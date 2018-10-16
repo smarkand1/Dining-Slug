@@ -1,0 +1,4 @@
+The react component generated an index.html file when it was created. The file path for it is 
+DS-Web-App/public/index.html
+This is the html file that will be interacting with the web app itself, use that file if you guys need it
+-Nelson
