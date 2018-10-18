@@ -52,10 +52,21 @@ def get_menu(url):
     response = requests.get(url)
     html = response.content
     soup = BeautifulSoup(html, "html.parser")
-    print(response.status_code)
-    print(soup.prettify().encode('utf-8').decode('ascii', 'ignore'))
+    frame = soup.find("frame", title="main content window")
+
+    return read_menu_frames(frame)
+    #print(soup.prettify().encode('utf-8').decode('ascii', 'ignore'))
     
     '''
     for item in soup.find_all("div", "menusamprecipes"):
         print(item)
     '''
+
+def read_menu_frames(frame):
+    base_url = "https://nutrition.sa.ucsc.edu/"
+    url = base_url + frame.get("src")
+    response = requests.get(url)
+    html = response.content
+    soup = BeautifulSoup(html, "html.parser")
+    print(url + " -------------------- ")
+    print(soup.prettify().encode('utf-8').decode('ascii', 'ignore'))

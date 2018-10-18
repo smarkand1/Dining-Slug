@@ -1,5 +1,6 @@
 {
     Title: "Dining Hall Name"
+    Date: "Date"
     Hours: [<Monday Hours>, <Tuesday Hours>, 
             <Wednesday Hours>, <Thursday Hours>,
             <Fridayday Hours>, <Saturday Hours>,
