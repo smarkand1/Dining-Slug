@@ -1,0 +1,26 @@
+{
+    Title: "Dining Hall Name"
+    Hours: [<Monday Hours>, <Tuesday Hours>, 
+            <Wednesday Hours>, <Thursday Hours>,
+            <Fridayday Hours>, <Saturday Hours>,
+            <Sunday Hours>]
+    Menu: [
+        {
+            Title: "Breakfast"
+            Menu["Food Name 1", "Food Name 2", ...]
+        }
+        {
+            Title: "Lunch"
+            Menu["Food Name 1", "Food Name 2", ...]
+        }
+        {
+            Title: "Dinner"
+            Menu["Food Name 1", "Food Name 2", ...]
+        }
+        {
+            Title: "Late Night"
+            Menu["Food Name 1", "Food Name 2", ...]
+            #Menu will be empty if a dining hall doesnt do late night
+        }
+    ]
+}
