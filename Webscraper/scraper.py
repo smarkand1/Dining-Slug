@@ -17,6 +17,9 @@ def get_dining_hall_URLs():
     #Create BS4 object containing HTML for webpage
     main_url = "https://dining.ucsc.edu/eat/index.html"
     response = requests.get(main_url)
+    if(response.status_code != 200):
+        print("Error in connecting to website")
+        return None
     html = response.content
     soup = BeautifulSoup(html, "html.parser")
 
@@ -79,7 +82,8 @@ def read_menu_frames(frame):
     soup = BeautifulSoup(html, "html.parser")
 
     food_items = []
-    for div in soup.find_all("div", {"class": "menusamprecipes"}):
+    for div in soup.find_all("div", {"class": ["menusamptitle", "menusampmeals", "menusamprecipes"]}):
         food_items.append(div.get_text())
+    #print(food_items)
     return food_items
     #print(soup.prettify().encode('utf-8').decode('ascii', 'ignore'))
