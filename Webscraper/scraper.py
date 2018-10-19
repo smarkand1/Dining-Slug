@@ -63,10 +63,23 @@ def get_menu(url):
     '''
 
 def read_menu_frames(frame):
+    '''
+    Gets the food items for each menu for each dining hall and returns it as a list of strings
+    Arguments:
+        frame - BS4 object
+    Returns:
+        List - members: {type = strings}
+    Raises:
+        None
+    '''
     base_url = "https://nutrition.sa.ucsc.edu/"
     url = base_url + frame.get("src")
     response = requests.get(url)
     html = response.content
     soup = BeautifulSoup(html, "html.parser")
-    print(url + " -------------------- ")
-    print(soup.prettify().encode('utf-8').decode('ascii', 'ignore'))
+
+    food_items = []
+    for div in soup.find_all("div", {"class": "menusamprecipes"}):
+        food_items.append(div.get_text())
+    return food_items
+    #print(soup.prettify().encode('utf-8').decode('ascii', 'ignore'))
