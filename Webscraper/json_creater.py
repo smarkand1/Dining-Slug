@@ -3,6 +3,19 @@ import json
 import requests
 
 def print_food(file, term, menu, i):
+    '''
+    Outputs the data from menu in an object format for each menu
+    Object contains attributes: title (string), menu(list of strings)  
+    Arguments:
+        file - (file) output file
+        term - (str) when to stop parsing master list containg food for all sections of the day
+        menu - (list) list of strings of food items
+        i - (int) where to start in the list
+    returns:
+        i - (int) where we left off in the master list
+    raises:
+        None
+    '''
     if(i > len(menu) - 1):
         return i
     title = menu[i]
@@ -29,6 +42,13 @@ def print_food(file, term, menu, i):
     file.write("]\n\t\t}")
     return i
 
+'''
+Run to get the current menu from each dining hall. The output is data.txt
+The data is output in a JSON format with 5 JSON objects each representing
+a dining hall menu. Each JSON object contains: the name of the dining hall,
+current date that the menu was pulled from, hours of operation for that date,
+and the menu.
+'''
 
 file = open("data.txt", "w")
 count = 0
@@ -39,12 +59,14 @@ for url in scraper.get_dining_hall_URLs():
     count += 1
     if count > 5 :
         break
+    #tests if we get a valid response from the dining hall menu
     try:
         menu = scraper.get_menu(url[1])
     except:
         print("Not a valid link: " + url[1])
         continue
-    #menus.append(scraper.get_menu(url))
+
+    #Starts outputing data to JSON format in a txt file
     file.write("{\n")
     try:
         file.write("\t\"Title\": \"" + url[0] + "\"\n")

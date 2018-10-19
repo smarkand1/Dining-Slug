@@ -6,12 +6,12 @@ def get_dining_hall_URLs():
     '''
     Retrieves the dining hall titles and menus on the main dining hall page
     Returns a list of lists where each list has 2 entries: the title of the dining hall, and the url
-    in that order.
+    in that order.    
     Arguments:
-        None
-    Returns:
-        List - members: {type = lists} || members: {type = {str, str}}; 1st Dining Hall Title, 2nd URL to Menu
-    Raises:
+        None  
+    Returns:  
+        dining_hall_urls - (list) list of lists - (str, str) 1st Dining Hall Title, 2nd URL to Menu  
+    Raises:  
         None
     '''
     #Create BS4 object containing HTML for webpage
@@ -43,11 +43,11 @@ def get_dining_hall_URLs():
 def get_menu(url):
     '''
     Gets the menu for each link sent in list format where each entry is a list and each entry in those lists
-    is a food item
+    is a food item  
     Arguments:
         URL - str
     Returns:
-        List - members: {type = lists} || member {types = str}
+        read_menu_frames - (list) frames for each dining hall - (BS4 Object) 
     Raises:
         None
     '''
@@ -58,20 +58,14 @@ def get_menu(url):
     frame = soup.find("frame", title="main content window")
 
     return read_menu_frames(frame)
-    #print(soup.prettify().encode('utf-8').decode('ascii', 'ignore'))
-    
-    '''
-    for item in soup.find_all("div", "menusamprecipes"):
-        print(item)
-    '''
 
 def read_menu_frames(frame):
     '''
-    Gets the food items for each menu for each dining hall and returns it as a list of strings
+    Gets the food items for each menu for each dining hall and returns it as a list of strings  
     Arguments:
         frame - BS4 object
     Returns:
-        List - members: {type = strings}
+        food_items - (list) contains food items as str
     Raises:
         None
     '''
@@ -84,6 +78,4 @@ def read_menu_frames(frame):
     food_items = []
     for div in soup.find_all("div", {"class": ["menusamptitle", "menusampmeals", "menusamprecipes"]}):
         food_items.append(div.get_text())
-    #print(food_items)
     return food_items
-    #print(soup.prettify().encode('utf-8').decode('ascii', 'ignore'))
