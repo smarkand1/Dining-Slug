@@ -69,11 +69,11 @@ for url in scraper.get_dining_hall_URLs():
     #Starts outputing data to JSON format in a txt file
     file.write("{\n")
     try:
-        file.write("\t\"Title\": \"" + url[0] + "\"\n")
+        file.write("\t\"Title\": \"" + url[0] + "\",\n")
     except:
-        file.write("\tTitle: \"\"\n")
-    file.write("\t\"Date\": \"" + menu[0] + "\"\n")
-    file.write("\t\"Hours\": " + "Hours go here" + "\n")
+        file.write("\tTitle: \"\",\n")
+    file.write("\t\"Date\": \"" + menu[0] + "\",\n")
+    file.write("\t\"Hours\": " + "\"Hours go here\"," + "\n")
     file.write("\t\"Menu\": [\n")
     #Prints the food
     if len(menu) >= 4 :

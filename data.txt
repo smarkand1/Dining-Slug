@@ -1,7 +1,7 @@
 {
-	"Title": "Colleges Nine & Ten Menu"
-	"Date": "Menus for Friday, October 19, 2018"
-	"Hours": Hours go here
+	"Title": "Colleges Nine & Ten Menu",
+	"Date": "Menus for Friday, October 19, 2018",
+	"Hours": "Hours go here",
 	"Menu": [
 		{
 			"Title": "Breakfast",
@@ -17,14 +17,14 @@
 		},
 		{
 			"Title": "Late Night",
-			"Food": ["Garlic Roast Beef", "Oven Roasted Chicken Thigh", "Steamed Rice", "Cheese Pizza", "Veggie Supreme Pizza", "Mashed Yukon Golds", "Caesar Wrap with Chicken", "French Fries", "BBQ Tofu Chili Garlic", "Bar Rice Bowl", "Jasmine Rice", "Stir Fry Vegetables", "Szechuan Sweet Chili Sauce", "Teriyaki Chicken Shoyu"]
+			"Food": ["Garlic Roast Beef", "Mashed Yukon Golds", "Oven Roasted Chicken Thigh", "Steamed Rice", "Steamed Seasonal Vegetables", "Cheese Pizza", "Veggie Supreme Pizza", "Caesar Wrap with Chicken", "French Fries", "BBQ Tofu Chili Garlic", "Bar Rice Bowl", "Jasmine Rice", "Stir Fry Vegetables", "Szechuan Sweet Chili Sauce", "Teriyaki Chicken Shoyu"]
 		}
 	]
 }
 {
-	"Title": "Cowell/Stevenson Dining Hall Menu"
-	"Date": "Menus for Friday, October 19, 2018"
-	"Hours": Hours go here
+	"Title": "Cowell/Stevenson Dining Hall Menu",
+	"Date": "Menus for Friday, October 19, 2018",
+	"Hours": "Hours go here",
 	"Menu": [
 		{
 			"Title": "Breakfast",
@@ -36,7 +36,7 @@
 		},
 		{
 			"Title": "Dinner",
-			"Food": ["Creamy Broccoli Cheddar Soup", "N.E.Clam Chowder", "Chef's Special", "Oven Roasted Chicken Thigh", "Roasted Vegetables in Balsamic Mustard Vinaigrette", "Spicy Seared Cod with Noodle Stir-Fry", "Steamed Rice", "Cheese Pizza", "Cilantro Flatbread with Red Onions and Mushrooms", "Whaler Fish Sandwich", "Mexican Brownie", "Vegan Blackberry Pie", "BAR Hot Dog", "Banh Mi Vegan Hot Dog", "Cheese Sauce", "Chili con Carne", "Hot Dog All Beef", "Jalapeno", "Onions", "Sauerkraut", "Sweet Relish"]
+			"Food": ["Creamy Broccoli Cheddar Soup", "N.E.Clam Chowder", "BBQ Pork Ribs", "Chef's Special", "Oven Roasted Chicken Thigh", "Steamed Rice", "Cheese Pizza", "Cilantro Flatbread with Red Onions and Mushrooms", "Steamed Seasonal Vegetables", "Mexican Brownie", "Vegan Blackberry Pie", "BAR Hot Dog", "Banh Mi Vegan Hot Dog", "Cheese Sauce", "Chili con Carne", "Hot Dog All Beef", "Jalapeno", "Onions", "Sauerkraut", "Sweet Relish"]
 		}		{
 			"Title": "Late Night",
 			"Food": []
@@ -44,9 +44,9 @@
 	]
 }
 {
-	"Title": "Crown/Merrill Dining Hall Menu"
-	"Date": "Menus for Friday, October 19, 2018"
-	"Hours": Hours go here
+	"Title": "Crown/Merrill Dining Hall Menu",
+	"Date": "Menus for Friday, October 19, 2018",
+	"Hours": "Hours go here",
 	"Menu": [
 		{
 			"Title": "Breakfast",
@@ -58,7 +58,7 @@
 		},
 		{
 			"Title": "Dinner",
-			"Food": ["N.E.Clam Chowder", "Tuscan Vegetable Soup", "Oven Roasted Chicken Thigh", "Spicy Seared Cod with Noodle Stir-Fry", "Steamed Rice", "Brie, Onion, and Apple Pizza", "Cheese Pizza", "Sauteed Seasonal Vegetable", "Vegan Blackberry Pie", "Armenian Salad", "BAR Worldly Wings", "Fried Plantains", "Harissa Chicken Wings", "Tzatziki Sauce", "Vegan Tenders", "Wings Chicken 65", "Wings Chicken Jerk"]
+			"Food": ["N.E.Clam Chowder", "Tuscan Vegetable Soup", "Oven Roasted Chicken Thigh", "Spicy Seared Cod with Noodle Stir-Fry", "Steamed Rice", "Brie, Onion, and Apple Pizza", "Cheese Pizza", "Sauteed Seasonal Vegetable", "Vegan Blackberry Pie", "Armenian Salad", "BAR Worldly Wings", "Vegan Tenders", "Wings Chicken 65", "Wings Chicken Jerk"]
 		}		{
 			"Title": "Late Night",
 			"Food": []
@@ -66,9 +66,9 @@
 	]
 }
 {
-	"Title": "Porter/Kresge Dining Hall Menu"
-	"Date": "Menus for Friday, October 19, 2018"
-	"Hours": Hours go here
+	"Title": "Porter/Kresge Dining Hall Menu",
+	"Date": "Menus for Friday, October 19, 2018",
+	"Hours": "Hours go here",
 	"Menu": [
 		{
 			"Title": "Breakfast",
@@ -76,7 +76,7 @@
 		},
 		{
 			"Title": "Lunch",
-			"Food": ["Italian Meatball Sandwich", "N.E.Clam Chowder", "Tuscan Vegetable Soup", "BAR Wings", "BBQ Wings", "Condiments", "Hawaiian Coleslaw", "Hot 'N Spicy Wings", "Teriyaki Glaze Wings", "Vegan Baked Beans", "Vegan Tenders", "Baked Salmon with Avocado Chimichurri", "Black Rice, Beet and Kale Salad", "Oven Roasted Chicken Thigh", "Roasted Seasonal Vegetables", "Sesame Chili Ginger Beef", "Sesame Chow Mein Noodles", "Steamed Rice", "Szechuan Sweet Chili Tofu", "Cheese Pizza", "Cilantro Flatbread with Red Onions and Mushrooms", "Combo Meat Pizza", "Pepperoni Pizza"]
+			"Food": ["Italian Meatball Sandwich", "N.E.Clam Chowder", "Tuscan Vegetable Soup", "BAR Wings", "BBQ Wings", "Condiments", "Hawaiian Coleslaw", "Hot 'N Spicy Wings", "Teriyaki Glaze Wings", "Vegan Baked Beans", "Vegan Tenders", "Baked Salmon with Avocado Chimichurri", "Black Rice, Beet and Kale Salad", "Hawaiian Pizza", "Oven Roasted Chicken Thigh", "Roasted Seasonal Vegetables", "Sesame Chili Ginger Beef", "Sesame Chow Mein Noodles", "Steamed Rice", "Szechuan Sweet Chili Tofu", "Cheese Pizza", "Pepperoni Pizza"]
 		},
 		{
 			"Title": "Dinner",
@@ -88,9 +88,9 @@
 	]
 }
 {
-	"Title": "Rachel Carson/Oakes Dining Hall"
-	"Date": "Menus for Friday, October 19, 2018"
-	"Hours": Hours go here
+	"Title": "Rachel Carson/Oakes Dining Hall",
+	"Date": "Menus for Friday, October 19, 2018",
+	"Hours": "Hours go here",
 	"Menu": [
 		{
 			"Title": "Breakfast",
