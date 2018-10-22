@@ -7,19 +7,19 @@
             "Sunday Hours"]
     Menu: [
         {
-            Title: "Breakfast"
+            Title: "Breakfast",
             Food: ["Food Name 1", "Food Name 2", ...]
         },
         {
-            Title: "Lunch"
+            Title: "Lunch",
             Food: ["Food Name 1", "Food Name 2", ...]
         },
         {
-            Title: "Dinner"
+            Title: "Dinner",
             Food: ["Food Name 1", "Food Name 2", ...]
         },
         {
-            Title: "Late Night"
+            Title: "Late Night",
             Food: ["Food Name 1", "Food Name 2", ...]
             #Menu will be empty if a dining hall doesnt do late night
         }
