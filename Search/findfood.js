@@ -1,4 +1,14 @@
 function findfood() {
+    /*
+    Searchs through array of food and creates a list as an element to be printed
+    that contains the specified string within the search bar.
+    Arguements:
+        None
+    Returns:
+        List or Prints element
+    Raises:
+        None
+    */
     var input; //Assign this to read input from seach bar
     var data = ["chicken", "cheese", "meat", "pasta", "Sausage"]; // This value will be static and always the same read from the 
     var output = []; // These values should display in a list style under the search bar
