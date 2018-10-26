@@ -1,7 +1,7 @@
-//Listing page for Crown, THIS IS called in DiningHall.js
+//Listing page for Porter, NOT YET called in DiningHall.js
 import React from 'react'
          
-export class NineTen extends React.Component { 
+export class Porter extends React.Component { 
         constructor(props){
         super(props);
            this.state={ recipes :[] } 
@@ -16,7 +16,7 @@ export class NineTen extends React.Component {
         render() {
          return (
           <div className="App">
-             <h2>Welcome to the 9/10 Listing!</h2>
+             <h2>Welcome to the Porter Listing!</h2>
              <dl>
              {this.state.recipes.map(recipe => {
                  return ( <div key={recipe.Menu}>
