@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  background-color: #003c6c;
 }
 
 .App-logo {
@@ -8,16 +8,27 @@
 }
 
 .App-header {
-  background-color: #003c6c;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: left;
+  justify-content: top;
   color: white;
+  padding: 10px;
 }
 
+.gradient {
+background-image: linear-gradient(to left, #003c6c , #fdc700);
+background-color: #fdc700; /* For browsers that do not support gradients */
+height: 10px;
+margin-top: 7px;
+}
+
+.title{
+  font-family: EB Garamond;
+  font-size:calc(30px + 2vmin);
+  color: #fdc700;
+}
 
 @keyframes App-logo-spin {
   from {
