@@ -78,4 +78,5 @@ def read_menu_frames(frame):
     food_items = []
     for div in soup.find_all("div", {"class": ["menusamptitle", "menusampmeals", "menusamprecipes"]}):
         food_items.append(div.get_text())
+    print(food_items)
     return food_items

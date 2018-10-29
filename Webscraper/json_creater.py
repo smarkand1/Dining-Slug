@@ -29,6 +29,7 @@ def print_food(file, term, menu, i):
         file.write("\"" + food + "\"")
         i += 1
         if(i > len(menu) - 1):
+            file.write("]\n\t\t}")
             return i
         food = menu[i]
 
@@ -92,6 +93,7 @@ for url in scraper.get_dining_hall_URLs():
             i = print_food(file, "", menu, i)
             file.write("\n")
         else:
+            file.write(",\n")
             file.write("\t\t{\n")
             file.write("\t\t\t\"Title\": \"Late Night\",\n")
             file.write("\t\t\t\"Food\": []")

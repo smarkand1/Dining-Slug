@@ -1,43 +1,44 @@
 {
 	"Title": "Colleges Nine & Ten Menu",
-	"Date": "Menus for Friday, October 19, 2018",
+	"Date": "Menus for Wednesday, October 24, 2018",
 	"Hours": "Hours go here",
 	"Menu": [
 		{
 			"Title": "Breakfast",
-			"Food": ["Belgian Waffles", "Cage Free Scrambled Eggs", "Crispy Bacon", "Hard-boiled Cage Free Eggs", "Oatmeal Gluten-Free", "Roasted Seasonal Vegetables", "Shredded Hash Browns", "Texas French Toast", "Almond Bear Claws", "Oatbran Apple Muffin", "Pineapple Coconut Muffin", "Vegan Peanut Granola", "Bell Peppers", "Cage Free Eggs", "Cage Free Omelette Bar", "Cheddar Cheese", "Feta Cheese", "Fresh Organic Spinach", "Fresh Tomato", "Jalapeno", "Onions", "Oven Roasted Turkey", "Sliced Olived", "Smoked Ham"]
+			"Food": ["Limited Options, Campus Activity impacting Dining Operations"]
 		},
 		{
 			"Title": "Lunch",
-			"Food": ["N.E.Clam Chowder", "Tuscan Vegetable Soup", "Lemon Pepper Cod", "Orange Glazed Chicken", "Orange Glazed Vegan Chicken", "Oven Roasted Chicken Thigh", "Pasta Puttanesca with Roasted Vegetables", "Steamed Rice", "Cheese Pizza", "Veggie Supreme Pizza", "Sticky Rice", "Steamed Seasonal Vegetables", "Lemon Cream Cheese Cup Cakes", "Mexican Brownie", "BAR Wings", "BBQ Wings", "Condiments", "Hot 'N Spicy Wings", "Teriyaki Glaze Wings", "Vegan Baked Beans", "Vegan Tenders", "Halal Seekh Kebab Sandwich", "Vegan Malibu Burger"]
+			"Food": ["Limited Options, Campus Activity impacting Dining Operations"]
 		},
 		{
 			"Title": "Dinner",
-			"Food": ["New England Clam Chowder", "Tuscan Vegetable Soup", "BBQ Tofu Chili Garlic", "Oven Roasted Chicken Thigh", "Pork Hawaiian Braised", "Steamed Rice", "Cheese Pizza", "Veggie Supreme Pizza", "Sticky Rice", "Steamed Seasonal Vegetables", "Cheese Quesadilla", "Tator Tots", "Whaler Fish Sandwich", "Mexican Brownie", "Vegan Blackberry Pie", "Bar Indian", "Basmati Rice Pullao", "Cauliflower Lentil Dal", "Condiments", "Madras Chicken", "Madras Curried Squash", "Original Naan", "Potato Samosas"]
+			"Food": ["Limited Options, Campus Activity impacting Dining Operations"]
 		},
 		{
 			"Title": "Late Night",
-			"Food": ["Garlic Roast Beef", "Mashed Yukon Golds", "Oven Roasted Chicken Thigh", "Steamed Rice", "Steamed Seasonal Vegetables", "Cheese Pizza", "Veggie Supreme Pizza", "Caesar Wrap with Chicken", "French Fries", "BBQ Tofu Chili Garlic", "Bar Rice Bowl", "Jasmine Rice", "Stir Fry Vegetables", "Szechuan Sweet Chili Sauce", "Teriyaki Chicken Shoyu"]
+			"Food": []
 		}
 	]
 }
 {
 	"Title": "Cowell/Stevenson Dining Hall Menu",
-	"Date": "Menus for Friday, October 19, 2018",
+	"Date": "Menus for Wednesday, October 24, 2018",
 	"Hours": "Hours go here",
 	"Menu": [
 		{
 			"Title": "Breakfast",
-			"Food": ["Belgian Waffles", "Bob's Pancakes", "Cage Free Scrambled Eggs", "Chicken Apple Sausage", "Eggbeaters Scramble", "Hard-boiled Cage Free Eggs", "Oatmeal Gluten-Free", "Shredded Hash Browns", "Thai Tofu Scramble", "Almond Bear Claws", "Oatbran Apple Muffin", "Pineapple Coconut Muffin", "Vegan Peanut Granola"]
+			"Food": ["Cage Free Scrambled Eggs", "Chicken Bacon", "Limited Options, Campus Activity impacting Dining Operations", "Papas Fritas", "Soyrizo Tofu Scramble"]
 		},
 		{
 			"Title": "Lunch",
-			"Food": ["Creamy Broccoli Cheddar Soup", "N.E.Clam Chowder", "Enchiladas de Crema", "Oven Roasted Chicken Thigh", "Steamed Rice", "Cheese Pizza", "Cilantro Flatbread with Red Onions and Mushrooms", "Mexican Rice", "Chocolate Chip Cookies", "Blackened Catfish Po' Boy Sandwich", "Lemon Cream Cheese Cup Cakes", "Mexican Brownie", "Argentinian Roasted Chicken", "Black Beans", "Braised Kale with Crispy Shallots", "Condiments", "Grilled Chimichurri Tofu", "Quinoa with Lemon and Thyme", "Roasted Sweet Potatoes"]
+			"Food": ["Cheese and Garlic Breadsticks", "Hot Dog All Beef", "Italian Sausage Sandwich", "Limited Options, Campus Activity impacting Dining Operations", "Bolognese Sauce", "Marinara Sauce", "Penne", "Chef's Special", "Chili con Carne", "Condiments", "Hot Dog Vegan", "Sauerkraut", "Sweet Relish", "Turkey Corn Dogs"]
 		},
 		{
 			"Title": "Dinner",
-			"Food": ["Creamy Broccoli Cheddar Soup", "N.E.Clam Chowder", "BBQ Pork Ribs", "Chef's Special", "Oven Roasted Chicken Thigh", "Steamed Rice", "Cheese Pizza", "Cilantro Flatbread with Red Onions and Mushrooms", "Steamed Seasonal Vegetables", "Mexican Brownie", "Vegan Blackberry Pie", "BAR Hot Dog", "Banh Mi Vegan Hot Dog", "Cheese Sauce", "Chili con Carne", "Hot Dog All Beef", "Jalapeno", "Onions", "Sauerkraut", "Sweet Relish"]
-		}		{
+			"Food": ["Condiments", "Limited Options, Campus Activity impacting Dining Operations", "BAR Hot Dog", "Beef Hot Dog", "Chili con Carne", "Hot Dog Vegan", "Italian Sausage Sandwich", "Sauerkraut", "Sweet Relish", "Turkey Corn Dogs"]
+		},
+		{
 			"Title": "Late Night",
 			"Food": []
 		}
@@ -45,21 +46,22 @@
 }
 {
 	"Title": "Crown/Merrill Dining Hall Menu",
-	"Date": "Menus for Friday, October 19, 2018",
+	"Date": "Menus for Wednesday, October 24, 2018",
 	"Hours": "Hours go here",
 	"Menu": [
 		{
 			"Title": "Breakfast",
-			"Food": ["Belgian Waffles", "Cage Free Scrambled Eggs", "Chicken Apple Sausage", "French Toast Sticks", "Hard-boiled Cage Free Eggs", "Oatmeal Gluten-Free", "Almond Bear Claws", "Oatbran Apple Muffin", "Pineapple Coconut Muffin"]
+			"Food": ["Blueberry Pancakes", "Oatmeal Gluten-Free", "Papas Fritas", "Turkey Sausage Patty"]
 		},
 		{
 			"Title": "Lunch",
-			"Food": ["N.E.Clam Chowder", "Tuscan Vegetable Soup", "Bistro Shrimp Caesar", "Bistro Caesar Salad with Citrus Tofu", "Cajun Lightning Chicken", "Cajun Rice with Red Beans", "Oven Roasted Chicken Thigh", "Steamed Rice", "Brie, Onion, and Apple Pizza", "Cheese Pizza", "Sauteed Seasonal Vegetable", "Blended Beef & Mushroom Burger Hawaiian Style", "Lemon Cream Cheese Cup Cakes", "Mexican Brownie", "BAR Boardwalk Burgers", "Burger Beef", "Grilled Pineapple Rings", "Hawaiian Bun", "Sauteed Mushrooms", "Sauteed Onions and Peppers", "Sweet Potato Fries", "Szechuan Sweet Chili Sauce", "Teriyaki Sauce (Gluten Free)", "Vegan Malibu Burger"]
+			"Food": ["Lentil & Lemon Soup", "Thai Coconut Curry Chicken Soup", "Lemon Pepper Cod", "Orange Glazed Chicken", "Orange Glazed Vegan Chicken", "Oven Roasted Chicken Thigh", "Steamed Rice", "Sticky Rice", "Artichoke Flatbread with Tomato, Spinach and Goat Cheese", "Pizza with Ranch and Bacon", "Roasted Seasonal Vegetables", "Bar Taqueria", "Chipotle Gardein Strips", "Condiments", "Corn Tortillas", "Flour Tortilla", "Mexican Rice", "Refried Beans", "Taqueria Chicken"]
 		},
 		{
 			"Title": "Dinner",
-			"Food": ["N.E.Clam Chowder", "Tuscan Vegetable Soup", "Oven Roasted Chicken Thigh", "Spicy Seared Cod with Noodle Stir-Fry", "Steamed Rice", "Brie, Onion, and Apple Pizza", "Cheese Pizza", "Sauteed Seasonal Vegetable", "Vegan Blackberry Pie", "Armenian Salad", "BAR Worldly Wings", "Vegan Tenders", "Wings Chicken 65", "Wings Chicken Jerk"]
-		}		{
+			"Food": ["Lentil & Lemon Soup", "Thai Coconut Curry Chicken Soup", "5 Spice BBQ Beef Chow Mein", "5 Spice BBQ Tofu Chow Mein", "Farro Mushroom Risotto", "Oven Roasted Chicken Thigh", "Roast Pork Loin with Parsley and Shallot Sauce", "Steamed Rice", "Artichoke Flatbread with Tomato, Spinach and Goat Cheese", "Pizza with Ranch and Bacon", "Roasted Seasonal Vegetables", "Bar Indian", "Basmati Rice Pullao", "Chicken Tikka Masala", "Chickpea Curry with Tomato and Kale", "Condiments", "Dal Saag", "Original Naan", "Potato Samosas"]
+		},
+		{
 			"Title": "Late Night",
 			"Food": []
 		}
@@ -67,43 +69,29 @@
 }
 {
 	"Title": "Porter/Kresge Dining Hall Menu",
-	"Date": "Menus for Friday, October 19, 2018",
+	"Date": "Menus for Wednesday, October 24, 2018",
 	"Hours": "Hours go here",
 	"Menu": [
-		{
-			"Title": "Breakfast",
-			"Food": ["Oatmeal Gluten-Free", "Blueberry Pancakes", "Cage Free Scrambled Eggs", "Egg Muffin with Sausage", "Flour Tortilla", "Hard-boiled Cage Free Eggs", "Natural BridgesTofu Scramble", "Sausage Patties", "Shredded Hash Browns"]
-		},
-		{
-			"Title": "Lunch",
-			"Food": ["Italian Meatball Sandwich", "N.E.Clam Chowder", "Tuscan Vegetable Soup", "BAR Wings", "BBQ Wings", "Condiments", "Hawaiian Coleslaw", "Hot 'N Spicy Wings", "Teriyaki Glaze Wings", "Vegan Baked Beans", "Vegan Tenders", "Baked Salmon with Avocado Chimichurri", "Black Rice, Beet and Kale Salad", "Hawaiian Pizza", "Oven Roasted Chicken Thigh", "Roasted Seasonal Vegetables", "Sesame Chili Ginger Beef", "Sesame Chow Mein Noodles", "Steamed Rice", "Szechuan Sweet Chili Tofu", "Cheese Pizza", "Pepperoni Pizza"]
-		},
-		{
-			"Title": "Dinner",
-			"Food": ["N.E.Clam Chowder", "Tuscan Vegetable Soup", "Bar Indian", "Basmati Rice Pullao", "Condiments", "Dal Saag", "Masala Vegetables", "Original Naan", "Tandoori Chicken", "California Pasta", "Chef's Special", "Oven Roasted Chicken Thigh", "Roasted Seasonal Vegetables", "Steamed Rice", "Torta Ahogada", "Cheese Pizza", "Cilantro Flatbread with Red Onions and Mushrooms", "Combo Meat Pizza", "Pepperoni Pizza"]
-		}		{
-			"Title": "Late Night",
-			"Food": []
-		}
 	]
 }
 {
 	"Title": "Rachel Carson/Oakes Dining Hall",
-	"Date": "Menus for Friday, October 19, 2018",
+	"Date": "Menus for Wednesday, October 24, 2018",
 	"Hours": "Hours go here",
 	"Menu": [
 		{
 			"Title": "Breakfast",
-			"Food": ["Belgian Waffles", "Bob's Pancakes", "Cage Free Scrambled Eggs", "Cajun Roasted Red Potatoes", "Chicken Bacon", "Eggbeaters Scramble", "Hard-boiled Cage Free Eggs", "Oatmeal Gluten-Free", "Soyrizo Tofu Scramble", "Almond Bear Claws", "Oatbran Apple Muffin", "Pineapple Coconut Muffin", "Vegan Peanut Granola", "Bell Peppers", "Cage Free Eggs", "Cage Free Omelette Bar", "Cheddar Cheese", "Feta Cheese", "Fresh Organic Spinach", "Fresh Tomato", "Jalapeno", "Onions", "Oven Roasted Turkey", "Sliced Olived", "Smoked Ham"]
+			"Food": ["Belgian Waffles", "Cage Free Scrambled Eggs", "Eggbeaters Scramble", "Hard-boiled Cage Free Eggs", "Limited Options, Campus Activity impacting Dining Operations", "Almond Bear Claws", "Apple Walnut Muffin", "Mocha Chip Muffin", "Old Fashioned Frosted Donut", "Vegan Peanut Granola", "Bell Peppers", "Cage Free Eggs", "Cage Free Omelette Bar", "Cheddar Cheese", "Feta Cheese", "Fresh Organic Spinach", "Fresh Tomato", "Jalapeno", "Onions", "Oven Roasted Turkey", "Sliced Olived", "Smoked Ham"]
 		},
 		{
 			"Title": "Lunch",
-			"Food": ["N.E.Clam Chowder", "Tomato Bisque Soup", "Fiesta Taquito Salad", "British Burger", "Island BBQ Chicken", "Oven Roasted Chicken Thigh", "Steamed Rice", "Bombay Chicken Pizza", "Cheese Pizza", "Coconut Basmati Rice", "Steamed Seasonal Vegetables", "Chocolate Chip Cookies", "Lemon Cream Cheese Cup Cakes", "Mexican Brownie", "UCSC Bakery French Rolls", "BAR Wings", "BBQ Wings", "Condiments", "Hawaiian Coleslaw", "Hot 'N Spicy Wings", "Teriyaki Glaze Wings", "Vegan Baked Beans", "Vegan Tenders"]
+			"Food": []
 		},
 		{
 			"Title": "Dinner",
-			"Food": ["N.E.Clam Chowder", "Tomato Bisque Soup", "Cajun Meatloaf", "Oven Roasted Chicken Thigh", "Steamed Rice", "Bombay Chicken Pizza", "Cheese Pizza", "Cajun Rice with Red Beans", "Steamed Seasonal Vegetables", "Mexican Brownie", "UCSC Bakery French Rolls", "Vegan Blackberry Pie", "Argentinian Roasted Chicken", "Black Beans", "Braised Kale with Crispy Shallots", "Condiments", "Quinoa with Lemon and Thyme", "Roasted Corn"]
-		}		{
+			"Food": ["Limited Options, Campus Activity impacting Dining Operations"]
+		},
+		{
 			"Title": "Late Night",
 			"Food": []
 		}
