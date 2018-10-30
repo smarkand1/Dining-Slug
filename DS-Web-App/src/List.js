@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { BrowserRouter, Route, Switch, NavLink} from 'react-router-dom';
 import { DiningHall } from './components/DiningHall';
 import './List.css';
