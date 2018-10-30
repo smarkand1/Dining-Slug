@@ -1,0 +1,31 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+    border-right:1px solid #bbb;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+.listButton {
+    background-color: #003c6c;
+    color: white;
+    cursor: pointer;    
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.listButton:hover {
+    background-color: #00266C;
+}
