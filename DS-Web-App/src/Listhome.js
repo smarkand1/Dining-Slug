@@ -1,14 +1,19 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import { BrowserRouter, Route, Switch, NavLink} from 'react-router-dom';
 import { DiningHall } from './components/DiningHall';
 import './List.css';
 
-
-export class List extends React.Component{
+export class Listhome extends React.Component{
 	render() {
 		return (
 			<div>
 				<ul>
+					<li>
+						<NavLink to = "/" exact>
+							<button class = "listButton">Home</button>
+						</NavLink>
+					</li>	
 					<li>
 						<NavLink to = "/9-10" exact>
 							<button class = "listButton">9/10</button>

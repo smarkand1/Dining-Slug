@@ -3,6 +3,7 @@ import {NavLink} from 'react-router-dom';
 import { Listhome } from './../Listhome';
 import {NineTen} from './NineTen';
 
+
 //Now all we need to do here is grab the information from the server on what the dining halls are serving
 export class DiningHall extends React.Component {
 	//Currently I'm just rendering a static JSON object for every dininghall.
