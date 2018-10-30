@@ -1,6 +1,6 @@
 //Listing page for Crown, THIS IS called in DiningHall.js
 import React from 'react'
-         
+     
 export class NineTen extends React.Component { 
         constructor(props){
         super(props);
@@ -15,13 +15,31 @@ export class NineTen extends React.Component {
         } 
         render() {
          return (
+      
           <div className="App">
              <h2>Welcome to the 9/10 Listing!</h2>
              <dl>
              {this.state.recipes.map(recipe => {
                  return ( <div key={recipe.Menu}>
-                     <dt>{recipe.Menu[0]}</dt><br></br> 
-                     <dt>{recipe.Menu[1]}</dt>
+                          <div key={recipe.Hours}></div>
+                          <div key={recipe.Title}></div>
+
+                    <ul> {recipe.Title.map(function(Title,index)
+                    {
+                      return <tab key = {index}>{Title}</tab>
+                    })}
+                    </ul>     
+                    <ul> {recipe.Hours.map(function(Hours,index)
+                    {
+                      return <tab key = {index}>{Hours}</tab>
+                    })}
+                    </ul>
+                    <ul> {recipe.Menu.map(function(Menu,index)
+                    {
+                      return  <tab key = {index}>{Menu}</tab>
+                    }
+                    )}
+                    </ul>
                      <br></br> 
                      <dd>{recipe.Food.join(',')}</dd>
                      <br></br> 
