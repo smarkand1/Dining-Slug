@@ -13,50 +13,35 @@ export class NineTen extends React.Component {
             recipes : require('./menu-ui')
           });
         } 
+        renderList =() =>{
+            let model = this.state.recipes[this.props.hallCode];
+            let title = model.Title;
+            let menu = model.Menu;
+
+            let menuUI = menu.map((m) => {
+              let time = m.Title;
+              let foodArr = m.Food;
+              let foodUI = foodArr.map((f) => {
+                return(
+                  <div>
+                    <h3>{f}</h3>
+                  </div>
+                );          
+              });
+              return (
+                <div>
+                  <h1>{time}</h1>
+                  {foodUI}
+                </div>
+              );
+            });
+            return menuUI;
+       }
         render() {
          return (
       
           <div className="App">
-             <h2>Welcome to the 9/10 Listing!</h2>
-             <dl>
-             {this.state.recipes.map(recipe => {
-                 return ( <div key={recipe.Menu}>
-                          <div key={recipe.Hours}></div>
-                          <div key={recipe.Title}></div>
-
-                    <ul> {recipe.Title.map(function(Title,index)
-                    {
-                      return <tab key = {index}>{Title}</tab>
-                    })}
-                    </ul>     
-                    <ul> {recipe.Hours.map(function(Hours,index)
-                    {
-                      return <tab key = {index}>{Hours}</tab>
-                    })}
-                    </ul>
-                    <ul> {recipe.Menu.map(function(Menu,index)
-                    {
-                      return  <tab key = {index}>{Menu}</tab>
-                    }
-                    )}
-                    </ul>
-                     <br></br> 
-                     <dd>{recipe.Food.join(',')}</dd>
-                     <br></br> 
-                     <dt>{recipe.Menu[2]}</dt>
-                     <br></br> 
-                     <dd>{recipe.Food.join(',')}</dd>
-                     <br></br> 
-                     <dt>{recipe.Menu[3]}</dt>
-                     <br></br> 
-                     <dd>{recipe.Food.join(',')}</dd>
-                     <br></br> 
-                     <hr></hr>
-                    </div>
-                   )
-                 })
-             }
-          </dl>
+            {this.renderList()}  
           </div>
         );
      }
