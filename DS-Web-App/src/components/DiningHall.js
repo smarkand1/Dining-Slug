@@ -1,7 +1,7 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom';
 import { Listhome } from './../Listhome';
-import {NineTen} from './NineTen';
+import {Menu} from './Menu';
 
 
 //Now all we need to do here is grab the information from the server on what the dining halls are serving
@@ -36,7 +36,7 @@ export class DiningHall extends React.Component {
 				  </div>
 				  <div className="gradient"></div>
 				  <Listhome/>
-				  <NineTen hallCode = {hall}/>
+				  <Menu hallCode = {hall}/>
 				  
 				</header>
 		  </div>
