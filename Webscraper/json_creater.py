@@ -51,15 +51,19 @@ current date that the menu was pulled from, hours of operation for that date,
 and the menu.
 '''
 
-file = open("data.txt", "w")
+file = open("data.JSON", "w")
 count = 0
-
+MAX_DINING_HALL_COUNT = 5
+#Starts the array of JSON objects
+file.write("[")
 for url in scraper.get_dining_hall_URLs():
     #Purpose is to stop after the standard dining halls
     #First 5 links are the 5 dining halls
     count += 1
-    if count > 5 :
+    if count > MAX_DINING_HALL_COUNT :
         break
+    elif(count > 1):
+        file.write(",\n")
     #tests if we get a valid response from the dining hall menu
     try:
         menu = scraper.get_menu(url[1])
@@ -99,8 +103,9 @@ for url in scraper.get_dining_hall_URLs():
             file.write("\t\t\t\"Food\": []")
             file.write("\n\t\t}\n")
     #Closes off the JSON
-    file.write("\t]\n}\n")
-        
+    file.write("\t]\n}")
+file.write("\n]")
+file.close();        
 
 
         
