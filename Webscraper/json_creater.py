@@ -1,5 +1,4 @@
 import scraper
-import json
 import requests
 
 def print_food(file, term, menu, i):
