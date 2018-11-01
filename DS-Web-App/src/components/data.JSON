@@ -1,4 +1,4 @@
-{
+[{
 	"Title": "Colleges Nine & Ten Menu",
 	"Date": "Menus for Thursday, November 01, 2018",
 	"Hours": "Hours go here",
@@ -20,7 +20,7 @@
 			"Food": ["Chef's Special", "Orange Glazed Pork", "Orange Glazed Vegan Chicken", "Oven Roasted Chicken Thigh", "Steamed Rice", "Cheese Pizza", "Chicken Club Pizza", "Steak Cut Fries", "Tavern Battered Pollock", "BBQ Tofu Chili Garlic", "Bar Rice Bowl", "Condiments", "Steamed Bok Choy", "Sticky Rice", "Szechuan Sweet Chili Sauce", "Teriyaki Chicken Shoyu"]
 		}
 	]
-}
+},
 {
 	"Title": "Cowell/Stevenson Dining Hall Menu",
 	"Date": "Menus for Thursday, November 01, 2018",
@@ -43,7 +43,7 @@
 			"Food": ["Oven Roasted Chicken Thigh", "Sauteed Seasonal Vegetable", "Spicy Seared Cod with Noodle Stir-Fry", "Steamed Rice", "Sugar and Spice Roasted Yams", "Cheese Pizza", "Pizza Asian Spicy Chicken", "Chicken Shawarma", "Couscous & Tomato Salad", "Baja Fish Tacos", "Baja Taco Bar", "Black Bean Corn Salsa", "Charro Beans", "Chipotle Gardein Strips", "Corn Tortillas", "Flour Tortilla", "Pork Al Pastor"]
 		}
 	]
-}
+},
 {
 	"Title": "Crown/Merrill Dining Hall Menu",
 	"Date": "Menus for Thursday, November 01, 2018",
@@ -66,7 +66,7 @@
 			"Food": []
 		}
 	]
-}
+},
 {
 	"Title": "Porter/Kresge Dining Hall Menu",
 	"Date": "Menus for Thursday, November 01, 2018",
@@ -89,7 +89,7 @@
 			"Food": []
 		}
 	]
-}
+},
 {
 	"Title": "Rachel Carson/Oakes Dining Hall",
 	"Date": "Menus for Thursday, November 01, 2018",
@@ -113,3 +113,4 @@
 		}
 	]
 }
+]
