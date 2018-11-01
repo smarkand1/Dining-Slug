@@ -1,5 +1,5 @@
 import React from 'react';
-import { List } from './../List';
+import { Listhome } from './../Listhome';
 
 export class Home extends React.Component {
 	render() {
@@ -11,7 +11,7 @@ export class Home extends React.Component {
             <img src ={require('./slug.png')}/>
           </div>
           <div className="gradient"></div>
-          <List/>
+          <Listhome/>
         </header>
         <body>
         </body>

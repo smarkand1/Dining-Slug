@@ -1,6 +1,6 @@
 //Listing page for all menus, THIS IS called in DiningHall.js
-import React from 'react'
-     
+import React from 'react';
+import {menuList, listColumn} from './Menu.css'
 export class Menu extends React.Component { 
     constructor(props){
       super(props);
@@ -21,6 +21,7 @@ export class Menu extends React.Component {
         let title = model.Title; //Dining hall title
         let menu = model.Menu;   //Dining hall menu, which is an array of more objects
 
+        //We need to figure out how to separate the menu times into different columns
         //Render the menu
         let menuUI = menu.map((indMenu) => {
           let time = indMenu.Title; //Breakfast/lunch/Dinner/Late Night
@@ -39,10 +40,10 @@ export class Menu extends React.Component {
           // Do not render
           if(foodArr.length > 0){
             return (
-              <div>
-                <h1>{time}</h1>
-                {foodUI}
-              </div>
+                <li>
+                      <h1>{time}</h1>
+                      {foodUI}
+                </li>
             );
           } else {
             return;
@@ -53,8 +54,10 @@ export class Menu extends React.Component {
     render() {
      return (
   
-      <div className="App">
-        {this.renderList()}  
+      <div className="wrapper">
+        <ul>
+          {this.renderList()}
+        </ul>  
       </div>
     );
  }

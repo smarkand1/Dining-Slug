@@ -1,11 +1,16 @@
 import React, {Component} from 'react'
 import Suggestions from './Suggestions'
 export class Search extends Component {
-    state = {
-      query: '',
-      results: []
-    }
+    constructor(props){
+        super(props);
+        state = {
+          query: '',
+          results: []
+        }
+        this.handleInputChange = this.handleInputChange.bind(this);
     
+    }
+
     //Should pull information from database
     getInfoFromDatabase = () =>
     {
