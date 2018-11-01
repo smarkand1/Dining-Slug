@@ -51,7 +51,7 @@ current date that the menu was pulled from, hours of operation for that date,
 and the menu.
 '''
 
-file = open("data.JSON", "w")
+file = open("DS-Web-App/src/components/data.JSON", "w")
 count = 0
 MAX_DINING_HALL_COUNT = 5
 #Starts the array of JSON objects
