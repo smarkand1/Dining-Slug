@@ -50,11 +50,11 @@ current date that the menu was pulled from, hours of operation for that date,
 and the menu.
 '''
 
-file = open("DS-Web-App/src/components/data.JSON", "w")
+file = open("DS-Web-App/src/components/data.json", "w")
 count = 0
 MAX_DINING_HALL_COUNT = 5
 #Starts the array of JSON objects
-file.write("[")
+file.write("{\n\"data\":[")
 for url in scraper.get_dining_hall_URLs():
     #Purpose is to stop after the standard dining halls
     #First 5 links are the 5 dining halls
@@ -103,7 +103,7 @@ for url in scraper.get_dining_hall_URLs():
             file.write("\n\t\t}\n")
     #Closes off the JSON
     file.write("\t]\n}")
-file.write("\n]")
+file.write("]\n}")
 file.close();        
 
 

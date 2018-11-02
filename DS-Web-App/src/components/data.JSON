@@ -1,4 +1,5 @@
-[{
+{
+"data":[{
 	"Title": "Colleges Nine & Ten Menu",
 	"Date": "Menus for Thursday, November 01, 2018",
 	"Hours": "Hours go here",
@@ -109,8 +110,8 @@
 		},
 		{
 			"Title": "Late Night",
-			"Food": ["Cider House Chicken Breast", "Oven Roasted Chicken Thigh", "Roasted Red Potatoes Garlic Herb", "Sauteed Seasonal Vegetable", "Steamed Rice", "Cheese Pizza", "Thai Chicken Pizza", "French Fries", "Rodeo Burger", "BAR Hot Dog", "Cheese Sauce", "Chili con Carne", "Condiments", "French Fries", "Hot Dog All Beef", "Hot Dog Vegan", "Sauteed Onions and Peppers"]
+			"Food": ["Italian Roasted Chicken", "Sauteed Seasonal Vegetable", "Steamed Rice", "Cheese Pizza", "Thai Chicken Pizza", "Braised Kale with Crispy Shallots", "Harissa Roasted Chicken", "North African Bar", "Roasted Cauliflower and Almond Salad", "Roasted Eggplant with Fried Onion", "Tahini Sauce", "Tzatziki Sauce"]
 		}
 	]
+}]
 }
-]
