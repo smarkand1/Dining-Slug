@@ -1,3 +1,5 @@
+//This just renders the entire application and passes it to the
+//HTML code in index.html (../public/index.html)
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
