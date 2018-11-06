@@ -9,7 +9,7 @@ import { DiningHall } from './components/DiningHall';
 import './Listhome.css';
 
 
-export class Listhome extends React.Component{
+export class HomeNav extends React.Component{
 	render() {
 		return (
 			<div>
