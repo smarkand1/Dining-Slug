@@ -4,18 +4,20 @@
 //(I think i have a picture of it idk)
 import React from 'react';
 import { Listhome } from './../Listhome';
+import { HomeNav } from './HomeNav';
 
 export class Home extends React.Component {
     render() {
         return(
             <div className="App">
-            <header className="App-header">
-                <div className="title">
-                    Dining Slug
-                    <img src ={require('./slug.png')}/>
-                </div>
-                <div className="gradient"></div>
-                <Listhome/>
+                <header className="App-header">
+                    <div className="title">
+                        Dining Slug
+                        <img src ={require('./slug.png')}/>
+                    </div>
+                    <div className="gradient"></div>
+                    <Listhome/>
+                    <HomeNav/>
                 </header>
                 <body>
                 </body>

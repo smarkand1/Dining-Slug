@@ -6,7 +6,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Route, Switch, NavLink} from 'react-router-dom';
 import { DiningHall } from './components/DiningHall';
-import './List.css';
+import './Listhome.css';
+
 
 export class Listhome extends React.Component{
 	render() {
@@ -29,7 +30,7 @@ export class Listhome extends React.Component{
 						</NavLink>
 					</li>
 					<li>
-					<NavLink to = "crown-merrill" exact>
+						<NavLink to = "/crown-merrill" exact>
 							<button class = "listButton">Crown/Merrill</button>
 						</NavLink>
 					</li>
@@ -45,7 +46,6 @@ export class Listhome extends React.Component{
 					</li>	
 				</ul>
 			</div>
-
 		);
 	}
 }

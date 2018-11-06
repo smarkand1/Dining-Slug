@@ -1,14 +1,24 @@
+//This renders the user interface for the list of buttons that the user
+//can use to navigate between each of the dining halls as well as
+//the home page
+//Thank to Chandler for the styling
 import React from 'react';
+import ReactDOM from 'react-dom';
 import { BrowserRouter, Route, Switch, NavLink} from 'react-router-dom';
 import { DiningHall } from './components/DiningHall';
-import './List.css';
+import './Listhome.css';
 
 
-export class List extends React.Component{
+export class Listhome extends React.Component{
 	render() {
 		return (
 			<div>
 				<ul>
+					<li>
+						<NavLink to = "/" exact>
+							<button class = "listButton">Home</button>
+						</NavLink>
+					</li>	
 					<li>
 						<NavLink to = "/9-10" exact>
 							<button class = "listButton">9/10</button>
@@ -20,7 +30,7 @@ export class List extends React.Component{
 						</NavLink>
 					</li>
 					<li>
-					<NavLink to = "crown-merrill" exact>
+						<NavLink to = "/crown-merrill" exact>
 							<button class = "listButton">Crown/Merrill</button>
 						</NavLink>
 					</li>
@@ -36,7 +46,6 @@ export class List extends React.Component{
 					</li>	
 				</ul>
 			</div>
-
 		);
 	}
 }
