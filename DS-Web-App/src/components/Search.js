@@ -1,46 +1,59 @@
 import React, {Component} from 'react'
-import Suggestions from './Suggestions'
+import dataList from './dataTest.json' //importing dataList
+import {Card, CardBody, CardTitle} from 'mdbreact'; //Styling
+
+
 export class Search extends Component {
-    constructor(props){
-        super(props);
-        state = {
-          query: '',
-          results: []
-        }
-        this.handleInputChange = this.handleInputChange.bind(this);
-    
+    //Set initial States
+    state = {
+      query: "",
     }
 
-    //Should pull information from database
-    getInfoFromDatabase = () =>
-    {
-      this.setState({
-        results: [1] //This is going to be our dummy array to test Search  
-      })
+    //Upon entering information into search bar...
+    onchangeOne = e =>{
+        this.setState({query: e.target.value}); //Log in target value
     }
-   
-    //When user inputs something, change its output
-    handleInputChange = () => {
-      this.setState({
-        query: this.search.value
-      },
-        this.getInfoFromDatabase()
-      )
-    }
-   
+
+    //This function will render our results
+    renderResults = r =>{
+        return <div className="col-md-3" style={{ marginTop : '10px' }}>
+            <Card>
+                <CardBody>
+                    <CardTitle title={r.Food}>{r.Food.substring(0, 15)}{ r.Food.length > 15 && "..."}</CardTitle>
+                </CardBody>
+            </Card>
+        </div>
+    }     
+
     render() {
+      const {query} = this.state; //query is now set to the given state
+      
+      /*
+      Declaration of a filtered variable that will look through the data.json
+      list and create an array containing only those options that match
+      the query result
+      */
+      const filteredItems = dataList.filter(r=>
+        {
+            return r.Food.indexOf(query) !== -1
+        })
+
+       
       return (
-        <form>
+        <div>
           <input
             placeholder="Search for..." //Search U.I bar
             ref={input => this.search = input}
-            onChange={this.handleInputChange}
+            onChange={this.onchangeOne}
           />
-          <Suggestions results= {this.state.query}/> 
-        </form>
+            
+            {filteredItems.map((r) => 
+             {
+                return this.renderResults(r) //print out results in a loop
+            })}
+        </div>
       )
     }
-   }
-   
-   export default Search
+}
+export default Search
    

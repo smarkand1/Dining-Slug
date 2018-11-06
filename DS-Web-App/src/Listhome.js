@@ -1,3 +1,7 @@
+//This renders the user interface for the list of buttons that the user
+//can use to navigate between each of the dining halls as well as
+//the home page
+//Thank to Chandler for the styling
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Route, Switch, NavLink} from 'react-router-dom';
