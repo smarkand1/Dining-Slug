@@ -50,11 +50,12 @@ current date that the menu was pulled from, hours of operation for that date,
 and the menu.
 '''
 
-file = open("DS-Web-App/src/components/data.json", "w")
+data_file = open("DS-Web-App/src/components/data.json", "w")
+food_file = open("DS-Web-App/src/components/food.json", "w")
 count = 0
 MAX_DINING_HALL_COUNT = 5
 #Starts the array of JSON objects
-file.write("{\n\"data\":[")
+data_file.write("{\n\"data\":[")
 for url in scraper.get_dining_hall_URLs():
     #Purpose is to stop after the standard dining halls
     #First 5 links are the 5 dining halls
@@ -62,7 +63,7 @@ for url in scraper.get_dining_hall_URLs():
     if count > MAX_DINING_HALL_COUNT :
         break
     elif(count > 1):
-        file.write(",\n")
+        data_file.write(",\n")
     #tests if we get a valid response from the dining hall menu
     try:
         menu = scraper.get_menu(url[1])
@@ -71,40 +72,40 @@ for url in scraper.get_dining_hall_URLs():
         continue
 
     #Starts outputing data to JSON format in a txt file
-    file.write("{\n")
+    data_file.write("{\n")
     try:
-        file.write("\t\"Title\": \"" + url[0] + "\",\n")
+        data_file.write("\t\"Title\": \"" + url[0] + "\",\n")
     except:
-        file.write("\tTitle: \"\",\n")
-    file.write("\t\"Date\": \"" + menu[0] + "\",\n")
-    file.write("\t\"Hours\": " + "\"Hours go here\"," + "\n")
-    file.write("\t\"Menu\": [\n")
+        data_file.write("\tTitle: \"\",\n")
+    data_file.write("\t\"Date\": \"" + menu[0] + "\",\n")
+    data_file.write("\t\"Hours\": " + "\"Hours go here\"," + "\n")
+    data_file.write("\t\"Menu\": [\n")
     #Prints the food
     if len(menu) >= 4 :
         i = 1
         #Print the items for breakfast
-        i = print_food(file, "Lunch", menu, i)
-        file.write(",\n")
+        i = print_food(data_file, "Lunch", menu, i)
+        data_file.write(",\n")
         #Print items for lunch
-        i = print_food(file, "Dinner", menu, i)
-        file.write(",\n")
+        i = print_food(data_file, "Dinner", menu, i)
+        data_file.write(",\n")
         #Print items for Dinner
-        i = print_food(file, "Late Night", menu, i)
+        i = print_food(data_file, "Late Night", menu, i)
         #Print items for late night if it exists
         if i != len(menu) :
-            file.write(",\n")
-            i = print_food(file, "", menu, i)
-            file.write("\n")
+            data_file.write(",\n")
+            i = print_food(data_file, "", menu, i)
+            data_file.write("\n")
         else:
-            file.write(",\n")
-            file.write("\t\t{\n")
-            file.write("\t\t\t\"Title\": \"Late Night\",\n")
-            file.write("\t\t\t\"Food\": []")
-            file.write("\n\t\t}\n")
+            data_file.write(",\n")
+            data_file.write("\t\t{\n")
+            data_file.write("\t\t\t\"Title\": \"Late Night\",\n")
+            data_file.write("\t\t\t\"Food\": []")
+            data_file.write("\n\t\t}\n")
     #Closes off the JSON
-    file.write("\t]\n}")
-file.write("]\n}")
-file.close();        
+    data_file.write("\t]\n}")
+data_file.write("]\n}")
+data_file.close();        
 
 
         
