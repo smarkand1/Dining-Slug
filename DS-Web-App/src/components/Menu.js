@@ -43,7 +43,7 @@ export class Menu extends React.Component {
             // Do not render
             if(foodArr.length > 0){
                 return (
-                    <li>
+                    <li class="foodItem">
                         <h1>{time}</h1>
                         {foodUI}
                     </li>
@@ -58,7 +58,7 @@ export class Menu extends React.Component {
     render() {
         return (
             <div className="wrapper">
-                <ul>
+                <ul class="foodList">
                     {this.renderList()}
                 </ul>  
             </div>

@@ -1,0 +1,42 @@
+.boxList {
+    padding: 0;
+    margin: 0;
+}
+
+.name{
+    display: inline-block;
+    font-size: 2vw;
+    width: 33%;
+    color: white;
+}
+
+.capacity{
+    display: inline-block;
+    font-size: 2vw;
+    width: 33%;
+    color: white;
+}
+
+.rating{
+    display: inline-block;
+    font-size: 2vw;
+    width: 33%;
+    color: white;
+}
+
+.boxButton {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 2px solid #fdc700;
+    border-radius: 25px;
+    padding: 25px;
+    margin-top: 15px;
+    cursor: pointer;  
+}
+
+.boxButton:hover {
+    background-color: #00266C;
+}

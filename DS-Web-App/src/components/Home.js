@@ -3,7 +3,6 @@
 //most likely the list interface that was proposed on Sunday
 //(I think i have a picture of it idk)
 import React from 'react';
-import { Listhome } from './../Listhome';
 import { HomeNav } from './HomeNav';
 
 export class Home extends React.Component {

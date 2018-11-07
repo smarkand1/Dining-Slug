@@ -3,40 +3,79 @@
 //the home page
 //Thank to Chandler for the styling
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter, Route, Switch, NavLink} from 'react-router-dom';
-
+import {NavLink} from 'react-router-dom';
+import './HomeNav.css';
 
 export class HomeNav extends React.Component{
 	render() {
 		return (
 			<div>
-				<ul>
-					<li>
-						<NavLink to = "/9-10" exact>
-							<button class = "listButton">9/10</button>
-						</NavLink>
-					</li>
-					<li>
-						<NavLink to = "/cowell-stevenson" exact>
-							<button class = "listButton">Cowell/Stevenson</button>
-						</NavLink>
-					</li>
-					<li>
-						<NavLink to = "/crown-merrill" exact>
-							<button class = "listButton">Crown/Merrill</button>
-						</NavLink>
-					</li>
-					<li>
-						<NavLink to = "/porter-kresge" exact>
-							<button class = "listButton">Porter/Kresge</button>
-						</NavLink>
-					</li>
-					<li>
-						<NavLink to = "/rcc-oakes" exact>
-							<button class = "listButton">Rachel Carson/Oakes</button>
-						</NavLink>
-					</li>	
+				<ul class="boxList">	
+					<NavLink to = "/9-10" exact>
+						<li class="boxButton">
+							<div class="name">
+								College 9/10	
+							</div>
+							<div class="capacity">
+								Capacity	
+							</div>
+							<div class="rating">
+								Rating	
+							</div>
+						</li>
+					</NavLink>
+					<NavLink to = "/cowell-stevenson" exact>
+						<li class="boxButton">
+							<div class="name">
+								Cowell/Stevenson
+							</div>
+							<div class="capacity">
+								Capacity	
+							</div>
+							<div class="rating">
+								Rating	
+							</div>
+						</li>
+					</NavLink>
+					<NavLink to = "/crown-merrill" exact>
+						<li class="boxButton">
+							<div class="name">
+								Crown/Merrill
+							</div>
+							<div class="capacity">
+								Capacity	
+							</div>
+							<div class="rating">
+								Rating	
+							</div>
+						</li>
+					</NavLink>
+					<NavLink to = "/porter-kresge" exact>
+						<li class="boxButton">
+							<div class="name">
+								Porter/Kresge
+							</div>
+							<div class="capacity">
+								Capacity	
+							</div>
+							<div class="rating">
+								Rating	
+							</div>
+						</li>
+					</NavLink>
+					<NavLink to = "/rcc-oakes" exact>
+						<li class="boxButton">
+							<div class="name">
+								Rachel Carson/Oakes
+							</div>
+							<div class="capacity">
+								Capacity	
+							</div>
+							<div class="rating">
+								Rating	
+							</div>
+						</li>
+					</NavLink>	
 				</ul>
 			</div>
 		);
