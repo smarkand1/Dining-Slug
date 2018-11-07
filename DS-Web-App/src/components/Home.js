@@ -16,7 +16,6 @@ export class Home extends React.Component {
                         <img src ={require('./slug.png')}/>
                     </div>
                     <div className="gradient"></div>
-                    <Listhome/>
                     <HomeNav/>
                 </header>
                 <body>
