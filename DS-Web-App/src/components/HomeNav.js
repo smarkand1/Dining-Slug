@@ -9,10 +9,10 @@ import './HomeNav.css';
 export class HomeNav extends React.Component{
 	render() {
 		return (
-			<div>
+			<div className="bigButtons">
 				<ul className="boxList">	
 					<NavLink to = "/9-10" exact>
-						<li className="boxButton">
+						<li className="boxItem">
 							<div className="name">
 								College 9/10	
 							</div>
@@ -25,7 +25,7 @@ export class HomeNav extends React.Component{
 						</li>
 					</NavLink>
 					<NavLink to = "/cowell-stevenson" exact>
-						<li className="boxButton">
+						<li className="boxItem">
 							<div className="name">
 								Cowell/Stevenson
 							</div>
@@ -38,7 +38,7 @@ export class HomeNav extends React.Component{
 						</li>
 					</NavLink>
 					<NavLink to = "/crown-merrill" exact>
-						<li className="boxButton">
+						<li className="boxItem">
 							<div className="name">
 								Crown/Merrill
 							</div>
@@ -51,7 +51,7 @@ export class HomeNav extends React.Component{
 						</li>
 					</NavLink>
 					<NavLink to = "/porter-kresge" exact>
-						<li className="boxButton">
+						<li className="boxItem">
 							<div className="name">
 								Porter/Kresge
 							</div>
@@ -64,7 +64,7 @@ export class HomeNav extends React.Component{
 						</li>
 					</NavLink>
 					<NavLink to = "/rcc-oakes" exact>
-						<li className="boxButton">
+						<li className="boxItem">
 							<div className="name">
 								Rachel Carson/Oakes
 							</div>

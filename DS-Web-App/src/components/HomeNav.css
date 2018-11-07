@@ -1,42 +1,56 @@
-.boxList {
-    padding: 0;
-    margin: 0;
-}
-
 .name{
     display: inline-block;
-    font-size: 2vw;
+    text-align: center;
+    font-size: 3vmin;
     width: 33%;
     color: white;
 }
 
 .capacity{
-    display: inline-block;
-    font-size: 2vw;
+    display: inline-block;  
+    text-align: center;
+    font-size: 3vmin;
     width: 33%;
     color: white;
 }
 
 .rating{
     display: inline-block;
-    font-size: 2vw;
+    text-align: center;
+    font-size: 3vmin;
     width: 33%;
     color: white;
 }
 
-.boxButton {
+.bigButtons {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.boxList {
+    padding: 0;
+    margin: 0;
+}
+
+.boxItem {
     width: 100%;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
-    border: 2px solid #fdc700;
-    border-radius: 25px;
-    padding: 25px;
+
+    border: 1.5px solid #fdc700;
+    border-radius: 15px;
+    padding-top: 6vh;
+    padding-bottom: 6vh;
     margin-top: 15px;
     cursor: pointer;  
 }
 
-.boxButton:hover {
+.boxItem:hover {
     background-color: #00266C;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
 }
