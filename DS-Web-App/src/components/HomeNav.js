@@ -10,68 +10,68 @@ export class HomeNav extends React.Component{
 	render() {
 		return (
 			<div>
-				<ul class="boxList">	
+				<ul className="boxList">	
 					<NavLink to = "/9-10" exact>
-						<li class="boxButton">
-							<div class="name">
+						<li className="boxButton">
+							<div className="name">
 								College 9/10	
 							</div>
-							<div class="capacity">
+							<div className="capacity">
 								Capacity	
 							</div>
-							<div class="rating">
+							<div className="rating">
 								Rating	
 							</div>
 						</li>
 					</NavLink>
 					<NavLink to = "/cowell-stevenson" exact>
-						<li class="boxButton">
-							<div class="name">
+						<li className="boxButton">
+							<div className="name">
 								Cowell/Stevenson
 							</div>
-							<div class="capacity">
+							<div className="capacity">
 								Capacity	
 							</div>
-							<div class="rating">
+							<div className="rating">
 								Rating	
 							</div>
 						</li>
 					</NavLink>
 					<NavLink to = "/crown-merrill" exact>
-						<li class="boxButton">
-							<div class="name">
+						<li className="boxButton">
+							<div className="name">
 								Crown/Merrill
 							</div>
-							<div class="capacity">
+							<div className="capacity">
 								Capacity	
 							</div>
-							<div class="rating">
+							<div className="rating">
 								Rating	
 							</div>
 						</li>
 					</NavLink>
 					<NavLink to = "/porter-kresge" exact>
-						<li class="boxButton">
-							<div class="name">
+						<li className="boxButton">
+							<div className="name">
 								Porter/Kresge
 							</div>
-							<div class="capacity">
+							<div className="capacity">
 								Capacity	
 							</div>
-							<div class="rating">
+							<div className="rating">
 								Rating	
 							</div>
 						</li>
 					</NavLink>
 					<NavLink to = "/rcc-oakes" exact>
-						<li class="boxButton">
-							<div class="name">
+						<li className="boxButton">
+							<div className="name">
 								Rachel Carson/Oakes
 							</div>
-							<div class="capacity">
+							<div className="capacity">
 								Capacity	
 							</div>
-							<div class="rating">
+							<div className="rating">
 								Rating	
 							</div>
 						</li>
