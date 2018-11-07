@@ -41,16 +41,33 @@
     -ms-box-sizing: border-box;
     box-sizing: border-box;
 
-    border: 1.5px solid #fdc700;
+    background-image: linear-gradient(to left, #003c6c , #fdc700);
+    background-color: #fdc700; /* For browsers that do not support gradients */
+    
+    border: 1.5px rgb(253, 199, 0, 0);
     border-radius: 20px;
-    padding-top: 6vh;
-    padding-bottom: 6vh;
+
     margin-top: 15px;
-    cursor: pointer;  
+    cursor: pointer; 
 }
 
-.boxItem:hover {
-    background-color: #00266C;
-    -webkit-transition-duration: 0.4s; /* Safari */
+.boxGradientHelper {
+    background-color: #003c6c;
+    border: 1.5px solid #fdc700;
+    border-radius: 20px;
+
+    padding-top: 6vh;
+    padding-bottom: 6vh;
+
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    }
+
+.boxGradientHelper:hover {
     transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s; /* Safari Support*/
+    background-color: rgb(0,0,0,0)
 }
