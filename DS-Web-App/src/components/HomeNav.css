@@ -51,6 +51,12 @@
 
     margin-top: 15px;
     cursor: pointer; 
+
+    transition-timing-function: ease-out;
+    transition-duration: 0.2s;
+    /* Safari Support*/
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 0.2s;
 }
 
 .boxItemHelper {
@@ -73,8 +79,8 @@
     background-color: rgb(253,199,0,0.8);
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
     transition-timing-function: ease-out;
-    transition-duration: 0.4s;
+    transition-duration: 0.3s;
     /* Safari Support*/
     -webkit-transition-timing-function: ease-out;
-    -webkit-transition-duration: 0.4s;
+    -webkit-transition-duration: 0.3s;
 }
