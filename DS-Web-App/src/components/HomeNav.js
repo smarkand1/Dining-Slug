@@ -13,7 +13,7 @@ export class HomeNav extends React.Component{
 				<ul className="boxList">	
 					<NavLink to = "/9-10" exact>
 						<li className="boxItem">
-							<div className="boxGradientHelper">
+							<div className="boxItemHelper">
 								<div className="name">
 									College 9/10	
 								</div>
@@ -28,7 +28,7 @@ export class HomeNav extends React.Component{
 					</NavLink>
 					<NavLink to = "/cowell-stevenson" exact>
 						<li className="boxItem">
-							<div className="boxGradientHelper">
+							<div className="boxItemHelper">
 								<div className="name">
 									Cowell/Stevenson
 								</div>
@@ -43,7 +43,7 @@ export class HomeNav extends React.Component{
 					</NavLink>
 					<NavLink to = "/crown-merrill" exact>
 						<li className="boxItem">
-							<div className="boxGradientHelper">
+							<div className="boxItemHelper">
 								<div className="name">
 									Crown/Merrill
 								</div>
@@ -58,7 +58,7 @@ export class HomeNav extends React.Component{
 					</NavLink>
 					<NavLink to = "/porter-kresge" exact>
 						<li className="boxItem">
-							<div className="boxGradientHelper">
+							<div className="boxItemHelper">
 								<div className="name">
 									Porter/Kresge
 								</div>
@@ -73,7 +73,7 @@ export class HomeNav extends React.Component{
 					</NavLink>
 					<NavLink to = "/rcc-oakes" exact>
 						<li className="boxItem">
-							<div className="boxGradientHelper">
+							<div className="boxItemHelper">
 								<div className="name">
 									Rachel Carson/Oakes
 								</div>
