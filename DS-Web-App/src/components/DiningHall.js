@@ -46,5 +46,7 @@ export class DiningHall extends React.Component {
                 </header>
           </div>
         );
+
     }
+
 }

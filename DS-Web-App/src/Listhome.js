@@ -7,45 +7,60 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter, Route, Switch, NavLink} from 'react-router-dom';
 import { DiningHall } from './components/DiningHall';
 import './List.css';
+import {
+	Collapse,
+	Navbar,
+	NavbarToggler,
+	NavbarBrand,
+	Nav,
+	NavItem,
+	UncontrolledDropdown,
+	DropdownToggle,
+	DropdownMenu,
+	DropdownItem } from 'reactstrap';
 
 export class Listhome extends React.Component{
+
+
 	render() {
 		return (
 			<div>
-				<ul>
-					<li>
+				<Navbar>
+					<Nav>
+					<NavItem>
 						<NavLink to = "/" exact>
-							<button class = "listButton">Home</button>
+							Home
 						</NavLink>
-					</li>	
-					<li>
+					</NavItem>
+					<NavItem>
 						<NavLink to = "/9-10" exact>
-							<button class = "listButton">9/10</button>
+							9/10
 						</NavLink>
-					</li>
-					<li>
+					</NavItem>
+					<NavItem>
 						<NavLink to = "/cowell-stevenson" exact>
-							<button class = "listButton">Cowell/Stevenson</button>
+							Cowell/Stevenson
 						</NavLink>
-					</li>
-					<li>
-					<NavLink to = "crown-merrill" exact>
-							<button class = "listButton">Crown/Merrill</button>
+					</NavItem>
+					<NavItem>
+						<NavLink to = "/crown-merrill" exact>
+							Crown/Merrill
 						</NavLink>
-					</li>
-					<li>
+					</NavItem>
+					<NavItem>
 						<NavLink to = "/porter-kresge" exact>
-							<button class = "listButton">Porter/Kresge</button>
+							Porter/Kresge
 						</NavLink>
-					</li>
-					<li>
+					</NavItem>
+					<NavItem>
 						<NavLink to = "/rcc-oakes" exact>
-							<button class = "listButton">Rachel Carson/Oakes</button>
+							Rachel Carson/Oakes
 						</NavLink>
-					</li>	
-				</ul>
+					</NavItem>
+					</Nav>
+				</Navbar>
 			</div>
-
 		);
 	}
 }
+

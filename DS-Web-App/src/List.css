@@ -29,3 +29,12 @@ li:last-child {
 .listButton:hover {
     background-color: #00266C;
 }
+
+.active {
+    background-color: #fdc700;
+    color: black;
+}
+
+.NavLink {
+    color:white;
+}
