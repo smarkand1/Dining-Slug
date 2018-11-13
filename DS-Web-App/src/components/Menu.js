@@ -3,9 +3,9 @@
 //Each of the menus are pulled from the ./menu-ui.js file, which contains
 //the constant that has the array of JSON objects
 import React from 'react';
-import {menuList, listColumn} from './Menu.css';
 import { FoodItem } from './FoodItem'
-
+import './Menu.css'
+import Collapsible from 'react-collapsible'
 export class Menu extends React.Component { 
     constructor(props){
         super(props);
@@ -39,15 +39,21 @@ export class Menu extends React.Component {
                     <div>
                         <FoodItem itemName = {foodItem} />
                     </div>
+
                 );          
             });
             // If we have an empty array (IE no food being served at that time)
             // Do not render
             if(foodArr.length > 0){
                 return (
-                    <li class="foodItem">
+                    <li class="food">
                         <h1>{time}</h1>
-                        {foodUI}
+
+                        <Collapsible trigger = {time}>
+                            <ul>
+                                {foodUI}
+                            </ul>
+                        </Collapsible>
                     </li>
                 );
             } else {
@@ -59,10 +65,8 @@ export class Menu extends React.Component {
 
     render() {
         return (
-            <div className="wrapper">
-                <ul class="foodList">
-                    {this.renderList()}
-                </ul>  
+            <div class="wrapper">
+                {this.renderList()}
             </div>
         );
     }

@@ -1,26 +1,13 @@
-.foodList {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-
+.food{
+    font-size:10px;
 }
 
-.foodItem {
-    float: left;
-    border-right:1px solid #bbb;
-
-}
-
-.foodItem:last-child {
-    border-right: none;
-}
 .wrapper {
     text-align: center;
 }
 
 .wrapper ul{
-    display: inline-block;
+    display: block;
     margin: 0;
     padding: 0;
     align-self: center;
@@ -29,16 +16,40 @@
 }
 
 .wrapper li {
-    float: left;
-    background-color: #003c6c;
-    color: white;
+    float: none;
+    background-color: #fdc700;
+    color: black;
     padding: 10px;
-    border-right:1px solid #bbb;
-    text-align: center;
+    border-right:none;
+    text-align: left;
     font-size: 15px;
     text-decoration: none;
+    display:block;
 }
 
 .wrapper li:last-child {
     border-right: none;
+}
+
+.Collapsible {
+ cursor: pointer;
+display: block;
+    font-size: 1.5em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+.Collapsible__trigger.is-open {
+ background-color: #fdc700;
+ color:black;
+ transition: width 2s;
+ width: 300px;
+}
+
+.Collapsible.isOpen {
+    background-color: #fdc700;
+    
 }

@@ -3,28 +3,42 @@
 //the home page
 //Thank to Chandler for the styling
 import React from 'react';
-import { NavLink} from 'react-router-dom';
+import ReactDOM from 'react-dom';
+import { BrowserRouter, Route, Switch, NavLink} from 'react-router-dom';
+import { DiningHall } from './components/DiningHall';
 import './Listhome.css';
-
+import {
+	Collapse,
+	Navbar,
+	NavbarToggler,
+	NavbarBrand,
+	Nav,
+	NavItem,
+	UncontrolledDropdown,
+	DropdownToggle,
+	DropdownMenu,
+	DropdownItem } from 'reactstrap';
 
 export class Listhome extends React.Component{
+
+
 	render() {
 		return (
 			<div>
 				<ul class="quickNavList">
 					<li class="quickNav">
 						<NavLink to = "/" exact>
-							<button class = "listButton">Home</button>
+							Home
 						</NavLink>
 					</li>	
 					<li class="quickNav">
 						<NavLink to = "/9-10" exact>
-							<button class = "listButton">9/10</button>
+							9/10
 						</NavLink>
 					</li>
 					<li class="quickNav">
 						<NavLink to = "/cowell-stevenson" exact>
-							<button class = "listButton">Cowell/Stevenson</button>
+							Cowell/Stevenson
 						</NavLink>
 					</li>
 					<li class="quickNav">
@@ -34,16 +48,17 @@ export class Listhome extends React.Component{
 					</li>
 					<li class="quickNav">
 						<NavLink to = "/porter-kresge" exact>
-							<button class = "listButton">Porter/Kresge</button>
+							Porter/Kresge
 						</NavLink>
 					</li>
 					<li class="quickNav">
 						<NavLink to = "/rcc-oakes" exact>
-							<button class = "listButton">Rachel Carson/Oakes</button>
+							Rachel Carson/Oakes
 						</NavLink>
-					</li>	
+					</li>
 				</ul>
 			</div>
 		);
 	}
 }
+
