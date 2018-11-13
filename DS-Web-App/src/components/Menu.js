@@ -3,7 +3,9 @@
 //Each of the menus are pulled from the ./menu-ui.js file, which contains
 //the constant that has the array of JSON objects
 import React from 'react';
-import {menuList, listColumn} from './Menu.css'
+import {menuList, listColumn} from './Menu.css';
+import { FoodItem } from './FoodItem'
+
 export class Menu extends React.Component { 
     constructor(props){
         super(props);
@@ -35,7 +37,7 @@ export class Menu extends React.Component {
             let foodUI = foodArr.map((foodItem) => {
                 return(
                     <div>
-                        <h3>{foodItem}</h3>
+                        <FoodItem itemName = {foodItem} />
                     </div>
                 );          
             });

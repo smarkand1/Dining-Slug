@@ -1,20 +1,11 @@
-[
-    {
-      "Food": "Belgian Waffles"
-    },
-    {
-      "Food" : "Cage Free Scrambled Eggs" 
-    },
-    {
-      "Food" :  "Crispy Bacon"   
-    },
-    {
-      "Food" : "Eggbeaters Scramble"
-    },
-    {
-      "Food":"Hard-boiled Cage Free Eggs"
-    },
-    {
-      "Food": "Oatmeal Gluten-Free"
-    }
-]
+{
+    "Id" : 1,
+    "Food":["Belgian Waffles", "Cage Free Scrambled Eggs", "Crispy Bacon", "Hard-boiled Cage Free Eggs", "Natural BridgesTofu Scramble", "Oatmeal Gluten-Free", "Pumpkin Pancakes", "Quinoa Fruit Salad", "Tator Tots", "Almond Allspice Coffecake", 
+    "Carrot Raisin Muffin", "Morning Glory Blueberry Granola Nut Muffin", "Vegan Peanut Granola", "Bell Peppers", "Cage Free Eggs", "Cage Free Omelette Bar", "Cheddar Cheese", "Feta Cheese", "Fresh Organic Spinach", "Fresh Tomato", "Jalapeno", "Onions", 
+    "Oven Roasted Turkey", "Sliced Olived", "Smoked Ham","Green Pozole", "Tomato Bisque Soup", "Baked Chicken with Spices", "Oven Roasted Chicken Thigh", 
+    "Cheese Pizza", "Chicken Club Pizza", "Garlic Mashed Yukon Golds", "Sauteed Seasonal Vegetable", "Sloppy Joe Sandwich", "Tofu Baton Rouge Stroller", "Rice Krispy Treats", 
+    "Vegan Chocolate Cup Cakes", "Cajun Bayou Bar", "Chicken Tenders", "Chipotle BBQ Sauce", "Jalapeno Corn Cakes", "Mardi Gras Jambalaya", "Sausage Andouille", "Steamed Rice"]
+}
+
+
+
