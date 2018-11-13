@@ -3,6 +3,7 @@
 import React from 'react';
 import { Listhome } from './../Listhome';
 import {Menu} from './Menu';
+import {Search} from './Search';
 
 
 //Now all we need to do here is grab the information from the server on what the dining halls are serving
@@ -40,6 +41,7 @@ export class DiningHall extends React.Component {
                     </div>
                     <div className="gradient"></div>
                     <Listhome/>
+                    <Search/>
                     <Menu hallCode = {hall}/>    
                 </header>
           </div>
