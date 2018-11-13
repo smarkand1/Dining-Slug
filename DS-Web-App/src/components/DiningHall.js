@@ -1,7 +1,6 @@
 //This component dynamically renders the dining hall page and its 
 //menu based on what button the user clicked on the user interface
 import React from 'react';
-import {NavLink} from 'react-router-dom';
 import { Listhome } from './../Listhome';
 import {Menu} from './Menu';
 
@@ -41,8 +40,7 @@ export class DiningHall extends React.Component {
                     </div>
                     <div className="gradient"></div>
                     <Listhome/>
-                    <Menu hallCode = {hall}/>
-                  
+                    <Menu hallCode = {hall}/>    
                 </header>
           </div>
         );
