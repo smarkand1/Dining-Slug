@@ -87,22 +87,24 @@ export class FoodItem extends React.Component {
         return(
             <div>
                 <button className = "listFood">
-                    {this.props.itemName}
-                    <Ratings  
-                        rating = {this.state.rating}
-                        widgetRatedColors = 'rgb(204, 204, 0)'
-                        widgetEmptyColors = 'rgb(203, 211, 227)'
-                        widgetHoverColors = 'rgb(255, 255, 0)'
-                        changeRating = {this.changeRating}
-                        widgetDimensions = '20px'
-                    >
-                        <Ratings.Widget />
-                        <Ratings.Widget />
-                        <Ratings.Widget />
-                        <Ratings.Widget />
-                        <Ratings.Widget />
-                    </Ratings>
-                    <h3>{this.state.reviews}</h3>
+                    {this.props.itemName} | Reviews: {this.state.reviews}
+                    <h3>
+                        Rating: 
+                        <Ratings  
+                            rating = {this.state.rating}
+                            widgetRatedColors = 'rgb(0, 80, 98)'
+                            widgetEmptyColors = 'rgb(203, 211, 227)'
+                            widgetHoverColors = 'rgb(0, 110, 110)'
+                            changeRating = {this.changeRating}
+                            widgetDimensions = '20px'
+                        >
+                            <Ratings.Widget />
+                            <Ratings.Widget />
+                            <Ratings.Widget />
+                            <Ratings.Widget />
+                            <Ratings.Widget />
+                        </Ratings>
+                    </h3> 
                 </button>
                 
             </div>

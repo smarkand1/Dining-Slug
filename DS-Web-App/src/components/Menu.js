@@ -46,15 +46,11 @@ export class Menu extends React.Component {
             // Do not render
             if(foodArr.length > 0){
                 return (
-                    <li class="food">
-                        <h1>{time}</h1>
-
-                        <Collapsible trigger = {time}>
-                            <ul>
-                                {foodUI}
-                            </ul>
-                        </Collapsible>
-                    </li>
+                    <Collapsible trigger = {time}>
+                        <ul>
+                            {foodUI}
+                        </ul>
+                    </Collapsible>
                 );
             } else {
                 return;

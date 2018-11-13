@@ -43,7 +43,7 @@ export class Listhome extends React.Component{
 					</li>
 					<li class="quickNav">
 						<NavLink to = "/crown-merrill" exact>
-							<button class = "listButton">Crown/Merrill</button>
+							Crown/Merill
 						</NavLink>
 					</li>
 					<li class="quickNav">
