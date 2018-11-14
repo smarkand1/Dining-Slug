@@ -41,7 +41,7 @@ export class Search extends Component {
 
     //closeMenu will close based upon event passed in which is a click
     closeMenu(e){
-        if (!this.dropdownMenu.contains(e.target)){
+        if (this.dropdownMenu === null || !this.dropdownMenu.contains(e.target)){
           this.setState({showMenu: false}, () => 
           {
             document.removeEventListener('click',this.closeMenu) //we will need to remove the event listener at this point
