@@ -10,7 +10,7 @@ export class HomeNav extends React.Component{
 	render() {
 		return (
 			<div className="bigButtons">
-				<ul className="boxList">	
+				<ul className="boxList">
 					<NavLink to = "/9-10" exact>
 						<li className="boxItem">
 							<div className="boxItemHelper">

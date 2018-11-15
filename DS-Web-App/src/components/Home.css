@@ -1,0 +1,20 @@
+.titleItem {
+    float: left;
+    font-family: "EB Garamond";
+    font-size:calc(30px + 2vmin);
+    color: #fdc700;
+    padding: 0;
+    margin: 0;
+}
+
+.searchItem {
+    margin: auto;
+    margin-top: 15px;
+    width: 10%;
+    /*margin-left: calc(50vw - 50px - 30px - 2vmin);
+    */
+}
+
+#clear {
+    clear: both;
+}
