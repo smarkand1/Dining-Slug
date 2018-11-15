@@ -52,14 +52,7 @@ export class Search extends Component {
 
     //This function will render our results
     renderResults = r =>{
-
-        return <div className="col-md-3" style={{ marginTop : '10px' }}>
-            <Card>
-                <CardBody>
-                    <button title={r}>{r.substring(0, 15)}{ r.length > 15 && "..."}</button>
-                </CardBody>
-            </Card>
-        </div>
+        return <button title={r} class="searchButton">{r.substring(0, 15)}{ r.length > 15 && "..."}</button>
     }     
 
     render() {
@@ -78,13 +71,13 @@ export class Search extends Component {
        
       return (
         <div>
-          <input
-            class="searchBar"
-            placeholder="Search..." //Search U.I bar
-            ref={input => this.search = input}
-            onChange={this.onchangeOne}
-          />
-            <div className = "dropdown" ref = {(e) =>{this.dropdownMenu = e}}> 
+            <input
+                className="searchBar"
+                placeholder="Search..." //Search U.I bar
+                ref={input => this.search = input}
+                onChange={this.onchangeOne}
+            />
+            <div className = "searchBar-content" ref = {(e) =>{this.dropdownMenu = e}}> 
             {
                 
                 this.state.showMenu
