@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import dataList from './food.json' //importing dataList
 import {Card, CardBody, CardTitle} from 'mdbreact'; //Styling
+import './Search.css'
 
 
 export class Search extends Component {
@@ -78,11 +79,12 @@ export class Search extends Component {
       return (
         <div>
           <input
-            placeholder="Search for..." //Search U.I bar
+            class="searchBar"
+            placeholder="Search..." //Search U.I bar
             ref={input => this.search = input}
             onChange={this.onchangeOne}
           />
-            <div className = "menu "ref = {(e) =>{this.dropdownMenu = e}}> 
+            <div className = "dropdown" ref = {(e) =>{this.dropdownMenu = e}}> 
             {
                 
                 this.state.showMenu

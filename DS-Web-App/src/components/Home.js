@@ -12,18 +12,14 @@ export class Home extends React.Component {
         return(
             <div className="App">
                 <header className="App-header">
-                    <div>
-                        <div className="titleItem">
-                            Dining Slug
-                            <img src ={require('./slug.png')}/>
-                        </div>
-                        <div className="searchItem">
-                            <Search/> 
-                        </div>
-                        
-                        <div id="clear"></div>
+                    <div className="title">
+                        Dining Slug
+                        <img src ={require('./slug.png')}/>
                     </div>
                     <div className="gradient"></div>
+                    <div className="searchItem">
+                        <Search/> 
+                    </div>
                     <HomeNav/>
                 </header>
                 <body>
