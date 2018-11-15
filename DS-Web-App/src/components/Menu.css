@@ -32,8 +32,8 @@
 }
 
 .Collapsible {
- cursor: pointer;
-display: block;
+    cursor: pointer;
+    display: block;
     font-size: 1.5em;
     margin-top: 0.83em;
     margin-bottom: 0.83em;
@@ -43,10 +43,10 @@ display: block;
 }
 
 .Collapsible__trigger.is-open {
- background-color: #fdc700;
- color:black;
- transition: width 2s;
- width: 300px;
+    background-color: #fdc700;
+    color:black;
+    transition: width 2s;
+    width: 300px;
 }
 
 .Collapsible.isOpen {

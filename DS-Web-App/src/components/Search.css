@@ -36,11 +36,6 @@ input {
     color:#ffffff;
 }
 
-.searchBar input:focus + .dropdown { 
-    display: block 
-}
-
-
 ::-webkit-input-placeholder { /* For WebKit browsers */
     color: #ffffff;
     text-align: left;

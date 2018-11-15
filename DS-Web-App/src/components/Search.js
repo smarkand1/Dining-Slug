@@ -52,7 +52,7 @@ export class Search extends Component {
 
     //This function will render our results
     renderResults = r =>{
-        return <button title={r} class="searchButton">{r.substring(0, 15)}{ r.length > 15 && "..."}</button>
+        return <button title={r} class="searchButton">{r.substring(0, 30)}{ r.length > 30 && "..."}</button>
     }     
 
     render() {
