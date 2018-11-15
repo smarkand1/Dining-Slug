@@ -71,8 +71,10 @@ input {
 /*Drop down styling*/
 .searchBar-content {
     position: absolute;
+    overflow: hidden;
     background-color: rgba(0,60,108);
     width: 20vw;
+    max-height: 39.5vh;
 }
 
 .searchBar:focus ~ .searchBar-content{
