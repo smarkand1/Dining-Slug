@@ -10,6 +10,7 @@
     float: left;
     padding: 10px 10px;
     margin-bottom: 10px;
+    font-size: 1.5vmin;
     text-decoration: none;
     color: #ffffff;
     border:1px solid rgb(187, 187, 187);
@@ -20,12 +21,12 @@
 
 .quickNav a:hover {
     background-color: #fdc700;
+    transition-timing-function: ease-out;
+    transition-duration: 0.3s;
+    /* Safari Support*/
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 0.3s;
 }
-
-.quickNav:last-child {
-    border-right: none;
-}
-
 
 .active {
     background-color: #fdc700;
