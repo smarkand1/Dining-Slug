@@ -26,8 +26,11 @@ export class Capacity extends React.Component {
         else if(curr_time > 10){
             return (<div className="moderate">Moderate</div>);
         }
-        else{
+        else if(curr_time > 0){
             return (<div className="notBusy">Not Busy</div>);
+        }
+        else{
+            return (<div className="notBusy">Not Available</div>);
         }
        
     }
