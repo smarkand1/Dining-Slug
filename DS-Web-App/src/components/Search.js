@@ -64,7 +64,7 @@ export class Search extends Component {
       list and create an array containing only those options that match
       the query result
       */
-      const filteredItems = dataList.Food.filter(r=>
+      const filteredItems = dataList.Ids[5].Food.filter(r=>
         {
             return r.toLowerCase().indexOf(query.toLowerCase()) !== -1
         })
