@@ -1,15 +1,18 @@
 .listFood {
-    background-color: #fdc700;
-    color: black;
+    outline: none;
+    background-color: rgba(0,60,108);
+    color: white;
     cursor: pointer;    
     padding: 10px;
-    width: 100%;
+    width: calc(50vw - 15vw);
     border: none;
     text-align: center;
     font-size: 15px;
     text-decoration: none;
+    border-radius: 8px;
+    width: 30vw;
 }
 
 .listFood:hover {
-    background-color: rgb(255, 217, 2);
+    background-color: #002b4e;
 }

@@ -52,6 +52,7 @@ export class Search extends Component {
 
     //This function will render our results
     renderResults = r =>{
+        console.log(Math.max(document.documentElement.clientWidth, window.innerWidth || 0));
         return <button title={r} class="searchButton">{r.substring(0, 30)}{ r.length > 30 && "..."}</button>
     }     
 

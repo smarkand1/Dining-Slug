@@ -4,6 +4,7 @@
 //Thank to Chandler for the styling
 import React from 'react';
 import {NavLink} from 'react-router-dom';
+import { Capacity } from './Capacity'
 import './HomeNav.css';
 
 export class HomeNav extends React.Component{
@@ -18,7 +19,7 @@ export class HomeNav extends React.Component{
 									College 9/10	
 								</div>
 								<div className="capacity">
-									Capacity	
+									Activity: <Capacity hall="9/10"/>	
 								</div>
 								<div className="rating">
 									Rating	
@@ -33,7 +34,7 @@ export class HomeNav extends React.Component{
 									Cowell/Stevenson
 								</div>
 								<div className="capacity">
-									Capacity	
+									Activity: <Capacity hall="Cowell/Stevenson"/>		
 								</div>
 								<div className="rating">
 									Rating	
@@ -48,7 +49,7 @@ export class HomeNav extends React.Component{
 									Crown/Merrill
 								</div>
 								<div className="capacity">
-									Capacity	
+									Activity: <Capacity hall="Crown/Merrill"/>			
 								</div>
 								<div className="rating">
 									Rating	
@@ -63,7 +64,7 @@ export class HomeNav extends React.Component{
 									Porter/Kresge
 								</div>
 								<div className="capacity">
-									Capacity	
+									Activity: <Capacity hall="Porter/Kresge"/>
 								</div>
 								<div className="rating">
 									Rating	
@@ -78,7 +79,7 @@ export class HomeNav extends React.Component{
 									Rachel Carson/Oakes
 								</div>
 								<div className="capacity">
-									Capacity	
+									Activity: <Capacity hall="Rachel Carson/Oakes"/>
 								</div>
 								<div className="rating">
 									Rating	
