@@ -51,7 +51,7 @@ and the menu.
 '''
 
 data_file = open("DS-Web-App/src/components/data.json", "w")
-food_file = open("DS-Web-App/src/components/food.json", "w")
+#food_file = open("DS-Web-App/src/components/food.json", "w")
 count = 0
 MAX_DINING_HALL_COUNT = 5
 #Starts the array of JSON objects
