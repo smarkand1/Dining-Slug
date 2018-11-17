@@ -1,6 +1,5 @@
 import React, {Component} from 'react'
 import dataList from './food.json' //importing dataList
-import {Card, CardBody, CardTitle} from 'mdbreact'; //Styling
 import './Search.css'
 
 

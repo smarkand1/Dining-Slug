@@ -1,16 +1,13 @@
-//This component renders how busy the dining hall is based on googles
-//popular times
+//This component renders how busy the dining hall is based on google's popular times
 import React from 'react';
 import './Capacity.css';
 
 const data = require('./dummyTimes.json');
-const closeData = require('./capacity.json')
+const closeData = require('./closedTimes.json')
 
-const times = data.diningHalls;
+const times = data.Halls;
 const hallsCloseTimes = closeData.Halls;
 
-
-//Now all we need to do here is grab the information from the server on what the dining halls are serving
 export class Capacity extends React.Component {
     constructor(props){
         super(props);
@@ -37,6 +34,7 @@ export class Capacity extends React.Component {
         var diningHall = times[hall];
         var currDay = diningHall[currDay];
         var currTime = currDay[currHour];
+
         //convert popularity to a word
         if(currTime > 20){
             return (<div className="busy">Busy</div>);
@@ -53,12 +51,11 @@ export class Capacity extends React.Component {
        
     }
 
-    //Renders the entire dining hall page based on what page the user 
-    //is in
+    //Renders specific information based on what dining hall page the user is on
     render(){
         var hall;
         //We'll need to pass this hall code code the menu component so that 
-        //we can render the correct menu
+        //we can render the correct information
         switch(this.props.hall){
             case "9/10":
                 hall = 0;

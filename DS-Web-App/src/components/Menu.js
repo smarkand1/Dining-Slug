@@ -1,11 +1,14 @@
 //The goal of this component is to render the menu component of each
 //dining hall component page 
-//Each of the menus are pulled from the ./menu-ui.js file, which contains
+//Each of the menus are pulled from the ./dailyMenu.json file, which contains
 //the constant that has the array of JSON objects
 import React from 'react';
 import { FoodItem } from './FoodItem'
 import './Menu.css'
 import Collapsible from 'react-collapsible'
+
+const data = require('./dailyMenu.json')
+
 export class Menu extends React.Component { 
     constructor(props){
         super(props);
@@ -15,7 +18,7 @@ export class Menu extends React.Component {
     //Grab the array of JSON objects from the text file
     componentWillMount(){
         this.setState({
-            recipes : require('./menu-ui')
+            recipes : data.data
         });
     } 
 
@@ -26,13 +29,11 @@ export class Menu extends React.Component {
         let title = model.Title; //Dining hall title
         let menu = model.Menu;   //Dining hall menu, which is an array of more objects
 
-        //We need to figure out how to separate the menu times into different columns
         //Render the menu
         let menuUI = menu.map((indMenu) => {
             let time = indMenu.Title; //Breakfast/lunch/Dinner/Late Night
             let foodArr = indMenu.Food; //Array of food items for the given time
-            // Here we're gonna need to figure out how to separate the food lists so that
-            // We can make them render as columns
+
             //Render the list of food items
             let foodUI = foodArr.map((foodItem) => {
                 return(

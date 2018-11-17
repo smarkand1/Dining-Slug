@@ -2,8 +2,8 @@
 //menu based on what button the user clicked on the user interface
 import React from 'react';
 import { Listhome } from './../Listhome';
-import {Menu} from './Menu';
-import {Search} from './Search';
+import { Menu } from './Menu';
+import { Search } from './Search';
 
 
 //Now all we need to do here is grab the information from the server on what the dining halls are serving
