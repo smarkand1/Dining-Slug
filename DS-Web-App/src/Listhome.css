@@ -5,34 +5,33 @@
     overflow: hidden;
 }
 
-.quickNav {
+/*These are the actual text boxes*/
+.quickNav a {
     float: left;
-    border-right:1px solid rgb(187, 187, 187);
-}
-
-.quickNav:last-child {
-    border-right: none;
-}
-
-.listButton {
-    background-color: #003c6c;
-    color: white;
-    cursor: pointer;    
-    padding: 10px;
-    width: 100%;
-    border: none;
-    text-align: center;
-    font-size: 15px;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    font-size: 1.5vmin;
     text-decoration: none;
+    color: #ffffff;
+    border:1px solid rgb(187, 187, 187);
+    border-top: none;
+    border-bottom: none;
+    text-align: center;
 }
 
-.listButton:hover {
-    background-color: #00266C;
+.quickNav a:hover {
+    background-color: #fdc700;
+    transition-timing-function: ease-out;
+    transition-duration: 0.3s;
+    /* Safari Support*/
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 0.3s;
 }
 
 .active {
     background-color: #fdc700;
-    color: black;
+    text-decoration: none;
+    color: #ffffff;
 }
 
 .NavLink {

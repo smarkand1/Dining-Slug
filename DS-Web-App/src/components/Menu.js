@@ -36,9 +36,9 @@ export class Menu extends React.Component {
             //Render the list of food items
             let foodUI = foodArr.map((foodItem) => {
                 return(
-                    <div>
+                    <li>
                         <FoodItem itemName = {foodItem} />
-                    </div>
+                    </li>
 
                 );          
             });
@@ -46,7 +46,7 @@ export class Menu extends React.Component {
             // Do not render
             if(foodArr.length > 0){
                 return (
-                    <Collapsible trigger = {time}>
+                    <Collapsible trigger = {<button className="collapsibleButton ">{time}</button>}>
                         <ul>
                             {foodUI}
                         </ul>

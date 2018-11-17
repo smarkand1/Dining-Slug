@@ -1,0 +1,95 @@
+/*Search Bar Styling*/
+.searchBar {
+    width: 20vw;
+    height: 30px;
+    padding: 0;
+    margin: 0;
+    background: rgb(0,60,108);
+    border: 1.5px solid #fdc700;
+    border-radius: 8px;
+    text-indent: 0.5vmin;
+    transition-timing-function: ease-out;
+    transition-duration: 0.3s;
+    /* Safari Support*/
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 0.3s;
+}
+
+.searchBar:focus {
+    outline: none;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom: 0px;
+}
+
+.searchBar:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    transition-timing-function: ease-out;
+    transition-duration: 0.3s;
+    /* Safari Support*/
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 0.3s;
+}
+
+/*Text box input*/
+input {
+    color:#ffffff;
+}
+
+::-webkit-input-placeholder { /* For WebKit browsers */
+    color: #ffffff;
+    text-align: left;
+}
+
+::-moz-placeholder { /* For Mozilla Firefox 19+ */
+    color: #ffffff;
+    text-align: left;
+}
+
+:-ms-input-placeholder { /* For Internet Explorer 10+ */
+    color: #ffffff;
+    text-align: left;
+}
+
+.searchBar:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.searchBar:focus::-moz-placeholder {
+    color: transparent;
+}
+
+.searchBar:focus:-ms-input-placeholder {
+    color: transparent;
+}
+
+/*Drop down styling*/
+.searchBar-content {
+    position: absolute;
+    overflow: hidden;
+    background-color: rgba(0,60,108);
+    width: 20vw;
+    max-height: 40vh;
+}
+
+.searchBar:focus ~ .searchBar-content{
+    border: 1.5px solid #fdc700;
+    border-top: 0px;
+    min-height: 4vh;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+/*Drop down item styling*/
+.searchButton {
+    border: none;
+    background-color: rgb(0,60,108,0);
+    color: #ffffff;
+    width: 100%;
+    text-align: left;
+    height: 5vh; 
+}
+
+.searchButton:hover {
+    background-color: #002b4e;
+}

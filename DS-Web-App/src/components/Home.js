@@ -4,6 +4,8 @@
 //(I think i have a picture of it idk)
 import React from 'react';
 import { HomeNav } from './HomeNav';
+import { Search } from './Search';
+import './Home.css'
 
 export class Home extends React.Component {
     render() {
@@ -15,6 +17,9 @@ export class Home extends React.Component {
                         <img src ={require('./slug.png')}/>
                     </div>
                     <div className="gradient"></div>
+                    <div className="searchItem">
+                        <Search/> 
+                    </div>
                     <HomeNav/>
                 </header>
                 <body>

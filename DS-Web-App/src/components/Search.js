@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
-import dataList from './dataTest.json' //importing dataList
+import dataList from './food.json' //importing dataList
 import {Card, CardBody, CardTitle} from 'mdbreact'; //Styling
+import './Search.css'
 
 
 export class Search extends Component {
@@ -51,14 +52,8 @@ export class Search extends Component {
 
     //This function will render our results
     renderResults = r =>{
-
-        return <div className="col-md-3" style={{ marginTop : '10px' }}>
-            <Card>
-                <CardBody>
-                    <button title={r}>{r.substring(0, 15)}{ r.length > 15 && "..."}</button>
-                </CardBody>
-            </Card>
-        </div>
+        console.log(Math.max(document.documentElement.clientWidth, window.innerWidth || 0));
+        return <button title={r} class="searchButton">{r.substring(0, 30)}{ r.length > 30 && "..."}</button>
     }     
 
     render() {
@@ -69,7 +64,7 @@ export class Search extends Component {
       list and create an array containing only those options that match
       the query result
       */
-      const filteredItems = dataList.Food.filter(r=>
+      const filteredItems = dataList.Ids[5].Food.filter(r=>
         {
             return r.toLowerCase().indexOf(query.toLowerCase()) !== -1
         })
@@ -77,12 +72,13 @@ export class Search extends Component {
        
       return (
         <div>
-          <input
-            placeholder="Search for..." //Search U.I bar
-            ref={input => this.search = input}
-            onChange={this.onchangeOne}
-          />
-            <div className = "menu "ref = {(e) =>{this.dropdownMenu = e}}> 
+            <input
+                className="searchBar"
+                placeholder="Search..." //Search U.I bar
+                ref={input => this.search = input}
+                onChange={this.onchangeOne}
+            />
+            <div className = "searchBar-content" ref = {(e) =>{this.dropdownMenu = e}}> 
             {
                 
                 this.state.showMenu

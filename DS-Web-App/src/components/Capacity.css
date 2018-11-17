@@ -1,0 +1,14 @@
+.notBusy {
+    display: inline-block;
+    color: green;
+}
+
+.moderate {
+    display: inline-block;
+    color: orange;
+}
+
+.busy {
+    display: inline-block;
+    color: red;
+}

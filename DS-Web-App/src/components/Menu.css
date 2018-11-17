@@ -4,6 +4,7 @@
 
 .wrapper {
     text-align: center;
+    overflow: hidden;
 }
 
 .wrapper ul{
@@ -17,36 +18,56 @@
 
 .wrapper li {
     float: none;
-    background-color: #fdc700;
+    background-color: rgba(0,60,108);
     color: black;
-    padding: 10px;
     border-right:none;
-    text-align: left;
+    text-align: center;
     font-size: 15px;
     text-decoration: none;
     display:block;
+    width: 30vw;
 }
 
 .wrapper li:last-child {
     border-right: none;
 }
 
-.Collapsible {
- cursor: pointer;
-display: block;
+.Collapsible{
+    overflow: hidden;
+    cursor: pointer;
+    display: block;
     font-size: 1.5em;
-    margin-top: 0.83em;
-    margin-bottom: 0.83em;
-    margin-left: 0;
-    margin-right: 0;
+    color: #ffffff;
+    margin: 10px 0px;
     font-weight: bold;
+    border: 1.5px solid #fdc700;
+    border-radius: 8px;
+    background-color: rgba(0,60,108);
+    margin-left: calc(50vw - 15vw);
+    width: 30vw;
+}
+
+.collapsibleButton{
+    cursor: pointer;
+    display: block;
+    font-size: 1.5em;
+    color: #ffffff;
+    margin: 10px 10px;
+    font-weight: bold;
+    border: none;
+    background-color: rgba(0,60,108);
+    width: 30vw;
+}
+
+.collapsibleButton:focus{
+    outline: none;
 }
 
 .Collapsible__trigger.is-open {
- background-color: #fdc700;
- color:black;
- transition: width 2s;
- width: 300px;
+    background-color: #fdc700;
+    color:black;
+    transition: width 2s;
+    width: 30vw;
 }
 
 .Collapsible.isOpen {
