@@ -75,13 +75,10 @@ export class Capacity extends React.Component {
                 break;
             default:
                 hall = 4;       
-
         }
         //Return the rendered component
         return(
             this.findTimes(hall)
         );
-
     }
-
 }
