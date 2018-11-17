@@ -50,9 +50,9 @@
 .collapsibleButton{
     cursor: pointer;
     display: block;
-    font-size: 1.5em;
+    font-size: 2vw;
     color: #ffffff;
-    margin: 10px 10px;
+    margin: 10px 8px;
     font-weight: bold;
     border: none;
     background-color: rgba(0,60,108);

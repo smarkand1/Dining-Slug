@@ -1,7 +1,4 @@
-//This renders the user interface for the list of buttons that the user
-//can use to navigate between each of the dining halls as well as
-//the home page
-//Thank to Chandler for the styling
+//This renders the user interface for the list of buttons on the home screen
 import React from 'react';
 import {NavLink} from 'react-router-dom';
 import { Capacity } from './Capacity'

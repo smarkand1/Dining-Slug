@@ -1,9 +1,14 @@
-//This component dynamically renders the dining hall page and its 
-//menu based on what button the user clicked on the user interface
+//This component renders how busy the dining hall is based on googles
+//popular times
 import React from 'react';
 import './Capacity.css';
+
 const data = require('./dummyTimes.json');
-const times = data.times;
+const closeData = require('./capacity.json')
+
+const times = data.diningHalls;
+const hallsCloseTimes = closeData.Halls;
+
 
 //Now all we need to do here is grab the information from the server on what the dining halls are serving
 export class Capacity extends React.Component {
@@ -12,21 +17,34 @@ export class Capacity extends React.Component {
     }
     
     findTimes(hall) {
-        //get the system time and convert it to california time
-        var d = new Date
-        var hours = d.getHours();
-        console.log(hours)
+        const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        const OPENING = 0;
+        const CLOSING = 1;
+
+        //get the system time and the day name
+        var d = new Date();
+        var currDayNum = d.getDay()
+        var currDay = weekday[currDayNum];
+        var currHour = d.getHours();
+        var currFullTime = currHour * 100 + d.getMinutes();
+
+        //Determine if a dining hall is closed
+        if(currFullTime < hallsCloseTimes[hall][currDayNum][OPENING] || hallsCloseTimes[hall][currDayNum][CLOSING] < currFullTime){
+            return (<div className="busy">Closed</div>);
+        }
+
         //get the popularity at the time from the data
-        var curr_time = times[hall].times[hours];
-        var toReturn = "";
+        var diningHall = times[hall];
+        var currDay = diningHall[currDay];
+        var currTime = currDay[currHour];
         //convert popularity to a word
-        if(curr_time > 20){
+        if(currTime > 20){
             return (<div className="busy">Busy</div>);
         }
-        else if(curr_time > 10){
+        else if(currTime > 10){
             return (<div className="moderate">Moderate</div>);
         }
-        else if(curr_time > 0){
+        else if(currTime > 0){
             return (<div className="notBusy">Not Busy</div>);
         }
         else{
