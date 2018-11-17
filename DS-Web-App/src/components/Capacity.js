@@ -50,7 +50,6 @@ export class Capacity extends React.Component {
             return (<div className="notBusy">Not Busy</div>);
         }
         else{
-            console.log("Is you negative?",currTime);
             return (<div className="notBusy">Not Available</div>);
         }
        
