@@ -9,7 +9,6 @@ import './FoodItem.css';
 import Ratings from 'react-ratings-declarative';
 import $ from 'jquery';
 
-
 export class FoodItem extends React.Component {
     constructor(props){
         super(props);
