@@ -1,4 +1,5 @@
 .name{
+    vertical-align: middle;
     display: inline-block;
     text-align: center;
     font-size: 3vmin;
@@ -7,6 +8,7 @@
 }
 
 .capacity{
+    vertical-align: middle;
     display: inline-block;  
     text-align: center;
     font-size: 3vmin;
@@ -15,6 +17,7 @@
 }
 
 .rating{
+    vertical-align: middle;
     display: inline-block;
     text-align: center;
     font-size: 3vmin;
@@ -65,8 +68,7 @@
     border: 1.5px solid #fdc700;
     border-radius: 20px;
 
-    padding-top: 6vh;
-    padding-bottom: 6vh;
+    padding: 5vh 0;
 
     width: 100%;
     -webkit-box-sizing: border-box;

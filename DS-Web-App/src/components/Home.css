@@ -1,6 +1,18 @@
-.searchItem {
-    margin: auto;
+.topBar {
+    margin: 0;
     padding: 0;
+}
+
+.searchItem {
     margin-top: 1.3vh;
-    width: 100%;
+    width: 70vw;
+    float: left;
+}
+
+.serving {
+    flex: 1;
+    margin-top: 0.5vh;
+    margin-left: 1vmin;
+    font-size: 3vmin;
+    float: left;
 }

@@ -3,21 +3,8 @@
 //the home page
 //Thank to Chandler for the styling
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter, Route, Switch, NavLink} from 'react-router-dom';
-import { DiningHall } from './components/DiningHall';
+import { NavLink} from 'react-router-dom';
 import './Listhome.css';
-import {
-	Collapse,
-	Navbar,
-	NavbarToggler,
-	NavbarBrand,
-	Nav,
-	NavItem,
-	UncontrolledDropdown,
-	DropdownToggle,
-	DropdownMenu,
-	DropdownItem } from 'reactstrap';
 
 export class Listhome extends React.Component{
 
