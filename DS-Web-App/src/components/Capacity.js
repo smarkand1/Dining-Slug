@@ -29,6 +29,10 @@ export class Capacity extends React.Component {
         if(currFullTime < hallsCloseTimes[hall][currDayNum][OPENING] || hallsCloseTimes[hall][currDayNum][CLOSING] < currFullTime){
             return (<div className="busy">Closed</div>);
         }
+        //I had to add an extra conditional for Crown and Porter to check if we're on the weekends
+        if((currDayNum === 0 || currDayNum === 6) && (hall === 2 || hall === 3)){
+            return (<div className="busy">Closed</div>);
+        }
 
         //get the popularity at the time from the data
         var diningHall = times[hall];
@@ -46,6 +50,7 @@ export class Capacity extends React.Component {
             return (<div className="notBusy">Not Busy</div>);
         }
         else{
+            console.log("Is you negative?",currTime);
             return (<div className="notBusy">Not Available</div>);
         }
        
