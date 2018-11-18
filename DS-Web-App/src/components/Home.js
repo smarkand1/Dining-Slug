@@ -17,7 +17,7 @@ export class Home extends React.Component {
                     <div className="gradient"></div>
                     <div className="topBar">
                         /*<div className="searchItem">
-                            <Search />
+                            <Search searchWithCode = {0}/>
                         </div>*/
                         <div className="serving">
                             Currently Serving: 
