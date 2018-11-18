@@ -7,7 +7,20 @@
 import React from 'react';
 import './FoodItem.css';
 import Ratings from 'react-ratings-declarative';
-import $ from 'jquery';
+import axios from 'axios';
+
+axios.post('public/databasehelper.php', {
+    "Food" : "Nuggies",
+    "Rating" : 1,
+    "Reviews" : 100
+})
+    .then(function (response) {
+        console.log("YOY");
+    })
+    .catch(function (error) {
+        console.log(error);
+    });
+
 
 export class FoodItem extends React.Component {
     constructor(props){
@@ -58,10 +71,10 @@ export class FoodItem extends React.Component {
         var newReviews = this.state.reviews + 1;
         var newRating = (userRating + (this.state.rating * this.state.reviews))/ newReviews;
         /* THIS IS WHAT A POSSIBLE CALL TO THE PHP FILE MAY LOOK LIKE 
-            -This may only work on the server itself but i'm not 100% sure
-        $.ajax({
+            -This may only work on the server itself but i'm not 100% sure */
+        /*$.ajax({
             type: 'POST',
-            url: './poopoo.php',
+            url: 'databasehelper.php',
             dataType: "json",
             data: {
                 "Food" : this.props.itemName,
@@ -71,7 +84,19 @@ export class FoodItem extends React.Component {
             success: function(data){
                 console.log(data);
             }
-        }); */
+        });*/
+        /*axios.post('DS-Web-App/src/components/databasehelper.php', {
+            "Food" : this.props.itemName,
+            "Rating" : userRating,
+            "Reviews" : newReviews
+        })
+            .then(function (response) {
+                console.log("YOY");
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+        */
         console.log("NEW RATING: ", newRating);
         this.setState({
             rating: newRating,
