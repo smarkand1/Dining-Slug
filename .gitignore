@@ -1,2 +1,5 @@
 #Ignore for Mac Users
 .DS_Store
+
+#Ignore for api keys
+config.json

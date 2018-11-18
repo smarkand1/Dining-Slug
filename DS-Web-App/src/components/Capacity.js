@@ -2,7 +2,7 @@
 import React from 'react';
 import './Capacity.css';
 
-const data = require('./dummyTimes.json');
+const data = require('./times.json');
 const closeData = require('./closedTimes.json')
 
 const times = data.Halls;
@@ -40,10 +40,10 @@ export class Capacity extends React.Component {
         var currTime = currDay[currHour];
 
         //convert popularity to a word
-        if(currTime > 20){
+        if(currTime > 60){
             return (<div className="busy">Busy</div>);
         }
-        else if(currTime > 10){
+        else if(currTime > 40){
             return (<div className="moderate">Moderate</div>);
         }
         else if(currTime > 0){

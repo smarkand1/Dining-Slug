@@ -16,9 +16,9 @@ export class Home extends React.Component {
                     </div>
                     <div className="gradient"></div>
                     <div className="topBar">
-                        <div className="searchItem">
-                            <Search/>
-                        </div>
+                        /*<div className="searchItem">
+                            <Search />
+                        </div>*/
                         <div className="serving">
                             Currently Serving: 
                         </div>
