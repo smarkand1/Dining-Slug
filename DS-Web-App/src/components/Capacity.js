@@ -2,7 +2,7 @@
 import React from 'react';
 import './Capacity.css';
 
-const data = require('./times.json');
+const data = require('./poptimes.json');
 const closeData = require('./closedTimes.json')
 
 const times = data.Halls;
