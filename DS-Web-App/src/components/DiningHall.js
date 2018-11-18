@@ -1,9 +1,9 @@
 //This component dynamically renders the dining hall page and its 
 //menu based on what button the user clicked on the user interface
 import React from 'react';
-import {NavLink} from 'react-router-dom';
 import { Listhome } from './../Listhome';
-import {Menu} from './Menu';
+import { Menu } from './Menu';
+import { Search } from './Search';
 
 
 //Now all we need to do here is grab the information from the server on what the dining halls are serving
@@ -41,10 +41,12 @@ export class DiningHall extends React.Component {
                     </div>
                     <div className="gradient"></div>
                     <Listhome/>
-                    <Menu hallCode = {hall}/>
-                  
+                    <Search/>
+                    <Menu hallCode = {hall}/>    
                 </header>
           </div>
         );
+
     }
+
 }

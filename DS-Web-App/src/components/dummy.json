@@ -1,0 +1,32 @@
+[
+    {
+	  "Food": "Belgian Waffles",
+	  "Rating" : 256,
+	  "Reviews": 100
+    },
+    {
+	  "Food" : "Cage Free Scrambled Eggs",
+	  "Rating" : 256,
+	  "Reviews": 100 
+    },
+    {
+	  "Food" :  "Crispy Bacon",
+	  "Rating" : 256,
+	  "Reviews": 100  
+    },
+    {
+	  "Food" : "Eggbeaters Scramble",
+	  "Rating" : 256,
+	  "Reviews": 100
+    },
+    {
+	  "Food":"Hard-boiled Cage Free Eggs",
+	  "Rating" : 256,
+	  "Reviews": 100
+    },
+    {
+	  "Food": "Oatmeal Gluten-Free",
+	  "Rating" : 256,
+	  "Reviews": 100
+    }
+]

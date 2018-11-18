@@ -18,14 +18,14 @@
 }
 
 .gradient {
-background-image: linear-gradient(to left, #003c6c , #fdc700);
-background-color: #fdc700; /* For browsers that do not support gradients */
-height: 10px;
-margin-top: 7px;
+  background-color: #fdc700; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to left, #003c6c , #fdc700);
+  height: 10px;
+  margin-top: 7px;
 }
 
 .title{
-  font-family: EB Garamond;
+  font-family: "EB Garamond";
   font-size:calc(30px + 2vmin);
   color: #fdc700;
 }

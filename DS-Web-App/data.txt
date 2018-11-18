@@ -1,4 +1,4 @@
-[{
+{
 	"Title": "Colleges Nine & Ten Menu",
 	"Date": "Menus for Tuesday, October 30, 2018",
 	"Hours": "Hours go here",
@@ -20,7 +20,7 @@
 			"Food": ["Oven Roasted Chicken Thigh", "Rice Fried Vegetable", "Steamed Rice", "Tamarind BBQ Tempeh", "Cheese Pizza", "Spicy Double Sausage Pizza", "French Fries", "Bar Taqueria", "Charro Beans", "Chipotle Gardein Strips", "Condiments", "Mexican Rice", "Taqueria Chicken", "Taqueria Ground Beef"]
 		}
 	]
-},
+}
 {
 	"Title": "Cowell/Stevenson Dining Hall Menu",
 	"Date": "Menus for Tuesday, October 30, 2018",
@@ -43,7 +43,7 @@
 			"Food": ["Beef and Cheese Enchiladas", "Oven Roasted Chicken Thigh", "Steamed Rice", "Vegan Refried Beans", "Cheese Pizza", "Pizza Mushroom & Sausage", "Blended Beef & Mushroom Burger Hawaiian Style", "Chinese Vegan Salad", "BBQ Shredded Pork", "Condiments", "Country Gravy", "Mashed Potato Bowl Bar", "Mashed Yukon Golds", "Roasted Kale and Butternut Squash", "Tempura Chicken", "Texas Jalapeno Gravy", "Vegan Sweet Potatoes"]
 		}
 	]
-},
+}
 {
 	"Title": "Crown/Merrill Dining Hall Menu",
 	"Date": "Menus for Tuesday, October 30, 2018",
@@ -66,7 +66,7 @@
 			"Food": []
 		}
 	]
-},
+}
 {
 	"Title": "Porter/Kresge Dining Hall Menu",
 	"Date": "Menus for Tuesday, October 30, 2018",
@@ -89,7 +89,7 @@
 			"Food": []
 		}
 	]
-},
+}
 {
 	"Title": "Rachel Carson/Oakes Dining Hall",
 	"Date": "Menus for Tuesday, October 30, 2018",
@@ -112,4 +112,4 @@
 			"Food": ["Island Beef Steak", "Oven Roasted Chicken Thigh", "Steamed Rice", "Caramelized Onions and Sausage Pizza", "Cheese Pizza", "Hawaiian Macaroni Salad", "Sweet Potato Fries", "Pesto Chicken Sandwich", "BAR Street Taco", "BBQ Ginger Soy Chicken", "BBQ Tofu Chili Garlic", "Chili Soy Slaw", "Condiments", "Korean BBQ Beef", "Salsa Roja", "Sticky Rice"]
 		}
 	]
-}]
+}

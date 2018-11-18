@@ -1,0 +1,39 @@
+.quickNavList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/*These are the actual text boxes*/
+.quickNav a {
+    float: left;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    font-size: 1.5vmin;
+    text-decoration: none;
+    color: #ffffff;
+    border:1px solid rgb(187, 187, 187);
+    border-top: none;
+    border-bottom: none;
+    text-align: center;
+}
+
+.quickNav a:hover {
+    background-color: #fdc700;
+    transition-timing-function: ease-out;
+    transition-duration: 0.3s;
+    /* Safari Support*/
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 0.3s;
+}
+
+.active {
+    background-color: #fdc700;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.NavLink {
+    color:white;
+}
