@@ -1,5 +1,7 @@
 import scraper
 import requests
+import dhpop
+import json
 
 def print_menu(file, term, menu, i):
     '''
@@ -71,7 +73,8 @@ def print_search_menu(file, menu):
         added.add(item)
         file.write("\"" + item + "\", ")
     #Write last item to list so as to avoid comma formatting issues
-    file.write("\"" + menu[-1] + "\"")
+    if menu[-1][:4] not in ILLEGAL_PHRASES:
+        file.write("\"" + menu[-1] + "\"")
     #Closes off list
     file.write("]\n\t\t}") 
 
@@ -82,12 +85,26 @@ a dining hall menu. Each JSON object contains: the name of the dining hall,
 current date that the menu was pulled from, hours of operation for that date,
 and the menu.
 
-The method also formats the data into another file food.json which is used 
-for the search bar.
+This file creates 4 json files
+times.json
+food.json
+dailyMenu.json
+dhRating.json
 '''
 
-data_file = open("../DS-Web-App/src/components/data.json", "w")
-food_file = open("../DS-Web-App/src/components/food.json", "w")
+prev_ratings_json = json.load(open('DS-Web-App/src/components/dhRating.json'))
+prev_times_json = json.load(open('DS-Web-App/src/components/times.json'))
+prev_ratings = prev_ratings_json["Halls"]
+prev_times = prev_times_json["Halls"]
+
+data_file = open("DS-Web-App/src/components/dailyMenu.json", "w")
+search_file = open("DS-Web-App/src/components/food.json", "w")
+ratings_file = open("DS-Web-App/src/components/dhRating.json", "w")
+times_file = open("DS-Web-App/src/components/times.json", "w")
+
+#Write Data for times and ratings using google data
+dhpop.print_google_data(ratings_file, times_file, prev_ratings, prev_times)
+
 count = 0
 MAX_DINING_HALL_COUNT = 5
 #Menu consisting of every item regardless of dining hall
@@ -163,7 +180,9 @@ search_file.write("\n\t]\n}")
 
 #Close the files
 data_file.close()   
-search_file.close()     
+search_file.close()   
+ratings_file.close()
+times_file.close()  
 
 
         

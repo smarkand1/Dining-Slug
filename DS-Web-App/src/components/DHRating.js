@@ -3,7 +3,7 @@ import React from 'react';
 import Ratings from 'react-ratings-declarative';
 import './DHRating.css'
 
-const data = require('./dummyDHRatings.json');
+const data = require('./dhRating.json');
 
 const ratings = data.Halls;
 
@@ -46,7 +46,7 @@ export class DHRating extends React.Component {
             <div className="dinRatings">
                 <div> 
                     Rating: <Ratings  
-                        rating = {ratings / reviews}
+                        rating = {ratings}
                         widgetRatedColors = 'rgb(253, 199, 0)'
                         widgetEmptyColors = 'rgb(203, 211, 227)'
                         widgetHoverColors = 'rgba(255, 219, 86, 0)'

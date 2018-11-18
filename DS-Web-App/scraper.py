@@ -20,6 +20,8 @@ def get_dining_hall_URLs():
     if(response.status_code != 200):
         print("Error in connecting to website")
         return None
+    else:
+       print(response.status_code) 
     html = response.content
     soup = BeautifulSoup(html, "html.parser")
 
@@ -53,6 +55,11 @@ def get_menu(url):
     '''
     #Create BS4 object containing HTML for webpage
     response = requests.get(url)
+    if(response.status_code != 200):
+        print("Error in connecting to website")
+        return None
+    else:
+       print(response.status_code) 
     html = response.content
     soup = BeautifulSoup(html, "html.parser")
     frame = soup.find("frame", title="main content window")

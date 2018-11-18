@@ -2,7 +2,7 @@
 import React from 'react';
 import './Capacity.css';
 
-const data = require('./dummyTimes.json');
+const data = require('./times.json');
 const closeData = require('./closedTimes.json')
 
 const times = data.Halls;
