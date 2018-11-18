@@ -1,12 +1,13 @@
-import React, {Component} from 'react'
-import dataList from './food.json' //importing dataList
-import './Search.css'
+import React from 'react';
+import './DiningHall';
+import dataList from './food.json'; //importing dataList
+import './Search.css';
 
 
-export class Search extends Component {
+export class Search extends React.Component {
     //Set initial States
-    constructor(){
-        super();
+    constructor(props){
+        super(props);
         this.closeMenu = this.closeMenu.bind(this);
 
         this.state = {
@@ -14,8 +15,7 @@ export class Search extends Component {
             showMenu: false //we will not show the menu if nothing has been clicked
         }
     }
-    
-   //Upon entering information into search bar...
+     //Upon entering information into search bar...
     onchangeOne = e =>{
         this.setState({query: e.target.value}); //Log in target value
 
@@ -51,7 +51,6 @@ export class Search extends Component {
 
     //This function will render our results
     renderResults = r =>{
-        console.log(Math.max(document.documentElement.clientWidth, window.innerWidth || 0));
         return <button title={r} class="searchButton">{r.substring(0, 30)}{ r.length > 30 && "..."}</button>
     }     
 
@@ -63,7 +62,7 @@ export class Search extends Component {
       list and create an array containing only those options that match
       the query result
       */
-      const filteredItems = dataList.Ids[5].Food.filter(r=>
+      const filteredItems = dataList[this.props.searchWithCode].Food.filter(r=>
         {
             return r.toLowerCase().indexOf(query.toLowerCase()) !== -1
         })
@@ -80,6 +79,7 @@ export class Search extends Component {
             <div className = "searchBar-content" ref = {(e) =>{this.dropdownMenu = e}}> 
             {
                 
+    
                 this.state.showMenu
                 ? (
                     filteredItems.map(r => 
@@ -94,5 +94,5 @@ export class Search extends Component {
       )
     }
 }
-export default Search
+export default Search;
    

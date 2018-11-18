@@ -1,11 +1,11 @@
 <?php
-	include 'databasehelper.php';
-	$Food = _POST('Food');
-	$Rating = _POST('Rating');
-	$Reviews = _POST('Reviews');
-	echo $Food;
-	echo $Rating;
-	echo $Reviews;
+	//$Food = $_POST['food'];
+	//$Rating = $_POST['rating'];
+	//$Reviews = $_POST['reviews'];
+	//echo $Food;
+	//echo $Rating;
+	//echo $Reviews;
+	echo "Hello";
 	//$servername = "localhost";
 	//$username = "root";
 	//$password = "";

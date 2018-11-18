@@ -41,7 +41,7 @@ export class DiningHall extends React.Component {
                     </div>
                     <div className="gradient"></div>
                     <Listhome/>
-                    <Search/>
+                    <Search searchWithCode = {hall}/>
                     <Menu hallCode = {hall}/>    
                 </header>
           </div>
