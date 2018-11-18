@@ -4,7 +4,7 @@ import json
 
 # finds the popular times per day of the Crown/Merrill dining hall
 with open('crown_merrill.txt', 'w') as out1:
-    popular_times = populartimes.get_id("AIzaSyAolymcJS2gRys5ObC5GH8o1e4z2ZLw0A0", "ChIJi_EvW6dBjoAR463303sobo8")["populartimes"]
+    popular_times = populartimes.get_id("API-Key", "ChIJi_EvW6dBjoAR463303sobo8")["populartimes"]
 
     for item in popular_times:
     	json.dump(item, out1)
@@ -13,7 +13,7 @@ with open('crown_merrill.txt', 'w') as out1:
 
 # finds the popular times per day of the RCC/Oakes dining hall
 with open('rcc_oakes.txt', 'w') as out2:
-    popular_times = populartimes.get_id("AIzaSyAolymcJS2gRys5ObC5GH8o1e4z2ZLw0A0", "ChIJy4TGQJlBjoAR_QvVJaRT-yc")["populartimes"]
+    popular_times = populartimes.get_id("API-Key", "ChIJy4TGQJlBjoAR_QvVJaRT-yc")["populartimes"]
 
     for item in popular_times:
     	json.dump(item, out2)
