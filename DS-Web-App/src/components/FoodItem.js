@@ -7,19 +7,19 @@
 import React from 'react';
 import './FoodItem.css';
 import Ratings from 'react-ratings-declarative';
-import axios from 'axios';
+//import axios from 'axios';
 
-axios.post('public/databasehelper.php', {
+/*axios.post('wamp64/www/Dining-Slug/DS-Web-App/src/components/databasehelper.php', {
     "Food" : "Nuggies",
     "Rating" : 1,
     "Reviews" : 100
 })
     .then(function (response) {
-        console.log("YOY");
+        console.log(response);
     })
     .catch(function (error) {
         console.log(error);
-    });
+    });*/
 
 
 export class FoodItem extends React.Component {
