@@ -9,6 +9,19 @@ import './FoodItem.css';
 import Ratings from 'react-ratings-declarative';
 import axios from 'axios';
 
+axios.post('public/databasehelper.php', {
+    "Food" : "Nuggies",
+    "Rating" : 1,
+    "Reviews" : 100
+})
+    .then(function (response) {
+        console.log("YOY");
+    })
+    .catch(function (error) {
+        console.log(error);
+    });
+
+
 export class FoodItem extends React.Component {
     constructor(props){
         super(props);
@@ -72,7 +85,7 @@ export class FoodItem extends React.Component {
                 console.log(data);
             }
         });*/
-        axios.post('./databasehelper.php', {
+        /*axios.post('DS-Web-App/src/components/databasehelper.php', {
             "Food" : this.props.itemName,
             "Rating" : userRating,
             "Reviews" : newReviews
@@ -83,7 +96,7 @@ export class FoodItem extends React.Component {
             .catch(function (error) {
                 console.log(error);
             });
-        
+        */
         console.log("NEW RATING: ", newRating);
         this.setState({
             rating: newRating,
