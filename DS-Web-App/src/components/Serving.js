@@ -12,9 +12,12 @@ export class Serving extends React.Component {
         var d = new Date();
         var currTime = d.getHours() * 100 + d.getMinutes();
         var day = d.getDay();
+        console.log(day)
+        console.log(currTime)
         //determine whats being served
         switch(day){
-            case 0, 6:
+            case 0:
+            case 6:
                 if(630 < currTime && currTime <= 1000){
                     return (<div className="open">Breakfast</div>);
                 }
