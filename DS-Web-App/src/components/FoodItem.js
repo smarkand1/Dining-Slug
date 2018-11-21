@@ -7,7 +7,8 @@
 import React from 'react';
 import './FoodItem.css';
 import Ratings from 'react-ratings-declarative';
-import fs from 'fs';
+import $ from 'jquery';
+
 var database = require('./database.json');
 
 export class FoodItem extends React.Component {
@@ -62,15 +63,15 @@ export class FoodItem extends React.Component {
   
         //Here, we're gonna have to either update existing data to database.json or 
         //append new data to database.json
-            database[this.props.itemName].Reviews = newReviews;
-            database[this.props.itemName].Rating += userRating;
-            fs.writeFileSync('./database.json', JSON.stringify(database, null, 2), function (err) {
-                if(err) console.log("err");
-                console.log(JSON.stringify(database, null, 2));
-                console.log("Writing to ./database.json");
-            });
+        console.log("Sending fetch request");
+        $.ajax({
+            type: "GET",
+            url: '/sqlreq',
+            success: function(response){
+                console.log(response);
+            }
+        })
 
-        
         
 
         console.log("NEW RATING: ", newRating);
