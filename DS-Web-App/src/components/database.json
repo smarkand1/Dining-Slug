@@ -1,31 +1,25 @@
 {
-    "d" : {
-	  "Food": "Belgian Waffles",
+    "Belgian Waffles" : {
 	  "Rating" : 256,
 	  "Reviews": 100
     },
     "Cage Free Scrambled Eggs" : {
-	  "Food" : "Cage Free Scrambled Eggs",
 	  "Rating" : 256,
 	  "Reviews": 100 
     },
-    "f" : {
-	  "Food" :  "Crispy Bacon",
+    "Crispy Bacon" : {
 	  "Rating" : 256,
 	  "Reviews": 100  
     },
-    "q" : {
-	  "Food" : "Eggbeaters Scramble",
+    "Eggbeaters Scramble" : {
 	  "Rating" : 256,
 	  "Reviews": 100
     },
-    "e" : {
-	  "Food":"Hard-boiled Cage Free Eggs",
+    "Hard-boiled Cage Free Eggs" : {
 	  "Rating" : 256,
 	  "Reviews": 100
     },
-    "o" : {
-	  "Food": "Oatmeal Gluten-Free",
+    "Oatmeal Gluten-Free" : {
 	  "Rating" : 256,
 	  "Reviews": 100
     }
