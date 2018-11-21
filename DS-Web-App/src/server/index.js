@@ -19,6 +19,11 @@ app.get('/sqlreq', (req,res) => {
     res.send({data : "Hello good sir"});
 });
 
+app.post('/sqlreq', (req,res) => {
+    console.log("Wow, a post request");
+    console.log(res);
+})
+
 app.get('*', (req,res) => {
     res.sendFile(path.join(__dirname+ '/../../dist/index.html'));
     console.log("Refresh");

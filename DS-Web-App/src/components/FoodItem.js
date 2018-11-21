@@ -65,10 +65,14 @@ export class FoodItem extends React.Component {
         //append new data to database.json
         console.log("Sending fetch request");
         $.ajax({
-            type: "GET",
+            type: "POST",
             url: '/sqlreq',
+            data: {Food : "Big Food"},
             success: function(response){
                 console.log(response);
+            },
+            failure: function(err){
+                console.log("Awww shit");
             }
         })
 
