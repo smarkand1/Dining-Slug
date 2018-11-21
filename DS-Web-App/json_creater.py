@@ -93,14 +93,14 @@ dhRating.json
 '''
 
 prev_ratings_json = json.load(open('DS-Web-App/src/components/dhRating.json'))
-prev_times_json = json.load(open('DS-Web-App/src/components/times.json'))
+prev_times_json = json.load(open('DS-Web-App/src/components/poptimes.json'))
 prev_ratings = prev_ratings_json["Halls"]
 prev_times = prev_times_json["Halls"]
 
 data_file = open("DS-Web-App/src/components/dailyMenu.json", "w")
 search_file = open("DS-Web-App/src/components/food.json", "w")
 ratings_file = open("DS-Web-App/src/components/dhRating.json", "w")
-times_file = open("DS-Web-App/src/components/times.json", "w")
+times_file = open("DS-Web-App/src/components/poptimes.json", "w")
 
 #Write Data for times and ratings using google data
 dhpop.print_google_data(ratings_file, times_file, prev_ratings, prev_times)

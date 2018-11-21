@@ -7,20 +7,8 @@
 import React from 'react';
 import './FoodItem.css';
 import Ratings from 'react-ratings-declarative';
-//import axios from 'axios';
-
-/*axios.post('wamp64/www/Dining-Slug/DS-Web-App/src/components/databasehelper.php', {
-    "Food" : "Nuggies",
-    "Rating" : 1,
-    "Reviews" : 100
-})
-    .then(function (response) {
-        console.log(response);
-    })
-    .catch(function (error) {
-        console.log(error);
-    });*/
-
+import fs from 'fs';
+var database = require('./database.json');
 
 export class FoodItem extends React.Component {
     constructor(props){
@@ -35,26 +23,27 @@ export class FoodItem extends React.Component {
         //   php file that updates the database.
         var foodName = this.props.itemName;
         var currentRating = 0;
-        var foodJSON = require('./dummy.json'); //Dummy database
         var foodIndex;
         var currentReviews = 0;
         //This just does some ugly linear search to find out whether or not
         //the food item is in the dummy database. Don't worry about how its 
         //Implemented because it'll most likely not do this in the 
-        //final product
-        for(foodIndex = 0; foodIndex < foodJSON.length; foodIndex++){
-            if(foodJSON[foodIndex].Food === this.props.itemName){
-                currentRating = (foodJSON[foodIndex].Rating / foodJSON[foodIndex].Reviews);
-                currentReviews = (foodJSON[foodIndex].Reviews); //Number of reviews
-                console.log("Rating = ", currentRating);
-                break;
-            }
+        //final product 
+        // UPDATE:
+        //whoops, that didnt go so well did it?
+        try {
+            currentReviews = database[foodName].Reviews;
+            currentRating = database[foodName].Rating / database[foodName].Reviews;
+        } catch {
+            currentReviews = 0;
+            currentRating = 0;
         }
+
         this.state = {
             rating: currentRating,
             reviews: currentReviews,
             foodCode: foodIndex,
-            foodJSON: foodJSON,
+            database: database,
             alreadyReviewed: 0
         };
         this.changeRating = this.changeRating.bind(this);
@@ -70,33 +59,20 @@ export class FoodItem extends React.Component {
         }
         var newReviews = this.state.reviews + 1;
         var newRating = (userRating + (this.state.rating * this.state.reviews))/ newReviews;
-        /* THIS IS WHAT A POSSIBLE CALL TO THE PHP FILE MAY LOOK LIKE 
-            -This may only work on the server itself but i'm not 100% sure */
-        /*$.ajax({
-            type: 'POST',
-            url: 'databasehelper.php',
-            dataType: "json",
-            data: {
-                "Food" : this.props.itemName,
-                "Rating" : userRating,
-                "Reviews" : newReviews
-            },
-            success: function(data){
-                console.log(data);
-            }
-        });*/
-        /*axios.post('DS-Web-App/src/components/databasehelper.php', {
-            "Food" : this.props.itemName,
-            "Rating" : userRating,
-            "Reviews" : newReviews
-        })
-            .then(function (response) {
-                console.log("YOY");
-            })
-            .catch(function (error) {
-                console.log(error);
+  
+        //Here, we're gonna have to either update existing data to database.json or 
+        //append new data to database.json
+            database[this.props.itemName].Reviews = newReviews;
+            database[this.props.itemName].Rating += userRating;
+            fs.writeFileSync('./database.json', JSON.stringify(database, null, 2), function (err) {
+                if(err) console.log("err");
+                console.log(JSON.stringify(database, null, 2));
+                console.log("Writing to ./database.json");
             });
-        */
+
+        
+        
+
         console.log("NEW RATING: ", newRating);
         this.setState({
             rating: newRating,
