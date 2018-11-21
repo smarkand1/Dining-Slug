@@ -63,7 +63,7 @@ export class FoodItem extends React.Component {
   
         //Here, we're gonna have to either update existing data to database.json or 
         //append new data to database.json
-        console.log("Sending fetch request");
+        console.log("Sending post request");
         $.ajax({
             type: "POST",
             url: '/sqlreq',
