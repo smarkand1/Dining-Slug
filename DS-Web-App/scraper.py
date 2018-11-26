@@ -1,7 +1,6 @@
 from bs4 import BeautifulSoup
 import requests
 
-
 def get_dining_hall_URLs():
     '''
     Retrieves the dining hall titles and menus on the main dining hall page
@@ -42,6 +41,19 @@ def get_dining_hall_URLs():
     return dining_hall_urls
     #print(soup.prettify().encode('utf-8').decode('ascii', 'ignore'))
 
+def make_frame(url):
+    #Create BS4 object containing HTML for webpage
+    response = requests.get(url)
+    if(response.status_code != 200):
+        print("Error in connecting to website")
+        return None
+    else:
+       print(response.status_code) 
+    html = response.content
+    soup = BeautifulSoup(html, "html.parser")
+    frame = soup.find("frame", title="main content window")
+    return frame
+
 def get_menu(url):
     '''
     Gets the menu for each link sent in list format where each entry is a list and each entry in those lists
@@ -53,22 +65,62 @@ def get_menu(url):
     Raises:
         None
     '''
-    #Create BS4 object containing HTML for webpage
-    response = requests.get(url)
-    if(response.status_code != 200):
-        print("Error in connecting to website")
-        return None
-    else:
-       print(response.status_code) 
-    html = response.content
-    soup = BeautifulSoup(html, "html.parser")
-    frame = soup.find("frame", title="main content window")
+    return read_menu_frames(make_frame(url))
 
-    return read_menu_frames(frame)
+def get_nutrion_info(url):
+    '''
+    Gets the menu for each link sent in list format where each entry is a list and each entry in those lists
+    is a food item  
+    Arguments:
+        URL - str
+    Returns:
+        read_menu_frames - (list) frames for each dining hall - (BS4 Object) 
+    Raises:
+        None
+    '''
+    return read_nutrition_frames(make_frame(url))
 
 def read_menu_frames(frame):
     '''
     Gets the food items for each menu for each dining hall and returns it as a list of strings  
+    Arguments:
+        frame - BS4 object
+    Returns:
+        food_items - (list) contains food items and meal times as lists with [food, pref] 
+    Raises:
+        None
+    '''
+    base_url = "https://nutrition.sa.ucsc.edu/"
+    url = base_url + frame.get("src")
+    response = requests.get(url)
+    html = response.content
+    soup = BeautifulSoup(html, "html.parser")
+
+    food_items = []
+    for div in soup.find_all("div", {"class": ["menusamptitle", "menusampmeals", "menusamprecipes"]}):
+        food = []
+        if(div["class"][0] == 'menusamprecipes'):
+            food.append(div.get_text())
+            
+            parent = div.parent
+            siblings = parent.find_next_siblings()
+            preferences = []
+            for sibling in siblings:
+                img = sibling.find("img")["src"]
+                pref = img[13:-4]
+                preferences.append(pref)
+
+            food.append(preferences)
+        else:
+            food.append(div.get_text())
+        food_items.append(food)
+    print(food_items)
+    return food_items
+
+def read_nutrition_frames(frame):
+    '''
+    Gets the links to the food items nutritional information for each menu for each dining hall 
+    and returns it as a list of strings  
     Arguments:
         frame - BS4 object
     Returns:
@@ -82,8 +134,10 @@ def read_menu_frames(frame):
     html = response.content
     soup = BeautifulSoup(html, "html.parser")
 
-    food_items = []
-    for div in soup.find_all("div", {"class": ["menusamptitle", "menusampmeals", "menusamprecipes"]}):
-        food_items.append(div.get_text())
-    print(food_items)
-    return food_items
+    nutrition_urls = []
+    for div in soup.find_all("span", {"class": "menusampnutritive"}):
+        link = (div.find('a').get("href"))
+        url = base_url + link
+        nutrition_urls.append(url)
+    print(nutrition_urls)
+    return nutrition_urls

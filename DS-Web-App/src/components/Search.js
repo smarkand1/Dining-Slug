@@ -1,6 +1,6 @@
 import React from 'react';
 import './DiningHall';
-import dataList from './food.json'; //importing dataList
+import dataList from './search.json'; //importing dataList
 import './Search.css';
 
 

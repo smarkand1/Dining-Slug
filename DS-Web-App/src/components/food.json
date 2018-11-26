@@ -1,20 +1,250 @@
-[
-		{
-			"Food": ["Middle Eastern Shakshuka Eggs", "Natural BridgesTofu Scramble", "Oatmeal Gluten-Free", "Sausage Links", "Shredded Hash Browns", "Texas French Toast", "Chicken Tortilla Soup", "Thai Lentil and Coconut Soup", "Cheese Manicotti with Marinara", "Oven Roasted Chicken Thigh", "Steamed Rice", "Cheese Pizza", "Roasted Seasonal Vegetables", "Apricot Honey Bran Muffin", "Banana Walnut Muffin", "Brownies", "Cake Donut", "Vegan Granola Nut Cookie", "Baja Taco Bar", "Charro Beans", "Chipotle Gardein Strips", "Cilantro Slaw", "Condiments", "Corn Tortillas", "Mexican Rice", "Pork Al Pastor", "Tavern Battered Pollock", "Asian Pork Spareribs", "Greek Chicken Saute", "Greek Tempeh Saute", "Nasi Goreng Fried Rice", "BlackBottom Peanut Butter Cheesecake", "Steamed Bok Choy", "Vietnamese Chicken Pho", "Vietnamese Pho Broth", "Vietnamese Pho Noodle Bar", "Vietnamese Tofu Pho", "Mushroom Spinach Quesadilla", "Pesto Chicken Sandwich", "Tator Tots", "Local Pacific Rock Fish Picatta", "Portobello Philly Sandwich", "Steak Cut Fries", "Argentinian Roasted Chicken", "Black Beans", "Grilled Chimichurri Tofu", "Peruvian Bar", "Quinoa with Lemon and Thyme", "Roasted Corn", "Roasted Sweet Potatoes"]
-		},
-		{
-			"Food": ["Crispy Bacon", "Oatmeal Gluten-Free", "Papas Fritas", "Texas French Toast", "Natural BridgesTofu Scramble", "Potatoes O'Brien", "Chicken Noodle Soup", "Creamy Broccoli Cheddar Soup", "Armanino Alfredo Sauce", "Oven Roasted Chicken Thigh", "Steamed Basmati Rice", "Steamed Rice", "Buffalo Chicken Pizza", "Cheese Pizza", "Berry White Cookie", "Oatmeal Raisin Cookie", "Apricot Honey Bran Muffin", "Banana Walnut Muffin", "Brownies", "Cake Donut", "Vegan Granola Nut Cookie", "Bar Pasta", "Cheese Ravioli", "Condiments", "Marinara Sauce", "Penne", "Chicken Gravy", "Chicken Lo Mein", "Red Skin Mashed Potatoes", "Spice Crusted Pork Loin", "Vegetable Lo Mein", "Sauteed Seasonal Vegetable", "BlackBottom Peanut Butter Cheesecake", "Hawaiian Bar", "Hawaiian Macaroni Salad", "Roasted Yams", "Spam Fried Rice", "Sticky Rice", "Teriyaki Chicken Shoyu", "Teriyaki Tofu", "Greek Penne with Spinach & Feta", "Salmon with Lemon, Garlic and Rosemary", "Avocado Bacon Cheddar Burger", "Tator Tots", "Teriyaki Tofu"]
-		},
-		{
-			"Food": []
-		},
-		{
-			"Food": []
-		},
-		{
-			"Food": ["Ham Steaks", "Natural BridgesTofu Scramble", "Oatmeal Gluten-Free", "Quinoa Fruit Salad", "Tator Tots", "Creamy Wild Mushroom Bisque", "Tuscan Vegetable Soup", "Burgundy Beef Ragout", "Oven Roasted Chicken Thigh", "Steamed Rice", "Cheese Pizza", "Margherita Pizza", "Saffron Orzo", "Roasted Seasonal Vegetables", "Berry White Cookie", "Oatmeal Raisin Cookie", "Apricot Honey Bran Muffin", "Banana Walnut Muffin", "Brownies", "Cake Donut", "UCSC Bakery French Rolls", "Vegan Granola Nut Cookie", "Asiago Cheese Sauce", "Chicken Tenders", "Chipotle Gardein Strips", "Mac & Cheese Bar Condiments", "Mac & Cheese", "Plain Cooked Elbow Pasta", "Vegan Macaroni & Cheese", "Middle East Apple Roasted Chicken", "Stir Fry Beef and Broccoli", "Stir Fry Vegetables", "Basmati Rice Pullao", "BlackBottom Peanut Butter Cheesecake", "Black Beans", "Braised Kale with Crispy Shallots", "Condiments", "Grilled Chimichurri Tofu", "Jalapeno Lime Shrimp", "Peruvian Bar", "Roasted Corn", "Baked Salmon with Garlic Butter", "Hershey Pancakes", "Lemon Herbed Orzo", "Halal Chicken Patty Sandwich", "Argentinian Roasted Chicken", "Quinoa with Lemon and Thyme", "Roasted Sweet Potatoes", "Roasted Tomatoes"]
-		},
-		{
-			"Food": ["Middle Eastern Shakshuka Eggs", "Natural BridgesTofu Scramble", "Oatmeal Gluten-Free", "Sausage Links", "Shredded Hash Browns", "Texas French Toast", "Chicken Tortilla Soup", "Thai Lentil and Coconut Soup", "Cheese Manicotti with Marinara", "Oven Roasted Chicken Thigh", "Steamed Rice", "Cheese Pizza", "Roasted Seasonal Vegetables", "Apricot Honey Bran Muffin", "Banana Walnut Muffin", "Brownies", "Cake Donut", "Vegan Granola Nut Cookie", "Baja Taco Bar", "Charro Beans", "Chipotle Gardein Strips", "Cilantro Slaw", "Condiments", "Corn Tortillas", "Mexican Rice", "Pork Al Pastor", "Tavern Battered Pollock", "Asian Pork Spareribs", "Greek Chicken Saute", "Greek Tempeh Saute", "Nasi Goreng Fried Rice", "BlackBottom Peanut Butter Cheesecake", "Steamed Bok Choy", "Vietnamese Chicken Pho", "Vietnamese Pho Broth", "Vietnamese Pho Noodle Bar", "Vietnamese Tofu Pho", "Mushroom Spinach Quesadilla", "Pesto Chicken Sandwich", "Tator Tots", "Local Pacific Rock Fish Picatta", "Portobello Philly Sandwich", "Steak Cut Fries", "Argentinian Roasted Chicken", "Black Beans", "Grilled Chimichurri Tofu", "Peruvian Bar", "Quinoa with Lemon and Thyme", "Roasted Corn", "Roasted Sweet Potatoes", "Crispy Bacon", "Papas Fritas", "Potatoes O'Brien", "Chicken Noodle Soup", "Creamy Broccoli Cheddar Soup", "Armanino Alfredo Sauce", "Steamed Basmati Rice", "Buffalo Chicken Pizza", "Berry White Cookie", "Oatmeal Raisin Cookie", "Bar Pasta", "Cheese Ravioli", "Marinara Sauce", "Penne", "Chicken Gravy", "Chicken Lo Mein", "Red Skin Mashed Potatoes", "Spice Crusted Pork Loin", "Vegetable Lo Mein", "Sauteed Seasonal Vegetable", "Hawaiian Bar", "Hawaiian Macaroni Salad", "Roasted Yams", "Spam Fried Rice", "Sticky Rice", "Teriyaki Chicken Shoyu", "Teriyaki Tofu", "Greek Penne with Spinach & Feta", "Salmon with Lemon, Garlic and Rosemary", "Avocado Bacon Cheddar Burger", "Ham Steaks", "Quinoa Fruit Salad", "Creamy Wild Mushroom Bisque", "Tuscan Vegetable Soup", "Burgundy Beef Ragout", "Margherita Pizza", "Saffron Orzo", "UCSC Bakery French Rolls", "Asiago Cheese Sauce", "Chicken Tenders", "Mac & Cheese Bar Condiments", "Mac & Cheese", "Plain Cooked Elbow Pasta", "Vegan Macaroni & Cheese", "Middle East Apple Roasted Chicken", "Stir Fry Beef and Broccoli", "Stir Fry Vegetables", "Basmati Rice Pullao", "Braised Kale with Crispy Shallots", "Jalapeno Lime Shrimp", "Baked Salmon with Garlic Butter", "Hershey Pancakes", "Lemon Herbed Orzo", "Halal Chicken Patty Sandwich", "Roasted Tomatoes"]
-		}
-]
+{
+	"Chicken Tortilla Soup": {
+		"Preferences": ["soy", "milk", "gluten"],
+		"Dining Halls": ["Colleges Nine & Ten Menu"]
+	},
+	"Tuscan Vegetable Soup": {
+		"Preferences": ["vegan"],
+		"Dining Halls": ["Colleges Nine & Ten Menu", "Cowell/Stevenson Dining Hall Menu"]
+	},
+	"Oven Roasted Chicken Thigh": {
+		"Preferences": ["gluten", "halal"],
+		"Dining Halls": ["Colleges Nine & Ten Menu", "Cowell/Stevenson Dining Hall Menu", "Rachel Carson/Oakes Dining Hall"]
+	},
+	"Spicy Beef with Garlic & Basil": {
+		"Preferences": ["beef", "nuts", "soy"],
+		"Dining Halls": ["Colleges Nine & Ten Menu"]
+	},
+	"Steamed Rice": {
+		"Preferences": ["vegan", "gluten"],
+		"Dining Halls": ["Colleges Nine & Ten Menu", "Cowell/Stevenson Dining Hall Menu", "Rachel Carson/Oakes Dining Hall"]
+	},
+	"Szechuan Sweet Chili Tofu": {
+		"Preferences": ["vegan", "soy"],
+		"Dining Halls": ["Colleges Nine & Ten Menu"]
+	},
+	"Cheese Pizza": {
+		"Preferences": ["soy", "milk", "veggie"],
+		"Dining Halls": ["Colleges Nine & Ten Menu", "Cowell/Stevenson Dining Hall Menu", "Rachel Carson/Oakes Dining Hall"]
+	},
+	"Focaccia Pizza with Basil Pesto": {
+		"Preferences": ["veggie", "nuts", "soy", "milk"],
+		"Dining Halls": ["Colleges Nine & Ten Menu"]
+	},
+	"Pepperoni Pizza": {
+		"Preferences": ["beef", "pork", "soy", "milk"],
+		"Dining Halls": ["Colleges Nine & Ten Menu"]
+	},
+	"Sauteed Seasonal Vegetable": {
+		"Preferences": ["vegan", "gluten"],
+		"Dining Halls": ["Colleges Nine & Ten Menu", "Rachel Carson/Oakes Dining Hall"]
+	},
+	"Chocolate Buttercream Brownie": {
+		"Preferences": ["veggie", "soy", "eggs", "milk"],
+		"Dining Halls": ["Colleges Nine & Ten Menu", "Cowell/Stevenson Dining Hall Menu", "Rachel Carson/Oakes Dining Hall"]
+	},
+	"Strawberry Lemon Cake": {
+		"Preferences": ["veggie", "soy", "eggs", "milk"],
+		"Dining Halls": ["Colleges Nine & Ten Menu", "Cowell/Stevenson Dining Hall Menu", "Rachel Carson/Oakes Dining Hall"]
+	},
+	"BAR Wings": {
+		"Preferences": [],
+		"Dining Halls": ["Colleges Nine & Ten Menu"]
+	},
+	"BBQ Wings": {
+		"Preferences": ["soy"],
+		"Dining Halls": ["Colleges Nine & Ten Menu"]
+	},
+	"Condiments": {
+		"Preferences": ["soy", "milk"],
+		"Dining Halls": ["Colleges Nine & Ten Menu", "Cowell/Stevenson Dining Hall Menu"]
+	},
+	"Hawaiian Coleslaw": {
+		"Preferences": ["vegan", "gluten"],
+		"Dining Halls": ["Colleges Nine & Ten Menu"]
+	},
+	"Hot 'N Spicy Wings": {
+		"Preferences": ["gluten"],
+		"Dining Halls": ["Colleges Nine & Ten Menu"]
+	},
+	"Teriyaki Glaze Wings": {
+		"Preferences": ["soy"],
+		"Dining Halls": ["Colleges Nine & Ten Menu"]
+	},
+	"Vegan Baked Beans": {
+		"Preferences": ["vegan", "gluten"],
+		"Dining Halls": ["Colleges Nine & Ten Menu"]
+	},
+	"Vegan Tenders": {
+		"Preferences": ["vegan", "soy"],
+		"Dining Halls": ["Colleges Nine & Ten Menu"]
+	},
+	"Knockout Burger": {
+		"Preferences": ["beef", "pork", "soy", "milk", "eggs"],
+		"Dining Halls": ["Colleges Nine & Ten Menu"]
+	},
+	"Regular Cut Fries": {
+		"Preferences": ["soy"],
+		"Dining Halls": ["Colleges Nine & Ten Menu"]
+	},
+	"Vegan Malibu Burger": {
+		"Preferences": ["vegan", "soy"],
+		"Dining Halls": ["Colleges Nine & Ten Menu"]
+	},
+	"Chef's Special": {
+		"Preferences": [],
+		"Dining Halls": ["Colleges Nine & Ten Menu"]
+	},
+	"Organic Brown Basmati Rice": {
+		"Preferences": ["vegan", "gluten"],
+		"Dining Halls": ["Colleges Nine & Ten Menu"]
+	},
+	"Spice Crusted Pork Loin": {
+		"Preferences": ["pork", "gluten"],
+		"Dining Halls": ["Colleges Nine & Ten Menu", "Cowell/Stevenson Dining Hall Menu", "Rachel Carson/Oakes Dining Hall"]
+	},
+	"Spicy Garbanzo and Vegetable Stir Fry": {
+		"Preferences": ["vegan", "gluten"],
+		"Dining Halls": ["Colleges Nine & Ten Menu"]
+	},
+	"Red Skin Mashed Potatoes": {
+		"Preferences": ["veggie", "milk", "gluten"],
+		"Dining Halls": ["Colleges Nine & Ten Menu", "Rachel Carson/Oakes Dining Hall"]
+	},
+	"Sweet Potato Fries": {
+		"Preferences": ["soy"],
+		"Dining Halls": ["Colleges Nine & Ten Menu"]
+	},
+	"Creamy Wild Mushroom Bisque": {
+		"Preferences": ["veggie", "milk"],
+		"Dining Halls": ["Cowell/Stevenson Dining Hall Menu"]
+	},
+	"Asian Flank Steak w/Teriyaki": {
+		"Preferences": ["beef", "soy"],
+		"Dining Halls": ["Cowell/Stevenson Dining Hall Menu"]
+	},
+	"Pasta Puttanesca with Roasted Vegetables": {
+		"Preferences": ["vegan", "soy"],
+		"Dining Halls": ["Cowell/Stevenson Dining Hall Menu"]
+	},
+	"Steamed Seasonal Vegetables": {
+		"Preferences": ["vegan", "gluten"],
+		"Dining Halls": ["Cowell/Stevenson Dining Hall Menu"]
+	},
+	"Margherita Pizza": {
+		"Preferences": ["soy", "milk"],
+		"Dining Halls": ["Cowell/Stevenson Dining Hall Menu"]
+	},
+	"French Fries": {
+		"Preferences": ["soy"],
+		"Dining Halls": ["Cowell/Stevenson Dining Hall Menu"]
+	},
+	"Gluten Free Ginger Cookie": {
+		"Preferences": ["eggs", "milk", "soy", "veggie", "gluten"],
+		"Dining Halls": ["Cowell/Stevenson Dining Hall Menu"]
+	},
+	"Bar Taqueria": {
+		"Preferences": [],
+		"Dining Halls": ["Cowell/Stevenson Dining Hall Menu"]
+	},
+	"Gaucho Beans": {
+		"Preferences": ["vegan", "gluten"],
+		"Dining Halls": ["Cowell/Stevenson Dining Hall Menu"]
+	},
+	"Mexican Rice": {
+		"Preferences": ["vegan", "gluten"],
+		"Dining Halls": ["Cowell/Stevenson Dining Hall Menu"]
+	},
+	"Soyrizo and Potatoes": {
+		"Preferences": ["vegan", "soy"],
+		"Dining Halls": ["Cowell/Stevenson Dining Hall Menu"]
+	},
+	"Taqueria Chicken": {
+		"Preferences": ["gluten", "soy"],
+		"Dining Halls": ["Cowell/Stevenson Dining Hall Menu"]
+	},
+	"Taqueria Ground Beef": {
+		"Preferences": ["beef", "gluten"],
+		"Dining Halls": ["Cowell/Stevenson Dining Hall Menu"]
+	},
+	"Roasted Toscano Potatoes": {
+		"Preferences": ["vegan", "gluten"],
+		"Dining Halls": ["Cowell/Stevenson Dining Hall Menu"]
+	},
+	"Blended Beef & Mushroom Burger Hawaiian Style": {
+		"Preferences": ["beef", "soy", "halal"],
+		"Dining Halls": ["Cowell/Stevenson Dining Hall Menu"]
+	},
+	"Tator Tots": {
+		"Preferences": ["soy"],
+		"Dining Halls": ["Cowell/Stevenson Dining Hall Menu"]
+	},
+	"Chicken Noodle Soup": {
+		"Preferences": ["soy", "eggs"],
+		"Dining Halls": ["Rachel Carson/Oakes Dining Hall"]
+	},
+	"Creamy Broccoli Cheddar Soup": {
+		"Preferences": ["veggie", "milk"],
+		"Dining Halls": ["Rachel Carson/Oakes Dining Hall"]
+	},
+	"Chicken Gravy": {
+		"Preferences": [],
+		"Dining Halls": ["Rachel Carson/Oakes Dining Hall"]
+	},
+	"Chicken Lo Mein": {
+		"Preferences": ["soy"],
+		"Dining Halls": ["Rachel Carson/Oakes Dining Hall"]
+	},
+	"Vegetable Lo Mein": {
+		"Preferences": ["vegan", "soy"],
+		"Dining Halls": ["Rachel Carson/Oakes Dining Hall"]
+	},
+	"Buffalo Chicken Pizza": {
+		"Preferences": ["soy", "milk"],
+		"Dining Halls": ["Rachel Carson/Oakes Dining Hall"]
+	},
+	"Berry White Cookie": {
+		"Preferences": ["eggs", "veggie", "milk"],
+		"Dining Halls": ["Rachel Carson/Oakes Dining Hall"]
+	},
+	"UCSC Bakery French Rolls": {
+		"Preferences": ["vegan", "soy"],
+		"Dining Halls": ["Rachel Carson/Oakes Dining Hall"]
+	},
+	"Hawaiian Bar": {
+		"Preferences": [],
+		"Dining Halls": ["Rachel Carson/Oakes Dining Hall"]
+	},
+	"Hawaiian Macaroni Salad": {
+		"Preferences": ["vegan"],
+		"Dining Halls": ["Rachel Carson/Oakes Dining Hall"]
+	},
+	"Roasted Yams": {
+		"Preferences": ["vegan", "gluten"],
+		"Dining Halls": ["Rachel Carson/Oakes Dining Hall"]
+	},
+	"Spam Fried Rice": {
+		"Preferences": ["pork", "soy", "eggs", "gluten"],
+		"Dining Halls": ["Rachel Carson/Oakes Dining Hall"]
+	},
+	"Sticky Rice": {
+		"Preferences": ["vegan", "gluten"],
+		"Dining Halls": ["Rachel Carson/Oakes Dining Hall"]
+	},
+	"Teriyaki Chicken Shoyu": {
+		"Preferences": ["soy", "halal"],
+		"Dining Halls": ["Rachel Carson/Oakes Dining Hall"]
+	},
+	"Teriyaki Tofu": {
+		"Preferences": ["vegan", "soy"],
+		"Dining Halls": ["Rachel Carson/Oakes Dining Hall"]
+	},
+	"Greek Penne with Spinach & Feta": {
+		"Preferences": ["milk"],
+		"Dining Halls": ["Rachel Carson/Oakes Dining Hall"]
+	},
+	"Tavern Battered Pollock": {
+		"Preferences": ["fish", "soy"],
+		"Dining Halls": ["Rachel Carson/Oakes Dining Hall"]
+	}
+}

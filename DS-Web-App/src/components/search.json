@@ -1,0 +1,22 @@
+{
+	"Ids": [
+		{
+			"Food": ["Chicken Tortilla Soup", "Tuscan Vegetable Soup", "Oven Roasted Chicken Thigh", "Spicy Beef with Garlic & Basil", "Steamed Rice", "Szechuan Sweet Chili Tofu", "Cheese Pizza", "Focaccia Pizza with Basil Pesto", "Pepperoni Pizza", "Sauteed Seasonal Vegetable", "Chocolate Buttercream Brownie", "Strawberry Lemon Cake", "BAR Wings", "BBQ Wings", "Condiments", "Hawaiian Coleslaw", "Hot 'N Spicy Wings", "Teriyaki Glaze Wings", "Vegan Baked Beans", "Vegan Tenders", "Knockout Burger", "Regular Cut Fries", "Vegan Malibu Burger", "Chef's Special", "Organic Brown Basmati Rice", "Spice Crusted Pork Loin", "Spicy Garbanzo and Vegetable Stir Fry", "Red Skin Mashed Potatoes", "Sweet Potato Fries"]
+		},
+		{
+			"Food": ["Creamy Wild Mushroom Bisque", "Tuscan Vegetable Soup", "Asian Flank Steak w/Teriyaki", "Oven Roasted Chicken Thigh", "Pasta Puttanesca with Roasted Vegetables", "Steamed Rice", "Steamed Seasonal Vegetables", "Cheese Pizza", "Margherita Pizza", "French Fries", "Gluten Free Ginger Cookie", "Chocolate Buttercream Brownie", "Strawberry Lemon Cake", "Bar Taqueria", "Condiments", "Gaucho Beans", "Mexican Rice", "Soyrizo and Potatoes", "Taqueria Chicken", "Taqueria Ground Beef", "Roasted Toscano Potatoes", "Spice Crusted Pork Loin", "Blended Beef & Mushroom Burger Hawaiian Style", "Tator Tots", "Taqueria Ground Beef"]
+		},
+		{
+			"Food": []
+		},
+		{
+			"Food": []
+		},
+		{
+			"Food": ["Chicken Noodle Soup", "Creamy Broccoli Cheddar Soup", "Chicken Gravy", "Chicken Lo Mein", "Oven Roasted Chicken Thigh", "Red Skin Mashed Potatoes", "Spice Crusted Pork Loin", "Steamed Rice", "Vegetable Lo Mein", "Buffalo Chicken Pizza", "Cheese Pizza", "Sauteed Seasonal Vegetable", "Berry White Cookie", "Chocolate Buttercream Brownie", "Strawberry Lemon Cake", "UCSC Bakery French Rolls", "Hawaiian Bar", "Hawaiian Macaroni Salad", "Roasted Yams", "Spam Fried Rice", "Sticky Rice", "Teriyaki Chicken Shoyu", "Teriyaki Tofu", "Greek Penne with Spinach & Feta", "Tavern Battered Pollock", "Teriyaki Tofu"]
+		},
+		{
+			"Food": ["Chicken Tortilla Soup", "Tuscan Vegetable Soup", "Oven Roasted Chicken Thigh", "Spicy Beef with Garlic & Basil", "Steamed Rice", "Szechuan Sweet Chili Tofu", "Cheese Pizza", "Focaccia Pizza with Basil Pesto", "Pepperoni Pizza", "Sauteed Seasonal Vegetable", "Chocolate Buttercream Brownie", "Strawberry Lemon Cake", "BAR Wings", "BBQ Wings", "Condiments", "Hawaiian Coleslaw", "Hot 'N Spicy Wings", "Teriyaki Glaze Wings", "Vegan Baked Beans", "Vegan Tenders", "Knockout Burger", "Regular Cut Fries", "Vegan Malibu Burger", "Chef's Special", "Organic Brown Basmati Rice", "Spice Crusted Pork Loin", "Spicy Garbanzo and Vegetable Stir Fry", "Red Skin Mashed Potatoes", "Sweet Potato Fries", "Creamy Wild Mushroom Bisque", "Asian Flank Steak w/Teriyaki", "Pasta Puttanesca with Roasted Vegetables", "Steamed Seasonal Vegetables", "Margherita Pizza", "French Fries", "Gluten Free Ginger Cookie", "Bar Taqueria", "Gaucho Beans", "Mexican Rice", "Soyrizo and Potatoes", "Taqueria Chicken", "Taqueria Ground Beef", "Roasted Toscano Potatoes", "Blended Beef & Mushroom Burger Hawaiian Style", "Tator Tots", "Chicken Noodle Soup", "Creamy Broccoli Cheddar Soup", "Chicken Gravy", "Chicken Lo Mein", "Vegetable Lo Mein", "Buffalo Chicken Pizza", "Berry White Cookie", "UCSC Bakery French Rolls", "Hawaiian Bar", "Hawaiian Macaroni Salad", "Roasted Yams", "Spam Fried Rice", "Sticky Rice", "Teriyaki Chicken Shoyu", "Teriyaki Tofu", "Greek Penne with Spinach & Feta", "Tavern Battered Pollock", "Teriyaki Tofu"]
+		}
+	]
+}
