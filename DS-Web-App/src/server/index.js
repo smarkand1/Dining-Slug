@@ -5,6 +5,11 @@ const cors = require('cors');
 
 const app = express();
 
+const bodyParser = require('body-parser');
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: true}));
+
 const connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
@@ -42,9 +47,11 @@ app.get('/dininghallfood/add', (req,res) => {
     }); 
 });
 
-app.post('/sqlreq', (req,res) => {
-    console.log("Wow, a post request");
-    console.log(res);
+app.post('/dininghallfood', (req,res) => {
+    console.log("Wow, a post request for database");
+    var obj = {};
+    console.log('body: ' + JSON.stringify(req.body));
+    res.send(req.body);
 })
 
 app.get('*', (req,res) => {

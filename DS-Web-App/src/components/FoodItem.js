@@ -51,8 +51,9 @@ export class FoodItem extends React.Component {
     }
 
     componentDidMount(){
-        console.log("MOUNT");
-        this.populateRatings();
+        if(this.props.itemName === "Tator Tots"){
+            this.populateRatings();
+        }
     }
 
     //Change the rating based off of what the user puts in.
@@ -98,11 +99,13 @@ export class FoodItem extends React.Component {
     populateRatings(){
         console.log("Populating rating data");
         try {
+            var data = {};
+            data.Name = this.props.itemName;
             $.ajax({
                 type: "POST",
                 url: '/dininghallfood',
-                dataType: 'json',
-                data: {Name: this.props.itemName},
+                contentType: 'application/json',
+                data: JSON.stringify(data),
                 success: function(res) {
                     console.log(res);
                     alert(res);
@@ -115,8 +118,7 @@ export class FoodItem extends React.Component {
     }
 
     render() {
-        console.log("In render for food item");
-        this.populateRatings();
+ 
         return(
             <div>
                 <button className = "listFood">
