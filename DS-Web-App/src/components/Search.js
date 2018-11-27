@@ -49,15 +49,12 @@ export class Search extends React.Component {
           });
         }
     }
-    callFood(e)
-    {
-      <FoodPage food = {e}/>
-    }
+
     //This function will render our results
     renderResults = r =>{
 
       return (
-        <button onClick={() => {this.callFood(r)}}>{r}</button>
+      <button onClick={() => <FoodPage food = {r}/>}>{r}</button>
       )
     } 
 
@@ -106,4 +103,4 @@ export class Search extends React.Component {
 }
 export default Search;
    
-   
+
