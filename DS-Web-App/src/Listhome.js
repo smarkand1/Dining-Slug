@@ -10,6 +10,15 @@ export class Listhome extends React.Component{
 
 
 	render() {
+		/*
+        Renders the quicknav bar at the top of the page
+        Arguments:
+            None
+        Returns:
+            Component (HTML Div) - HTML div containing the 5 quicknav buttons
+        Raises:
+            None
+        */
 		return (
 			<div>
 				<ul class="quickNavList">

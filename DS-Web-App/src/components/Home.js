@@ -7,6 +7,16 @@ import './Home.css'
 
 export class Home extends React.Component {
     render() {
+        /*
+        Renders the entire home page for the website with buttons to go to each dining hall. Each button contains information
+        about the dining hall including the activity, name, and ratings
+        Arguments:
+            None
+        Returns:
+            Component (HTML Div) - HTML div containing the home page rendering. Components: Search.js, Serving.js, HomeNav.js
+        Raises:
+            None
+        */
         return(
             <div className="App">
                 <header className="App-header">

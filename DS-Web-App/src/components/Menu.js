@@ -4,6 +4,7 @@
 //the constant that has the array of JSON objects
 import React from 'react';
 import { FoodItem } from './FoodItem'
+import { NavLink} from 'react-router-dom';
 import './Menu.css'
 import Collapsible from 'react-collapsible'
 
@@ -24,6 +25,16 @@ export class Menu extends React.Component {
 
     //Render the menu list
     renderList =() =>{
+        /*
+        Chooses which dining hall list to display from
+        Arguments:
+            None
+        Returns:
+            Component (HTML Div) - HTML div containing up to 4 divs.
+            Each div contains the items that the dining is serving at each meal time.
+        Raises:
+            None
+        */
         //Determine which JSON objecy to look at based on what the user clicked
         let model = this.state.recipes[this.props.hallCode];
         let title = model.Title; //Dining hall title
@@ -38,7 +49,9 @@ export class Menu extends React.Component {
             let foodUI = foodArr.map((foodItem) => {
                 return(
                     <li>
-                        <FoodItem itemName = {foodItem} />
+                        <NavLink to = {`/food/${foodItem}`}>
+                            <FoodItem itemName = {foodItem} />
+                        </NavLink>
                     </li>
 
                 );          
@@ -61,6 +74,15 @@ export class Menu extends React.Component {
    }
 
     render() {
+        /*
+        Renders the drop down box for the menu on a dining hall page
+        Arguments:
+            None
+        Returns:
+            Component (HTML Div) - HTML div containing the items the dining hall is serving at a certain meal time
+        Raises:
+            None
+        */
         return (
             <div class="wrapper">
                 {this.renderList()}

@@ -1,7 +1,9 @@
 import React from 'react';
+import FoodPage from './FoodPage.js';
 import './DiningHall';
-import dataList from './food.json'; //importing dataList
 import './Search.css';
+import { NavLink} from 'react-router-dom';
+import dataList from './search.json'; //importing dataList
 
 
 export class Search extends React.Component {
@@ -51,48 +53,57 @@ export class Search extends React.Component {
 
     //This function will render our results
     renderResults = r =>{
-        return <button title={r} class="searchButton">{r.substring(0, 30)}{ r.length > 30 && "..."}</button>
-    }     
+
+        return (
+        <NavLink to = {`/food/${r}`}>
+            <button className="searchButton">{r}</button>
+        </NavLink>
+        )
+    } 
+
+    
 
     render() {
-      const {query} = this.state; //query is now set to the given state
-      
-      /*
-      Declaration of a filtered variable that will look through the data.json
-      list and create an array containing only those options that match
-      the query result
-      */
-      const filteredItems = dataList[this.props.searchWithCode].Food.filter(r=>
-        {
-            return r.toLowerCase().indexOf(query.toLowerCase()) !== -1
-        })
+        const {query} = this.state; //query is now set to the given state
+        
+        /*
+        Declaration of a filtered variable that will look through the data.json
+        list and create an array containing only those options that match
+        the query result
+        */
+        const filteredItems = dataList.Ids[this.props.searchWithCode].Food.filter(r=>
+            {
+                return r.toLowerCase().indexOf(query.toLowerCase()) !== -1
+            })
 
        
-      return (
-        <div>
-            <input
-                className="searchBar"
-                placeholder="Search..." //Search U.I bar
-                ref={input => this.search = input}
-                onChange={this.onchangeOne}
-            />
-            <div className = "searchBar-content" ref = {(e) =>{this.dropdownMenu = e}}> 
-            {
-                
-    
-                this.state.showMenu
-                ? (
-                    filteredItems.map(r => 
-                    {
-                      return this.renderResults(r) //print out results in a loop
-                    })
-                  ) 
-                : (null)
-            }
+        return (
+            <div>
+                <input
+                    className="searchBar"
+                    placeholder="Search..." //Search U.I bar
+                    ref={input => this.search = input}
+                    onChange={this.onchangeOne}
+                />
+                <div className = "searchBar-content" ref = {(e) =>{this.dropdownMenu = e}} toggleItem = {this.toggleSelected}> 
+                {
+                    
+        
+                    this.state.showMenu
+                    ? (
+                        filteredItems.map(r => 
+                        {
+                        return this.renderResults(r) //print out results in a loop
+                        })
+                    
+                    ) 
+                    : (null)
+                }
+                </div>
             </div>
-        </div>
-      )
+        )
     }
 }
 export default Search;
    
+

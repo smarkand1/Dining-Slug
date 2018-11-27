@@ -7,6 +7,16 @@ import './HomeNav.css';
 
 export class HomeNav extends React.Component{
 	render() {
+		/*
+		Renders the buttons on the home page for the website with buttons to go to each dining hall. 
+		Each button contains information about the dining hall including the activity, name, and ratings
+        Arguments:
+            None
+        Returns:
+            Component (HTML Div) - HTML div containing the home page button layout rendering. Components: Capcity.js, dhRating.js, HomeNav.js
+        Raises:
+            None
+        */
 		return (
 			<div className="bigButtons">
 				<ul className="boxList">
