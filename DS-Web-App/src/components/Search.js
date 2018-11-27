@@ -1,7 +1,8 @@
 import React from 'react';
 import './DiningHall';
-import dataList from './search.json'; //importing dataList
+import dataList from './food.json'; //importing dataList
 import './Search.css';
+import FoodPage from './FoodPage.js';
 
 
 export class Search extends React.Component {
@@ -48,11 +49,19 @@ export class Search extends React.Component {
           });
         }
     }
-
+    callFood(e)
+    {
+      <FoodPage food = {e}/>
+    }
     //This function will render our results
     renderResults = r =>{
-        return <button title={r} class="searchButton">{r.substring(0, 30)}{ r.length > 30 && "..."}</button>
-    }     
+
+      return (
+        <button onClick={() => {this.callFood(r)}}>{r}</button>
+      )
+    } 
+
+    
 
     render() {
       const {query} = this.state; //query is now set to the given state
@@ -76,7 +85,7 @@ export class Search extends React.Component {
                 ref={input => this.search = input}
                 onChange={this.onchangeOne}
             />
-            <div className = "searchBar-content" ref = {(e) =>{this.dropdownMenu = e}}> 
+            <div className = "searchBar-content" ref = {(e) =>{this.dropdownMenu = e}} toggleItem = {this.toggleSelected}> 
             {
                 
     
@@ -86,6 +95,7 @@ export class Search extends React.Component {
                     {
                       return this.renderResults(r) //print out results in a loop
                     })
+                
                   ) 
                 : (null)
             }
@@ -95,4 +105,5 @@ export class Search extends React.Component {
     }
 }
 export default Search;
+   
    
