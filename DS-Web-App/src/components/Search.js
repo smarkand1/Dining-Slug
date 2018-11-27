@@ -1,9 +1,8 @@
 import React from 'react';
-import './DiningHall';
-import dataList from './food.json'; //importing dataList
-import './Search.css';
 import FoodPage from './FoodPage.js';
-
+import './DiningHall';
+import './Search.css';
+import dataList from './search.json'; //importing dataList
 
 export class Search extends React.Component {
     //Set initial States
@@ -54,7 +53,7 @@ export class Search extends React.Component {
     renderResults = r =>{
 
       return (
-      <button onClick={() => <FoodPage food = {r}/>}>{r}</button>
+      <button className="searchButton" onClick={() => <FoodPage food = {r}/>}>{r}</button>
       )
     } 
 
@@ -68,7 +67,7 @@ export class Search extends React.Component {
       list and create an array containing only those options that match
       the query result
       */
-      const filteredItems = dataList[this.props.searchWithCode].Food.filter(r=>
+      const filteredItems = dataList.Ids[this.props.searchWithCode].Food.filter(r=>
         {
             return r.toLowerCase().indexOf(query.toLowerCase()) !== -1
         })
