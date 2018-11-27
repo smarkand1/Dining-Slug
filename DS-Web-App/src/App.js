@@ -3,6 +3,7 @@
 //component while passing the corresponding name of the Dining Hall
 import React, { Component } from 'react';
 import './App.css';
+import { FoodPage } from './components/FoodPage'
 import { Home } from './components/Home';
 import { DiningHall } from './components/DiningHall';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
@@ -29,6 +30,7 @@ class App extends Component {
                     <Route path = "/crown-merrill" exact render = {() => <DiningHall name="Crown/Merrill"/>} />
                     <Route path = "/porter-kresge" exact render = {() => <DiningHall name="Porter/Kresge"/>} />
                     <Route path = "/rcc-oakes" exact render = {() => <DiningHall name="Rachel Carson/Oakes"/>} />
+                    <Route path= "/food" component = {FoodPage} exact strict />
                 </Switch>
             </BrowserRouter>
         );

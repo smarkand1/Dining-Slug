@@ -5,7 +5,7 @@ export class FoodPage extends React.Component {
     constructor(props){
       super(props);
       this.state = {
-          preferences :[],
+          preferences : [],
           correspondingDiningHall : []
       }
     }   
@@ -15,7 +15,9 @@ export class FoodPage extends React.Component {
   render(){
   
     return(
-      alert('Made it into Food Page')
+      <div>
+        {"This is the food page"}
+      </div>
     )
   }
 

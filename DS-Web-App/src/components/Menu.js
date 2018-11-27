@@ -4,6 +4,7 @@
 //the constant that has the array of JSON objects
 import React from 'react';
 import { FoodItem } from './FoodItem'
+import { NavLink} from 'react-router-dom';
 import './Menu.css'
 import Collapsible from 'react-collapsible'
 
@@ -48,7 +49,9 @@ export class Menu extends React.Component {
             let foodUI = foodArr.map((foodItem) => {
                 return(
                     <li>
-                        <FoodItem itemName = {foodItem} />
+                        <NavLink to = "/food" exact>
+                            <FoodItem itemName = {foodItem} />
+                        </NavLink>
                     </li>
 
                 );          
