@@ -107,8 +107,8 @@ export class FoodItem extends React.Component {
                 contentType: 'application/json',
                 data: JSON.stringify(data),
                 success: function(res) {
-                    console.log(res);
-                    alert(res);
+                    console.log(JSON.parse(res));
+
                 }
 
             })

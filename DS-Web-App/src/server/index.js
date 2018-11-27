@@ -47,12 +47,24 @@ app.get('/dininghallfood/add', (req,res) => {
     }); 
 });
 
+//Takes in a post request from the client side
+//The reason why it needs a post is that it needs a 
+//parameter passed to it so that we can send a request to find
+//information for a specific item
 app.post('/dininghallfood', (req,res) => {
     console.log("Wow, a post request for database");
-    var obj = {};
-    console.log('body: ' + JSON.stringify(req.body));
-    res.send(req.body);
-})
+    console.log('body: ' + req.body.Name);
+    //Now we want to create a query for that given item name
+    const FIND_FOOD_QUERY = `SELECT Food_Star_Rating, numberofratings FROM dininghallfood WHERE Name ='${req.body.Name}'`
+    //Make that query via the conection we set up
+    connection.query(FIND_FOOD_QUERY, (err, results) => {
+        if(err){
+            return res.send(err);
+        } else {
+            return res.send(JSON.stringify(results)); //Send the results of the query to the client
+        }
+    });
+});
 
 app.get('*', (req,res) => {
     res.sendFile(path.join(__dirname+ '/../../dist/index.html'));
