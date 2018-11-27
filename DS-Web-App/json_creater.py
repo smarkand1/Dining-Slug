@@ -120,6 +120,8 @@ def print_detailed_menu(file, menu):
             continue
         added[item[NAME]] = {"Preferences" : item[PREFS], "Dining Halls" : [item[DH]]}
 
+    print(added)
+
     #Write each food item to the file
     for food in added:
         file.write("\t\"" + food + "\": {\n")
@@ -254,7 +256,6 @@ print_search_menu(search_file, full_menu)
 search_file.write("\n\t]\n}")
 
 #Writes the food menu file
-print(full_menu)
 print_detailed_menu(food_file, full_menu)
 food_file.write("\n}")
 

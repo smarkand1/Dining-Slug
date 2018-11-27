@@ -4,7 +4,7 @@ import './DiningHall';
 import './Search.css';
 import { NavLink} from 'react-router-dom';
 import dataList from './search.json'; //importing dataList
-import foodList from './food.json'
+
 
 export class Search extends React.Component {
     //Set initial States
@@ -55,8 +55,8 @@ export class Search extends React.Component {
     renderResults = r =>{
 
         return (
-        <NavLink to = "/food" exact>
-            <button className="searchButton" onClick={() => <FoodPage food = {foodList[r]}/>}>{r}</button>
+        <NavLink to = {`/food/${r}`}>
+            <button className="searchButton">{r}</button>
         </NavLink>
         )
     } 
