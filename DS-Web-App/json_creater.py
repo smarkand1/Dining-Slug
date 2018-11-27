@@ -137,6 +137,19 @@ def print_detailed_menu(file, menu):
         file.write("\t\t\"Dining Halls\": " + json.dumps(added[food]["Dining Halls"]) + "\n")
         file.write("\t}")
 
+def append_urls(menu, nutr_menu):
+    #First 4 letters of a phrase that is not a food
+    ILLEGAL_PHRASES = ("Brea", "Lunc", "Dinn", "Late", "Menu")
+    NAME = 0
+    PREFS = 1
+
+    nutr_index = 0
+    for menu_index in range(len(menu)):
+        if menu[menu_index][NAME][:4] in ILLEGAL_PHRASES:
+            continue
+        else:
+            menu[menu_index].append(nutr_menu[nutr_index])
+            nutr_index += 1
 
 '''
 Run to get the current menu from each dining hall. The output is dailyMenu.json
@@ -172,8 +185,12 @@ dhpop.print_google_data(ratings_file, times_file, prev_ratings, prev_times)
 count = 0
 MAX_DINING_HALL_COUNT = 5
 NAME = 0
+
 #Menu consisting of every item regardless of dining hall
 full_menu = []
+
+#Menu consisting of links to nutrition of every item regardless of dining hall
+full_link_menu = []
 
 #Starts the JSON file for dailyMenu.json
 data_file.write("{\n\"data\":[")
@@ -191,16 +208,23 @@ for url in scraper.get_dining_hall_URLs():
         data_file.write(",\n")
     #tests if we get a valid response from the dining hall menu
     #if valid, gets the menu and stores in 'menu' variable
+    #also stores the link to the nutrition info for each item in the 'nutrition' variable
+    #While the links and the food items are in different arrays, the order is the same
+    #Menu does contain data such as date, and meal type (lunch, dinner, etc), so once its cleaned
+    #The first index in menu is the food and the first index in nutrition is the link for it
     try:
         menu = scraper.get_menu(url[1])
-        nutrition = scraper.get_nutrion_info(url[1])
+        nutrition_menu = scraper.get_nutrion_info(url[1])
+        #Add the link member to each food item
     except:
         print("Not a valid link: " + url[1])
         continue
 
     #Fills in which dining hall the food is being served at
+    #Menu at first index (0) is name of item, menu at second index (1) is dining hall its from
     for item in menu:
         item.append(url[0])
+    append_urls(menu, nutrition_menu)
     full_menu.extend(menu)
 
     #Starts outputing data to json file for food.json
