@@ -3,8 +3,8 @@ import React from 'react';
 import Ratings from 'react-ratings-declarative';
 import './DHRating.css'
 
+//Data from googles api containing the ratings and reviews information
 const data = require('./dhRating.json');
-
 const ratings = data.Halls;
 
 export class DHRating extends React.Component {
@@ -13,15 +13,34 @@ export class DHRating extends React.Component {
     }
     
     findStars(hall) {
+        /*
+        Returns the number of stars a dining hall has
+        Arguments:
+            Hall (int) - hall number that corresponds to a dining hall
+            9/10 - 0, cowell-stevenson - 1, crown-merrill - 2, porter-kresge - 3, rcc-oakes - 4
+        Returns:
+            ratingObj (Dictionary) - has the overall number of stars a dining hall has and the number of reviews the dining hall has
+        Raises:
+            None
+        */
         const ratingObj = ratings[hall];
         return ratingObj
     }
 
     //Renders specific information based on what dining hall
     render(){
-        var hall;
+        /*
+        Renders the rating and number of reviews a dining hall has 
+        Arguments:
+            None
+        Returns:
+            Component (HTML Div) - HTML div containing the ratings viewed as stars and the number of reviews based on Googles data
+        Raises:
+            None
+        */
         //We'll need to pass this hall code code the menu component so that 
         //we can render the correct information
+        var hall;
         switch(this.props.hall){
             case "9/10":
                 hall = 0;
@@ -38,9 +57,12 @@ export class DHRating extends React.Component {
             default:
                 hall = 4;       
         }
+
+        //The ratings and reviews for each dining hall and the number of stars
         const ratingObj = this.findStars(hall);
         var ratings = ratingObj["Rating"];
         var reviews = ratingObj["Reviews"];
+
         //Return the rendered component
         return(
             <div className="dinRatings">

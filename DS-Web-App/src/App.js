@@ -9,6 +9,15 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 class App extends Component {
     render() {
+        /*
+        Renders the quick nav bar at the top of the page. Also modifies the browser link in the url
+        Arguments:
+            None
+        Returns:
+            BrowserRouter that contains the 5 dining halls and their navlinks
+        Raises:
+            None
+        */
         //Renders the routers so that the user can navigate to the different
         //pages for each dining hall
         return (

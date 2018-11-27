@@ -8,13 +8,23 @@ export class Serving extends React.Component {
     }
     
     findTimes() {
+        /*
+        Finds what time it is and updates what the dining hall is currently serving based on the time.
+        Arguments:
+            None
+        Returns:
+            Component (HTML Div) - HTML div containing what meal type is being served in the dining hall
+            Types include: Breakfast, Lunch, Dinner, Limited Options, Late night, closed
+        Raises:
+            None
+        */
         //get the system time
         var d = new Date();
         var currTime = d.getHours() * 100 + d.getMinutes();
         var day = d.getDay();
         console.log(day)
         console.log(currTime)
-        //determine whats being served
+        //determine whats being served. Saturday and Sunday have different meal times than the work days of the week
         switch(day){
             case 0:
             case 6:
