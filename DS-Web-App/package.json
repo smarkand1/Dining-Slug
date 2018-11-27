@@ -41,7 +41,7 @@
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "prod": "concurrently \"node src/server/index.js\" \"serve -s dist\""
   },
-  "proxy" : "https://localhost:5000",
+  "proxy": "https://localhost:5000",
   "eslintConfig": {
     "extends": "react-app"
   },

@@ -50,6 +50,11 @@ export class FoodItem extends React.Component {
         this.changeRating = this.changeRating.bind(this);
     }
 
+    componentDidMount(){
+        console.log("MOUNT");
+        this.populateRatings();
+    }
+
     //Change the rating based off of what the user puts in.
     //We will probably want to have the new rating be calculated by what the 
     //average is for the database.w
@@ -63,7 +68,7 @@ export class FoodItem extends React.Component {
   
         //Here, we're gonna have to either update existing data to database.json or 
         //append new data to database.json
-        console.log("Sending post request");
+        console.log("Sending poost request");
         $.ajax({
             type: "POST",
             url: '/sqlreq',
@@ -86,9 +91,32 @@ export class FoodItem extends React.Component {
         });
     }
 
-    render() {
-        
+ 
 
+    //Make a get request to populate the information for each item that exists in the
+    //Database
+    populateRatings(){
+        console.log("Populating rating data");
+        try {
+            $.ajax({
+                type: "POST",
+                url: '/dininghallfood',
+                dataType: 'json',
+                data: {Name: this.props.itemName},
+                success: function(res) {
+                    console.log(res);
+                    alert(res);
+                }
+
+            })
+        } catch {
+            console.log('This food isnt in the database yet');
+        }
+    }
+
+    render() {
+        console.log("In render for food item");
+        this.populateRatings();
         return(
             <div>
                 <button className = "listFood">
