@@ -1,5 +1,5 @@
 import React from 'react';
-import './SearchTest.js';
+import './Search.js';
 
 export class FoodPage extends React.Component {
   constructor(props){
