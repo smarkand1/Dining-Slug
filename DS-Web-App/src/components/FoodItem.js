@@ -51,7 +51,7 @@ export class FoodItem extends React.Component {
     }
 
     componentDidMount(){
-        if(this.props.itemName === "Tator Tots"){
+        if(this.props.itemName === "Bell Peppers"){
             this.populateRatings();
         }
     }
@@ -107,8 +107,14 @@ export class FoodItem extends React.Component {
                 contentType: 'application/json',
                 data: JSON.stringify(data),
                 success: function(res) {
-                    console.log(JSON.parse(res));
-
+                    var result = JSON.parse(res);
+                    if(result[0].Food_Star_Rating !== undefined){
+                        this.setState({ 
+                            rating: result[0].Food_Star_Rating,
+                            reviews: result[0].numberofratings
+                        });
+                        console.log(JSON.parse(res));
+                    }
                 }
 
             })
