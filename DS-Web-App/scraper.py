@@ -13,14 +13,15 @@ def get_dining_hall_URLs():
     Raises:  
         None
     '''
+    SUCCESS_CODE = 200
     #Create BS4 object containing HTML for webpage
     main_url = "https://dining.ucsc.edu/eat/index.html"
     response = requests.get(main_url)
-    if(response.status_code != 200):
+    if(response.status_code != SUCCESS_CODE):
         print("Error in connecting to website")
         return None
     else:
-       print(response.status_code) 
+       print("response code: ", response.status_code) 
     html = response.content
     soup = BeautifulSoup(html, "html.parser")
 
@@ -54,19 +55,6 @@ def get_menu(url):
     '''
     return read_menu_frames(make_frame(url))
 
-def get_nutrion_info(url):
-    '''
-    Gets the menu for each link sent in list format where each entry is a list and each entry in those lists
-    is a food item  
-    Arguments:
-        URL - str
-    Returns:
-        read_menu_frames - (list) frames for each dining hall - (BS4 Object) 
-    Raises:
-        None
-    '''
-    return read_nutrition_frames(make_frame(url))
-
 def read_menu_frames(frame):
     '''
     Gets the food items for each menu for each dining hall and returns it as a list of strings  
@@ -77,55 +65,44 @@ def read_menu_frames(frame):
     Raises:
         None
     '''
-    soup = make_soup_from_frame(frame)
-
-    food_items = []
-    for div in soup.find_all("div", {"class": ["menusamptitle", "menusampmeals", "menusamprecipes"]}):
-        food = []
-        if(div["class"][0] == 'menusamprecipes'):
-            food.append(div.get_text())
-            
-            parent = div.parent
-            siblings = parent.find_next_siblings()
-            preferences = []
-            for sibling in siblings:
-                img = sibling.find("img")["src"]
-                pref = img[13:-4]
-                preferences.append(pref)
-
-            food.append(preferences)
-        else:
-            food.append(div.get_text())
-        food_items.append(food)
-    print(food_items)
-    return food_items
-
-def read_nutrition_frames(frame):
-    '''
-    Gets the links to the food items nutritional information for each menu for each dining hall 
-    and returns it as a list of strings  
-    Arguments:
-        frame - BS4 object
-    Returns:
-        food_items - (list) contains links to dining halls nutrition info list for food items
-    Raises:
-        None
-    '''
+    CLASS_NAME = 0
+    print("Getting items for dining hall")
     base_url = "https://nutrition.sa.ucsc.edu/"
     soup = make_soup_from_frame(frame)
 
-    nutrition_urls = []
-    nutrition_item_urls = []
-    for div in soup.find_all("span", {"class": "menusampnutritive"}):
-        link = (div.find('a').get("href"))
-        url = base_url + link
-        nutrition_urls.append(url)
-    
-    for url in nutrition_urls:
-        soup = make_soup_from_url(url)
-        for div in soup.find_all("div", {"class": "pickmenucoldispname"}):
-            nutrition_item_urls.append(base_url + div.find("a").get("href"))
-    return nutrition_item_urls
+    food_items = []
+    for div in soup.find_all(True, {"class": ["menusamptitle", "menusampmeals", "menusampnutritive"]}):
+        food = []
+        #If the item is a link to the food item page, go there
+        if(div["class"][CLASS_NAME] == 'menusampnutritive'):
+            #Gets the link to the food page
+            link = (div.find('a').get("href"))
+            url = base_url + link
+            inner_soup = make_soup_from_url(url)
+            
+            #Gets all the food on that page
+            for inner_div in inner_soup.find_all("div", {"class": "pickmenucoldispname"}):
+                food = []
+                
+                parent = inner_div.parent
+                siblings = parent.find_next_siblings()
+                preferences = []
+
+                for sibling in siblings:
+                    img = sibling.find("img")["src"]
+                    pref = img[13:-4]
+                    preferences.append(pref)
+
+                food.append(inner_div.find("a").get_text())
+                food.append(preferences)
+                food.append(base_url + inner_div.find("a").get("href"))
+
+                food_items.append(food)
+        else:
+            food.append(div.get_text())
+
+        food_items.append(food)
+    return food_items
 
 def make_soup_from_frame(frame):
     base_url = "https://nutrition.sa.ucsc.edu/"
@@ -139,13 +116,14 @@ def make_soup_from_url(url):
     return soup
 
 def make_frame(url):
+    SUCCESS_CODE = 200
     #Create BS4 object containing HTML for webpage
     response = requests.get(url)
-    if(response.status_code != 200):
+    if(response.status_code != SUCCESS_CODE):
         print("Error in connecting to website")
         return None
     else:
-       print(response.status_code) 
+       print("response code: ", response.status_code)  
     html = response.content
     soup = BeautifulSoup(html, "html.parser")
     frame = soup.find("frame", title="main content window")

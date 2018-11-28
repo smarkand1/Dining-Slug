@@ -3,7 +3,7 @@ import requests
 import dhpop
 import json
 
-def print_menu(file, term, menu, i):
+def print_menu(file, term, menu, food_index):
     '''
     Outputs the data from menu in an object format for each menu
     Object contains attributes: title (string), menu(list of strings)  
@@ -17,33 +17,35 @@ def print_menu(file, term, menu, i):
     raises:
         None
     '''
-    if(i > len(menu) - 1):
-        return i
     NAME = 0
-    title = menu[i][NAME]
+    OUT_OF_BOUNDS = len(menu) - 1
+
+    if(food_index > len(menu) - 1):
+        return food_index
+    title = menu[food_index][NAME]
     file.write("\t\t{\n")
     file.write("\t\t\t\"Title\": \"" + title + "\",\n")
     file.write("\t\t\t\"Food\": [")
 
-    i += 1
-    food = menu[i][NAME]
+    food_index += 1
+    food = menu[food_index][NAME]
     if food != term :
         file.write("\"" + food + "\"")
-        i += 1
-        if(i > len(menu) - 1):
+        food_index += 1
+        if(food_index > OUT_OF_BOUNDS):
             file.write("]\n\t\t}")
-            return i
-        food = menu[i][NAME]
+            return food_index
+        food = menu[food_index][NAME]
 
     while food != term :
         file.write(", \"" + food + "\"")
-        i += 1
-        if(i > len(menu) - 1):
+        food_index += 1
+        if(food_index > OUT_OF_BOUNDS):
             break
-        food = menu[i][NAME]
+        food = menu[food_index][NAME]
 
     file.write("]\n\t\t}")
-    return i
+    return food_index
 
 def print_search_menu(file, menu):
     '''
@@ -57,9 +59,10 @@ def print_search_menu(file, menu):
     raises:
         None
     '''
-    NAME = 0
     #First 4 letters of a phrase that is not a food
     ILLEGAL_PHRASES = ("Brea", "Lunc", "Dinn", "Late", "Menu")
+    NAME = 0
+    LAST = -1
 
     #Keeps track of what was added so as to not add it again
     added = set()
@@ -69,7 +72,7 @@ def print_search_menu(file, menu):
     file.write("\t\t\t\"Food\": [")
 
     #Writes food items to array if it isnt there already
-    for item in menu[:-1]:
+    for item in menu[:LAST]:
         if item[NAME][:4] in ILLEGAL_PHRASES:
             continue
         if item[NAME] in added:
@@ -78,8 +81,8 @@ def print_search_menu(file, menu):
         file.write("\"" + item[NAME] + "\", ")
 
     #Write last item to list so as to avoid comma formatting issues
-    if menu[-1][NAME][:4] not in ILLEGAL_PHRASES:
-        file.write("\"" + menu[-1][NAME] + "\"")
+    if menu[LAST][NAME][:4] not in ILLEGAL_PHRASES:
+        file.write("\"" + menu[LAST][NAME] + "\"")
 
     #Closes off list
     file.write("]\n\t\t}") 
@@ -96,11 +99,13 @@ def print_detailed_menu(file, menu):
     raises:
         None
     '''
-    NAME = 0
-    PREFS = 1
-    DH = 2
     #First 4 letters of a phrase that is not a food
     ILLEGAL_PHRASES = ("Brea", "Lunc", "Dinn", "Late", "Menu")
+    NAME = 0
+    PREFS = 1
+    URL = 2
+    DH = 3
+    LAST = -1
 
     #Keeps track of what was added so as to not add it again
     added = {}
@@ -109,7 +114,7 @@ def print_detailed_menu(file, menu):
     file.write("{\n")
 
     #Sifts out duplicates and combines which dining hall food is served in
-    for item in menu[:-1]:
+    for item in menu[:LAST]:
         #If its not a food item, it skips over it
         if item[NAME][:4] in ILLEGAL_PHRASES:
             continue
@@ -118,38 +123,29 @@ def print_detailed_menu(file, menu):
             if (item[DH] not in added[item[NAME]]["Dining Halls"]):
                 added[item[NAME]]["Dining Halls"].append(item[DH])
             continue
-        added[item[NAME]] = {"Preferences" : item[PREFS], "Dining Halls" : [item[DH]]}
+        added[item[NAME]] = {"Preferences" : item[PREFS], "URL" : item[URL], "Dining Halls" : [item[DH]]}
 
     print(added)
 
-    #Write each food item to the file
+    #Write each food item and its information to the file
+    #writes the first item then deletes it for formatting purposes with commas
     for food in added:
         file.write("\t\"" + food + "\": {\n")
         file.write("\t\t\"Preferences\": " + json.dumps(added[food]["Preferences"]) + ",\n")
+        file.write("\t\t\"URL\": " + json.dumps(added[food]["URL"]) + ",\n")
         file.write("\t\t\"Dining Halls\": " + json.dumps(added[food]["Dining Halls"]) + "\n")
         file.write("\t}")
         del added[food]
         break
+
+    #Writes the rest of the items in the list
     for food in added:
         file.write(",\n")
         file.write("\t\"" + food + "\": {\n")
         file.write("\t\t\"Preferences\": " + json.dumps(added[food]["Preferences"]) + ",\n")
+        file.write("\t\t\"URL\": " + json.dumps(added[food]["URL"]) + ",\n")
         file.write("\t\t\"Dining Halls\": " + json.dumps(added[food]["Dining Halls"]) + "\n")
         file.write("\t}")
-
-def append_urls(menu, nutr_menu):
-    #First 4 letters of a phrase that is not a food
-    ILLEGAL_PHRASES = ("Brea", "Lunc", "Dinn", "Late", "Menu")
-    NAME = 0
-    PREFS = 1
-
-    nutr_index = 0
-    for menu_index in range(len(menu)):
-        if menu[menu_index][NAME][:4] in ILLEGAL_PHRASES:
-            continue
-        else:
-            menu[menu_index].append(nutr_menu[nutr_index])
-            nutr_index += 1
 
 '''
 Run to get the current menu from each dining hall. The output is dailyMenu.json
@@ -183,8 +179,14 @@ times_file = open("DS-Web-App/src/components/poptimes.json", "w")
 dhpop.print_google_data(ratings_file, times_file, prev_ratings, prev_times)
 
 count = 0
-MAX_DINING_HALL_COUNT = 5
 NAME = 0
+DINING_HALL = 0
+DATE = 0
+URL = 1
+FIRST = 1
+INCREMENT_BY_ONE = 1
+MIN_VALID = 4
+MAX_DINING_HALL_COUNT = 5
 
 #Menu consisting of every item regardless of dining hall
 full_menu = []
@@ -201,33 +203,28 @@ search_file.write("{\n\t\"Ids\": [\n")
 for url in scraper.get_dining_hall_URLs():
     #Purpose is to stop after the standard dining halls
     #First 5 links are the 5 dining halls
-    count += 1
+    count += INCREMENT_BY_ONE
     if count > MAX_DINING_HALL_COUNT :
         break
-    elif(count > 1):
+    elif(count > FIRST):
         data_file.write(",\n")
     #tests if we get a valid response from the dining hall menu
     #if valid, gets the menu and stores in 'menu' variable
-    #also stores the link to the nutrition info for each item in the 'nutrition' variable
-    #While the links and the food items are in different arrays, the order is the same
-    #Menu does contain data such as date, and meal type (lunch, dinner, etc), so once its cleaned
-    #The first index in menu is the food and the first index in nutrition is the link for it
+    #menu is a list of lists. Each item in menu is a list with the following at each index:
+    #0: name, 1: preferences (vegan, soy, etc), 2: link to nutrition
     try:
-        menu = scraper.get_menu(url[1])
-        nutrition_menu = scraper.get_nutrion_info(url[1])
-        #Add the link member to each food item
+        menu = scraper.get_menu(url[URL])
     except:
-        print("Not a valid link: " + url[1])
+        print("Not a valid link: " + url[URL])
         continue
 
     #Fills in which dining hall the food is being served at
-    #Menu at first index (0) is name of item, menu at second index (1) is dining hall its from
+    #0: name, 1: preferences (vegan, soy, etc), 2: link to nutrition, 3: dining hall
     for item in menu:
-        item.append(url[0])
-    append_urls(menu, nutrition_menu)
+        item.append(url[DINING_HALL])
     full_menu.extend(menu)
 
-    #Starts outputing data to json file for food.json
+    #Starts outputing data to json file for search.json
     print_search_menu(search_file, menu)
     search_file.write(",\n")
 
@@ -236,33 +233,32 @@ for url in scraper.get_dining_hall_URLs():
 
     #Tests if the dining hall has a name
     try:
-        data_file.write("\t\"Title\": \"" + url[0] + "\",\n")
+        data_file.write("\t\"Title\": \"" + url[DINING_HALL] + "\",\n")
     except:
         data_file.write("\tTitle: \"\",\n")
 
     #Formatting for data    
-    data_file.write("\t\"Date\": \"" + menu[0][NAME] + "\",\n")
-    data_file.write("\t\"Hours\": " + "\"Hours go here\"," + "\n")
+    data_file.write("\t\"Date\": \"" + menu[DATE][NAME] + "\",\n")
     data_file.write("\t\"Menu\": [\n")
     
     #Prints the food for that dining hall
-    if len(menu) >= 4 :
-        i = 1
+    if len(menu) >= MIN_VALID :
+        index = 1
         #Print the items for breakfast
-        if(menu[i][NAME] == "Breakfast"):
-            i = print_menu(data_file, "Lunch", menu, i)
+        if(menu[index][NAME] == "Breakfast"):
+            index = print_menu(data_file, "Lunch", menu, index)
             data_file.write(",\n")
         #Print items for lunch
-        if(menu[i][NAME] == "Lunch"):
-            i = print_menu(data_file, "Dinner", menu, i)
+        if(menu[index][NAME] == "Lunch"):
+            index = print_menu(data_file, "Dinner", menu, index)
             data_file.write(",\n")
         #Print items for Dinner
-        if(menu[i][NAME] == "Dinner"):  
-            i = print_menu(data_file, "Late Night", menu, i)
+        if(menu[index][NAME] == "Dinner"):  
+            index = print_menu(data_file, "Late Night", menu, index)
         #Print items for late night if it exists
-        if i != len(menu) :
+        if index != len(menu) :
             data_file.write(",\n")
-            i = print_menu(data_file, "", menu, i)
+            index = print_menu(data_file, "", menu, index)
             data_file.write("\n")
         else:
             data_file.write(",\n")
@@ -272,14 +268,14 @@ for url in scraper.get_dining_hall_URLs():
             data_file.write("\n\t\t}\n")
     data_file.write("\t]\n}")
 
-#Closes off the JSON files
+#Closes off the dailMenu.json file
 data_file.write("]\n}")
 
-#Writes the search menu file
+#Writes the search.json file
 print_search_menu(search_file, full_menu)
 search_file.write("\n\t]\n}")
 
-#Writes the food menu file
+#Writes the food.json file
 print_detailed_menu(food_file, full_menu)
 food_file.write("\n}")
 
@@ -287,4 +283,5 @@ food_file.write("\n}")
 data_file.close()   
 search_file.close()   
 ratings_file.close()
-times_file.close()  
+times_file.close()
+food_file.close()  
