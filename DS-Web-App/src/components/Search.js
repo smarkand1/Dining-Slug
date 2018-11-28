@@ -1,5 +1,4 @@
 import React from 'react';
-import FoodPage from './FoodPage.js';
 import './DiningHall';
 import './Search.css';
 import { NavLink} from 'react-router-dom';
