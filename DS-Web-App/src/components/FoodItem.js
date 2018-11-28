@@ -23,6 +23,7 @@ export class FoodItem extends React.Component {
             alreadyReviewed: 0
         };
         this.changeRating = this.changeRating.bind(this);
+        this.populateRatings = this.populateRatings.bind(this);
     }
 
     //Change the rating based off of what the user puts in.
@@ -58,7 +59,7 @@ export class FoodItem extends React.Component {
         } else {
             $.ajax({
                 type: "POST",
-                url: "dininghallfood/add",
+                url: '/dininghallfood/add',
                 data: {
                         Name: this.props.itemName,
                         Rating: totalRating,
@@ -89,14 +90,18 @@ export class FoodItem extends React.Component {
     populateRatings(){
         //console.log("Populating rating data");
         //Let's make a post call to the server
+        var newRating = 0;
+        var newOverallRating = 0;
+        var newReviews = 0;
+        var doesExist = false;
         try {
             var data = {};
             data.Name = this.props.itemName;
             //We want to use the item's name as a parameter for lookup in the 
             //database. The database name is dininghallfood, which is the url that
             //we want to send the query to. 
-            $.ajax({
-                type: "POST",
+            
+            /*$.post({
                 url: '/dininghallfood',
                 contentType: 'application/json',
                 data: JSON.stringify(data),
@@ -107,21 +112,46 @@ export class FoodItem extends React.Component {
                     //IF the result was empty, the data isnt in the database yet, use use 0 for ratings 
                     //and reviews. If it is in the database, then use that info to populate the fields
                     if(result[0] !== undefined){
-                        var newRating = result[0].Food_Star_Rating/result[0].Number_Of_Ratings;
-                        this.setState({ 
-                            rating: newRating,
-                            overallRating: result[0].Food_Star_Rating,
-                            reviews: result[0].Number_Of_Ratings,
-                            isInDatabase: true
-                        });
+                        console.log(result[0]);
+                        newRating = result[0].Food_Star_Rating/result[0].Number_Of_Ratings;
+                        newOverallRating = result[0].Food_Star_Rating;
+                        newReviews = result[0].Number_Of_Ratings;
+                        doesExist = true;
                         //console.log(JSON.parse(res));
                     }
                 }
 
+            })*/
+            fetch("/dininghallfood", {
+                method: "POST",
+                mode: "cors",
+                headers: {
+                    "Content-Type": "application/json; charset=utf-8"
+                },
+                body: JSON.stringify(data)
             })
+                .then(res => res.json())
+                .then( (result) => {
+                    if(result[0] !== undefined){
+                        console.log("Grabbed from db");
+                        this.setState({
+                            rating: (result[0].Food_Star_Rating/result[0].Number_Of_Ratings),
+                            overallRating: result[0].Food_Star_Rating,
+                            reviews: result[0].Number_Of_Ratings,
+                            isInDatabase: true
+                        });
+                    }
+                })
         } catch {
             console.log('This food isnt in the database yet');
         }
+        /*console.log("New rating ", newOverallRating);
+            this.setState({ 
+                rating: newRating,
+                overallRating: newOverallRating,
+                reviews: newReviews,
+                isInDatabase: doesExist
+        });*/
     }
 
     render() {

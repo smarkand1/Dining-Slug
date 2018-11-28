@@ -49,9 +49,7 @@ export class Menu extends React.Component {
             let foodUI = foodArr.map((foodItem) => {
                 return(
                     <li>
-                        <NavLink to = {`/food/${foodItem}`}>
-                            <FoodItem itemName = {foodItem} />
-                        </NavLink>
+                        <FoodItem itemName = {foodItem} />
                     </li>
 
                 );          
