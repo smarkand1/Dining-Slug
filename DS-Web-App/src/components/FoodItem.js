@@ -38,8 +38,10 @@ export class FoodItem extends React.Component {
         var newRating = (userRating + (this.state.rating * this.state.reviews))/ newReviews;
   
         var totalRating = userRating + this.state.overallRating;
-        //Here, we're gonna have to either update existing data to database.json or 
-        //append new data to database.json
+        //Now we need to update the database since there's been a change in rating. 
+        //If the item is in the database, then we can update it with a post call
+        //to the update url.
+        //If its not in the database, we have to add it to the db with the new rating
         if(this.state.isInDatabase){
             $.ajax({
                 type: "POST",
@@ -80,7 +82,9 @@ export class FoodItem extends React.Component {
             alreadyReviewed: 1
         });
     }
-
+    
+    //This gets called when a component is rendering. It'll be used to update the state when
+    //a change in the current state is detected
     componentDidMount(){
         this.populateRatings();
     }
@@ -95,7 +99,7 @@ export class FoodItem extends React.Component {
             var data = {};
             data.Name = this.props.itemName;
             //We want to send a post request to the server, and then
-            //use that data to load 
+            //use that data to load each of the food items that we need for the menus
             fetch("/dininghallfood", {
                 method: "POST",
                 mode: "cors",
@@ -106,7 +110,7 @@ export class FoodItem extends React.Component {
             })
                 .then(res => res.json())
                 .then( (result) => {
-                    if(result[0] !== undefined){
+                    if(result[0] !== undefined){ //Make sure that we actually got data back. If we did, the item is in the db
                         console.log("Grabbed from db");
                         this.setState({
                             rating: (result[0].Food_Star_Rating/result[0].Number_Of_Ratings),
@@ -119,13 +123,7 @@ export class FoodItem extends React.Component {
         } catch {
             console.log('This food isnt in the database yet');
         }
-        /*console.log("New rating ", newOverallRating);
-            this.setState({ 
-                rating: newRating,
-                overallRating: newOverallRating,
-                reviews: newReviews,
-                isInDatabase: doesExist
-        });*/
+
     }
 
     render() {

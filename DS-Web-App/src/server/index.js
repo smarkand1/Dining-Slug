@@ -1,15 +1,16 @@
 const express = require('express');
 const path = require('path');
 const mysql = require('mysql');
-const cors = require('cors');
+const cors = require('cors'); //Allow for cross origin resource sharing
 
 const app = express();
 
 const bodyParser = require('body-parser');
 
-app.use(bodyParser.json());
+app.use(bodyParser.json()); //We'll need this to parse the data we get for post calls
 app.use(bodyParser.urlencoded({extended: true}));
 
+//Set up the connection to mysql.
 const connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
@@ -17,14 +18,13 @@ const connection = mysql.createConnection({
     database: 'diningslug'
 });
 
-
+//make that dope connection
 connection.connect(err => {
     if(err) {
         return err;
     }
 });
 
-console.log(connection);
 
 //serve the state files from the React app
 app.use(express.static("dist"));
@@ -68,6 +68,7 @@ app.post('/dininghallfood', (req,res) => {
     });
 });
 
+//Update an already existing entry in the database
 app.post('/dininghallfood/update', (req,res) => {
     console.log("Updating the database with a new review");
     console.log("New rating: " + req.body.Rating);
