@@ -16,7 +16,7 @@ export class FoodPage extends React.Component {
     //this.state["preferences"] is an array of vegan, soy, etc. items
     //This array could be empty
 
-    //this.state["url"] is the url
+    //this.state["url"] is the url of the food items nutritional information
     
     //this.state["diningHall"] is an array of the dining halls the item is serving in
     //This array always has at least 1 element in it 
@@ -25,18 +25,22 @@ export class FoodPage extends React.Component {
     render(){
         return(
             <div>
-                This is the food page
+                <div>
+                    Food Item Name
+                </div>
                 <div>
                     {this.state["preferences"]}
                 </div>
                 <div>
-                    {this.state["url"]}
+                    <a href={this.state["url"]}>Click Here for Nutritional Info!</a>
                 </div>
                 <div>
                     {this.state["diningHalls"]}
                 </div>
             </div>
+
         )
+
     }
 
 }
