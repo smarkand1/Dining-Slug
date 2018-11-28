@@ -1,7 +1,7 @@
 import React from 'react';
-import './Search.js';
-import foodList from './food.json'
-
+import { Search } from './Search';
+import foodList from './food.json';
+import { Listhome } from './../Listhome';
 
 export class FoodPage extends React.Component {
     constructor(props){
@@ -32,6 +32,12 @@ export class FoodPage extends React.Component {
                         <img src ={require('./slug.png')}/>
                     </div>
                     <div className="gradient"></div>
+                    <div className="topBar">
+                        <Listhome/>
+                        <div className="searchItem">
+                            <Search searchWithCode = {5}/>
+                        </div>
+                    </div>
                     <h1>
                         {this.props.location.pathname.substring(6)}
                     </h1>
@@ -44,7 +50,12 @@ export class FoodPage extends React.Component {
                     <h2>
                         You can find this food at: {this.state["diningHalls"]}
                     </h2>
+                    <div>
+                     <button class="diningslugbutton" onClick ={() => {this.props.history.goBack()}}>Go Back</button>
+                    </div>
                     </header>
+
+                    
             </div>
 
         )
