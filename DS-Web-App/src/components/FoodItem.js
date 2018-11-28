@@ -14,46 +14,15 @@ var database = require('./database.json');
 export class FoodItem extends React.Component {
     constructor(props){
         super(props);
-        //I know this is probably a horrible way to test it, but right now I just have
-        //Some select food items in a dummy.json file, which will be our test database
-        //We will update the food Item's rating based on what is in our database
-        //****What WE STILL NEED: ******
-        // - We still need a way to have javascript pull information from the database
-        // - I've been looking into ways for having the javascript file update the 
-        //   database, most likely using $.post calls from jQuery to send values to the
-        //   php file that updates the database.
-        var foodName = this.props.itemName;
-        var currentRating = 0;
-        var foodIndex;
-        var currentReviews = 0;
-        //This just does some ugly linear search to find out whether or not
-        //the food item is in the dummy database. Don't worry about how its 
-        //Implemented because it'll most likely not do this in the 
-        //final product 
-        // UPDATE:
-        //whoops, that didnt go so well did it?
-        try {
-            currentReviews = database[foodName].Reviews;
-            currentRating = database[foodName].Rating / database[foodName].Reviews;
-        } catch {
-            currentReviews = 0;
-            currentRating = 0;
-        }
 
         this.state = {
-            rating: currentRating,
-            reviews: currentReviews,
-            foodCode: foodIndex,
-            database: database,
+            rating: 0,
+            overallRating: 0,
+            reviews: 0,
+            isInDatabase: false,
             alreadyReviewed: 0
         };
         this.changeRating = this.changeRating.bind(this);
-    }
-
-    componentDidMount(){
-        if(this.props.itemName === "Bell Peppers"){
-            this.populateRatings();
-        }
     }
 
     //Change the rating based off of what the user puts in.
@@ -67,53 +36,85 @@ export class FoodItem extends React.Component {
         var newReviews = this.state.reviews + 1;
         var newRating = (userRating + (this.state.rating * this.state.reviews))/ newReviews;
   
+        var totalRating = userRating + this.state.overallRating;
         //Here, we're gonna have to either update existing data to database.json or 
         //append new data to database.json
-        console.log("Sending poost request");
-        $.ajax({
-            type: "POST",
-            url: '/sqlreq',
-            data: {Food : "Big Food"},
-            success: function(response){
-                console.log(response);
-            },
-            failure: function(err){
-                console.log("Awww shit");
-            }
-        })
-
+        if(this.state.isInDatabase){
+            $.ajax({
+                type: "POST",
+                url: '/dininghallfood/update',
+                data: {
+                        Name: this.props.itemName,
+                        Rating: totalRating,
+                        Reviews: newReviews
+                      },
+                success: function(response){
+                    console.log(response);
+                },
+                failure: function(err){
+                    console.log("Awww shit");
+                }
+            })
+        } else {
+            $.ajax({
+                type: "POST",
+                url: "dininghallfood/add",
+                data: {
+                        Name: this.props.itemName,
+                        Rating: totalRating,
+                        Reviews: newReviews
+                      },
+                success: (response) => {
+                    console.log(response);
+                }
+            })
+        }
         
 
         console.log("NEW RATING: ", newRating);
         this.setState({
             rating: newRating,
+            overallRating: totalRating,
             reviews: newReviews,
             alreadyReviewed: 1
         });
     }
 
- 
+    componentDidMount(){
+        this.populateRatings();
+    }
 
     //Make a get request to populate the information for each item that exists in the
     //Database
     populateRatings(){
-        console.log("Populating rating data");
+        //console.log("Populating rating data");
+        //Let's make a post call to the server
         try {
             var data = {};
             data.Name = this.props.itemName;
+            //We want to use the item's name as a parameter for lookup in the 
+            //database. The database name is dininghallfood, which is the url that
+            //we want to send the query to. 
             $.ajax({
                 type: "POST",
                 url: '/dininghallfood',
                 contentType: 'application/json',
                 data: JSON.stringify(data),
                 success: function(res) {
+                    //If we have a successful return, then we want to take the result and parse
+                    //it so that we can extract the information.
                     var result = JSON.parse(res);
-                    if(result[0].Food_Star_Rating !== undefined){
+                    //IF the result was empty, the data isnt in the database yet, use use 0 for ratings 
+                    //and reviews. If it is in the database, then use that info to populate the fields
+                    if(result[0] !== undefined){
+                        var newRating = result[0].Food_Star_Rating/result[0].Number_Of_Ratings;
                         this.setState({ 
-                            rating: result[0].Food_Star_Rating,
-                            reviews: result[0].numberofratings
+                            rating: newRating,
+                            overallRating: result[0].Food_Star_Rating,
+                            reviews: result[0].Number_Of_Ratings,
+                            isInDatabase: true
                         });
-                        console.log(JSON.parse(res));
+                        //console.log(JSON.parse(res));
                     }
                 }
 
