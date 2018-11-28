@@ -90,38 +90,12 @@ export class FoodItem extends React.Component {
     populateRatings(){
         //console.log("Populating rating data");
         //Let's make a post call to the server
-        var newRating = 0;
-        var newOverallRating = 0;
-        var newReviews = 0;
-        var doesExist = false;
+       
         try {
             var data = {};
             data.Name = this.props.itemName;
-            //We want to use the item's name as a parameter for lookup in the 
-            //database. The database name is dininghallfood, which is the url that
-            //we want to send the query to. 
-            
-            /*$.post({
-                url: '/dininghallfood',
-                contentType: 'application/json',
-                data: JSON.stringify(data),
-                success: function(res) {
-                    //If we have a successful return, then we want to take the result and parse
-                    //it so that we can extract the information.
-                    var result = JSON.parse(res);
-                    //IF the result was empty, the data isnt in the database yet, use use 0 for ratings 
-                    //and reviews. If it is in the database, then use that info to populate the fields
-                    if(result[0] !== undefined){
-                        console.log(result[0]);
-                        newRating = result[0].Food_Star_Rating/result[0].Number_Of_Ratings;
-                        newOverallRating = result[0].Food_Star_Rating;
-                        newReviews = result[0].Number_Of_Ratings;
-                        doesExist = true;
-                        //console.log(JSON.parse(res));
-                    }
-                }
-
-            })*/
+            //We want to send a post request to the server, and then
+            //use that data to load 
             fetch("/dininghallfood", {
                 method: "POST",
                 mode: "cors",
