@@ -6,12 +6,6 @@ import { Listhome } from './../Listhome';
 export class FoodPage extends React.Component {
     constructor(props){
         super(props);
-        var food = this.props.location.pathname.substring(6);
-        this.state = {
-            preferences : foodList[food]["Preferences"].join(", "),
-            url : foodList[food]["URL"],
-            diningHalls : foodList[food]["Dining Halls"].join(", ")
-        }
     }
   
     //this.state["preferences"] is an array of vegan, soy, etc. items
@@ -24,6 +18,12 @@ export class FoodPage extends React.Component {
 
     //Any formatting will appear here.
     render(){
+        var food = this.props.location.pathname.substring(6);
+        this.state = {
+            preferences : foodList[food]["Preferences"].join(", "),
+            url : foodList[food]["URL"],
+            diningHalls : foodList[food]["Dining Halls"].join(", ")
+        }
         return(
             <div className="App">
                 <header className="App-header">
@@ -45,7 +45,7 @@ export class FoodPage extends React.Component {
                         Food Contains: {this.state["preferences"]}
                     </h2>
                     <h2>
-                        <a href={this.state["url"]}>Click Here for Nutritional Info!</a>
+                        <a href={this.state["url"]} target="_blank">Click Here for Nutritional Info!</a>
                     </h2>
                     <h2>
                         You can find this food at: {this.state["diningHalls"]}

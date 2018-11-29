@@ -11,7 +11,7 @@
 
 .serving {
     flex: 1;
-    margin-top: 0.5vh;
+    margin-top: 12px;
     margin-left: 1vmin;
     font-size: 3vmin;
     float: left;

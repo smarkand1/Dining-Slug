@@ -91,6 +91,7 @@ def read_menu_frames(frame):
                 for sibling in siblings:
                     img = sibling.find("img")["src"]
                     pref = img[13:-4]
+                    pref = convert_img_name(pref)
                     preferences.append(pref)
 
                 food.append(inner_div.find("a").get_text())
@@ -128,3 +129,32 @@ def make_frame(url):
     soup = BeautifulSoup(html, "html.parser")
     frame = soup.find("frame", title="main content window")
     return frame
+
+def convert_img_name(name):
+    if(name.lower() == "eggs"):
+        return "Eggs"
+    elif(name.lower() == "fish"):
+        return "Fish"
+    elif(name.lower() == "gluten"):
+        return "Gluten Free"
+    elif(name.lower() == "milk"):
+        return "Dairy"
+    elif(name.lower() == "nuts"):
+        return "Peanuts and/or Tree Nuts"
+    elif(name.lower() == "soy"):
+        return "Soy"
+    elif(name.lower() == "vegan"):
+        return "Vegan"
+    elif(name.lower() == "veggie"):
+        return "Vegetarian"
+    elif(name.lower() == "pork"):
+        return "Pork"
+    elif(name.lower() == "beef"):
+        return "Beef"
+    elif(name.lower() == "halal"):
+        return "Halal"
+    elif(name.lower() == "kosher-ingredients"):
+        return "Kosher Ingredients"
+    else:
+        return name
+    

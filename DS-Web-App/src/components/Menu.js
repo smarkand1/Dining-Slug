@@ -61,7 +61,7 @@ export class Menu extends React.Component {
             if(foodArr.length > 0){
                 return (
                     <Collapsible trigger = {<button className="collapsibleButton ">{time}</button>}>
-                        <ul>
+                        <ul className="menuList">
                             {foodUI}
                         </ul>
                     </Collapsible>
@@ -84,7 +84,7 @@ export class Menu extends React.Component {
             None
         */
         return (
-            <div class="wrapper">
+            <div>
                 {this.renderList()}
             </div>
         );

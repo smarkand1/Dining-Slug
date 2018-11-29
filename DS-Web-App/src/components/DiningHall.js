@@ -37,7 +37,6 @@ export class DiningHall extends React.Component {
                 break;
             default:
                 hall = 4;       
-
         }
 
         //Return the rendered component
@@ -45,7 +44,7 @@ export class DiningHall extends React.Component {
             <div className="App">
                 <header className="App-header">
                     <div className="title">
-                        {this.props.name}
+                        Dining Slug - {this.props.name}
                         <img src ={require('./slug.png')}/>
                     </div>
                     <div className="gradient"></div>
