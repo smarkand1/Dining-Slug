@@ -22,7 +22,7 @@ export class Search extends React.Component {
         this.setState({query: e.target.value}); //Log in target value
 
         e.preventDefault(); //prevent default event...
-        
+
         if(e.target.value === ""){ //if target input is blank, don't show Menu
             this.setState({
                 showMenu : false 
@@ -39,7 +39,10 @@ export class Search extends React.Component {
 
     //closeMenu will close based upon event passed in which is a click
     closeMenu(e){
-        if (this.dropdownMenu === null || !this.dropdownMenu.contains(e.target)){
+        var searchBarFood = document.getElementById("textField");
+        var isFocused = (document.activeElement === searchBarFood);
+
+        if (this.dropdownMenu === null || !this.dropdownMenu.contains(e.target) || !isFocused){
           this.setState({showMenu: false}, () => 
           {
             document.removeEventListener('click',this.closeMenu) //we will need to remove the event listener at this point
@@ -51,7 +54,7 @@ export class Search extends React.Component {
     renderResults = r =>{
         return (
         <NavLink to = {`/food/${r}`}>
-            <button className="searchButton">{r}</button>
+            <button className="searchButton" id="searchBarFood">{r}</button>
         </NavLink>
         )
     } 
@@ -86,11 +89,12 @@ export class Search extends React.Component {
             <div>
                 <input
                     className = "searchBar"
+                    id = "textField"
                     placeholder = {searchText} //Search U.I bar
                     ref = {input => this.search = input}
                     onChange = {this.onchangeOne}
                 />
-                <div className = "searchBar-content" ref = {(e) =>{this.dropdownMenu = e}} toggleItem = {this.toggleSelected}> {
+                <div className = "searchBar-content" id="dropDown" ref = {(e) =>{this.dropdownMenu = e}} toggleItem = {this.toggleSelected}> {
                     this.state.showMenu ? (
                         filteredItems.map(r => {
                         return this.renderResults(r) //print out results in a loop
