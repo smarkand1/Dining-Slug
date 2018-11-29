@@ -14,5 +14,6 @@
 }
 
 .listFood:hover {
+    border-radius: 0px;
     background-color: #002b4e;
 }

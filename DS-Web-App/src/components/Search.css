@@ -1,6 +1,7 @@
 /*Search Bar Styling*/
 .searchBar {
-    width: 20vw;
+    width: 30vw;
+    min-width: 300px;
     height: 30px;
     padding: 0;
     margin: 0;
@@ -68,7 +69,8 @@ input {
     position: absolute;
     overflow: hidden;
     background-color: rgba(0,60,108);
-    width: 20vw;
+    width: 30vw;
+    min-width: 300px;
     max-height: 40vh;
 }
 

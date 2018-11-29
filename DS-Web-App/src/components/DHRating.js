@@ -27,6 +27,15 @@ export class DHRating extends React.Component {
         return ratingObj
     }
 
+    displayRatings(){
+        var x = document.getElementById("");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+
     //Renders specific information based on what dining hall
     render(){
         /*
@@ -84,7 +93,7 @@ export class DHRating extends React.Component {
                 <div className="numReviews">
                     Google Reviews: {reviews}
                 </div>
-            </div>
+            </div>            
         );
     }
 }

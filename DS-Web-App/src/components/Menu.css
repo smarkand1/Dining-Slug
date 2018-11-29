@@ -1,13 +1,6 @@
-.food{
-    font-size:10px;
-}
 
-.wrapper {
-    text-align: center;
-    overflow: hidden;
-}
-
-.wrapper ul{
+/*The list properties: positioning, type*/
+.menuList{
     display: block;
     margin: 0;
     padding: 0;
@@ -16,22 +9,7 @@
     align-items: center;
 }
 
-.wrapper li {
-    float: none;
-    background-color: rgba(0,60,108);
-    color: black;
-    border-right:none;
-    text-align: center;
-    font-size: 15px;
-    text-decoration: none;
-    display:block;
-    width: 30vw;
-}
-
-.wrapper li:last-child {
-    border-right: none;
-}
-
+/*The collapsible button style*/
 .Collapsible{
     overflow: hidden;
     cursor: pointer;
@@ -45,32 +23,49 @@
     background-color: rgba(0,60,108);
     margin-left: calc(50vw - 15vw);
     width: 30vw;
+    transition-timing-function: ease-out;
+    transition-duration: 0.3s;
+    /* Safari Support*/
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 0.3s;
 }
 
+.Collapsible:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    transition-timing-function: ease-out;
+    transition-duration: 0.3s;
+    /* Safari Support*/
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 0.3s;
+}
+
+/*The button for the collapsible styles*/
 .collapsibleButton{
     cursor: pointer;
     display: block;
     font-size: 2vw;
     color: #ffffff;
-    margin: 10px 8px;
+    padding: 10px 8px;
     font-weight: bold;
     border: none;
     background-color: rgba(0,60,108);
     width: 30vw;
+    transition-timing-function: ease-out;
+    transition-duration: 0.3s;
+    /* Safari Support*/
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 0.3s;
 }
 
 .collapsibleButton:focus{
     outline: none;
 }
 
-.Collapsible__trigger.is-open {
+.collapsibleButton:hover{
     background-color: #fdc700;
-    color:black;
-    transition: width 2s;
-    width: 30vw;
-}
-
-.Collapsible.isOpen {
-    background-color: #fdc700;
-    
+    transition-timing-function: ease-out;
+    transition-duration: 0.3s;
+    /* Safari Support*/
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 0.3s;
 }
