@@ -26,10 +26,9 @@ export class FoodPage extends React.Component {
         //Render the list of food preferences
         let prefUI = preferences.map((pref) => {
             return(
-                <li>
+                <div className="prefItem">
                     {pref}
-                </li>
-
+                </div>
             );          
         });
         return prefUI;
@@ -50,10 +49,12 @@ export class FoodPage extends React.Component {
         var diningHalls = halls;
         //Render the list of food preferences
         let hallUI = diningHalls.map((hall) => {
+            hall = hall.replace("Menu", "");
+            hall = hall.replace("Ten", "Ten Dining Hall");
             return(
-                <li>
+                <div className="hallItem">
                     {hall}
-                </li>
+                </div>
 
             );          
         });
@@ -92,39 +93,37 @@ export class FoodPage extends React.Component {
                             <Search searchWithCode = {5}/>
                         </div>
                     </div>
+
                     <div className="foodPageTitle">
                         {this.props.location.pathname.substring(6)}
                     </div>
-                    <div className="wrapperr">
-                        <ul className="leftBoxList">
-                            <li className="leftBoxListItem">
-                                <u>
-                                    Contains
-                                </u>
-                                <ul className="prefList">
-                                    {this.renderListPref(this.state["preferences"])}
-                                </ul>
-                            </li>
-                            <li className="leftBoxListItem">
-                                <a href={this.state["url"]} target="_blank">Click Here for Nutritional Info!</a>
-                            </li>
 
-                        </ul>
-                        
-                        <ul className="rightBoxList">
-                            <li className="rightBoxListItem">
-                                <u>
-                                    Serving At
-                                </u>
-                                <ul className="hallList">
+                    <div className="wrapper">
+                        <div className="leftBox">
+                            <div className="leftBoxPrefs">
+                                <u>About</u>
+                                <div className="prefList">
+                                    {this.renderListPref(this.state["preferences"])}
+                                </div>
+                            </div>
+                            <div className="leftBoxURL">
+                                <a href={this.state["url"]} target="_blank" className="nutURL">Click Here for Nutritional Info!</a>
+                            </div>
+
+                        </div>
+                        <div className="rightBox">
+                            <div className="rightBoxServing">
+                                <u>Serving At</u>
+                                <div className="hallList">
                                     {this.renderListHalls(this.state["diningHalls"])}
-                                </ul>
-                            </li>
-                            <li className="rightBoxListItem">
-                                <FoodItem itemName = {this.props.location.pathname.substring(6)} />
-                            </li>
-                        </ul>
+                                </div>
+                            </div>
+                            <div className="rightBoxRating">
+                                <FoodItem itemName = {this.props.location.pathname.substring(6)} className="foodItemRating"/>
+                            </div>
+                        </div>
                     </div>
+
                     <button class="backButton" onClick ={() => {this.props.history.goBack()}}>
                         Go Back
                     </button>

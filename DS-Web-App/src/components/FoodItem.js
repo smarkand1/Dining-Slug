@@ -8,7 +8,6 @@ import React from 'react';
 import './FoodItem.css';
 import Ratings from 'react-ratings-declarative';
 import fs from 'fs';
-import { NavLink} from 'react-router-dom';
 var database = require('./database.json');
 
 export class FoodItem extends React.Component {
@@ -83,15 +82,8 @@ export class FoodItem extends React.Component {
     }
 
     render() {
-        
-
         return(
-            <li className="foodItem">
-                <NavLink to = {`/food/${this.props.itemName}`}>
-                    <button className="foodButton">
-                        {this.props.itemName}
-                    </button>
-                </NavLink>
+            <div>
                 <div className="divText">
                     Rating : <Ratings  
                         rating = {this.state.rating}
@@ -109,8 +101,7 @@ export class FoodItem extends React.Component {
                     </Ratings> 
                 </div>
                 Reviews: {this.state.reviews}
-            </li>
-               
+            </div>
         );
     }
 }
