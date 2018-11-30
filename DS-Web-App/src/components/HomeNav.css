@@ -17,6 +17,9 @@
 }
 
 .rating{
+    position: absolute;
+    top: calc(6vh - 1.5vmin);
+    left: 66vw;
     vertical-align: middle;
     display: inline-block;
     text-align: center;
@@ -38,6 +41,7 @@
 }
 
 .boxItem {
+    position: relative;
     width: 100%;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -68,7 +72,7 @@
     border: 1.5px solid #fdc700;
     border-radius: 20px;
 
-    padding: 5vh 0;
+    padding: 6vh 0;
 
     width: 100%;
     -webkit-box-sizing: border-box;

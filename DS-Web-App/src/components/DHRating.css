@@ -3,6 +3,12 @@
     padding: 0px;
 }
 
-.numReviews {
+.reviews {
     font-size: 2vmin;
+    text-decoration: none;
+    color: white;
+}
+
+.reviews:hover{
+    text-decoration: underline;
 }
