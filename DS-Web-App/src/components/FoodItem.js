@@ -87,11 +87,11 @@ export class FoodItem extends React.Component {
 
         return(
             <li className="foodItem">
-                <button className="foodButton">
-                    <NavLink to = {`/food/${this.props.itemName}`} className="foodName">
+                <NavLink to = {`/food/${this.props.itemName}`}>
+                    <button className="foodButton">
                         {this.props.itemName}
-                    </NavLink>
-                </button>
+                    </button>
+                </NavLink>
                 <div className="divText">
                     Rating : <Ratings  
                         rating = {this.state.rating}

@@ -26,17 +26,15 @@
     background-color: rgba(0,60,108,0);
     cursor: pointer;    
     border: none;
-}
-
-.foodButton:hover {
-    border-radius: 0px;
-    background-color: #002b4e;
-}
-
-.foodName{
     color: white;
     font-size: 18px;
     text-align: center;
     text-decoration: none;
     font-weight: bold;
+    width: 100%;
+}
+
+.foodButton:hover {
+    border-radius: 0px;
+    background-color: #002b4e;
 }
