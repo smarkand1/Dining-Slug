@@ -4,6 +4,7 @@ import foodList from './food.json';
 import { Listhome } from './../Listhome';
 import { FoodItem } from './FoodItem';
 import "./FoodPage.css"
+import { NavLink } from 'react-router-dom';
 
 export class FoodPage extends React.Component {
     constructor(props){
@@ -51,16 +52,32 @@ export class FoodPage extends React.Component {
         let hallUI = diningHalls.map((hall) => {
             hall = hall.replace("Menu", "");
             hall = hall.replace("Ten", "Ten Dining Hall");
+            var code;
+            if(hall.includes("Nine")){
+                code = "/9-10";
+            }
+            else if(hall.includes("Cowell")){
+                code = "/cowell-stevenson";
+            } 
+            else if(hall.includes("Crown")){
+                code = "/crown-merrill"
+            } 
+            else if(hall.includes("Porter")){
+                code ="/porter-kresge"
+            } 
+            else{
+                code ="/rcc-oakes"
+            }
             return(
-                <div className="hallItem">
-                    {hall}
+                <div>
+                    <NavLink to = {code} exact className="hallItem">
+                        {hall}
+                    </NavLink>
                 </div>
-
             );          
         });
         return hallUI;
     }
-   
 
     //this.state["preferences"] is an array of vegan, soy, etc. items
     //This array could be empty
@@ -107,7 +124,7 @@ export class FoodPage extends React.Component {
                                 </div>
                             </div>
                             <div className="leftBoxURL">
-                                <a href={this.state["url"]} target="_blank" className="nutURL">Click Here for Nutritional Info!</a>
+                                <a href={this.state["url"]} target="_blank" className="nutURL">Click Here for Nutritional Info</a>
                             </div>
 
                         </div>
