@@ -88,6 +88,7 @@ export class DHRating extends React.Component {
                         widgetEmptyColors = 'rgb(203, 211, 227)'
                         widgetHoverColors = 'rgba(255, 219, 86, 0)'
                         widgetDimensions = '3vmin'
+                        widgetSpacings = "1vmin"
                     >
                         <Ratings.Widget />
                         <Ratings.Widget />
