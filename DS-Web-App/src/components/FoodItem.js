@@ -8,6 +8,7 @@ import React from 'react';
 import './FoodItem.css';
 import Ratings from 'react-ratings-declarative';
 import fs from 'fs';
+import { NavLink} from 'react-router-dom';
 var database = require('./database.json');
 
 export class FoodItem extends React.Component {
@@ -87,24 +88,27 @@ export class FoodItem extends React.Component {
         return(
             <div>
                 <button className = "listFood">
-                    {this.props.itemName} | Reviews: {this.state.reviews}
-                    <h3>
-                        Rating: 
-                        <Ratings  
+                    <div className="divText">
+                        <NavLink to = {`/food/${this.props.itemName}`} className="foodName">
+                            {this.props.itemName}
+                        </NavLink>
+                        Rating : <Ratings  
                             rating = {this.state.rating}
                             widgetRatedColors = 'rgb(253, 199, 0)'
                             widgetEmptyColors = 'rgb(203, 211, 227)'
                             widgetHoverColors = 'rgb(255, 219, 86)'
                             changeRating = {this.changeRating}
                             widgetDimensions = '20px'
+                            className="ratings"
                         >
                             <Ratings.Widget />
                             <Ratings.Widget />
                             <Ratings.Widget />
                             <Ratings.Widget />
                             <Ratings.Widget />
-                        </Ratings>
-                    </h3> 
+                        </Ratings> 
+                    </div>
+                    Reviews: {this.state.reviews}
                 </button>
                 
             </div>

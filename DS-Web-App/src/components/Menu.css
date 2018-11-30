@@ -2,6 +2,7 @@
 /*The list properties: positioning, type*/
 .menuList{
     display: block;
+    list-style-type: none;
     margin: 0;
     padding: 0;
     align-self: center;
@@ -68,4 +69,12 @@
     /* Safari Support*/
     -webkit-transition-timing-function: ease-out;
     -webkit-transition-duration: 0.3s;
+}
+
+li.foodButton{
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
 }

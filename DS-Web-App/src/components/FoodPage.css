@@ -1,0 +1,63 @@
+.backButton {
+    padding: 8px;
+    margin: 0 auto;
+    background: rgb(0,60,108);
+    border: 1.5px solid #fdc700;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    display: block;
+}
+
+.foodPageTitle {
+    font-size: 7vmin;
+    text-align: center;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+}
+
+.wrapper {
+    width: 100%;
+    text-align:center;
+    
+}
+
+.leftBoxList {
+    padding: 20px;
+    margin: 0 auto;
+    display: inline-block;
+    list-style-type: none;
+}
+
+.rightBoxList {
+    padding: 20px;
+    margin: 0 auto;
+    display: inline-block;
+    list-style-type: none;
+}
+
+.leftboxListItem{
+    border: 1.5px solid #fdc700;
+    border-radius: 8px;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+.rightBoxListItem{
+    border: 1.5px solid #fdc700;
+    border-radius: 8px;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+
+}
+
+.hallList {
+    list-style-type: none;
+}
+
+.prefList {
+    list-style-type: none;
+}

@@ -4,6 +4,7 @@
     color: white;
     cursor: pointer;    
     padding: 10px;
+    margin: 0px;
     width: calc(50vw - 15vw);
     border: none;
     text-align: center;
@@ -13,7 +14,33 @@
     width: 30vw;
 }
 
-.listFood:hover {
+.ratings{
+    padding: 0px;
+    margin: 0px;
+}
+
+.divText{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.foodName {
+    outline: none;
+    display: inline-block;
+    padding: 15px 10px;
+    padding-left: 10px;
+    margin: 0px;
+    width: 100%;
+    background-color: rgba(0,60,108);
+    color: white;
+    cursor: pointer;    
+    border: none;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.foodName:hover {
     border-radius: 0px;
     background-color: #002b4e;
 }

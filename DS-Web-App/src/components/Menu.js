@@ -48,10 +48,8 @@ export class Menu extends React.Component {
             //Render the list of food items
             let foodUI = foodArr.map((foodItem) => {
                 return(
-                    <li>
-                        <NavLink to = {`/food/${foodItem}`}>
-                            <FoodItem itemName = {foodItem} />
-                        </NavLink>
+                    <li className="foodButton">
+                        <FoodItem itemName = {foodItem} />
                     </li>
 
                 );          
@@ -66,7 +64,8 @@ export class Menu extends React.Component {
                         </ul>
                     </Collapsible>
                 );
-            } else {
+            } 
+            else {
                 return;
             }
         });
