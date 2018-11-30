@@ -1,46 +1,42 @@
-.listFood {
+.foodItem {
     outline: none;
     background-color: rgba(0,60,108);
     color: white;
-    cursor: pointer;    
-    padding: 10px;
+    padding: 15px 0px;
     margin: 0px;
-    width: calc(50vw - 15vw);
     border: none;
     text-align: center;
     font-size: 15px;
     text-decoration: none;
-    border-radius: 8px;
     width: 30vw;
 }
 
-.ratings{
+.divText{
+    text-decoration: none;
+    font-weight: bold;
     padding: 0px;
     margin: 0px;
 }
 
-.divText{
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.foodName {
+.foodButton {
     outline: none;
-    display: inline-block;
-    padding: 15px 10px;
-    padding-left: 10px;
+    padding: 10px;
     margin: 0px;
     width: 100%;
-    background-color: rgba(0,60,108);
-    color: white;
+    background-color: rgba(0,60,108,0);
     cursor: pointer;    
     border: none;
+}
+
+.foodButton:hover {
+    border-radius: 0px;
+    background-color: #002b4e;
+}
+
+.foodName{
+    color: white;
     font-size: 18px;
     text-align: center;
     text-decoration: none;
-}
-
-.foodName:hover {
-    border-radius: 0px;
-    background-color: #002b4e;
+    font-weight: bold;
 }

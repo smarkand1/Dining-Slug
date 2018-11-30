@@ -3,6 +3,7 @@
 .menuList{
     display: block;
     list-style-type: none;
+    cursor: auto;
     margin: 0;
     padding: 0;
     align-self: center;

@@ -48,10 +48,7 @@ export class Menu extends React.Component {
             //Render the list of food items
             let foodUI = foodArr.map((foodItem) => {
                 return(
-                    <li className="foodButton">
-                        <FoodItem itemName = {foodItem} />
-                    </li>
-
+                    <FoodItem itemName = {foodItem} />
                 );          
             });
             // If we have an empty array (IE no food being served at that time)

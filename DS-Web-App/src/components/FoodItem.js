@@ -86,32 +86,30 @@ export class FoodItem extends React.Component {
         
 
         return(
-            <div>
-                <button className = "listFood">
-                    <div className="divText">
-                        <NavLink to = {`/food/${this.props.itemName}`} className="foodName">
-                            {this.props.itemName}
-                        </NavLink>
-                        Rating : <Ratings  
-                            rating = {this.state.rating}
-                            widgetRatedColors = 'rgb(253, 199, 0)'
-                            widgetEmptyColors = 'rgb(203, 211, 227)'
-                            widgetHoverColors = 'rgb(255, 219, 86)'
-                            changeRating = {this.changeRating}
-                            widgetDimensions = '20px'
-                            className="ratings"
-                        >
-                            <Ratings.Widget />
-                            <Ratings.Widget />
-                            <Ratings.Widget />
-                            <Ratings.Widget />
-                            <Ratings.Widget />
-                        </Ratings> 
-                    </div>
-                    Reviews: {this.state.reviews}
+            <li className="foodItem">
+                <button className="foodButton">
+                    <NavLink to = {`/food/${this.props.itemName}`} className="foodName">
+                        {this.props.itemName}
+                    </NavLink>
                 </button>
-                
-            </div>
+                <div className="divText">
+                    Rating : <Ratings  
+                        rating = {this.state.rating}
+                        widgetRatedColors = 'rgb(253, 199, 0)'
+                        widgetEmptyColors = 'rgb(203, 211, 227)'
+                        widgetHoverColors = 'rgb(255, 219, 86)'
+                        changeRating = {this.changeRating}
+                        widgetDimensions = '20px'
+                    >
+                        <Ratings.Widget />
+                        <Ratings.Widget />
+                        <Ratings.Widget />
+                        <Ratings.Widget />
+                        <Ratings.Widget />
+                    </Ratings> 
+                </div>
+                Reviews: {this.state.reviews}
+            </li>
                
         );
     }
