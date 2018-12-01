@@ -38,3 +38,13 @@
     border-radius: 0px;
     background-color: #002b4e;
 }
+/* MEDIA FOR RESPONSIVE DESIGN */
+//If width of screen reaches 450px, change the width back to 100% (No downsizing)
+@media screen and (max-width:450px){
+    .foodItem{
+        width: 100%;
+    }
+     .foodButton:hover{
+        width: 100%;
+    }
+}
