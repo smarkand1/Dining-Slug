@@ -1,7 +1,6 @@
 /*Stlying for app.js*/
 .App {
   background-color: #003c6c;
-  width: 100%;
 }
 
 .App-logo {
@@ -17,7 +16,6 @@
   justify-content: top;
   color: white;
   padding: 10px;
-  width: 100%;
 }
 
 .gradient {
@@ -101,6 +99,30 @@ File: Listhome.js*/
 
 .NavLink {
   color:white;
+}
+
+/*Now serving
+File:Serving.js*/
+/*Currently Serving*/
+.serving {
+  font-size: 3vmin;
+  float: right;
+  margin: 0px 10px;
+  padding-top: 5px;
+}
+
+/*Open Text Color*/
+.open{
+  margin: 0px 10px;
+  float: right;
+  color: white;
+}
+
+/*Closed Text color*/
+.closed{
+  margin: 0px 10px;
+  float: right;
+  color: red;
 }
 
 /*The levels of activity on the dining hall
@@ -329,15 +351,6 @@ File: Home.js*/
   float: left;
   z-index: 10;
   position: relative;
-}
-
-/*Currently Serving*/
-.serving {
-  flex: 1;
-  margin-top: 12px;
-  margin-left: 1vmin;
-  font-size: 3vmin;
-  float: left;
 }
 
 /*Styles the homenavigation

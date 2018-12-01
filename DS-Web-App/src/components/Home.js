@@ -30,10 +30,7 @@ export class Home extends React.Component {
                             <Search searchWithCode = {5}/>
                         </div>
                         <div className="serving">
-                            Currently Serving: 
-                        </div>
-                        <div className="serving">
-                            <Serving/>
+                            Currently Serving:  <Serving/>
                         </div>
                     </div>
                     <HomeNav/>
