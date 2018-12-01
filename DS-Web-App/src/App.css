@@ -142,7 +142,7 @@ File: Menu.js*/
 /*Styling for each food items name*/
 .foodItem {
   outline: none;
-  background-color: rgba(0,60,108);
+  background-color: rgb(0,60,108);
   color: white;
   padding: 15px 0px;
   margin: 0px;
@@ -419,7 +419,7 @@ File: HomeNav.js*/
   }
 
 .boxItem:hover {
-  background-color: rgb(253,199,0,0.8);
+  background-color: rgba(253,199,0,0.8);
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
   transition-timing-function: ease-out;
   transition-duration: 0.3s;
@@ -453,7 +453,7 @@ File: Menu.js*/
   font-weight: bold;
   border: 1.5px solid #fdc700;
   border-radius: 8px;
-  background-color: rgba(0,60,108);
+  background-color: rgb(0,60,108);
   margin-left: calc(50vw - 15vw);
   width: 30vw;
   transition-timing-function: ease-out;
@@ -481,8 +481,9 @@ File: Menu.js*/
   padding: 10px 8px;
   font-weight: bold;
   border: none;
-  background-color: rgba(0,60,108);
+  background-color: rgb(0,60,108);
   width: 30vw;
+  height: 65px;
   transition-timing-function: ease-out;
   transition-duration: 0.3s;
   /* Safari Support*/
@@ -582,7 +583,7 @@ input {
 .searchBar-content {
   position: absolute;
   overflow: hidden;
-  background-color: rgba(0,60,108);
+  background-color: rgb(0,60,108);
   width: 30vw;
   min-width: 300px;
   max-height: 40vh;
@@ -601,7 +602,7 @@ input {
 /*Drop down item styling*/
 .searchButton {
   border: none;
-  background-color: rgb(0,60,108,0);
+  background-color: rgba(0,60,108,0);
   color: #ffffff;
   width: 100%;
   text-align: left;
