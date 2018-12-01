@@ -382,6 +382,7 @@ File: HomeNav.js*/
 .boxList {
   padding: 0;
   margin: 0;
+  list-style-type: none;
 }
 
 /*Each item in the list*/
@@ -392,18 +393,11 @@ File: HomeNav.js*/
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
-
-  /*background-image: linear-gradient(to left, rgb(0,60,108) , rgb(253,199,0));
-  background-color: #fdc700; /* For browsers that do not support gradients */
-
   background-color: rgb(0,60,108);
-  
   border: 1.5px rgba(253, 199, 0, 0);
   border-radius: 20px;
-
   margin-top: 15px;
   cursor: pointer; 
-
   transition-timing-function: ease-out;
   transition-duration: 0.2s;
   /* Safari Support*/
@@ -416,9 +410,7 @@ File: HomeNav.js*/
   background-color: rgba(0,60,108, 0);
   border: 1.5px solid #fdc700;
   border-radius: 20px;
-
   padding: 6vh 0;
-
   width: 100%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -447,6 +439,7 @@ File: Menu.js*/
   align-self: center;
   justify-content: center;
   align-items: center;
+  background-color: rgb(0,60,108);
 }
 
 /*The collapsible button style*/
@@ -593,6 +586,7 @@ input {
   width: 30vw;
   min-width: 300px;
   max-height: 40vh;
+  z-index: 10;
 }
 
 .searchBar:focus ~ .searchBar-content{
@@ -601,6 +595,7 @@ input {
   min-height: 4vh;
   border-bottom-right-radius: 8px;
   border-bottom-left-radius: 8px;
+  background-color: rgb(0,60,108);
 }
 
 /*Drop down item styling*/
