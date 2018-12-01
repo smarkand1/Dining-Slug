@@ -8,23 +8,25 @@ import { NavLink} from 'react-router-dom';
 import './Menu.css'
 import Collapsible from 'react-collapsible'
 
-const data = require('./dailyMenu.json')
+//const data = require('./dailyMenu.json')
 
 export class Menu extends React.Component { 
     constructor(props){
         super(props);
-        this.state={ recipes :[] } 
+        this.state={ 
+            recipes :[],
+            finalUI: null
+        } 
+        //this.renderList = this.renderList.bind(this);
     }
 
     //Grab the array of JSON objects from the text file
     componentWillMount(){
-        this.setState({
-            recipes : data.data
-        });
+        this.renderList()
     } 
 
     //Render the menu list
-    renderList =() =>{
+    renderList(){
         /*
         Chooses which dining hall list to display from
         Arguments:
@@ -36,39 +38,60 @@ export class Menu extends React.Component {
             None
         */
         //Determine which JSON objecy to look at based on what the user clicked
-        let model = this.state.recipes[this.props.hallCode];
-        let title = model.Title; //Dining hall title
-        let menu = model.Menu;   //Dining hall menu, which is an array of more objects
 
-        //Render the menu
-        let menuUI = menu.map((indMenu) => {
-            let time = indMenu.Title; //Breakfast/lunch/Dinner/Late Night
-            let foodArr = indMenu.Food; //Array of food items for the given time
+        fetch("/dailyMenu.json", {Method: "GET"})
+            .then(res => res.json())
+            .then((results) => {
+                console.log(results.data);
+                this.setState({
+                    recipes : results.data
+                })
+            })
+            .then(() => {
+                let model =  this.state.recipes[this.props.hallCode];
+                //let title = model.Title; //Dining hall title
+                let menu = model.Menu;   //Dining hall menu, which is an array of more objects
 
-            //Render the list of food items
-            let foodUI = foodArr.map((foodItem) => {
-                return(
-                    <li>
-                        <FoodItem itemName = {foodItem} />
-                    </li>
+                //Render the menu
+                let menuUI = menu.map((indMenu) => {
+                    let time = indMenu.Title; //Breakfast/lunch/Dinner/Late Night
+                    let foodArr = indMenu.Food; //Array of food items for the given time
 
-                );          
+                    //Render the list of food items
+                    let foodUI = foodArr.map((foodItem) => {
+                        return(
+                            <li>
+                                <FoodItem itemName = {foodItem} />
+                            </li>
+
+                        );          
+                    });
+                    // If we have an empty array (IE no food being served at that time)
+                    // Do not render
+                    if(foodArr.length > 0){
+                        return (
+                            <Collapsible trigger = {<button className="collapsibleButton ">{time}</button>}>
+                                <ul>
+                                    {foodUI}
+                                </ul>
+                            </Collapsible>
+                        );
+                    } else {
+                        return;
+                    }
+                });
+                this.setState({finalUI:menuUI})
             });
-            // If we have an empty array (IE no food being served at that time)
-            // Do not render
-            if(foodArr.length > 0){
-                return (
-                    <Collapsible trigger = {<button className="collapsibleButton ">{time}</button>}>
-                        <ul>
-                            {foodUI}
-                        </ul>
-                    </Collapsible>
-                );
-            } else {
-                return;
-            }
-        });
-        return menuUI;
+        
+                /*const request = async () => {
+                    const response = await fetch("/dailyMenu.json");
+                    const json = await response.json();
+                    console.log(json);
+                    await this.setState({
+                        recipes: json.data
+                    })
+                }*/
+        
    }
 
     render() {
@@ -83,7 +106,7 @@ export class Menu extends React.Component {
         */
         return (
             <div class="wrapper">
-                {this.renderList()}
+                {this.state.finalUI === null ? "Loading menus..." : this.state.finalUI}
             </div>
         );
     }

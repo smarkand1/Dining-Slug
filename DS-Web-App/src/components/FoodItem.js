@@ -9,7 +9,6 @@ import './FoodItem.css';
 import Ratings from 'react-ratings-declarative';
 import $ from 'jquery';
 
-var database = require('./database.json');
 
 export class FoodItem extends React.Component {
     constructor(props){
