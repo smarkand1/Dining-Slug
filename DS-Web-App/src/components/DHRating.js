@@ -1,7 +1,7 @@
 //This component renders the ratings for the dining hall based on googles data
 import React from 'react';
 import Ratings from 'react-ratings-declarative';
-import './DHRating.css'
+import '../App.css'
 
 //Data from googles api containing the ratings and reviews information
 const data = require('./dhRating.json');

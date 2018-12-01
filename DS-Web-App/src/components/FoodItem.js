@@ -5,7 +5,7 @@
  */
 
 import React from 'react';
-import './FoodItem.css';
+import '../App.css';
 import Ratings from 'react-ratings-declarative';
 import fs from 'fs';
 var database = require('./database.json');

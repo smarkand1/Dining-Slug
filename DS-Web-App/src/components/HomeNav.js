@@ -3,7 +3,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { Capacity } from './Capacity'
 import { DHRating } from './DHRating'
-import './HomeNav.css';
+import '../App.css';
 
 export class HomeNav extends React.Component{
 	render() {

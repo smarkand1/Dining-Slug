@@ -3,7 +3,7 @@ import React from 'react';
 import { HomeNav } from './HomeNav';
 import { Search } from './Search';
 import { Serving } from './Serving';
-import './Home.css'
+import '../App.css'
 
 export class Home extends React.Component {
     render() {

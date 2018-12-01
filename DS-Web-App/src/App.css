@@ -38,3 +38,581 @@
     transform: rotate(360deg);
   }
 }
+
+.quickNavList {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/*These are the actual text boxes*/
+.quickNav a {
+  float: left;
+  padding: 10px 10px;
+  margin-bottom: 10px;
+  font-size: 1.5vmin;
+  text-decoration: none;
+  color: #ffffff;
+  border:1px solid rgb(187, 187, 187);
+  border-top: none;
+  border-bottom: none;
+  text-align: center;
+}
+
+.quickNav a:hover {
+  background-color: #fdc700;
+  transition-timing-function: ease-out;
+  transition-duration: 0.3s;
+  /* Safari Support*/
+  -webkit-transition-timing-function: ease-out;
+  -webkit-transition-duration: 0.3s;
+}
+
+.active .quickNav{
+  background-color: #fdc700;
+  height: 5vh;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.NavLink {
+  color:white;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.open {
+  color: white;
+}
+
+.closed {
+  color: red;
+}
+
+.notBusy {
+  display: inline-block;
+  color: rgb(0, 255, 29);
+}
+
+.moderate {
+  display: inline-block;
+  color: rgb(255, 114, 0);
+}
+
+.busy {
+  display: inline-block;
+  color: rgb(255, 0, 0);
+}
+
+.dinRatings{
+  margin: 0px;
+  padding: 0px;
+}
+
+.reviews {
+  font-size: 2vmin;
+  text-decoration: none;
+  color: white;
+}
+
+.reviews:hover{
+  text-decoration: underline;
+}
+
+/*@MEDIA Responsive Code Block */
+@media screen and (max-width:450px){
+  .dinRatings{
+      width: 100%;
+  }
+}
+
+.foodItem {
+  outline: none;
+  background-color: rgba(0,60,108);
+  color: white;
+  padding: 15px 0px;
+  margin: 0px;
+  border: none;
+  text-align: center;
+  font-size: 15px;
+  text-decoration: none;
+  width: 30vw;
+}
+
+.divText{
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0px;
+  margin: 0px;
+}
+
+.foodButton {
+  outline: none;
+  padding: 10px;
+  margin: 0px;
+  width: 100%;
+  background-color: rgba(0,60,108,0);
+  cursor: pointer;    
+  border: none;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  width: 100%;
+}
+
+.foodButton:hover {
+  border-radius: 0px;
+  background-color: #002b4e;
+}
+/* MEDIA FOR RESPONSIVE DESIGN */
+//If width of screen reaches 450px, change the width back to 100% (No downsizing)
+@media screen and (max-width:450px){
+  .foodItem{
+      width: 100%;
+  }
+   .foodButton:hover{
+      width: 100%;
+  }
+}
+
+.foodPageTitle {
+  font-size: 7vmin;
+  text-align: center;
+  color: white;
+  margin: 0px;
+  padding: 0px;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.leftBox {
+  border: 1.5px solid #fdc700;
+  border-radius: 8px;
+  float: left;
+  min-height: 40vh;
+  max-height: 40vh;
+  width: 40vw;
+  margin: 0 5vw;
+  margin-top: 2vh;
+  overflow: hidden;
+}
+
+.rightBox{
+  border: 1.5px solid #fdc700;
+  border-radius: 8px;
+  min-height: 40vh;
+  max-height: 40vh;
+  width: 40vw;
+  margin: 0 3vw;
+  margin-top: 2vh;
+  overflow: hidden;
+  float: left;
+}
+
+.leftBoxPrefs{
+  padding: 0;
+  margin: 10px 0;
+  font-size: 4vmin;
+  text-align: center;
+}
+
+.leftBoxURL{
+  padding: 0;
+  margin-top: 4vh;
+  font-size: 3vmin;
+  text-align: center;
+}
+
+.rightBoxServing{
+  padding: 0;
+  margin: 10px 0;
+  font-size: 4vmin;
+  text-align: center;
+}
+
+.rightBoxRating{
+  padding: 0;
+  margin-top: 4vh;
+  text-align: center;
+}
+
+.hallList {
+  list-style-type: none;
+}
+
+.prefList {
+  list-style-type: none;
+}
+
+.hallItem{
+  padding: 0px auto;
+  font-size: 3vmin;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+.hallItem:hover{
+  text-decoration: underline;
+}
+
+.prefItem{
+  font-size: 3vmin;
+  text-align: center;
+}
+
+.nutURL{
+  text-decoration: none;
+  color: white;
+}
+
+.nutURL:hover{
+  text-decoration: underline;
+}
+
+.backButton {
+  padding: 8px;
+  margin: 10px 5vw;
+  width: 100px;
+  background: rgb(0,60,108);
+  border: 1.5px solid #fdc700;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  display: block;
+}
+
+.topBar {
+  margin: 0;
+  padding: 0;
+}
+
+.searchItem {
+  margin-top: 1.3vh;
+  width: 70vw;
+  float: left;
+  z-index: 10;
+  position: relative;
+}
+
+.serving {
+  flex: 1;
+  margin-top: 12px;
+  margin-left: 1vmin;
+  font-size: 3vmin;
+  float: left;
+}
+
+.name{
+  vertical-align: middle;
+  display: inline-block;
+  text-align: center;
+  font-size: 3vmin;
+  width: 33%;
+  color: white;
+}
+
+.capacity{
+  vertical-align: middle;
+  display: inline-block;  
+  text-align: center;
+  font-size: 3vmin;
+  width: 33%;
+  color: white;
+}
+
+.rating{
+  position: absolute;
+  top: calc(6vh - 1.5vmin);
+  left: 66vw;
+  vertical-align: middle;
+  display: inline-block;
+  text-align: center;
+  font-size: 3vmin;
+  width: 33%;
+  color: white;
+}
+
+.bigButtons {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.boxList {
+  padding: 0;
+  margin: 0;
+}
+
+.boxItem {
+  position: relative;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+
+  /*background-image: linear-gradient(to left, rgb(0,60,108) , rgb(253,199,0));
+  background-color: #fdc700; /* For browsers that do not support gradients */
+
+  background-color: rgb(0,60,108);
+  
+  border: 1.5px rgba(253, 199, 0, 0);
+  border-radius: 20px;
+
+  margin-top: 15px;
+  cursor: pointer; 
+
+  transition-timing-function: ease-out;
+  transition-duration: 0.2s;
+  /* Safari Support*/
+  -webkit-transition-timing-function: ease-out;
+  -webkit-transition-duration: 0.2s;
+}
+
+.boxItemHelper {
+  /*Use for adding gradient transitions. Set as just background transition for now*/
+  background-color: rgba(0,60,108, 0);
+  border: 1.5px solid #fdc700;
+  border-radius: 20px;
+
+  padding: 6vh 0;
+
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  }
+
+.boxItem:hover {
+  background-color: rgb(253,199,0,0.8);
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  transition-timing-function: ease-out;
+  transition-duration: 0.3s;
+  /* Safari Support*/
+  -webkit-transition-timing-function: ease-out;
+  -webkit-transition-duration: 0.3s;
+}
+
+.buttonRating{
+  margin: 0px;
+  padding: 5px;
+  vertical-align: middle;
+  display: inline-block;
+  text-align: center;
+  font-size: 3vmin;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  background-color: rgb(0,60,108,0);
+}
+
+.buttonRating:hover{
+  background-color: rgb(0,60,108);
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  transition-timing-function: ease-out;
+  transition-duration: 0.3s;
+  /* Safari Support*/
+  -webkit-transition-timing-function: ease-out;
+  -webkit-transition-duration: 0.3s;
+}
+
+
+/*The list properties: positioning, type*/
+.menuList{
+  display: block;
+  list-style-type: none;
+  cursor: auto;
+  margin: 0;
+  padding: 0;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+}
+
+/*The collapsible button style*/
+.Collapsible{
+  overflow: hidden;
+  cursor: pointer;
+  display: block;
+  font-size: 1.5em;
+  color: #ffffff;
+  margin: 10px 0px;
+  font-weight: bold;
+  border: 1.5px solid #fdc700;
+  border-radius: 8px;
+  background-color: rgba(0,60,108);
+  margin-left: calc(50vw - 15vw);
+  width: 30vw;
+  transition-timing-function: ease-out;
+  transition-duration: 0.3s;
+  /* Safari Support*/
+  -webkit-transition-timing-function: ease-out;
+  -webkit-transition-duration: 0.3s;
+}
+
+.Collapsible:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  transition-timing-function: ease-out;
+  transition-duration: 0.3s;
+  /* Safari Support*/
+  -webkit-transition-timing-function: ease-out;
+  -webkit-transition-duration: 0.3s;
+}
+
+/*The button for the collapsible styles*/
+.collapsibleButton{
+  cursor: pointer;
+  display: block;
+  font-size: 2vw;
+  color: #ffffff;
+  padding: 10px 8px;
+  font-weight: bold;
+  border: none;
+  background-color: rgba(0,60,108);
+  width: 30vw;
+  transition-timing-function: ease-out;
+  transition-duration: 0.3s;
+  /* Safari Support*/
+  -webkit-transition-timing-function: ease-out;
+  -webkit-transition-duration: 0.3s;
+}
+
+.collapsibleButton:focus{
+  outline: none;
+}
+
+.collapsibleButton:hover{
+  background-color: #fdc700;
+  transition-timing-function: ease-out;
+  transition-duration: 0.3s;
+  /* Safari Support*/
+  -webkit-transition-timing-function: ease-out;
+  -webkit-transition-duration: 0.3s;
+}
+
+li.foodButton{
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+}
+
+/*Search Bar Styling*/
+.searchBar {
+  width: 30vw;
+  min-width: 300px;
+  height: 30px;
+  padding: 0;
+  margin: 0;
+  background: rgb(0,60,108);
+  border: 1.5px solid #fdc700;
+  border-radius: 8px;
+  text-indent: 0.5vmin;
+  transition-timing-function: ease-out;
+  transition-duration: 0.3s;
+  /* Safari Support*/
+  -webkit-transition-timing-function: ease-out;
+  -webkit-transition-duration: 0.3s;
+}
+
+.searchBar:focus {
+  outline: none;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom: 0px;
+}
+
+.searchBar:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  transition-timing-function: ease-out;
+  transition-duration: 0.3s;
+  /* Safari Support*/
+  -webkit-transition-timing-function: ease-out;
+  -webkit-transition-duration: 0.3s;
+}
+
+/*Text box input*/
+input {
+  color:#ffffff;
+}
+
+::-webkit-input-placeholder { /* For WebKit browsers */
+  color: #ffffff;
+  text-align: left;
+}
+
+::-moz-placeholder { /* For Mozilla Firefox 19+ */
+  color: #ffffff;
+  text-align: left;
+}
+
+:-ms-input-placeholder { /* For Internet Explorer 10+ */
+  color: #ffffff;
+  text-align: left;
+}
+
+.searchBar:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.searchBar:focus::-moz-placeholder {
+  color: transparent;
+}
+
+.searchBar:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+/*Drop down styling*/
+.searchBar-content {
+  position: absolute;
+  overflow: hidden;
+  background-color: rgba(0,60,108);
+  width: 30vw;
+  min-width: 300px;
+  max-height: 40vh;
+}
+
+.searchBar:focus ~ .searchBar-content{
+  border: 1.5px solid #fdc700;
+  border-top: 0px;
+  min-height: 4vh;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+/*Drop down item styling*/
+.searchButton {
+  border: none;
+  background-color: rgb(0,60,108,0);
+  color: #ffffff;
+  width: 100%;
+  text-align: left;
+  height: 5vh; 
+}
+
+.searchButton:hover {
+  background-color: #002b4e;
+}

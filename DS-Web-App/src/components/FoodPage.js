@@ -3,7 +3,7 @@ import { Search } from './Search';
 import foodList from './food.json';
 import { Listhome } from './../Listhome';
 import { FoodItem } from './FoodItem';
-import "./FoodPage.css"
+import "../App.css"
 import { NavLink } from 'react-router-dom';
 
 export class FoodPage extends React.Component {

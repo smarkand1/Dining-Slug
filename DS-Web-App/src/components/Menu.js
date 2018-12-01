@@ -5,7 +5,7 @@
 import React from 'react';
 import { FoodItem } from './FoodItem'
 import { NavLink} from 'react-router-dom';
-import './Menu.css'
+import '../App.css';
 import Collapsible from 'react-collapsible'
 
 const data = require('./dailyMenu.json')

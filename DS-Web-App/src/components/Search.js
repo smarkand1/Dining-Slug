@@ -1,6 +1,6 @@
 import React from 'react';
 import './DiningHall';
-import './Search.css';
+import '../App.css';
 import { NavLink} from 'react-router-dom';
 import dataList from './search.json'; //importing dataList
 
