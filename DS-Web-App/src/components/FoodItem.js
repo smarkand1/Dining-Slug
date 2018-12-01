@@ -92,6 +92,7 @@ export class FoodItem extends React.Component {
                         widgetHoverColors = 'rgb(255, 219, 86)'
                         changeRating = {this.changeRating}
                         widgetDimensions = '2vmin'
+                        widgetSpacings = "1vmin"
                     >
                         <Ratings.Widget />
                         <Ratings.Widget />
