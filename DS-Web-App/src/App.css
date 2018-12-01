@@ -24,6 +24,16 @@
   margin-top: 7px;
 }
 
+.diningslugbutton {
+  padding: 8px;
+  margin: 0;
+  background: rgb(0,60,108);
+  border: 1.5px solid #fdc700;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
 .title{
   font-family: "EB Garamond";
   font-size:calc(30px + 2vmin);

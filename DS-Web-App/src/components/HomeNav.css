@@ -86,3 +86,26 @@
     -webkit-transition-timing-function: ease-out;
     -webkit-transition-duration: 0.3s;
 }
+
+.buttonRating{
+    margin: 0px;
+    padding: 5px;
+    vertical-align: middle;
+    display: inline-block;
+    text-align: center;
+    font-size: 3vmin;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(0,60,108,0);
+}
+
+.buttonRating:hover{
+    background-color: rgb(0,60,108);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    transition-timing-function: ease-out;
+    transition-duration: 0.3s;
+    /* Safari Support*/
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 0.3s;
+}

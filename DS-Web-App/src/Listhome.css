@@ -28,8 +28,9 @@
     -webkit-transition-duration: 0.3s;
 }
 
-.active {
+.active .quickNav{
     background-color: #fdc700;
+    height: 5vh;
     text-decoration: none;
     color: #ffffff;
 }

@@ -7,6 +7,7 @@ google_api_json = json.load(open("DS-Web-App/config.json"))
 google_api_key = google_api_json["GOOGLE_API_KEY"]
 
 def print_google_data(ratings_file, times_file, prev_ratings, prev_times):
+    LAST = -1
     halls = []
     #Gets the google data for 9/10
     nine = populartimes.get_id(google_api_key, "ChIJDf7xXQpBjoARyuZR1vXuXF8")
@@ -28,7 +29,7 @@ def print_google_data(ratings_file, times_file, prev_ratings, prev_times):
 
     #Build each file for each dining hall except for the last one for formatting puposes
     index = 0
-    for hall in halls[:-1]:
+    for hall in halls[:LAST]:
         #Fill in popular times data
         try:
             times = hall["populartimes"]
@@ -52,22 +53,22 @@ def print_google_data(ratings_file, times_file, prev_ratings, prev_times):
     #Adds the last dining hall information to each file
     #Fill in popular times data for the last dining hall
     try:
-        times = halls[-1]["populartimes"]
+        times = halls[LAST]["populartimes"]
         print(times)
         
         times_file.write("\t\t{\n")
         #Write the information for all dining halls except last one
-        for day in times[:-1]:
+        for day in times[:LAST]:
             times_file.write("\t\t\t\"" + day["name"] + "\": [")
-            for time_slot in day["data"][:-1]:
+            for time_slot in day["data"][:LAST]:
                 times_file.write(str(time_slot) + ", ")
-            times_file.write(str(day["data"][-1]) + "],\n")
+            times_file.write(str(day["data"][LAST]) + "],\n")
 
         #Write the last one
-        times_file.write("\t\t\t\"" + times[-1]["name"] + "\": [")
-        for time_slot in times[-1]["data"][:-1]:
+        times_file.write("\t\t\t\"" + times[LAST]["name"] + "\": [")
+        for time_slot in times[LAST]["data"][:LAST]:
             times_file.write(str(time_slot) + ", ")
-        times_file.write(str(times[-1]["data"][-1]) + "]\n")
+        times_file.write(str(times[LAST]["data"][LAST]) + "]\n")
         times_file.write("\t\t}\n")
     except KeyError:
         print("no popular time data, using old data")
@@ -88,8 +89,8 @@ def print_google_data(ratings_file, times_file, prev_ratings, prev_times):
 
     #Fill in ratings data for last dining hall
     try:
-        ratings = halls[-1]["rating"]    
-        reviews = halls[-1]["rating_n"]
+        ratings = halls[LAST]["rating"]    
+        reviews = halls[LAST]["rating_n"]
         print(ratings, reviews)
 
         #Write the data
@@ -112,21 +113,23 @@ def print_google_data(ratings_file, times_file, prev_ratings, prev_times):
 
 
 def print_times(times_obj, file):
+    LAST = -1
+
     #write header
     file.write("\t\t{\n")
 
     #Write the information for all dining halls except last one
     for day in times_obj[:-1]:
         file.write("\t\t\t\"" + day["name"] + "\": [")
-        for time_slot in day["data"][:-1]:
+        for time_slot in day["data"][:LAST]:
             file.write(str(time_slot) + ", ")
-        file.write(str(times_obj[-1]["data"][-1]) + "],\n")
+        file.write(str(times_obj[LAST]["data"][LAST]) + "],\n")
 
     #Write the last one
-    file.write("\t\t\t\"" + times_obj[-1]["name"] + "\": [")
-    for time_slot in times_obj[-1]["data"][:-1]:
+    file.write("\t\t\t\"" + times_obj[LAST]["name"] + "\": [")
+    for time_slot in times_obj[LAST]["data"][:LAST]:
         file.write(str(time_slot) + ", ")
-    file.write(str(times_obj[-1]["data"][-1]) + "]\n")
+    file.write(str(times_obj[LAST]["data"][LAST]) + "]\n")
 
     #close it off
     file.write("\t\t},\n")

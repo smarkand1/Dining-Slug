@@ -18,6 +18,8 @@ export class Serving extends React.Component {
         Raises:
             None
         */
+        const SUNDAY = 0;
+        const SATURDAY = 6;
         //get the system time
         var d = new Date();
         var currTime = d.getHours() * 100 + d.getMinutes();
@@ -26,8 +28,8 @@ export class Serving extends React.Component {
         console.log(currTime)
         //determine whats being served. Saturday and Sunday have different meal times than the work days of the week
         switch(day){
-            case 0:
-            case 6:
+            case SUNDAY:
+            case SATURDAY:
                 if(630 < currTime && currTime <= 1000){
                     return (<div className="open">Breakfast</div>);
                 }

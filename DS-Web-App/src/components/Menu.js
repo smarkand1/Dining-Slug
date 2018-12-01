@@ -82,6 +82,7 @@ export class Menu extends React.Component {
                 });
                 this.setState({finalUI:menuUI})
             });
+<<<<<<< HEAD
         
                 /*const request = async () => {
                     const response = await fetch("/dailyMenu.json");
@@ -92,6 +93,23 @@ export class Menu extends React.Component {
                     })
                 }*/
         
+=======
+            // If we have an empty array (IE no food being served at that time)
+            // Do not render
+            if(foodArr.length > 0){
+                return (
+                    <Collapsible trigger = {<button className="collapsibleButton ">{time}</button>}>
+                        <ul className="menuList">
+                            {foodUI}
+                        </ul>
+                    </Collapsible>
+                );
+            } else {
+                return;
+            }
+        });
+        return menuUI;
+>>>>>>> FrontEnd
    }
 
     render() {
@@ -105,8 +123,13 @@ export class Menu extends React.Component {
             None
         */
         return (
+<<<<<<< HEAD
             <div class="wrapper">
                 {this.state.finalUI === null ? "Loading menus..." : this.state.finalUI}
+=======
+            <div>
+                {this.renderList()}
+>>>>>>> FrontEnd
             </div>
         );
     }

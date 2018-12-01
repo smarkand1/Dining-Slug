@@ -97,6 +97,15 @@ export class DHRating extends React.Component {
             });
     }
 
+    displayRatings(){
+        var x = document.getElementById("");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+
     //Renders specific information based on what dining hall
     render(){
         /*
@@ -112,8 +121,30 @@ export class DHRating extends React.Component {
         //Return the rendered component
         return(
             <div className="dinRatings">
+<<<<<<< HEAD
                 {this.state.final_UI ===null ? "Loading reviews.." : this.state.final_UI}
             </div>
+=======
+                <div> 
+                    Rating: <Ratings  
+                        rating = {ratings}
+                        widgetRatedColors = 'rgb(253, 199, 0)'
+                        widgetEmptyColors = 'rgb(203, 211, 227)'
+                        widgetHoverColors = 'rgba(255, 219, 86, 0)'
+                        widgetDimensions = '3vmin'
+                    >
+                        <Ratings.Widget />
+                        <Ratings.Widget />
+                        <Ratings.Widget />
+                        <Ratings.Widget />
+                        <Ratings.Widget />
+                    </Ratings>
+                </div>
+                <div className="numReviews">
+                    Google Reviews: {reviews}
+                </div>
+            </div>            
+>>>>>>> FrontEnd
         );
     }
 }

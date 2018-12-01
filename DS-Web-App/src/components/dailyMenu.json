@@ -1,66 +1,63 @@
 {
 "data":[{
 	"Title": "Colleges Nine & Ten Menu",
-	"Date": "Menus for Tuesday, November 27, 2018",
-	"Hours": "Hours go here",
+	"Date": "Menus for Wednesday, November 28, 2018",
 	"Menu": [
 		{
 			"Title": "Breakfast",
-			"Food": ["Belgian Waffles", "Bob's Pancakes", "Breakfast Enchiladas", "Cage Free Scrambled Eggs", "Crispy Bacon", "Fruit Topping for Pancakes", "Hard-boiled Cage Free Eggs", "Oatmeal Gluten-Free", "Papas Fritas", "Blueberry Cheese Ring", "Strawberry Crunch Muffin", "Vegan Peanut Granola", "Bell Peppers", "Cage Free Eggs", "Cage Free Omelette Bar", "Cheddar Cheese", "Feta Cheese", "Fresh Organic Spinach", "Fresh Tomato", "Jalapeno", "Onions", "Oven Roasted Turkey", "Sliced Olived", "Smoked Ham"]
+			"Food": ["Belgian Waffles", "Bob's Pancakes", "Cage Free Scrambled Eggs", "Hard-boiled Cage Free Eggs", "Oatmeal Gluten-Free", "Sausage Links", "Tator Tots", "Almond Bear Claws", "Apple Walnut Muffin", "Mocha Chip Muffin", "Old Fashioned Frosted Donut", "Vegan Peanut Granola", "Bell Peppers", "Cage Free Eggs", "Cage Free Omelette Bar", "Cheddar Cheese", "Feta Cheese", "Fresh Organic Spinach", "Fresh Tomato", "Jalapeno", "Onions", "Oven Roasted Turkey", "Sliced Olived", "Smoked Ham", "Smoked Ham"]
 		},
 		{
 			"Title": "Lunch",
-			"Food": ["Chicken Tortilla Soup", "Fire Roasted Corn Soup", "Baked Chicken with Spices", "Cilantro Kale Pasta", "Lemon Pepper Sustainable Pacific Cod", "Oven Roasted Chicken Thigh", "Cheese Pizza", "Combo Meat Pizza", "Garlic Mashed Yukon Golds", "Steamed Rice", "Roasted Vegetables in Balsamic Mustard Vinaigrette", "Onion Rings", "Vegan Malibu Burger", "Bourbon Snicker Peanut Bar", "Bar Taqueria", "Condiments", "Flour Tortilla", "Gaucho Beans", "Pork Chile Verde", "Soyrizo and Potatoes", "Taqueria Chicken", "Taqueria Ground Beef", "Grilled Tuscan Turkey Sandwich"]
+			"Food": ["Chicken Pozole", "Tomato Bisque Soup", "BBQ Tofu Chili Garlic", "Malaysian Beef Rendang", "Oven Roasted Chicken Thigh", "Steamed Rice", "Sustainable Pacific Rockfish Vera Cruz", "Artichoke & Roasted Garlic Pizza", "Cheese Pizza", "Spicy Gold Potatoes", "Chili Soy Slaw", "Steamed Seasonal Vegetables", "Rice Krispy Treats", "UCSC Bakery French Rolls", "Vegan Brownie", "Bar Indian", "Basmati Rice Pullao", "Cauliflower Lentil Dal", "Chickpea Curry with Tomato and Kale", "Condiments", "Original Naan", "Potato Samosas", "Tandoori Chicken", "Banh Mi Hot Dog", "French Fries", "Zesty Seitan Creole Wrap", "Zesty Seitan Creole Wrap"]
 		},
 		{
 			"Title": "Dinner",
-			"Food": ["Chicken Tortilla Soup", "Fire Roasted Corn Soup", "Chipotle Lime Pork Loin", "Oven Roasted Chicken Thigh", "Vegetable Lo Mein", "Cheese Pizza", "Papas Bravas", "Steamed Rice", "Roasted Seasonal Vegetables", "Curly Fries", "Mushroom & Swiss Burger with Onions", "Bourbon Snicker Peanut Bar", "Chocolate Smore' Pie", "UCSC Bakery French Rolls", "BAR Wings", "BBQ Wings", "Condiments", "Hawaiian Coleslaw", "Hot 'N Spicy Wings", "Teriyaki Glaze Wings", "Vegan Baked Beans", "Vegan Tenders", "Portabello Sandwich"]
+			"Food": ["Chicken Pozole", "Tomato Bisque Soup", "Cajun Meatloaf", "Oven Roasted Chicken Thigh", "Pineapple Tofu Curry", "Steamed Rice", "Thai Basil Coconut Curry Chicken", "Artichoke & Roasted Garlic Pizza", "Cheese Pizza", "Spicy Cajun Gravy", "Garlic Mashed Potatoes", "Steamed Seasonal Vegetables", "Falafel  Wrap", "Garlic Fries", "Double Chocolate Dobash Cake", "Rice Krispy Treats", "UCSC Bakery French Rolls", "Vegan Brownie", "Armenian Salad", "Baba Ganoush Eggplant Dip", "Braised Kale with Crispy Shallots", "Harissa Roasted Chicken", "Koshary, Egyptian Rice and Chickpeas", "North African Bar", "Roasted Cauliflower and Almond Salad", "Tahini Sauce", "Artichoke Pesto Turkey Burger", "Artichoke Pesto Turkey Burger"]
 		},
 		{
 			"Title": "Late Night",
-			"Food": ["Beef and Lamb Gyro", "Oven Roasted Chicken Thigh", "Cheese Pizza", "Steamed Rice", "Tabouleh Salad", "Armenian Salad", "Roasted Seasonal Vegetables", "Curly Fries", "Black Beans", "Condiments", "Cuban Yellow Rice", "Garlic Rainbow Chard", "Pork Carnitas", "Spicy Havana Chicken"]
+			"Food": ["Curry Tomato Tempeh Stir Fry", "Oven Roasted Chicken Thigh", "Oven Roasted Turkey", "Steamed Brown Rice", "Artichoke & Roasted Garlic Pizza", "Cheese Pizza", "Turkey Gravy", "Sage Stuffing", "Sugar and Spice Roasted Yams", "Garlic Fries", "Armanino Alfredo Sauce", "Bar Pasta", "Bolognese Sauce", "Focaccia Pizza with Basil Pesto", "Marinara Sauce", "Penne", "Shrimp Remoulade Sandwich", "Shrimp Remoulade Sandwich"]
 		}
 	]
 },
 {
 	"Title": "Cowell/Stevenson Dining Hall Menu",
-	"Date": "Menus for Tuesday, November 27, 2018",
-	"Hours": "Hours go here",
+	"Date": "Menus for Wednesday, November 28, 2018",
 	"Menu": [
 		{
 			"Title": "Breakfast",
-			"Food": ["Belgian Waffles", "Cage Free Scrambled Eggs", "Crispy Bacon", "Eggbeaters Scramble", "Hard-boiled Cage Free Eggs", "Oatmeal Gluten-Free", "Papas Fritas", "Texas French Toast", "Banana Maple Walnut Muffin", "Blueberry Cheese Ring", "Strawberry Crunch Muffin", "Vegan Peanut Granola", "Bell Peppers", "Cage Free Eggs", "Cage Free Omelette Bar", "Cheddar Cheese", "Feta Cheese", "Fresh Organic Spinach", "Fresh Tomato", "Jalapeno", "Onions", "Oven Roasted Turkey", "Sliced Olived", "Smoked Ham"]
+			"Food": ["Belgian Waffles", "Buttermilk Pancakes", "Cage Free Scrambled Eggs", "Eggbeaters Scramble", "Hard-boiled Cage Free Eggs", "Mexican Chorizo Sausage Patties", "Oatmeal Gluten-Free", "Spicy Gold Potatoes", "Almond Bear Claws", "Apple Walnut Muffin", "Mocha Chip Muffin", "Old Fashioned Frosted Donut", "Vegan Peanut Granola", "Vegan Peanut Granola"]
 		},
 		{
 			"Title": "Lunch",
-			"Food": ["Chef's Special", "Couscous", "Harissa Roasted Chicken", "Tomato Bisque Soup", "Beef and Lamb Gyro", "Big Island Chicken Stir Fry", "Big Island Tofu Stir Fry", "Oven Roasted Chicken Thigh", "Steamed Rice", "Caramelized Onions and Sausage Pizza", "Cheese Pizza", "Chicken Noodle Soup", "Mexican Chocolate Cookie", "Vegan Oatmeal Cookie", "Whole Wheat Grilled Cheese Sandwich", "Bourbon Snicker Peanut Bar", "UCSC Bakery French Rolls", "Armenian Salad", "BAR Middle Eastern", "BAR Middle Eastern", "Falafels", "Malfouf", "Pita Bread", "Tabouleh Salad", "Tzatziki Sauce"]
+			"Food": ["Chicken Tortilla Soup", "Creamy Wild Mushroom Bisque", "Sizzling Buffalo Chicken Salad", "Sizzling Buffalo Tofu Salad", "Beef Tamales", "Oven Roasted Chicken Thigh", "Steamed Rice", "Cheese Pizza", "Garden Patch Supreme Pizza", "Steamed Seasonal Vegetables", "Berry White Cookie", "Mint Chip Cookie", "Rice Krispy Treats", "Vegan Brownie", "Gaucho Beans", "Mexican Rice", "Taqueria Chicken", "Taqueria Ground Beef", "Taqueria Ground Beef"]
 		},
 		{
 			"Title": "Dinner",
-			"Food": ["Tomato Bisque Soup", "Oven Roasted Chicken Thigh", "Spicy Shrimp Diablo on Linguine", "Steamed Rice", "Tofu Diablo on Linguine", "Caramelized Onions and Sausage Pizza", "Cheese Pizza", "Rice Pilaf", "Sauteed Seasonal Vegetable", "Bourbon Snicker Peanut Bar", "Chocolate Smore' Pie", "UCSC Bakery French Rolls", "BAR Street Taco", "BBQ Ginger Soy Chicken", "BBQ Tofu Chili Garlic", "Chili Soy Slaw", "Condiments", "Korean BBQ Beef", "Salsa Roja", "Sticky Rice"]
+			"Food": ["Double Chocolate Dobash Cake", "Rice Krispy Treats", "Vegan Brownie", "Vegan Brownie"]
 		},
 		{
 			"Title": "Late Night",
-			"Food": ["Hawaiian Macaroni Salad", "Island Beef Steak", "Oven Roasted Chicken Thigh", "Steamed Rice", "Caramelized Onions and Sausage Pizza", "Cheese Pizza", "Sticky Rice", "Pesto Chicken Sandwich", "Sweet Potato Fries", "BAR Street Taco", "BBQ Ginger Soy Chicken", "BBQ Tofu Chili Garlic", "Chili Soy Slaw", "Condiments", "Korean BBQ Beef", "Salsa Roja"]
+			"Food": ["Oven Roasted Chicken Thigh", "Penne", "Spicy Arrabbiata Sauce", "Vegan Polpette", "Cheese Pizza", "Garden Patch Supreme Pizza", "Barcelona Steak Sandwich", "Curly Fries", "Bar Indian", "Basmati Rice Pullao", "Cauliflower Lentil Dal", "Chickpea Curry with Tomato and Kale", "Condiments", "Original Naan", "Peruvian Bar", "Potato Samosas", "Tandoori Chicken", "Tandoori Chicken"]
 		}
 	]
 },
 {
 	"Title": "Crown/Merrill Dining Hall Menu",
-	"Date": "Menus for Tuesday, November 27, 2018",
-	"Hours": "Hours go here",
+	"Date": "Menus for Wednesday, November 28, 2018",
 	"Menu": [
 		{
 			"Title": "Breakfast",
-			"Food": ["Belgian Waffles", "Cage Free Scrambled Eggs", "Chicken Apple Sausage", "Hard-boiled Cage Free Eggs", "Oatmeal Gluten-Free", "Plantain Pancakes", "Tator Tots", "Banana Maple Walnut Muffin", "Blueberry Cheese Ring", "Strawberry Crunch Muffin", "Vegan Peanut Granola"]
+			"Food": ["Belgian Waffles", "Blueberry Pancakes", "Cage Free Scrambled Eggs", "Hard-boiled Cage Free Eggs", "Oatmeal Gluten-Free", "Papas Fritas", "Turkey Sausage Patty", "Almond Bear Claws", "Apple Walnut Muffin", "Mocha Chip Muffin", "Old Fashioned Frosted Donut", "Old Fashioned Frosted Donut"]
 		},
 		{
 			"Title": "Lunch",
-			"Food": ["Creamy Wild Mushroom Bisque", "Fire Roasted Corn Soup", "Baked Salmon with Avocado Chimichurri", "Big Paul's Creamy Chicken Mamou Pasta", "Black Rice, Beet and Kale Salad", "Oven Roasted Chicken Thigh", "Steamed Rice", "Falafel  Wrap", "Cheese Pizza", "Pizza Mushroom & Sausage", "Steamed Seasonal Vegetables", "Bourbon Snicker Peanut Bar", "Bar Indian", "Basmati Rice Pullao", "Cauliflower Lentil Dal", "Channa Masala", "Condiments", "Madras Chicken", "Original Naan", "Potato Samosas"]
+			"Food": ["Lentil & Lemon Soup", "Thai Coconut Curry Chicken Soup", "Lemon Pepper Cod", "Orange Glazed Chicken", "Orange Glazed Vegan Chicken", "Oven Roasted Chicken Thigh", "Steamed Rice", "Sticky Rice", "Pizza with Ranch and Bacon", "Roasted Seasonal Vegetables", "Rice Krispy Treats", "UCSC Bakery French Rolls", "Vegan Brownie", "Bar Taqueria", "Chipotle Gardein Strips", "Condiments", "Corn Tortillas", "Flour Tortilla", "Mexican Rice", "Refried Beans", "Taqueria Chicken", "Taqueria Chicken"]
 		},
 		{
 			"Title": "Dinner",
-			"Food": ["Creamy Wild Mushroom Bisque", "Fire Roasted Corn Soup", "Oven Roasted Chicken Thigh", "Steamed Rice", "Thai Shrimp Fried Rice", "Tuscan Roast Beef", "Veggie Fried Rice", "White and Wild Rice Pilaf", "Cheese Pizza", "Pizza Mushroom & Sausage", "Steamed Seasonal Vegetables", "Chocolate Smore' Pie", "UCSC Bakery French Rolls", "BBQ Shredded Pork", "Chipotle BBQ Sauce", "Condiments", "Mashed Potato Bowl Bar", "Mashed Yukon Golds", "Roasted Kale and Butternut Squash", "Tempura Chicken"]
+			"Food": ["Lentil & Lemon Soup", "Thai Coconut Curry Chicken Soup", "5 Spice BBQ Beef Chow Mein", "5 Spice BBQ Tofu Chow Mein", "Farro Mushroom Risotto", "Oven Roasted Chicken Thigh", "Roast Pork Loin with Parsley and Shallot Sauce", "Steamed Rice", "Pizza with Ranch and Bacon", "Roasted Seasonal Vegetables", "Double Chocolate Dobash Cake", "Bar Indian", "Basmati Rice Pullao", "Chicken Tikka Masala", "Chickpea Curry with Tomato and Kale", "Condiments", "Dal Saag", "Original Naan", "Potato Samosas", "Potato Samosas"]
 		},
 		{
 			"Title": "Late Night",
@@ -70,20 +67,19 @@
 },
 {
 	"Title": "Porter/Kresge Dining Hall Menu",
-	"Date": "Menus for Tuesday, November 27, 2018",
-	"Hours": "Hours go here",
+	"Date": "Menus for Wednesday, November 28, 2018",
 	"Menu": [
 		{
 			"Title": "Breakfast",
-			"Food": ["Oatmeal Gluten-Free", "Texas French Toast", "Bell Peppers", "Cage Free Eggs", "Cage Free Omelette Bar", "Cheddar Cheese", "Feta Cheese", "Fresh Organic Spinach", "Fresh Tomato", "Jalapeno", "Onions", "Oven Roasted Turkey", "Sliced Olived", "Smoked Ham", "Belgian Waffles", "Cage Free Scrambled Eggs", "Eggbeaters Scramble", "Flour Tortilla", "Hard-boiled Cage Free Eggs", "Papas Fritas", "Pizza with Potato, Sausage and Cheese", "Sausage Patties", "Thai Tofu Scramble"]
+			"Food": ["Almond Bear Claws", "Apple Walnut Muffin", "Mocha Chip Muffin", "Old Fashioned Frosted Donut", "Oatmeal Gluten-Free", "Bell Peppers", "Cage Free Eggs", "Cage Free Omelette Bar", "Cheddar Cheese", "Feta Cheese", "Fresh Organic Spinach", "Fresh Tomato", "Jalapeno", "Onions", "Oven Roasted Turkey", "Sliced Olived", "Smoked Ham", "Blueberry Pancakes", "Breakfast Burrito", "Cage Free Scrambled Eggs", "Chicken Apple Sausage", "Cinnamon Roasted Butternut Squash", "Eggbeaters Scramble", "Flour Tortilla", "Hard-boiled Cage Free Eggs", "Natural BridgesTofu Scramble", "Natural BridgesTofu Scramble"]
 		},
 		{
 			"Title": "Lunch",
-			"Food": ["Coconut Green Curry Shrimp Soup", "Sweet & Sour Mushroom Soup", "BBQ Shredded Pork", "Chicken Tenders", "Chipotle BBQ Sauce", "Condiments", "Mashed Potato Bowl Bar", "Mashed Yukon Golds", "Roasted Kale and Butternut Squash", "Vegan Garlic Mashed Potatoes", "Vegan Mushroom Gravy", "Bistro Cobb Salad", "Chicken Sofrito", "Cilantro Lemon Rice", "Oven Roasted Chicken Thigh", "Steamed Rice", "Steamed Seasonal Vegetables", "Cheese Pizza", "Spicy Double Sausage Pizza"]
+			"Food": ["Berry White Cookie", "Mint Chip Cookie", "Rice Krispy Treats", "Vegan Brownie", "Blended Beef & Mushroom Burger Hawaiian Style", "Chicken Ortega Soup", "Creamy Broccoli Cheddar Soup", "Atomic Cheese Sauce", "BAR Boardwalk Burgers", "Bacon", "Bread Bun", "Bread Onion Bun", "Burger Beef", "Burger Turkey", "Chili with Beef", "Sauteed Mushrooms", "Brown Rice Pilaf", "Farfalle Rustiche", "Oven Roasted Chicken Thigh", "Roasted Seasonal Vegetables", "Spicy Gold Potatoes", "Steamed Rice", "Thai Style Sustainable Pacific Cod", "Vegan Malibu Burger", "Cheese Pizza", "Hanalei Pizza with Chicken and Bacon", "Hanalei Pizza with Chicken and Bacon"]
 		},
 		{
 			"Title": "Dinner",
-			"Food": ["Chicken Noodle Soup", "Sweet & Sour Mushroom Soup", "Black Beans", "Carribbean Bar", "Coconut Basmati Rice", "Condiments", "Crispy Okra", "Fried Plantains", "Roasted Butternut Squash", "Vegan Collard Greens", "Wings Chicken Jerk", "BBQ Pork Ribs", "Jasmine Rice", "Oven Roasted Chicken Thigh", "Steak Cut Fries", "Steamed Rice", "Steamed Seasonal Vegetables", "Thai Basil Coconut Curry Chicken", "Thai Coconut Gardein Stirfry", "Vegan Baked Beans", "Cheese Pizza"]
+			"Food": ["Double Chocolate Dobash Cake", "Rice Krispy Treats", "UCSC Bakery French Rolls", "Vegan Brownie", "Chicken Ortega Soup", "White Bean with Kale Soup", "BAR Yakisoba Noodles", "Char Siu Chicken", "Char Siu Sauce", "Char Siu Seitan", "Sesame Yakisoba Noodles", "Stir Fry Vegetables", "Szechuan Sweet Chili Sauce", "Carne Adobo Verde", "Oven Roasted Chicken Thigh", "Oven Roasted Herbed Potatoes", "Roasted Seasonal Vegetables", "Sizzling Buffalo Chicken Salad", "Sizzling Buffalo Tofu Salad", "Steamed Rice", "Cheese Pizza", "Eggplant Parmesan Pizza", "Hanalei Pizza with Chicken and Bacon", "Hanalei Pizza with Chicken and Bacon"]
 		},
 		{
 			"Title": "Late Night",
@@ -93,24 +89,23 @@
 },
 {
 	"Title": "Rachel Carson/Oakes Dining Hall",
-	"Date": "Menus for Tuesday, November 27, 2018",
-	"Hours": "Hours go here",
+	"Date": "Menus for Wednesday, November 28, 2018",
 	"Menu": [
 		{
 			"Title": "Breakfast",
-			"Food": ["Belgian Waffles", "Cage Free Scrambled Eggs", "Eggbeaters Scramble", "French Waffles", "Hard-boiled Cage Free Eggs", "Oatmeal Gluten-Free", "Papas Fritas", "Quiche Alsace with Ham", "Turkey Sausage Patty", "Banana Maple Walnut Muffin", "Blueberry Cheese Ring", "Strawberry Crunch Muffin", "Vegan Peanut Granola", "Bell Peppers", "Cage Free Eggs", "Cage Free Omelette Bar", "Cheddar Cheese", "Feta Cheese", "Fresh Organic Spinach", "Fresh Tomato", "Jalapeno", "Onions", "Oven Roasted Turkey", "Sliced Olived", "Smoked Ham"]
+			"Food": ["Belgian Waffles", "Cage Free Scrambled Eggs", "Cinnamon Roasted Butternut Squash", "Eggbeaters Scramble", "Ham Steaks", "Hard-boiled Cage Free Eggs", "Oatmeal Gluten-Free", "Tator Tots", "Almond Bear Claws", "Apple Walnut Muffin", "Mocha Chip Muffin", "Old Fashioned Frosted Donut", "Vegan Peanut Granola", "Bell Peppers", "Cage Free Eggs", "Cage Free Omelette Bar", "Cheddar Cheese", "Feta Cheese", "Fresh Organic Spinach", "Fresh Tomato", "Jalapeno", "Onions", "Oven Roasted Turkey", "Sliced Olived", "Smoked Ham", "Smoked Ham"]
 		},
 		{
 			"Title": "Lunch",
-			"Food": ["Butternut Squash Bisque", "Thai Coconut Curry Chicken Soup", "Oven Roasted Chicken Thigh", "Portabello Tofu Fried Rice", "Steamed Rice", "Sustainable Pacific Rockfish Vera Cruz", "Cheese Pizza", "Hawaiian Pizza", "Cheese and Garlic Breadsticks", "Roasted Seasonal Vegetables", "Chocolate Chip Cookie", "Mexican Chocolate Cookie", "Halal Chicken Patty Sandwich", "Sweet Potato Fries", "Bourbon Snicker Peanut Bar", "Lemon Cookie", "Peanut Butter Cookie", "UCSC Bakery French Rolls", "Vegan Oatmeal Cookie", "Bar Pasta", "Cheese Manicotti with Marinara", "Condiments", "Creamy Alfredo Sauce", "Marinara Sauce", "Meatballs", "Penne"]
+			"Food": ["Chicken and Dumpling Soup", "Fire Roasted Corn Soup", "Greek Chicken Saute", "Oven Roasted Chicken Thigh", "Spicy Garbanzo Curry", "Steamed Rice", "Cheese Pizza", "Pizza Mushroom & Sausage", "Steamed Basmati Rice", "Sauteed Seasonal Vegetable", "Berry White Cookie", "Mint Chip Cookie", "Rice Krispy Treats", "UCSC Bakery French Rolls", "Vegan Brownie", "BAR Wings", "BBQ Wings", "Condiments", "Hot 'N Spicy Wings", "Teriyaki Glaze Wings", "Vegan Baked Beans", "Vegan Tenders", "Vegan Tenders"]
 		},
 		{
 			"Title": "Dinner",
-			"Food": ["Butternut Squash Bisque", "Thai Coconut Curry Chicken Soup", "General Tso's Chicken", "General Tso's Tofu", "Hawaiian Pork Loin", "Oven Roasted Chicken Thigh", "Steamed Rice", "Cheese Pizza", "Hawaiian Pizza", "Sticky Rice", "Sugar and Spice Roasted Yams", "Roasted Seasonal Vegetables", "Bourbon Snicker Peanut Bar", "Chocolate Smore' Pie", "UCSC Bakery French Rolls", "Black Beans", "Carribbean Bar", "Coconut Basmati Rice", "Condiments", "Fried Plantains", "Pork Carnitas", "Roasted Butternut Squash", "Vegan Spicy Garbanzo Curry"]
+			"Food": ["Chicken and Dumpling Soup", "Fire Roasted Corn Soup", "Cuban Chicken and Chorizo", "Oven Roasted Chicken Thigh", "Steamed Rice", "Cheese Pizza", "Pizza Mushroom & Sausage", "Sweet & Sour Gardein", "Sweet and Sour Shrimp", "Black Beans", "Sticky Rice", "Sauteed Seasonal Vegetable", "Double Chocolate Dobash Cake", "Rice Krispy Treats", "UCSC Bakery French Rolls", "Vegan Brownie", "Atomic Cheese Sauce", "BAR Boardwalk Burgers", "Bacon", "Bread Bun", "Burger Bar #1 Condiments", "Burger Beef", "Burger Turkey", "Chili with Beef", "Onion Rings", "Sauteed Mushrooms", "Vegan Malibu Burger", "Vegan Malibu Burger"]
 		},
 		{
 			"Title": "Late Night",
-			"Food": ["Asian Flank Steak w/Teriyaki", "Chinese Chicken Salad", "Chinese Vegan Salad", "Cilantro Lemon Rice", "Oven Roasted Chicken Thigh", "Roasted Seasonal Vegetables", "Steamed Rice", "Cheese Pizza", "Hawaiian Pizza", "Falafel  Wrap", "Sweet Potato Fries", "Black Beans", "Carribbean Bar", "Coconut Basmati Rice", "Condiments", "Fried Plantains", "Pork Carnitas", "Roasted Butternut Squash", "Vegan Spicy Garbanzo Curry"]
+			"Food": ["BBQ Pork Ribs", "Crispy Beef and Bean Tostada", "Crispy Tostada", "Oven Roasted Chicken Thigh", "Oven Roasted Herbed Potatoes", "Sauteed Seasonal Vegetable", "Steamed Rice", "Cheese Pizza", "Pizza Mushroom & Sausage", "Blended Beef & Mushroom Burger Hawaiian Style", "Onion Rings", "Atomic Cheese Sauce", "BAR Boardwalk Burgers", "Bacon", "Bread Bun", "Burger Bar #1 Condiments", "Burger Beef", "Burger Turkey", "Chili with Beef", "Onion Rings", "Sauteed Mushrooms", "Vegan Malibu Burger", "Vegan Malibu Burger"]
 		}
 	]
 }]

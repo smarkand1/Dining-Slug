@@ -27,6 +27,13 @@ export class Capacity extends React.Component {
         const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
         const OPENING = 0;
         const CLOSING = 1;
+        const SUNDAY = 0;
+        const SATURDAY = 6;
+        const MERRILL = 2;
+        const PORTER = 3;
+        const BUSY = 60;
+        const MODERATE = 30;
+        const NOT_BUSY = 0;
 
         //get the system time and the day name
         var d = new Date();
@@ -40,7 +47,7 @@ export class Capacity extends React.Component {
             return (<div className="busy">Closed</div>);
         }
         //Check if we're on the weekends
-        if((currDayNum === 0 || currDayNum === 6) && (hall === 2 || hall === 3)){
+        if((currDayNum === SUNDAY || currDayNum === SATURDAY) && (hall === MERRILL || hall === PORTER)){
             return (<div className="busy">Closed</div>);
         }
 
@@ -50,13 +57,13 @@ export class Capacity extends React.Component {
         var currTime = currDay[currHour];
 
         //convert popularity to a word
-        if(currTime > 60){
+        if(currTime > BUSY){
             return (<div className="busy">Busy</div>);
         }
-        else if(currTime > 40){
+        else if(currTime > MODERATE){
             return (<div className="moderate">Moderate</div>);
         }
-        else if(currTime > 0){
+        else if(currTime > NOT_BUSY){
             return (<div className="notBusy">Not Busy</div>);
         }
         else{
