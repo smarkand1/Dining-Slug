@@ -1,3 +1,4 @@
+/*Stlying for app.js*/
 .App {
   background-color: #003c6c;
 }
@@ -18,8 +19,8 @@
 }
 
 .gradient {
-  background-color: #fdc700; /* For browsers that do not support gradients */
   background-image: linear-gradient(to left, #003c6c , #fdc700);
+  background-color: #fdc700; /* For browsers that do not support gradients */
   height: 10px;
   margin-top: 7px;
 }
@@ -39,6 +40,23 @@
   }
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/*Styling for the quicknav list
+File: Listhome.js*/
 .quickNavList {
   list-style-type: none;
   margin: 0;
@@ -46,7 +64,7 @@
   overflow: hidden;
 }
 
-/*These are the actual text boxes*/
+/*Each text boxe with dining hall name*/
 .quickNav a {
   float: left;
   padding: 10px 10px;
@@ -69,6 +87,7 @@
   -webkit-transition-duration: 0.3s;
 }
 
+/*The active quicknav tab*/
 .active .quickNav{
   background-color: #fdc700;
   height: 5vh;
@@ -80,49 +99,34 @@
   color:white;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
-.open {
-  color: white;
-}
-
-.closed {
-  color: red;
-}
-
+/*The levels of activity on the dining hall
+File: Capacity.js*/
+/*Text for not busy*/
 .notBusy {
   display: inline-block;
   color: rgb(0, 255, 29);
 }
 
+/*Text for moderate busy*/
 .moderate {
   display: inline-block;
   color: rgb(255, 114, 0);
 }
 
+/*Text for busy*/
 .busy {
   display: inline-block;
   color: rgb(255, 0, 0);
 }
 
+/*The ratings for each dining hall on the home page
+File: Ratings.js*/
 .dinRatings{
   margin: 0px;
   padding: 0px;
 }
 
+/*The link to the google reviews page*/
 .reviews {
   font-size: 2vmin;
   text-decoration: none;
@@ -133,6 +137,9 @@ code {
   text-decoration: underline;
 }
 
+/*Styling for the menu
+File: Menu.js*/
+/*Styling for each food items name*/
 .foodItem {
   outline: none;
   background-color: rgba(0,60,108);
@@ -146,13 +153,7 @@ code {
   width: 30vw;
 }
 
-.divText{
-  text-decoration: none;
-  font-weight: bold;
-  padding: 0px;
-  margin: 0px;
-}
-
+/*Styling for each button for the food item*/
 .foodButton {
   outline: none;
   padding: 10px;
@@ -174,6 +175,18 @@ code {
   background-color: #002b4e;
 }
 
+/*Stlying for the ratings and review
+File: FoodItem.js*/
+.divText{
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0px;
+  margin: 0px;
+}
+
+/*Styling for the food page
+File: FoodPage.js*/
+/*The food name*/
 .foodPageTitle {
   font-size: 7vmin;
   text-align: center;
@@ -182,27 +195,30 @@ code {
   padding: 0px;
 }
 
+/*Wrapper for the two boxes*/
 .wrapper {
   width: 100%;
 }
 
+/*Left box containing about and nutritional info*/
 .leftBox {
   border: 1.5px solid #fdc700;
   border-radius: 8px;
   float: left;
-  min-height: 40vh;
-  max-height: 40vh;
+  min-height: 45vh;
+  max-height: 45vh;
   width: 40vw;
   margin: 0 5vw;
   margin-top: 2vh;
   overflow: hidden;
 }
 
+/*Right box containing Serving and Ratings*/
 .rightBox{
   border: 1.5px solid #fdc700;
   border-radius: 8px;
-  min-height: 40vh;
-  max-height: 40vh;
+  min-height: 45vh;
+  max-height: 45vh;
   width: 40vw;
   margin: 0 3vw;
   margin-top: 2vh;
@@ -210,6 +226,7 @@ code {
   float: left;
 }
 
+/*The about styling*/
 .leftBoxPrefs{
   padding: 0;
   margin: 10px 0;
@@ -217,6 +234,7 @@ code {
   text-align: center;
 }
 
+/*The URL box styling*/
 .leftBoxURL{
   padding: 0;
   margin-top: 4vh;
@@ -224,6 +242,7 @@ code {
   text-align: center;
 }
 
+/*The box for dining halls serving in and the title (Serving At)*/
 .rightBoxServing{
   padding: 0;
   margin: 10px 0;
@@ -231,20 +250,24 @@ code {
   text-align: center;
 }
 
+/*The box for the rating for the dining hall*/
 .rightBoxRating{
   padding: 0;
   margin-top: 4vh;
   text-align: center;
 }
 
+/*The box for the list of dining halls its serving in*/
 .hallList {
   list-style-type: none;
 }
 
+/*The Box for the list of preferences (vegan, soy, etc)*/
 .prefList {
   list-style-type: none;
 }
 
+/*Each item in the list of dining halls*/
 .hallItem{
   padding: 0px auto;
   font-size: 3vmin;
@@ -257,11 +280,13 @@ code {
   text-decoration: underline;
 }
 
+/*Each item in the list of preferences*/
 .prefItem{
   font-size: 3vmin;
   text-align: center;
 }
 
+/*The url for the nutritional info*/
 .nutURL{
   text-decoration: none;
   color: white;
@@ -271,6 +296,7 @@ code {
   text-decoration: underline;
 }
 
+/*Styling for the back button*/
 .backButton {
   padding: 8px;
   margin: 10px 5vw;
@@ -283,11 +309,15 @@ code {
   display: block;
 }
 
+/*Styling for the home page
+File: Home.js*/
+/*Container for search bar and currently serving*/
 .topBar {
   margin: 0;
   padding: 0;
 }
 
+/*Search bar*/
 .searchItem {
   margin-top: 1.3vh;
   width: 70vw;
@@ -296,6 +326,7 @@ code {
   position: relative;
 }
 
+/*Currently Serving*/
 .serving {
   flex: 1;
   margin-top: 12px;
@@ -304,6 +335,9 @@ code {
   float: left;
 }
 
+/*Styles the homenavigation
+File: HomeNav.js*/
+/*Name of the dining hall*/
 .name{
   vertical-align: middle;
   display: inline-block;
@@ -313,6 +347,7 @@ code {
   color: white;
 }
 
+/*Activity rating for dining hall*/
 .capacity{
   vertical-align: middle;
   display: inline-block;  
@@ -322,6 +357,7 @@ code {
   color: white;
 }
 
+/*The dining hall rating*/
 .rating{
   position: absolute;
   top: calc(6vh - 1.5vmin);
@@ -334,6 +370,7 @@ code {
   color: white;
 }
 
+/*Container for the 5 buttons*/
 .bigButtons {
   top: 0;
   right: 0;
@@ -341,11 +378,13 @@ code {
   left: 0;
 }
 
+/*The list for the buttons*/
 .boxList {
   padding: 0;
   margin: 0;
 }
 
+/*Each item in the list*/
 .boxItem {
   position: relative;
   width: 100%;
@@ -372,8 +411,8 @@ code {
   -webkit-transition-duration: 0.2s;
 }
 
+/*Use for adding gradient transitions on each item. Set as just background transition for now*/
 .boxItemHelper {
-  /*Use for adding gradient transitions. Set as just background transition for now*/
   background-color: rgba(0,60,108, 0);
   border: 1.5px solid #fdc700;
   border-radius: 20px;
@@ -397,31 +436,8 @@ code {
   -webkit-transition-duration: 0.3s;
 }
 
-.buttonRating{
-  margin: 0px;
-  padding: 5px;
-  vertical-align: middle;
-  display: inline-block;
-  text-align: center;
-  font-size: 3vmin;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  background-color: rgb(0,60,108,0);
-}
-
-.buttonRating:hover{
-  background-color: rgb(0,60,108);
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-  transition-timing-function: ease-out;
-  transition-duration: 0.3s;
-  /* Safari Support*/
-  -webkit-transition-timing-function: ease-out;
-  -webkit-transition-duration: 0.3s;
-}
-
-
-/*The list properties: positioning, type*/
+/*The list properties: positioning, type
+File: Menu.js*/
 .menuList{
   display: block;
   list-style-type: none;
@@ -502,7 +518,8 @@ li.foodButton{
   margin: 0px;
 }
 
-/*Search Bar Styling*/
+/*Search Bar Styling
+File: Search.js*/
 .searchBar {
   width: 30vw;
   min-width: 300px;
