@@ -133,13 +133,6 @@ code {
   text-decoration: underline;
 }
 
-/*@MEDIA Responsive Code Block */
-@media screen and (max-width:450px){
-  .dinRatings{
-      width: 100%;
-  }
-}
-
 .foodItem {
   outline: none;
   background-color: rgba(0,60,108);
@@ -179,16 +172,6 @@ code {
 .foodButton:hover {
   border-radius: 0px;
   background-color: #002b4e;
-}
-/* MEDIA FOR RESPONSIVE DESIGN */
-//If width of screen reaches 450px, change the width back to 100% (No downsizing)
-@media screen and (max-width:450px){
-  .foodItem{
-      width: 100%;
-  }
-   .foodButton:hover{
-      width: 100%;
-  }
 }
 
 .foodPageTitle {
@@ -615,4 +598,22 @@ input {
 
 .searchButton:hover {
   background-color: #002b4e;
+}
+
+/*@MEDIA Responsive Code Block */
+@media screen and (max-width:450px){
+  .dinRatings{
+      width: 100%;
+  }
+}
+
+/* MEDIA FOR RESPONSIVE DESIGN */
+/*If width of screen reaches 450px, change the width back to 100% (No downsizing)*/
+@media screen and (max-width:450px){
+  .foodItem{
+      width: 100%;
+  }
+   .foodButton:hover{
+      width: 100%;
+  }
 }
