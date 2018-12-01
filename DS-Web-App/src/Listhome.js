@@ -4,7 +4,6 @@
 //Thank to Chandler for the styling
 import React from 'react';
 import { NavLink} from 'react-router-dom';
-import { Serving } from './components/Serving';
 import './App.css';
 
 export class Listhome extends React.Component{

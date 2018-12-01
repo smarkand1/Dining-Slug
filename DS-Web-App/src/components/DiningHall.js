@@ -48,9 +48,11 @@ export class DiningHall extends React.Component {
                         <img src ={require('./slug.png')}/>
                     </div>
                     <div className="gradient"></div>
+                    <div>
                     <Listhome/>
                     <Search searchWithCode = {hall}/>
                     <Menu hallCode = {hall}/>    
+                    </div>
                 </header>
           </div>
         );
