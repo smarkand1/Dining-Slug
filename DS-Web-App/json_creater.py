@@ -2,6 +2,7 @@ import scraper
 import requests
 import dhpop
 import json
+import sys
 
 def print_menu(file, term, menu, food_index):
     '''
@@ -168,15 +169,23 @@ prev_times_json = json.load(open('DS-Web-App/src/components/poptimes.json'))
 prev_ratings = prev_ratings_json["Halls"]
 prev_times = prev_times_json["Halls"]
 
-#Output files
-data_file = open("DS-Web-App/src/components/dailyMenu.json", "w")
-search_file = open("DS-Web-App/src/components/search.json", "w")
-food_file = open("DS-Web-App/src/components/food.json", "w")
+#Output files for google api
 ratings_file = open("DS-Web-App/src/components/dhRating.json", "w")
 times_file = open("DS-Web-App/src/components/poptimes.json", "w")
 
 #Write Data for times and ratings using google data
 dhpop.print_google_data(ratings_file, times_file, prev_ratings, prev_times)
+ratings_file.close()
+times_file.close()
+
+urls = scraper.get_dining_hall_URLs()
+if(urls == -1):
+    sys.exit()
+
+#Output files for webscraper
+data_file = open("DS-Web-App/src/components/dailyMenu.json", "w")
+search_file = open("DS-Web-App/src/components/search.json", "w")
+food_file = open("DS-Web-App/src/components/food.json", "w")
 
 count = 0
 NAME = 0
@@ -200,7 +209,7 @@ data_file.write("{\n\"data\":[")
 #Starts the JSON file for food.json
 search_file.write("{\n\t\"Ids\": [\n")
 
-for url in scraper.get_dining_hall_URLs():
+for url in urls:
     #Purpose is to stop after the standard dining halls
     #First 5 links are the 5 dining halls
     count += INCREMENT_BY_ONE
@@ -282,6 +291,4 @@ food_file.write("\n}")
 #Close the files
 data_file.close()   
 search_file.close()   
-ratings_file.close()
-times_file.close()
 food_file.close()  

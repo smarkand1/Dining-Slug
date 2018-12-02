@@ -21,7 +21,8 @@ def get_dining_hall_URLs():
         print("Error in connecting to website")
         return None
     else:
-       print("response code: ", response.status_code) 
+       print("response code: ", response.status_code)
+       return -1; 
     html = response.content
     soup = BeautifulSoup(html, "html.parser")
 
