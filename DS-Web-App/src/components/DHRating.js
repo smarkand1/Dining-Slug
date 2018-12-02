@@ -121,30 +121,8 @@ export class DHRating extends React.Component {
         //Return the rendered component
         return(
             <div className="dinRatings">
-<<<<<<< HEAD
                 {this.state.final_UI ===null ? "Loading reviews.." : this.state.final_UI}
             </div>
-=======
-                <div> 
-                    Rating: <Ratings  
-                        rating = {ratings}
-                        widgetRatedColors = 'rgb(253, 199, 0)'
-                        widgetEmptyColors = 'rgb(203, 211, 227)'
-                        widgetHoverColors = 'rgba(255, 219, 86, 0)'
-                        widgetDimensions = '3vmin'
-                    >
-                        <Ratings.Widget />
-                        <Ratings.Widget />
-                        <Ratings.Widget />
-                        <Ratings.Widget />
-                        <Ratings.Widget />
-                    </Ratings>
-                </div>
-                <div className="numReviews">
-                    Google Reviews: {reviews}
-                </div>
-            </div>            
->>>>>>> FrontEnd
         );
     }
 }
