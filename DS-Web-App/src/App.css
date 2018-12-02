@@ -630,6 +630,10 @@ input {
   background-color: #002b4e;
 }
 
+.hallhours {
+  float: right;
+}
+
 /*@MEDIA Responsive Code Block */
 @media screen and (max-width:450px){
 
@@ -747,12 +751,7 @@ input {
   }
 
   .dropdown:hover .dropbtn {
-    background-color: #fdc700;
-    transition-timing-function: ease-out;
-    transition-duration: 0.3s;
-    /* Safari Support*/
-    -webkit-transition-timing-function: ease-out;
-    -webkit-transition-duration: 0.3s;
+    background-color: rgb(0,60,108);
   }
 
   .title {
@@ -774,5 +773,18 @@ input {
     padding-top: 1.5vw;
     width: 100%;
     font-weight: bold;
+  }
+
+  .collapsibleButton:hover{
+    background-color: rgb(0,60,108);
+  }
+
+  .serving {
+    font-size: 5vmin;
+    padding-top: 2vw;
+  }
+
+  .open {
+    padding-top: vw;
   }
 }
