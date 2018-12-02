@@ -6,6 +6,7 @@ import React from 'react';
 import { NavLink} from 'react-router-dom';
 import './App.css';
 import MediaQuery from 'react-responsive';
+import { Header } from './components/Header';
 
 
 export class Listhome extends React.Component{
@@ -81,6 +82,7 @@ export class Listhome extends React.Component{
 								Rachel Carson/Oakes
 							</NavLink>
 						</li>
+						<Header pdfCode = {this.props.name}/>
 					</ul>
 				</MediaQuery>
 

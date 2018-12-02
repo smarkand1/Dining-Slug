@@ -65,14 +65,12 @@ export class FoodPage extends React.Component {
                         <header className="App-header">
                             <div className="title">
                                 Dining Slug
-                                <img src ={require('./slug.png')}/>
+                                <img class="logo" src ={require('./slug.png')}/>
                             </div>
                             <div className="gradient"></div>
                             <div className="topBar">
                                 <Listhome/>
-                                <div className="searchItem">
                                     <Search searchWithCode = {5}/>
-                                </div>
                             </div>
 
                             <div className="foodPageTitle">
@@ -84,11 +82,11 @@ export class FoodPage extends React.Component {
                                     <div className="leftBoxPrefs">
                                         <u>About</u>
                                         <div className="prefList">
-                                            {this.renderListPref(this.state.preferences)}
+                                            {this.renderListPref(this.state["preferences"])}
                                         </div>
                                     </div>
                                     <div className="leftBoxURL">
-                                        <a href={this.state["url"]} target="_blank" className="nutURL">Click Here for Nutritional Info</a>
+                                        <a href={this.state["url"]} target="_blank" className="nutURL">Click <u>Here</u> for Nutritional Info</a>
                                     </div>
                                 </div>
                                 <div className="rightBox">
