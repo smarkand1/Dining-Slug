@@ -146,7 +146,7 @@ File: Capacity.js*/
 }
 
 /*The ratings for each dining hall on the home page
-File: Ratings.js*/
+File: DHRatings.js*/
 .dinRatings{
   margin: 0px;
   padding: 0px;
@@ -346,8 +346,9 @@ File: Home.js*/
 
 /*Search bar*/
 .searchItem {
-  margin-top: 1.3vh;
-  width: 70vw;
+  margin-top: 15px;
+  width: 30vw;
+  min-width: 300px;
   float: left;
   z-index: 10;
   position: relative;
