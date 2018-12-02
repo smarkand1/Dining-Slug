@@ -22,7 +22,7 @@ export class Home extends React.Component {
                 <header className="App-header">
                     <div className="title">
                         Dining Slug
-                        <img src ={require('./slug.png')}/>
+                        <img class="logo" src ={require('./slug.png')}/>
                     </div>
                     <div className="gradient"></div>
                     <div className="topBar">

@@ -1,0 +1,80 @@
+{
+"data":[{
+	"Title": "Colleges Nine & Ten Menu",
+	"Date": "Menus for Saturday, December 01, 2018",
+	"Menu": [
+		{
+			"Title": "Breakfast",
+			"Food": ["Apple Pancakes", "Cajun Roasted Red Potatoes", "Natural BridgesTofu Scramble", "Oatmeal Gluten-Free", "Sausage Links", "Sausage Links"]
+		},
+		{
+			"Title": "Lunch",
+			"Food": ["Apple Pancakes", "Cage Free Scrambled Eggs", "Chilaquiles Frittata", "Eggs Benedict", "Hard-boiled Cage Free Eggs", "Natural BridgesTofu Scramble", "Oatmeal Gluten-Free", "Chicken Noodle Soup", "Thai Lentil and Coconut Soup", "Jambalaya with Chicken, Ham & Sausage", "Oven Roasted Chicken Thigh", "Steamed Rice", "Cheese Pizza", "Pizza Philly Steak", "Steamed Seasonal Vegetables", "Blueberry Muffin", "Cake Donut", "Cheese Danish", "Peach Crunch Muffin", "Sweet Pumpkin Bar", "Bar Pasta", "Cheese Tortellini", "Condiments", "Garlic Rainbow Chard", "Italian Roasted Chicken", "Marinara Sauce", "Penne", "Tomato & Basil Relish", "Tomato & Basil Relish"]
+		},
+		{
+			"Title": "Dinner",
+			"Food": ["Chicken Noodle Soup", "Thai Lentil and Coconut Soup", "Oven Roasted Chicken Thigh", "Steamed Rice", "Cheese Pizza", "Pizza Philly Steak", "Steamed Seasonal Vegetables", "Sweet Pumpkin Bar", "UCSC Bakery French Rolls", "Vegan Apple Cranberry Pie", "Gardein and Broccoli Stir Fry", "Grilled Huli Huli Chicken", "Hawaiian Bar", "Steamed Bok Choy", "Sticky Rice", "Yakisoba Stir-Fried Noodles", "Blended Beef & Mushroom Burger Hawaiian Style", "French Fries", "Vegan Malibu South West Burger", "Vegan Malibu South West Burger"]
+		},
+		{
+			"Title": "Late Night",
+			"Food": ["Oven Roasted Chicken Thigh", "Shrimp Etouffee", "Steamed Rice", "Cheese Pizza", "Pizza Philly Steak", "Savory Cheese Grits", "Blended Beef & Mushroom Burger Hawaiian Style", "Onion Rings", "BBQ Tofu Chili Garlic", "Bar Rice Bowl", "Condiments", "Sticky Rice", "Stir Fry Vegetables", "Teriyaki Chicken Shoyu", "Teriyaki Chicken Shoyu"]
+		}
+	]
+},
+{
+	"Title": "Cowell/Stevenson Dining Hall Menu",
+	"Date": "Menus for Saturday, December 01, 2018",
+	"Menu": [
+		{
+			"Title": "Breakfast",
+			"Food": ["Avocado Toast with Spicy Fried Egg", "Cajun Roasted Red Potatoes", "Crispy Bacon", "Oatmeal Gluten-Free", "Tollhouse Pancakes", "Tollhouse Pancakes"]
+		},
+		{
+			"Title": "Lunch",
+			"Food": ["Cajun Roasted Red Potatoes", "Crispy Bacon", "Oatmeal Gluten-Free", "Tollhouse Pancakes", "Chicken Noodle Soup", "Creamy Broccoli Cheddar Soup", "Fettuccine con Pollo", "Oven Roasted Chicken Thigh", "Steamed Rice", "Cheese Pizza", "Chipotle Chicken Pizza", "Steamed Seasonal Vegetables", "Chocolate Chip Cookies", "Blueberry Muffin", "Cake Donut", "Cheese Danish", "Oatmeal Raisin Cookie", "Peach Crunch Muffin", "Sweet Pumpkin Bar", "Gardein and Broccoli Stir Fry", "Grilled Teriyaki Steak", "Hawaiian Bar", "Hawaiian Coleslaw", "Potato Mac Salad", "Spam Fried Rice", "Sticky Rice", "Sticky Rice"]
+		},
+		{
+			"Title": "Dinner",
+			"Food": ["Chicken Noodle Soup", "Creamy Broccoli Cheddar Soup", "Chef's Special", "Macaroni & Cheese", "Oven Roasted Chicken Thigh", "Steamed Rice", "Cheese Pizza", "Chipotle Chicken Pizza", "Steamed Seasonal Vegetables", "Sweet Pumpkin Bar", "UCSC Bakery French Rolls", "Vegan Apple Cranberry Pie", "Cheese Sauce", "Condiments", "Jalapeno", "Nachos Bar", "Refried Beans", "Taqueria Chicken", "Taqueria Ground Beef", "Tortilla Chips", "Tortilla Chips"]
+		},
+		{
+			"Title": "Late Night",
+			"Food": []
+		}
+	]
+},
+{
+	"Title": "Crown/Merrill Dining Hall Menu",
+	"Date": "Menus for Saturday, December 01, 2018",
+	"Menu": [
+	]
+},
+{
+	"Title": "Porter/Kresge Dining Hall Menu",
+	"Date": "Menus for Saturday, December 01, 2018",
+	"Menu": [
+	]
+},
+{
+	"Title": "Rachel Carson/Oakes Dining Hall",
+	"Date": "Menus for Saturday, December 01, 2018",
+	"Menu": [
+		{
+			"Title": "Breakfast",
+			"Food": ["Banana and Coconut Pancakes", "Biscuit and Gravy", "Hash Brown Patty", "Natural BridgesTofu Scramble", "Oatmeal Gluten-Free", "Sausage Links", "Sausage Links"]
+		},
+		{
+			"Title": "Lunch",
+			"Food": ["Banana and Coconut Pancakes", "Hash Brown Patty", "Natural BridgesTofu Scramble", "Oatmeal Gluten-Free", "Sausage Links", "Creamy Wild Mushroom Bisque", "Home Style Ground Beef Chili", "Grilled  Lemon Thyme Chicken", "Oven Roasted Chicken Thigh", "Steamed Rice", "Buffalo Chicken Pizza", "Cheese Pizza", "Lemon Herbed Orzo", "Sauteed Seasonal Vegetable", "Chocolate Chip Cookies", "Blueberry Muffin", "Cake Donut", "Cheese Danish", "Peach Crunch Muffin", "Sweet Pumpkin Bar", "UCSC Bakery French Rolls", "Black Beans", "Carribbean Bar", "Condiments", "Crispy Okra", "Cuban Banana BBQ'd Chicken", "Fried Plantains", "Pork Carnitas", "Roasted Butternut Squash", "Vegan Collard Greens", "Vegan Spicy Garbanzo Curry", "Vegan Spicy Garbanzo Curry"]
+		},
+		{
+			"Title": "Dinner",
+			"Food": ["Creamy Wild Mushroom Bisque", "Home Style Ground Beef Chili", "Lasagna Bolognese", "Oven Roasted Chicken Thigh", "Steamed Rice", "Buffalo Chicken Pizza", "Cheese Pizza", "Cheesy Garlic Bread Sticks", "Sauteed Seasonal Vegetable", "Burger Turkey", "Sweet Pumpkin Bar", "UCSC Bakery French Rolls", "Vegan Apple Cranberry Pie", "Bar Indian", "Basmati Rice Pullao", "Dal Saag", "Madras Chicken", "Matar Paneer", "Original Naan", "Potato Samosas", "Potato Samosas"]
+		},
+		{
+			"Title": "Late Night",
+			"Food": []
+		}
+	]
+}]
+}

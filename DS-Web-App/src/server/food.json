@@ -1,867 +1,487 @@
 {
-	"Belgian Waffles": {
+	"Apple Pancakes": {
 		"Preferences": ["Vegetarian", "Soy", "Eggs", "Dairy"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=217033%2A1",
-		"Dining Halls": ["Colleges Nine & Ten Menu", "Cowell/Stevenson Dining Hall Menu", "Crown/Merrill Dining Hall Menu", "Rachel Carson/Oakes Dining Hall"]
-	},
-	"Bob's Pancakes": {
-		"Preferences": ["Vegan", "Gluten Free"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=180104%2A2",
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=217004%2A2",
 		"Dining Halls": ["Colleges Nine & Ten Menu"]
 	},
-	"Cage Free Scrambled Eggs": {
-		"Preferences": ["Vegetarian", "Eggs", "Gluten Free"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=061002%2A1",
-		"Dining Halls": ["Colleges Nine & Ten Menu", "Cowell/Stevenson Dining Hall Menu", "Crown/Merrill Dining Hall Menu", "Porter/Kresge Dining Hall Menu", "Rachel Carson/Oakes Dining Hall"]
+	"Cajun Roasted Red Potatoes": {
+		"Preferences": ["Vegan", "Gluten Free"],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=012252%2A3",
+		"Dining Halls": ["Colleges Nine & Ten Menu", "Cowell/Stevenson Dining Hall Menu"]
 	},
-	"Hard-boiled Cage Free Eggs": {
-		"Preferences": ["Vegetarian", "Eggs", "Gluten Free"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=061003%2A1",
-		"Dining Halls": ["Colleges Nine & Ten Menu", "Cowell/Stevenson Dining Hall Menu", "Crown/Merrill Dining Hall Menu", "Porter/Kresge Dining Hall Menu", "Rachel Carson/Oakes Dining Hall"]
+	"Natural BridgesTofu Scramble": {
+		"Preferences": ["Vegan", "Soy", "Gluten Free"],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=140108%2A4",
+		"Dining Halls": ["Colleges Nine & Ten Menu", "Rachel Carson/Oakes Dining Hall"]
 	},
 	"Oatmeal Gluten-Free": {
 		"Preferences": ["Vegan", "Gluten Free"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=031003%2A6",
-		"Dining Halls": ["Colleges Nine & Ten Menu", "Cowell/Stevenson Dining Hall Menu", "Crown/Merrill Dining Hall Menu", "Porter/Kresge Dining Hall Menu", "Rachel Carson/Oakes Dining Hall"]
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=031003%2A6",
+		"Dining Halls": ["Colleges Nine & Ten Menu", "Cowell/Stevenson Dining Hall Menu", "Rachel Carson/Oakes Dining Hall"]
 	},
 	"Sausage Links": {
 		"Preferences": ["Pork", "Gluten Free"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=089002%2A2",
-		"Dining Halls": ["Colleges Nine & Ten Menu"]
-	},
-	"Tator Tots": {
-		"Preferences": ["Soy"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=161012%2A3",
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=089014%2A2",
 		"Dining Halls": ["Colleges Nine & Ten Menu", "Rachel Carson/Oakes Dining Hall"]
 	},
-	"Almond Bear Claws": {
-		"Preferences": ["Vegetarian", "Peanuts and/or Tree Nuts", "Soy", "Eggs", "Dairy"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=219178%2A1",
-		"Dining Halls": ["Colleges Nine & Ten Menu", "Cowell/Stevenson Dining Hall Menu", "Crown/Merrill Dining Hall Menu", "Porter/Kresge Dining Hall Menu", "Rachel Carson/Oakes Dining Hall"]
+	"Cage Free Scrambled Eggs": {
+		"Preferences": ["Vegetarian", "Eggs", "Gluten Free"],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=061002%2A3",
+		"Dining Halls": ["Colleges Nine & Ten Menu"]
 	},
-	"Apple Walnut Muffin": {
-		"Preferences": ["Peanuts and/or Tree Nuts", "Soy", "Eggs", "Dairy", "Vegan"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=023042%2A1",
-		"Dining Halls": ["Colleges Nine & Ten Menu", "Cowell/Stevenson Dining Hall Menu", "Crown/Merrill Dining Hall Menu", "Porter/Kresge Dining Hall Menu", "Rachel Carson/Oakes Dining Hall"]
+	"Chilaquiles Frittata": {
+		"Preferences": ["Soy", "Eggs", "Dairy"],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=140053%2A1%2F18",
+		"Dining Halls": ["Colleges Nine & Ten Menu"]
 	},
-	"Mocha Chip Muffin": {
-		"Preferences": ["Soy", "Eggs", "Dairy", "Vegetarian"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=023053%2A1",
-		"Dining Halls": ["Colleges Nine & Ten Menu", "Cowell/Stevenson Dining Hall Menu", "Crown/Merrill Dining Hall Menu", "Porter/Kresge Dining Hall Menu", "Rachel Carson/Oakes Dining Hall"]
+	"Eggs Benedict": {
+		"Preferences": ["Pork", "Eggs", "Dairy", "Soy"],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=065011%2A1",
+		"Dining Halls": ["Colleges Nine & Ten Menu"]
 	},
-	"Old Fashioned Frosted Donut": {
-		"Preferences": ["Vegetarian", "Soy", "Eggs", "Dairy"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=189258%2A1",
-		"Dining Halls": ["Colleges Nine & Ten Menu", "Cowell/Stevenson Dining Hall Menu", "Crown/Merrill Dining Hall Menu", "Porter/Kresge Dining Hall Menu", "Rachel Carson/Oakes Dining Hall"]
+	"Hard-boiled Cage Free Eggs": {
+		"Preferences": ["Vegetarian", "Eggs", "Gluten Free"],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=061003%2A1",
+		"Dining Halls": ["Colleges Nine & Ten Menu"]
 	},
-	"Vegan Peanut Granola": {
+	"Chicken Noodle Soup": {
+		"Preferences": ["Soy", "Eggs"],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=900034%2A6",
+		"Dining Halls": ["Colleges Nine & Ten Menu", "Cowell/Stevenson Dining Hall Menu"]
+	},
+	"Thai Lentil and Coconut Soup": {
 		"Preferences": ["Vegan", "Peanuts and/or Tree Nuts"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=189077%2A2",
-		"Dining Halls": ["Colleges Nine & Ten Menu", "Cowell/Stevenson Dining Hall Menu", "Rachel Carson/Oakes Dining Hall"]
-	},
-	"Bell Peppers": {
-		"Preferences": ["Vegan", "Gluten Free"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=061021%2A1",
-		"Dining Halls": ["Colleges Nine & Ten Menu", "Porter/Kresge Dining Hall Menu", "Rachel Carson/Oakes Dining Hall"]
-	},
-	"Cage Free Eggs": {
-		"Preferences": ["Eggs", "Vegetarian", "Gluten Free"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=061013%2A3",
-		"Dining Halls": ["Colleges Nine & Ten Menu", "Porter/Kresge Dining Hall Menu", "Rachel Carson/Oakes Dining Hall"]
-	},
-	"Cage Free Omelette Bar": {
-		"Preferences": ["Dairy", "Eggs"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=010029%2A1",
-		"Dining Halls": ["Colleges Nine & Ten Menu", "Porter/Kresge Dining Hall Menu", "Rachel Carson/Oakes Dining Hall"]
-	},
-	"Cheddar Cheese": {
-		"Preferences": ["Dairy"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=061014%2A1",
-		"Dining Halls": ["Colleges Nine & Ten Menu", "Porter/Kresge Dining Hall Menu", "Rachel Carson/Oakes Dining Hall"]
-	},
-	"Feta Cheese": {
-		"Preferences": ["Dairy"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=061015%2A1",
-		"Dining Halls": ["Colleges Nine & Ten Menu", "Porter/Kresge Dining Hall Menu", "Rachel Carson/Oakes Dining Hall"]
-	},
-	"Fresh Organic Spinach": {
-		"Preferences": ["Vegan", "Gluten Free"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=061020%2A1",
-		"Dining Halls": ["Colleges Nine & Ten Menu", "Porter/Kresge Dining Hall Menu", "Rachel Carson/Oakes Dining Hall"]
-	},
-	"Fresh Tomato": {
-		"Preferences": ["Vegan", "Gluten Free"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=061024%2A1",
-		"Dining Halls": ["Colleges Nine & Ten Menu", "Porter/Kresge Dining Hall Menu", "Rachel Carson/Oakes Dining Hall"]
-	},
-	"Jalapeno": {
-		"Preferences": ["Vegan", "Gluten Free"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=061023%2A1",
-		"Dining Halls": ["Colleges Nine & Ten Menu", "Porter/Kresge Dining Hall Menu", "Rachel Carson/Oakes Dining Hall"]
-	},
-	"Onions": {
-		"Preferences": ["Vegan", "Gluten Free"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=061022%2A1",
-		"Dining Halls": ["Colleges Nine & Ten Menu", "Porter/Kresge Dining Hall Menu", "Rachel Carson/Oakes Dining Hall"]
-	},
-	"Oven Roasted Turkey": {
-		"Preferences": [],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=061016%2A1",
-		"Dining Halls": ["Colleges Nine & Ten Menu", "Porter/Kresge Dining Hall Menu", "Rachel Carson/Oakes Dining Hall"]
-	},
-	"Sliced Olived": {
-		"Preferences": ["Vegan", "Gluten Free"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=061025%2A1",
-		"Dining Halls": ["Colleges Nine & Ten Menu", "Porter/Kresge Dining Hall Menu", "Rachel Carson/Oakes Dining Hall"]
-	},
-	"Smoked Ham": {
-		"Preferences": ["Pork"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=061017%2A1",
-		"Dining Halls": ["Colleges Nine & Ten Menu", "Porter/Kresge Dining Hall Menu", "Rachel Carson/Oakes Dining Hall"]
-	},
-	"Chicken Pozole": {
-		"Preferences": ["Gluten Free"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=077030%2A6",
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=012229%2A6",
 		"Dining Halls": ["Colleges Nine & Ten Menu"]
 	},
-	"Tomato Bisque Soup": {
-		"Preferences": ["Dairy", "Vegetarian"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=900031%2A6",
-		"Dining Halls": ["Colleges Nine & Ten Menu"]
-	},
-	"BBQ Tofu Chili Garlic": {
-		"Preferences": ["Vegan", "Soy", "Gluten Free"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=060116%2A2",
-		"Dining Halls": ["Colleges Nine & Ten Menu"]
-	},
-	"Malaysian Beef Rendang": {
-		"Preferences": ["Beef", "Peanuts and/or Tree Nuts"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=911013%2A8",
+	"Jambalaya with Chicken, Ham & Sausage": {
+		"Preferences": ["Dairy", "Soy", "Pork"],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=111174%2A6",
 		"Dining Halls": ["Colleges Nine & Ten Menu"]
 	},
 	"Oven Roasted Chicken Thigh": {
 		"Preferences": ["Gluten Free", "Halal"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=020549%2A3",
-		"Dining Halls": ["Colleges Nine & Ten Menu", "Cowell/Stevenson Dining Hall Menu", "Crown/Merrill Dining Hall Menu", "Porter/Kresge Dining Hall Menu", "Rachel Carson/Oakes Dining Hall"]
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=020549%2A3",
+		"Dining Halls": ["Colleges Nine & Ten Menu", "Cowell/Stevenson Dining Hall Menu", "Rachel Carson/Oakes Dining Hall"]
 	},
 	"Steamed Rice": {
 		"Preferences": ["Vegan", "Gluten Free"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=163000%2A4",
-		"Dining Halls": ["Colleges Nine & Ten Menu", "Cowell/Stevenson Dining Hall Menu", "Crown/Merrill Dining Hall Menu", "Porter/Kresge Dining Hall Menu", "Rachel Carson/Oakes Dining Hall"]
-	},
-	"Sustainable Pacific Rockfish Vera Cruz": {
-		"Preferences": ["Fish", "Gluten Free"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=211045%2A4",
-		"Dining Halls": ["Colleges Nine & Ten Menu"]
-	},
-	"Artichoke & Roasted Garlic Pizza": {
-		"Preferences": ["Soy", "Dairy", "Vegetarian"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=111211%2A1%2F12",
-		"Dining Halls": ["Colleges Nine & Ten Menu"]
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=163000%2A4",
+		"Dining Halls": ["Colleges Nine & Ten Menu", "Cowell/Stevenson Dining Hall Menu", "Rachel Carson/Oakes Dining Hall"]
 	},
 	"Cheese Pizza": {
 		"Preferences": ["Soy", "Dairy", "Vegetarian"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=400082%2A1%2F12",
-		"Dining Halls": ["Colleges Nine & Ten Menu", "Cowell/Stevenson Dining Hall Menu", "Porter/Kresge Dining Hall Menu", "Rachel Carson/Oakes Dining Hall"]
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=400082%2A1%2F12",
+		"Dining Halls": ["Colleges Nine & Ten Menu", "Cowell/Stevenson Dining Hall Menu", "Rachel Carson/Oakes Dining Hall"]
 	},
-	"Spicy Gold Potatoes": {
-		"Preferences": ["Vegan", "Gluten Free"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=012255%2A3",
-		"Dining Halls": ["Colleges Nine & Ten Menu", "Cowell/Stevenson Dining Hall Menu", "Porter/Kresge Dining Hall Menu"]
-	},
-	"Chili Soy Slaw": {
-		"Preferences": ["Vegan", "Soy", "Gluten Free"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=060111%2A1",
+	"Pizza Philly Steak": {
+		"Preferences": ["Beef", "Soy", "Dairy"],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=123030%2A1%2F12",
 		"Dining Halls": ["Colleges Nine & Ten Menu"]
 	},
 	"Steamed Seasonal Vegetables": {
 		"Preferences": ["Vegan", "Gluten Free"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=175071%2A3",
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=175071%2A3",
 		"Dining Halls": ["Colleges Nine & Ten Menu", "Cowell/Stevenson Dining Hall Menu"]
 	},
-	"Rice Krispy Treats": {
-		"Preferences": ["Gluten Free"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=182043%2A1",
-		"Dining Halls": ["Colleges Nine & Ten Menu", "Cowell/Stevenson Dining Hall Menu", "Crown/Merrill Dining Hall Menu", "Porter/Kresge Dining Hall Menu", "Rachel Carson/Oakes Dining Hall"]
-	},
-	"UCSC Bakery French Rolls": {
-		"Preferences": ["Vegan", "Soy"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=020001%2A1",
-		"Dining Halls": ["Colleges Nine & Ten Menu", "Crown/Merrill Dining Hall Menu", "Porter/Kresge Dining Hall Menu", "Rachel Carson/Oakes Dining Hall"]
-	},
-	"Vegan Brownie": {
-		"Preferences": ["Vegan", "Soy"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=212222%2A1",
-		"Dining Halls": ["Colleges Nine & Ten Menu", "Cowell/Stevenson Dining Hall Menu", "Crown/Merrill Dining Hall Menu", "Porter/Kresge Dining Hall Menu", "Rachel Carson/Oakes Dining Hall"]
-	},
-	"Bar Indian": {
-		"Preferences": [],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=010099%2A1",
-		"Dining Halls": ["Colleges Nine & Ten Menu", "Cowell/Stevenson Dining Hall Menu", "Crown/Merrill Dining Hall Menu"]
-	},
-	"Basmati Rice Pullao": {
-		"Preferences": ["Vegan", "Gluten Free"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=200012%2A3",
-		"Dining Halls": ["Colleges Nine & Ten Menu", "Cowell/Stevenson Dining Hall Menu", "Crown/Merrill Dining Hall Menu"]
-	},
-	"Cauliflower Lentil Dal": {
-		"Preferences": ["Vegan", "Gluten Free"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=199996%2A3",
-		"Dining Halls": ["Colleges Nine & Ten Menu", "Cowell/Stevenson Dining Hall Menu"]
-	},
-	"Chickpea Curry with Tomato and Kale": {
-		"Preferences": ["Vegan", "Gluten Free", "Peanuts and/or Tree Nuts"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=199995%2A3",
-		"Dining Halls": ["Colleges Nine & Ten Menu", "Cowell/Stevenson Dining Hall Menu", "Crown/Merrill Dining Hall Menu"]
-	},
-	"Condiments": {
-		"Preferences": ["Peanuts and/or Tree Nuts", "Soy"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=200010%2A1",
-		"Dining Halls": ["Colleges Nine & Ten Menu", "Cowell/Stevenson Dining Hall Menu", "Crown/Merrill Dining Hall Menu", "Rachel Carson/Oakes Dining Hall"]
-	},
-	"Original Naan": {
-		"Preferences": ["Vegetarian", "Dairy"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=200006%2A1",
-		"Dining Halls": ["Colleges Nine & Ten Menu", "Cowell/Stevenson Dining Hall Menu", "Crown/Merrill Dining Hall Menu"]
-	},
-	"Potato Samosas": {
-		"Preferences": ["Vegan"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=200009%2A1",
-		"Dining Halls": ["Colleges Nine & Ten Menu", "Cowell/Stevenson Dining Hall Menu", "Crown/Merrill Dining Hall Menu"]
-	},
-	"Tandoori Chicken": {
-		"Preferences": ["Dairy", "Peanuts and/or Tree Nuts", "Soy", "Halal"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=187212%2A3",
-		"Dining Halls": ["Colleges Nine & Ten Menu", "Cowell/Stevenson Dining Hall Menu"]
-	},
-	"Banh Mi Hot Dog": {
-		"Preferences": ["Beef", "Soy"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=040518%2A1",
-		"Dining Halls": ["Colleges Nine & Ten Menu"]
-	},
-	"French Fries": {
-		"Preferences": ["Soy"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=400116%2A3",
-		"Dining Halls": ["Colleges Nine & Ten Menu"]
-	},
-	"Zesty Seitan Creole Wrap": {
-		"Preferences": ["Vegan", "Soy"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=600068%2A1%2F2",
-		"Dining Halls": ["Colleges Nine & Ten Menu"]
-	},
-	"Cajun Meatloaf": {
-		"Preferences": ["Beef", "Pork", "Soy", "Eggs", "Dairy"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=400970%2A6",
-		"Dining Halls": ["Colleges Nine & Ten Menu"]
-	},
-	"Pineapple Tofu Curry": {
-		"Preferences": ["Vegan", "Soy", "Peanuts and/or Tree Nuts"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=911034%2A6",
-		"Dining Halls": ["Colleges Nine & Ten Menu"]
-	},
-	"Thai Basil Coconut Curry Chicken": {
-		"Preferences": ["Peanuts and/or Tree Nuts", "Soy", "Gluten Free", "Halal"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=075129%2A8",
-		"Dining Halls": ["Colleges Nine & Ten Menu"]
-	},
-	"Spicy Cajun Gravy": {
-		"Preferences": ["Vegan", "Soy"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=999912%2A2",
-		"Dining Halls": ["Colleges Nine & Ten Menu"]
-	},
-	"Garlic Mashed Potatoes": {
-		"Preferences": ["Vegetarian", "Dairy", "Gluten Free"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=400850%2A4",
-		"Dining Halls": ["Colleges Nine & Ten Menu"]
-	},
-	"Falafel  Wrap": {
-		"Preferences": ["Vegetarian", "Soy", "Dairy"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=400127%2A1",
-		"Dining Halls": ["Colleges Nine & Ten Menu"]
-	},
-	"Garlic Fries": {
-		"Preferences": ["Soy"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=999905%2A3",
-		"Dining Halls": ["Colleges Nine & Ten Menu"]
-	},
-	"Double Chocolate Dobash Cake": {
+	"Blueberry Muffin": {
 		"Preferences": ["Vegetarian", "Soy", "Eggs", "Dairy"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=212215%2A1",
-		"Dining Halls": ["Colleges Nine & Ten Menu", "Cowell/Stevenson Dining Hall Menu", "Crown/Merrill Dining Hall Menu", "Porter/Kresge Dining Hall Menu", "Rachel Carson/Oakes Dining Hall"]
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=213036%2A1",
+		"Dining Halls": ["Colleges Nine & Ten Menu", "Cowell/Stevenson Dining Hall Menu", "Rachel Carson/Oakes Dining Hall"]
 	},
-	"Armenian Salad": {
-		"Preferences": ["Vegan", "Gluten Free"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=911037%2A3",
-		"Dining Halls": ["Colleges Nine & Ten Menu"]
+	"Cake Donut": {
+		"Preferences": ["Vegetarian", "Soy", "Eggs", "Dairy"],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=189051%2A1",
+		"Dining Halls": ["Colleges Nine & Ten Menu", "Cowell/Stevenson Dining Hall Menu", "Rachel Carson/Oakes Dining Hall"]
 	},
-	"Baba Ganoush Eggplant Dip": {
-		"Preferences": ["Vegan"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=900065%2A3",
-		"Dining Halls": ["Colleges Nine & Ten Menu"]
+	"Cheese Danish": {
+		"Preferences": ["Vegetarian", "Soy", "Eggs", "Dairy"],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=189283%2A1",
+		"Dining Halls": ["Colleges Nine & Ten Menu", "Cowell/Stevenson Dining Hall Menu", "Rachel Carson/Oakes Dining Hall"]
 	},
-	"Braised Kale with Crispy Shallots": {
-		"Preferences": ["Vegan", "Soy"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=900056%2A4",
-		"Dining Halls": ["Colleges Nine & Ten Menu"]
+	"Peach Crunch Muffin": {
+		"Preferences": ["Soy", "Eggs", "Dairy"],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=023057%2A1",
+		"Dining Halls": ["Colleges Nine & Ten Menu", "Cowell/Stevenson Dining Hall Menu", "Rachel Carson/Oakes Dining Hall"]
 	},
-	"Harissa Roasted Chicken": {
-		"Preferences": ["Halal", "Soy", "Gluten Free", "Peanuts and/or Tree Nuts"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=030513%2A6",
-		"Dining Halls": ["Colleges Nine & Ten Menu"]
-	},
-	"Koshary, Egyptian Rice and Chickpeas": {
-		"Preferences": ["Vegan"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=060251%2A9",
-		"Dining Halls": ["Colleges Nine & Ten Menu"]
-	},
-	"North African Bar": {
-		"Preferences": [],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=010125%2A1",
-		"Dining Halls": ["Colleges Nine & Ten Menu"]
-	},
-	"Roasted Cauliflower and Almond Salad": {
-		"Preferences": ["Vegan", "Peanuts and/or Tree Nuts", "Gluten Free"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=900068%2A4",
-		"Dining Halls": ["Colleges Nine & Ten Menu"]
-	},
-	"Tahini Sauce": {
-		"Preferences": ["Vegan", "Gluten Free"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=045201%2A1",
-		"Dining Halls": ["Colleges Nine & Ten Menu"]
-	},
-	"Artichoke Pesto Turkey Burger": {
-		"Preferences": ["Soy", "Dairy"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=118142%2A1",
-		"Dining Halls": ["Colleges Nine & Ten Menu"]
-	},
-	"Curry Tomato Tempeh Stir Fry": {
-		"Preferences": ["Vegan", "Soy", "Gluten Free"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=071098%2A6",
-		"Dining Halls": ["Colleges Nine & Ten Menu"]
-	},
-	"Steamed Brown Rice": {
-		"Preferences": ["Vegan", "Gluten Free"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=163008%2A4",
-		"Dining Halls": ["Colleges Nine & Ten Menu"]
-	},
-	"Turkey Gravy": {
-		"Preferences": [],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=233011%2A2",
-		"Dining Halls": ["Colleges Nine & Ten Menu"]
-	},
-	"Sage Stuffing": {
-		"Preferences": ["Eggs", "Dairy"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=113013%2A4",
-		"Dining Halls": ["Colleges Nine & Ten Menu"]
-	},
-	"Sugar and Spice Roasted Yams": {
-		"Preferences": ["Vegan", "Gluten Free"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=184033%2A4",
-		"Dining Halls": ["Colleges Nine & Ten Menu"]
-	},
-	"Armanino Alfredo Sauce": {
-		"Preferences": ["Vegetarian", "Dairy", "Soy"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=012055%2A4",
-		"Dining Halls": ["Colleges Nine & Ten Menu"]
+	"Sweet Pumpkin Bar": {
+		"Preferences": ["Vegetarian", "Soy", "Eggs", "Dairy"],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=212027%2A1",
+		"Dining Halls": ["Colleges Nine & Ten Menu", "Cowell/Stevenson Dining Hall Menu", "Rachel Carson/Oakes Dining Hall"]
 	},
 	"Bar Pasta": {
 		"Preferences": [],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=010105%2A1",
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=010110%2A1",
 		"Dining Halls": ["Colleges Nine & Ten Menu"]
 	},
-	"Bolognese Sauce": {
-		"Preferences": ["Beef", "Pork", "Gluten Free"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=157139%2A4",
+	"Cheese Tortellini": {
+		"Preferences": ["Vegetarian", "Soy", "Eggs", "Dairy"],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=131039%2A6",
 		"Dining Halls": ["Colleges Nine & Ten Menu"]
 	},
-	"Focaccia Pizza with Basil Pesto": {
-		"Preferences": ["Vegetarian", "Peanuts and/or Tree Nuts", "Soy", "Dairy"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=174002%2A1",
+	"Condiments": {
+		"Preferences": [],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=153025%2A1",
+		"Dining Halls": ["Colleges Nine & Ten Menu", "Cowell/Stevenson Dining Hall Menu", "Rachel Carson/Oakes Dining Hall"]
+	},
+	"Garlic Rainbow Chard": {
+		"Preferences": ["Vegan", "Gluten Free"],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=012050%2A1",
+		"Dining Halls": ["Colleges Nine & Ten Menu"]
+	},
+	"Italian Roasted Chicken": {
+		"Preferences": ["Gluten Free", "Halal"],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=012045%2A4",
 		"Dining Halls": ["Colleges Nine & Ten Menu"]
 	},
 	"Marinara Sauce": {
 		"Preferences": ["Vegan", "Gluten Free"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=153029%2A4",
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=153029%2A4",
 		"Dining Halls": ["Colleges Nine & Ten Menu"]
 	},
 	"Penne": {
 		"Preferences": ["Vegan"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=140305%2A6",
-		"Dining Halls": ["Colleges Nine & Ten Menu", "Cowell/Stevenson Dining Hall Menu"]
-	},
-	"Shrimp Remoulade Sandwich": {
-		"Preferences": ["Soy", "Eggs", "Dairy"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=999856%2A1",
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=140305%2A6",
 		"Dining Halls": ["Colleges Nine & Ten Menu"]
 	},
-	"Buttermilk Pancakes": {
-		"Preferences": ["Vegetarian", "Soy", "Eggs", "Dairy"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=05&locationName=Cowell+Stevenson+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=217001%2A3",
-		"Dining Halls": ["Cowell/Stevenson Dining Hall Menu"]
-	},
-	"Eggbeaters Scramble": {
-		"Preferences": ["Vegetarian", "Eggs", "Gluten Free"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=05&locationName=Cowell+Stevenson+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=185020%2A4",
-		"Dining Halls": ["Cowell/Stevenson Dining Hall Menu", "Porter/Kresge Dining Hall Menu", "Rachel Carson/Oakes Dining Hall"]
-	},
-	"Mexican Chorizo Sausage Patties": {
-		"Preferences": ["Pork", "Gluten Free"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=05&locationName=Cowell+Stevenson+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=900108%2A2",
-		"Dining Halls": ["Cowell/Stevenson Dining Hall Menu"]
-	},
-	"Chicken Tortilla Soup": {
-		"Preferences": ["Soy", "Dairy", "Gluten Free"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=05&locationName=Cowell+Stevenson+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=900107%2A6",
-		"Dining Halls": ["Cowell/Stevenson Dining Hall Menu"]
-	},
-	"Creamy Wild Mushroom Bisque": {
-		"Preferences": ["Vegetarian", "Dairy"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=05&locationName=Cowell+Stevenson+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=900033%2A6",
-		"Dining Halls": ["Cowell/Stevenson Dining Hall Menu"]
-	},
-	"Sizzling Buffalo Chicken Salad": {
-		"Preferences": ["Soy", "Eggs", "Dairy"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=05&locationName=Cowell+Stevenson+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=041077%2A10",
-		"Dining Halls": ["Cowell/Stevenson Dining Hall Menu", "Porter/Kresge Dining Hall Menu"]
-	},
-	"Sizzling Buffalo Tofu Salad": {
-		"Preferences": ["Vegetarian", "Soy", "Dairy"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=05&locationName=Cowell+Stevenson+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=041079%2A10",
-		"Dining Halls": ["Cowell/Stevenson Dining Hall Menu", "Porter/Kresge Dining Hall Menu"]
-	},
-	"Beef Tamales": {
-		"Preferences": ["Beef", "Dairy"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=05&locationName=Cowell+Stevenson+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=124136%2A1",
-		"Dining Halls": ["Cowell/Stevenson Dining Hall Menu"]
-	},
-	"Garden Patch Supreme Pizza": {
-		"Preferences": ["Soy", "Dairy"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=05&locationName=Cowell+Stevenson+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=113001%2A1%2F12",
-		"Dining Halls": ["Cowell/Stevenson Dining Hall Menu"]
-	},
-	"Berry White Cookie": {
-		"Preferences": ["Eggs", "Vegetarian", "Dairy"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=05&locationName=Cowell+Stevenson+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=023028%2A1",
-		"Dining Halls": ["Cowell/Stevenson Dining Hall Menu", "Porter/Kresge Dining Hall Menu", "Rachel Carson/Oakes Dining Hall"]
-	},
-	"Mint Chip Cookie": {
-		"Preferences": ["Vegetarian", "Eggs", "Dairy"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=05&locationName=Cowell+Stevenson+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=023035%2A1",
-		"Dining Halls": ["Cowell/Stevenson Dining Hall Menu", "Porter/Kresge Dining Hall Menu", "Rachel Carson/Oakes Dining Hall"]
-	},
-	"Gaucho Beans": {
+	"Tomato & Basil Relish": {
 		"Preferences": ["Vegan", "Gluten Free"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=05&locationName=Cowell+Stevenson+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=187226%2A4",
-		"Dining Halls": ["Cowell/Stevenson Dining Hall Menu"]
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=012046%2A1",
+		"Dining Halls": ["Colleges Nine & Ten Menu"]
 	},
-	"Mexican Rice": {
-		"Preferences": ["Vegan", "Gluten Free"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=05&locationName=Cowell+Stevenson+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=163031%2A3",
-		"Dining Halls": ["Cowell/Stevenson Dining Hall Menu", "Crown/Merrill Dining Hall Menu"]
-	},
-	"Taqueria Chicken": {
-		"Preferences": ["Gluten Free", "Soy"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=05&locationName=Cowell+Stevenson+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=111205%2A2",
-		"Dining Halls": ["Cowell/Stevenson Dining Hall Menu", "Crown/Merrill Dining Hall Menu"]
-	},
-	"Taqueria Ground Beef": {
-		"Preferences": ["Beef", "Gluten Free"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=05&locationName=Cowell+Stevenson+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=073005%2A3",
-		"Dining Halls": ["Cowell/Stevenson Dining Hall Menu"]
-	},
-	"Spicy Arrabbiata Sauce": {
-		"Preferences": ["Gluten Free", "Vegan"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=05&locationName=Cowell+Stevenson+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=065124%2A2",
-		"Dining Halls": ["Cowell/Stevenson Dining Hall Menu"]
-	},
-	"Vegan Polpette": {
+	"UCSC Bakery French Rolls": {
 		"Preferences": ["Vegan", "Soy"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=05&locationName=Cowell+Stevenson+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=140251%2A3",
-		"Dining Halls": ["Cowell/Stevenson Dining Hall Menu"]
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=020001%2A1",
+		"Dining Halls": ["Colleges Nine & Ten Menu", "Cowell/Stevenson Dining Hall Menu", "Rachel Carson/Oakes Dining Hall"]
 	},
-	"Barcelona Steak Sandwich": {
-		"Preferences": ["Beef", "Soy", "Dairy"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=05&locationName=Cowell+Stevenson+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=077068%2A1%2F2",
-		"Dining Halls": ["Cowell/Stevenson Dining Hall Menu"]
+	"Vegan Apple Cranberry Pie": {
+		"Preferences": ["Vegan", "Soy"],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=212069%2A1",
+		"Dining Halls": ["Colleges Nine & Ten Menu", "Cowell/Stevenson Dining Hall Menu", "Rachel Carson/Oakes Dining Hall"]
 	},
-	"Curly Fries": {
-		"Preferences": ["Soy"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=05&locationName=Cowell+Stevenson+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=400118%2A3",
-		"Dining Halls": ["Cowell/Stevenson Dining Hall Menu"]
+	"Gardein and Broccoli Stir Fry": {
+		"Preferences": ["Vegan", "Soy"],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=181081%2A5",
+		"Dining Halls": ["Colleges Nine & Ten Menu", "Cowell/Stevenson Dining Hall Menu"]
 	},
-	"Peruvian Bar": {
+	"Grilled Huli Huli Chicken": {
+		"Preferences": ["Soy", "Gluten Free", "Halal"],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=180131%2A1",
+		"Dining Halls": ["Colleges Nine & Ten Menu"]
+	},
+	"Hawaiian Bar": {
 		"Preferences": [],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=05&locationName=Cowell+Stevenson+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=010128%2A1",
-		"Dining Halls": ["Cowell/Stevenson Dining Hall Menu"]
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=010118%2A1",
+		"Dining Halls": ["Colleges Nine & Ten Menu", "Cowell/Stevenson Dining Hall Menu"]
 	},
-	"Blueberry Pancakes": {
-		"Preferences": ["Gluten Free", "Dairy", "Eggs"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=20&locationName=Crown+Merrill+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=217008%2A2",
-		"Dining Halls": ["Crown/Merrill Dining Hall Menu", "Porter/Kresge Dining Hall Menu"]
-	},
-	"Papas Fritas": {
-		"Preferences": ["Vegetarian", "Soy"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=20&locationName=Crown+Merrill+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=161002%2A3",
-		"Dining Halls": ["Crown/Merrill Dining Hall Menu"]
-	},
-	"Turkey Sausage Patty": {
-		"Preferences": ["Gluten Free"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=20&locationName=Crown+Merrill+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=400386%2A2",
-		"Dining Halls": ["Crown/Merrill Dining Hall Menu"]
-	},
-	"Lentil & Lemon Soup": {
-		"Preferences": ["Vegan", "Gluten Free"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=20&locationName=Crown+Merrill+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=027018%2A6",
-		"Dining Halls": ["Crown/Merrill Dining Hall Menu"]
-	},
-	"Thai Coconut Curry Chicken Soup": {
-		"Preferences": ["Fish", "Peanuts and/or Tree Nuts"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=20&locationName=Crown+Merrill+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=900035%2A6",
-		"Dining Halls": ["Crown/Merrill Dining Hall Menu"]
-	},
-	"Lemon Pepper Cod": {
-		"Preferences": ["Fish", "Dairy"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=20&locationName=Crown+Merrill+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=666667%2A1",
-		"Dining Halls": ["Crown/Merrill Dining Hall Menu"]
-	},
-	"Orange Glazed Chicken": {
-		"Preferences": ["Soy"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=20&locationName=Crown+Merrill+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=112097%2A6",
-		"Dining Halls": ["Crown/Merrill Dining Hall Menu"]
-	},
-	"Orange Glazed Vegan Chicken": {
-		"Preferences": ["Vegan", "Soy"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=20&locationName=Crown+Merrill+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=112125%2A6",
-		"Dining Halls": ["Crown/Merrill Dining Hall Menu"]
+	"Steamed Bok Choy": {
+		"Preferences": ["Vegan", "Gluten Free", "Soy"],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=020586%2A3",
+		"Dining Halls": ["Colleges Nine & Ten Menu"]
 	},
 	"Sticky Rice": {
 		"Preferences": ["Vegan", "Gluten Free"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=20&locationName=Crown+Merrill+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=400035%2A3",
-		"Dining Halls": ["Crown/Merrill Dining Hall Menu", "Rachel Carson/Oakes Dining Hall"]
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=400035%2A3",
+		"Dining Halls": ["Colleges Nine & Ten Menu", "Cowell/Stevenson Dining Hall Menu"]
 	},
-	"Pizza with Ranch and Bacon": {
-		"Preferences": ["Pork", "Soy", "Dairy"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=20&locationName=Crown+Merrill+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=400083%2A1%2F12",
-		"Dining Halls": ["Crown/Merrill Dining Hall Menu"]
-	},
-	"Roasted Seasonal Vegetables": {
-		"Preferences": ["Vegan", "Gluten Free"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=20&locationName=Crown+Merrill+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=175073%2A3",
-		"Dining Halls": ["Crown/Merrill Dining Hall Menu", "Porter/Kresge Dining Hall Menu"]
-	},
-	"Bar Taqueria": {
-		"Preferences": [],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=20&locationName=Crown+Merrill+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=010107%2A1",
-		"Dining Halls": ["Crown/Merrill Dining Hall Menu"]
-	},
-	"Chipotle Gardein Strips": {
+	"Yakisoba Stir-Fried Noodles": {
 		"Preferences": ["Vegan", "Soy"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=20&locationName=Crown+Merrill+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=025506%2A2",
-		"Dining Halls": ["Crown/Merrill Dining Hall Menu"]
-	},
-	"Corn Tortillas": {
-		"Preferences": ["Vegan", "Gluten Free"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=20&locationName=Crown+Merrill+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=060118%2A1",
-		"Dining Halls": ["Crown/Merrill Dining Hall Menu"]
-	},
-	"Flour Tortilla": {
-		"Preferences": ["Vegan", "Soy"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=20&locationName=Crown+Merrill+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=144071%2A1",
-		"Dining Halls": ["Crown/Merrill Dining Hall Menu", "Porter/Kresge Dining Hall Menu"]
-	},
-	"Refried Beans": {
-		"Preferences": ["Soy", "Gluten Free", "Vegan"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=20&locationName=Crown+Merrill+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=164016%2A3",
-		"Dining Halls": ["Crown/Merrill Dining Hall Menu"]
-	},
-	"5 Spice BBQ Beef Chow Mein": {
-		"Preferences": ["Beef", "Soy"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=20&locationName=Crown+Merrill+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=075110%2A5",
-		"Dining Halls": ["Crown/Merrill Dining Hall Menu"]
-	},
-	"5 Spice BBQ Tofu Chow Mein": {
-		"Preferences": ["Vegan", "Soy"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=20&locationName=Crown+Merrill+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=075100%2A5",
-		"Dining Halls": ["Crown/Merrill Dining Hall Menu"]
-	},
-	"Farro Mushroom Risotto": {
-		"Preferences": ["Dairy"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=20&locationName=Crown+Merrill+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=999829%2A3",
-		"Dining Halls": ["Crown/Merrill Dining Hall Menu"]
-	},
-	"Roast Pork Loin with Parsley and Shallot Sauce": {
-		"Preferences": ["Pork", "Gluten Free"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=20&locationName=Crown+Merrill+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=030501%2A6",
-		"Dining Halls": ["Crown/Merrill Dining Hall Menu"]
-	},
-	"Chicken Tikka Masala": {
-		"Preferences": ["Dairy", "Gluten Free", "Halal"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=20&locationName=Crown+Merrill+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=200001%2A1",
-		"Dining Halls": ["Crown/Merrill Dining Hall Menu"]
-	},
-	"Dal Saag": {
-		"Preferences": ["Vegan", "Gluten Free"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=20&locationName=Crown+Merrill+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=200013%2A3",
-		"Dining Halls": ["Crown/Merrill Dining Hall Menu"]
-	},
-	"Chicken Apple Sausage": {
-		"Preferences": ["Gluten Free"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=25&locationName=Porter+Kresge+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=400387%2A2",
-		"Dining Halls": ["Porter/Kresge Dining Hall Menu"]
-	},
-	"Cinnamon Roasted Butternut Squash": {
-		"Preferences": ["Vegan", "Gluten Free"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=25&locationName=Porter+Kresge+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=999883%2A2",
-		"Dining Halls": ["Porter/Kresge Dining Hall Menu", "Rachel Carson/Oakes Dining Hall"]
-	},
-	"Natural BridgesTofu Scramble": {
-		"Preferences": ["Vegan", "Soy", "Gluten Free"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=25&locationName=Porter+Kresge+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=140108%2A4",
-		"Dining Halls": ["Porter/Kresge Dining Hall Menu"]
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=060241%2A6",
+		"Dining Halls": ["Colleges Nine & Ten Menu"]
 	},
 	"Blended Beef & Mushroom Burger Hawaiian Style": {
 		"Preferences": ["Beef", "Soy", "Halal"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=25&locationName=Porter+Kresge+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=012041%2A1",
-		"Dining Halls": ["Porter/Kresge Dining Hall Menu", "Rachel Carson/Oakes Dining Hall"]
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=012041%2A1",
+		"Dining Halls": ["Colleges Nine & Ten Menu"]
 	},
-	"Chicken Ortega Soup": {
-		"Preferences": ["Dairy"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=25&locationName=Porter+Kresge+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=025017%2A6",
-		"Dining Halls": ["Porter/Kresge Dining Hall Menu"]
-	},
-	"Creamy Broccoli Cheddar Soup": {
-		"Preferences": ["Vegetarian", "Dairy"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=25&locationName=Porter+Kresge+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=900032%2A6",
-		"Dining Halls": ["Porter/Kresge Dining Hall Menu"]
-	},
-	"Atomic Cheese Sauce": {
-		"Preferences": ["Dairy", "Gluten Free"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=25&locationName=Porter+Kresge+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=060130%2A1",
-		"Dining Halls": ["Porter/Kresge Dining Hall Menu", "Rachel Carson/Oakes Dining Hall"]
-	},
-	"BAR Boardwalk Burgers": {
-		"Preferences": [],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=25&locationName=Porter+Kresge+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=010096%2A1",
-		"Dining Halls": ["Porter/Kresge Dining Hall Menu", "Rachel Carson/Oakes Dining Hall"]
-	},
-	"Bacon": {
-		"Preferences": ["Pork", "Gluten Free"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=25&locationName=Porter+Kresge+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=400120%2A1",
-		"Dining Halls": ["Porter/Kresge Dining Hall Menu", "Rachel Carson/Oakes Dining Hall"]
-	},
-	"Burger Beef": {
-		"Preferences": ["Beef", "Gluten Free", "Halal"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=25&locationName=Porter+Kresge+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=400129%2A1",
-		"Dining Halls": ["Porter/Kresge Dining Hall Menu", "Rachel Carson/Oakes Dining Hall"]
-	},
-	"Burger Turkey": {
-		"Preferences": ["Gluten Free"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=25&locationName=Porter+Kresge+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=400128%2A1",
-		"Dining Halls": ["Porter/Kresge Dining Hall Menu", "Rachel Carson/Oakes Dining Hall"]
-	},
-	"Chili with Beef": {
-		"Preferences": ["Beef", "Gluten Free"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=25&locationName=Porter+Kresge+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=400123%2A1",
-		"Dining Halls": ["Porter/Kresge Dining Hall Menu", "Rachel Carson/Oakes Dining Hall"]
-	},
-	"Sauteed Mushrooms": {
-		"Preferences": ["Vegan", "Gluten Free"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=25&locationName=Porter+Kresge+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=400121%2A1",
-		"Dining Halls": ["Porter/Kresge Dining Hall Menu", "Rachel Carson/Oakes Dining Hall"]
-	},
-	"Brown Rice Pilaf": {
-		"Preferences": ["Dairy", "Gluten Free"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=25&locationName=Porter+Kresge+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=163032%2A4",
-		"Dining Halls": ["Porter/Kresge Dining Hall Menu"]
-	},
-	"Farfalle Rustiche": {
-		"Preferences": ["Peanuts and/or Tree Nuts", "Dairy"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=25&locationName=Porter+Kresge+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=500267%2A7",
-		"Dining Halls": ["Porter/Kresge Dining Hall Menu"]
-	},
-	"Thai Style Sustainable Pacific Cod": {
-		"Preferences": ["Fish", "Peanuts and/or Tree Nuts"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=25&locationName=Porter+Kresge+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=121134%2A1",
-		"Dining Halls": ["Porter/Kresge Dining Hall Menu"]
-	},
-	"Vegan Malibu Burger": {
-		"Preferences": ["Vegan", "Soy"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=25&locationName=Porter+Kresge+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=400115%2A1",
-		"Dining Halls": ["Porter/Kresge Dining Hall Menu", "Rachel Carson/Oakes Dining Hall"]
-	},
-	"Hanalei Pizza with Chicken and Bacon": {
-		"Preferences": ["Pork", "Soy", "Dairy"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=25&locationName=Porter+Kresge+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=013096%2A1%2F12",
-		"Dining Halls": ["Porter/Kresge Dining Hall Menu"]
-	},
-	"White Bean with Kale Soup": {
-		"Preferences": ["Vegetarian", "Dairy", "Gluten Free"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=25&locationName=Porter+Kresge+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=900036%2A6",
-		"Dining Halls": ["Porter/Kresge Dining Hall Menu"]
-	},
-	"BAR Yakisoba Noodles": {
-		"Preferences": [],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=25&locationName=Porter+Kresge+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=010112%2A1",
-		"Dining Halls": ["Porter/Kresge Dining Hall Menu"]
-	},
-	"Char Siu Chicken": {
+	"French Fries": {
 		"Preferences": ["Soy"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=25&locationName=Porter+Kresge+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=900015%2A3",
-		"Dining Halls": ["Porter/Kresge Dining Hall Menu"]
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=400116%2A3",
+		"Dining Halls": ["Colleges Nine & Ten Menu"]
 	},
-	"Char Siu Sauce": {
-		"Preferences": ["Vegan", "Soy"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=25&locationName=Porter+Kresge+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=060125%2A1",
-		"Dining Halls": ["Porter/Kresge Dining Hall Menu"]
+	"Vegan Malibu South West Burger": {
+		"Preferences": ["Soy", "Vegan"],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=233148%2A1",
+		"Dining Halls": ["Colleges Nine & Ten Menu"]
 	},
-	"Char Siu Seitan": {
-		"Preferences": ["Vegan", "Soy"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=25&locationName=Porter+Kresge+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=900017%2A3",
-		"Dining Halls": ["Porter/Kresge Dining Hall Menu"]
+	"Shrimp Etouffee": {
+		"Preferences": ["Fish", "Soy"],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=123057%2A4",
+		"Dining Halls": ["Colleges Nine & Ten Menu"]
 	},
-	"Sesame Yakisoba Noodles": {
-		"Preferences": ["Vegan", "Soy"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=25&locationName=Porter+Kresge+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=900014%2A4",
-		"Dining Halls": ["Porter/Kresge Dining Hall Menu"]
+	"Savory Cheese Grits": {
+		"Preferences": ["Dairy", "Gluten Free"],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=020505%2A2",
+		"Dining Halls": ["Colleges Nine & Ten Menu"]
+	},
+	"Onion Rings": {
+		"Preferences": ["Vegetarian", "Soy", "Dairy"],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=171008%2A3",
+		"Dining Halls": ["Colleges Nine & Ten Menu"]
+	},
+	"BBQ Tofu Chili Garlic": {
+		"Preferences": ["Vegan", "Soy", "Gluten Free"],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=060116%2A2",
+		"Dining Halls": ["Colleges Nine & Ten Menu"]
+	},
+	"Bar Rice Bowl": {
+		"Preferences": [],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=010094%2A1",
+		"Dining Halls": ["Colleges Nine & Ten Menu"]
 	},
 	"Stir Fry Vegetables": {
 		"Preferences": ["Vegan", "Soy", "Gluten Free"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=25&locationName=Porter+Kresge+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=900016%2A3",
-		"Dining Halls": ["Porter/Kresge Dining Hall Menu"]
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=900016%2A3",
+		"Dining Halls": ["Colleges Nine & Ten Menu"]
 	},
-	"Szechuan Sweet Chili Sauce": {
-		"Preferences": ["Vegan", "Soy", "Gluten Free"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=25&locationName=Porter+Kresge+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=500126%2A2",
-		"Dining Halls": ["Porter/Kresge Dining Hall Menu"]
+	"Teriyaki Chicken Shoyu": {
+		"Preferences": ["Soy", "Halal"],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=40&locationName=Colleges+Nine+%26+Ten+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=180132%2A5",
+		"Dining Halls": ["Colleges Nine & Ten Menu"]
 	},
-	"Carne Adobo Verde": {
-		"Preferences": ["Beef", "Dairy"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=25&locationName=Porter+Kresge+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=075132%2A3",
-		"Dining Halls": ["Porter/Kresge Dining Hall Menu"]
+	"Avocado Toast with Spicy Fried Egg": {
+		"Preferences": ["Eggs", "Soy", "Vegetarian"],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=05&locationName=Cowell+Stevenson+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=012053%2A1",
+		"Dining Halls": ["Cowell/Stevenson Dining Hall Menu"]
 	},
-	"Oven Roasted Herbed Potatoes": {
-		"Preferences": ["Vegan", "Gluten Free"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=25&locationName=Porter+Kresge+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=400176%2A3",
-		"Dining Halls": ["Porter/Kresge Dining Hall Menu", "Rachel Carson/Oakes Dining Hall"]
-	},
-	"Eggplant Parmesan Pizza": {
-		"Preferences": ["Vegetarian", "Soy", "Dairy"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=25&locationName=Porter+Kresge+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=044061%2A1%2F12",
-		"Dining Halls": ["Porter/Kresge Dining Hall Menu"]
-	},
-	"Ham Steaks": {
+	"Crispy Bacon": {
 		"Preferences": ["Pork", "Gluten Free"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=30&locationName=Rachel+Carson+Oakes+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=089016%2A2",
-		"Dining Halls": ["Rachel Carson/Oakes Dining Hall"]
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=05&locationName=Cowell+Stevenson+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=089013%2A1",
+		"Dining Halls": ["Cowell/Stevenson Dining Hall Menu"]
 	},
-	"Chicken and Dumpling Soup": {
-		"Preferences": ["Soy", "Eggs", "Dairy"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=30&locationName=Rachel+Carson+Oakes+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=777709%2A6",
-		"Dining Halls": ["Rachel Carson/Oakes Dining Hall"]
+	"Tollhouse Pancakes": {
+		"Preferences": ["Vegetarian", "Peanuts and/or Tree Nuts", "Soy", "Eggs", "Dairy"],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=05&locationName=Cowell+Stevenson+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=123054%2A2",
+		"Dining Halls": ["Cowell/Stevenson Dining Hall Menu"]
 	},
-	"Fire Roasted Corn Soup": {
+	"Creamy Broccoli Cheddar Soup": {
 		"Preferences": ["Vegetarian", "Dairy"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=30&locationName=Rachel+Carson+Oakes+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=140191%2A6",
-		"Dining Halls": ["Rachel Carson/Oakes Dining Hall"]
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=05&locationName=Cowell+Stevenson+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=900032%2A6",
+		"Dining Halls": ["Cowell/Stevenson Dining Hall Menu"]
 	},
-	"Greek Chicken Saute": {
-		"Preferences": ["Dairy", "Gluten Free", "Soy"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=30&locationName=Rachel+Carson+Oakes+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=400028%2A6",
-		"Dining Halls": ["Rachel Carson/Oakes Dining Hall"]
+	"Fettuccine con Pollo": {
+		"Preferences": ["Dairy"],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=05&locationName=Cowell+Stevenson+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=400972%2A8",
+		"Dining Halls": ["Cowell/Stevenson Dining Hall Menu"]
 	},
-	"Spicy Garbanzo Curry": {
-		"Preferences": ["Vegan", "Peanuts and/or Tree Nuts", "Gluten Free"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=30&locationName=Rachel+Carson+Oakes+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=110001%2A3",
-		"Dining Halls": ["Rachel Carson/Oakes Dining Hall"]
+	"Chipotle Chicken Pizza": {
+		"Preferences": ["Soy", "Dairy"],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=05&locationName=Cowell+Stevenson+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=065090%2A1%2F12",
+		"Dining Halls": ["Cowell/Stevenson Dining Hall Menu"]
 	},
-	"Pizza Mushroom & Sausage": {
-		"Preferences": ["Pork", "Soy", "Dairy"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=30&locationName=Rachel+Carson+Oakes+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=111053%2A1%2F12",
-		"Dining Halls": ["Rachel Carson/Oakes Dining Hall"]
+	"Chocolate Chip Cookies": {
+		"Preferences": ["Vegetarian", "Eggs", "Dairy"],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=05&locationName=Cowell+Stevenson+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=023036%2A1",
+		"Dining Halls": ["Cowell/Stevenson Dining Hall Menu", "Rachel Carson/Oakes Dining Hall"]
 	},
-	"Steamed Basmati Rice": {
+	"Oatmeal Raisin Cookie": {
+		"Preferences": ["Vegan"],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=05&locationName=Cowell+Stevenson+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=023071%2A1",
+		"Dining Halls": ["Cowell/Stevenson Dining Hall Menu"]
+	},
+	"Grilled Teriyaki Steak": {
+		"Preferences": ["Beef", "Soy", "Halal"],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=05&locationName=Cowell+Stevenson+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=999931%2A4",
+		"Dining Halls": ["Cowell/Stevenson Dining Hall Menu"]
+	},
+	"Hawaiian Coleslaw": {
 		"Preferences": ["Vegan", "Gluten Free"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=30&locationName=Rachel+Carson+Oakes+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=163023%2A3",
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=05&locationName=Cowell+Stevenson+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=201006%2A3",
+		"Dining Halls": ["Cowell/Stevenson Dining Hall Menu"]
+	},
+	"Potato Mac Salad": {
+		"Preferences": ["Vegan", "Soy"],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=05&locationName=Cowell+Stevenson+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=999925%2A2",
+		"Dining Halls": ["Cowell/Stevenson Dining Hall Menu"]
+	},
+	"Spam Fried Rice": {
+		"Preferences": ["Pork", "Soy", "Eggs", "Gluten Free"],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=05&locationName=Cowell+Stevenson+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=163010%2A4",
+		"Dining Halls": ["Cowell/Stevenson Dining Hall Menu"]
+	},
+	"Chef's Special": {
+		"Preferences": [],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=05&locationName=Cowell+Stevenson+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=555555%2A1",
+		"Dining Halls": ["Cowell/Stevenson Dining Hall Menu"]
+	},
+	"Macaroni & Cheese": {
+		"Preferences": ["Soy", "Eggs", "Dairy"],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=05&locationName=Cowell+Stevenson+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=401018%2A6",
+		"Dining Halls": ["Cowell/Stevenson Dining Hall Menu"]
+	},
+	"Cheese Sauce": {
+		"Preferences": ["Soy", "Dairy", "Gluten Free"],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=05&locationName=Cowell+Stevenson+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=027104%2A1",
+		"Dining Halls": ["Cowell/Stevenson Dining Hall Menu"]
+	},
+	"Jalapeno": {
+		"Preferences": ["Vegan", "Gluten Free"],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=05&locationName=Cowell+Stevenson+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=027105%2A1",
+		"Dining Halls": ["Cowell/Stevenson Dining Hall Menu"]
+	},
+	"Nachos Bar": {
+		"Preferences": [],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=05&locationName=Cowell+Stevenson+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=010115%2A1",
+		"Dining Halls": ["Cowell/Stevenson Dining Hall Menu"]
+	},
+	"Refried Beans": {
+		"Preferences": ["Soy", "Gluten Free", "Vegan"],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=05&locationName=Cowell+Stevenson+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=164016%2A3",
+		"Dining Halls": ["Cowell/Stevenson Dining Hall Menu"]
+	},
+	"Taqueria Chicken": {
+		"Preferences": ["Gluten Free", "Soy"],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=05&locationName=Cowell+Stevenson+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=111205%2A2",
+		"Dining Halls": ["Cowell/Stevenson Dining Hall Menu"]
+	},
+	"Taqueria Ground Beef": {
+		"Preferences": ["Beef", "Gluten Free"],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=05&locationName=Cowell+Stevenson+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=073005%2A3",
+		"Dining Halls": ["Cowell/Stevenson Dining Hall Menu"]
+	},
+	"Tortilla Chips": {
+		"Preferences": ["Vegan", "Gluten Free"],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=05&locationName=Cowell+Stevenson+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=160004%2A1",
+		"Dining Halls": ["Cowell/Stevenson Dining Hall Menu"]
+	},
+	"Banana and Coconut Pancakes": {
+		"Preferences": ["Vegetarian", "Peanuts and/or Tree Nuts", "Soy", "Eggs", "Dairy"],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=30&locationName=Rachel+Carson+Oakes+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=217011%2A2",
+		"Dining Halls": ["Rachel Carson/Oakes Dining Hall"]
+	},
+	"Biscuit and Gravy": {
+		"Preferences": ["Soy", "Dairy", "Pork"],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=30&locationName=Rachel+Carson+Oakes+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=065136%2A1",
+		"Dining Halls": ["Rachel Carson/Oakes Dining Hall"]
+	},
+	"Hash Brown Patty": {
+		"Preferences": ["Soy"],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=30&locationName=Rachel+Carson+Oakes+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=161003%2A1",
+		"Dining Halls": ["Rachel Carson/Oakes Dining Hall"]
+	},
+	"Creamy Wild Mushroom Bisque": {
+		"Preferences": ["Vegetarian", "Dairy"],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=30&locationName=Rachel+Carson+Oakes+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=900033%2A6",
+		"Dining Halls": ["Rachel Carson/Oakes Dining Hall"]
+	},
+	"Home Style Ground Beef Chili": {
+		"Preferences": ["Beef", "Gluten Free", "Halal"],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=30&locationName=Rachel+Carson+Oakes+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=027040%2A6",
+		"Dining Halls": ["Rachel Carson/Oakes Dining Hall"]
+	},
+	"Grilled  Lemon Thyme Chicken": {
+		"Preferences": ["Halal", "Gluten Free"],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=30&locationName=Rachel+Carson+Oakes+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=025504%2A9",
+		"Dining Halls": ["Rachel Carson/Oakes Dining Hall"]
+	},
+	"Buffalo Chicken Pizza": {
+		"Preferences": ["Soy", "Dairy"],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=30&locationName=Rachel+Carson+Oakes+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=044064%2A1%2F12",
+		"Dining Halls": ["Rachel Carson/Oakes Dining Hall"]
+	},
+	"Lemon Herbed Orzo": {
+		"Preferences": ["Vegan", "Soy"],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=30&locationName=Rachel+Carson+Oakes+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=500032%2A4",
 		"Dining Halls": ["Rachel Carson/Oakes Dining Hall"]
 	},
 	"Sauteed Seasonal Vegetable": {
 		"Preferences": ["Vegan", "Gluten Free"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=30&locationName=Rachel+Carson+Oakes+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=175072%2A3",
-		"Dining Halls": ["Rachel Carson/Oakes Dining Hall"]
-	},
-	"BAR Wings": {
-		"Preferences": [],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=30&locationName=Rachel+Carson+Oakes+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=010106%2A1",
-		"Dining Halls": ["Rachel Carson/Oakes Dining Hall"]
-	},
-	"BBQ Wings": {
-		"Preferences": ["Soy"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=30&locationName=Rachel+Carson+Oakes+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=184015%2A6",
-		"Dining Halls": ["Rachel Carson/Oakes Dining Hall"]
-	},
-	"Hot 'N Spicy Wings": {
-		"Preferences": ["Gluten Free"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=30&locationName=Rachel+Carson+Oakes+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=184017%2A6",
-		"Dining Halls": ["Rachel Carson/Oakes Dining Hall"]
-	},
-	"Teriyaki Glaze Wings": {
-		"Preferences": ["Soy"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=30&locationName=Rachel+Carson+Oakes+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=184016%2A6",
-		"Dining Halls": ["Rachel Carson/Oakes Dining Hall"]
-	},
-	"Vegan Baked Beans": {
-		"Preferences": ["Vegan", "Gluten Free"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=30&locationName=Rachel+Carson+Oakes+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=016004%2A3",
-		"Dining Halls": ["Rachel Carson/Oakes Dining Hall"]
-	},
-	"Vegan Tenders": {
-		"Preferences": ["Vegan", "Soy"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=30&locationName=Rachel+Carson+Oakes+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=184018%2A6",
-		"Dining Halls": ["Rachel Carson/Oakes Dining Hall"]
-	},
-	"Cuban Chicken and Chorizo": {
-		"Preferences": ["Pork", "Gluten Free"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=30&locationName=Rachel+Carson+Oakes+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=020504%2A4",
-		"Dining Halls": ["Rachel Carson/Oakes Dining Hall"]
-	},
-	"Sweet & Sour Gardein": {
-		"Preferences": ["Vegan", "Soy"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=30&locationName=Rachel+Carson+Oakes+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=112012%2A6",
-		"Dining Halls": ["Rachel Carson/Oakes Dining Hall"]
-	},
-	"Sweet and Sour Shrimp": {
-		"Preferences": ["Fish", "Soy", "Dairy"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=30&locationName=Rachel+Carson+Oakes+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=112010%2A6",
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=30&locationName=Rachel+Carson+Oakes+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=175072%2A3",
 		"Dining Halls": ["Rachel Carson/Oakes Dining Hall"]
 	},
 	"Black Beans": {
 		"Preferences": ["Vegan", "Gluten Free"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=30&locationName=Rachel+Carson+Oakes+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=166006%2A3",
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=30&locationName=Rachel+Carson+Oakes+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=161080%2A3",
 		"Dining Halls": ["Rachel Carson/Oakes Dining Hall"]
 	},
-	"Burger Bar #1 Condiments": {
+	"Carribbean Bar": {
 		"Preferences": [],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=30&locationName=Rachel+Carson+Oakes+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=060121%2A1%2F4",
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=30&locationName=Rachel+Carson+Oakes+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=010124%2A1",
 		"Dining Halls": ["Rachel Carson/Oakes Dining Hall"]
 	},
-	"Onion Rings": {
-		"Preferences": ["Vegetarian", "Soy", "Dairy"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=30&locationName=Rachel+Carson+Oakes+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=171008%2A3",
+	"Crispy Okra": {
+		"Preferences": ["Vegan", "Gluten Free"],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=30&locationName=Rachel+Carson+Oakes+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=999869%2A1",
 		"Dining Halls": ["Rachel Carson/Oakes Dining Hall"]
 	},
-	"BBQ Pork Ribs": {
-		"Preferences": ["Pork", "Soy"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=30&locationName=Rachel+Carson+Oakes+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=500167%2A8",
+	"Cuban Banana BBQ'd Chicken": {
+		"Preferences": ["Soy", "Halal"],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=30&locationName=Rachel+Carson+Oakes+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=012027%2A1",
 		"Dining Halls": ["Rachel Carson/Oakes Dining Hall"]
 	},
-	"Crispy Beef and Bean Tostada": {
-		"Preferences": ["Beef", "Dairy", "Gluten Free"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=30&locationName=Rachel+Carson+Oakes+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=140350%2A1",
+	"Fried Plantains": {
+		"Preferences": ["Soy"],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=30&locationName=Rachel+Carson+Oakes+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=999870%2A1",
 		"Dining Halls": ["Rachel Carson/Oakes Dining Hall"]
 	},
-	"Crispy Tostada": {
-		"Preferences": ["Vegan", "Soy", "Gluten Free"],
-		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=30&locationName=Rachel+Carson+Oakes+Dining+Hall&dtdate=11%2F28%2F2018&RecNumAndPort=140349%2A1",
+	"Pork Carnitas": {
+		"Preferences": ["Pork", "Gluten Free"],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=30&locationName=Rachel+Carson+Oakes+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=187202%2A2",
+		"Dining Halls": ["Rachel Carson/Oakes Dining Hall"]
+	},
+	"Roasted Butternut Squash": {
+		"Preferences": ["Vegan", "Gluten Free"],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=30&locationName=Rachel+Carson+Oakes+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=081020%2A4",
+		"Dining Halls": ["Rachel Carson/Oakes Dining Hall"]
+	},
+	"Vegan Collard Greens": {
+		"Preferences": ["Vegan", "Gluten Free"],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=30&locationName=Rachel+Carson+Oakes+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=777775%2A3",
+		"Dining Halls": ["Rachel Carson/Oakes Dining Hall"]
+	},
+	"Vegan Spicy Garbanzo Curry": {
+		"Preferences": ["Vegan", "Peanuts and/or Tree Nuts", "Gluten Free"],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=30&locationName=Rachel+Carson+Oakes+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=065070%2A2",
+		"Dining Halls": ["Rachel Carson/Oakes Dining Hall"]
+	},
+	"Lasagna Bolognese": {
+		"Preferences": ["Beef", "Pork", "Soy", "Eggs", "Dairy"],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=30&locationName=Rachel+Carson+Oakes+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=083010%2A1%2F24",
+		"Dining Halls": ["Rachel Carson/Oakes Dining Hall"]
+	},
+	"Cheesy Garlic Bread Sticks": {
+		"Preferences": ["Soy", "Eggs", "Dairy", "Vegetarian"],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=30&locationName=Rachel+Carson+Oakes+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=211012%2A1",
+		"Dining Halls": ["Rachel Carson/Oakes Dining Hall"]
+	},
+	"Burger Turkey": {
+		"Preferences": ["Gluten Free"],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=30&locationName=Rachel+Carson+Oakes+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=400128%2A1",
+		"Dining Halls": ["Rachel Carson/Oakes Dining Hall"]
+	},
+	"Bar Indian": {
+		"Preferences": [],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=30&locationName=Rachel+Carson+Oakes+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=010098%2A1",
+		"Dining Halls": ["Rachel Carson/Oakes Dining Hall"]
+	},
+	"Basmati Rice Pullao": {
+		"Preferences": ["Vegan", "Gluten Free"],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=30&locationName=Rachel+Carson+Oakes+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=200012%2A3",
+		"Dining Halls": ["Rachel Carson/Oakes Dining Hall"]
+	},
+	"Dal Saag": {
+		"Preferences": ["Vegan", "Gluten Free"],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=30&locationName=Rachel+Carson+Oakes+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=200011%2A3",
+		"Dining Halls": ["Rachel Carson/Oakes Dining Hall"]
+	},
+	"Madras Chicken": {
+		"Preferences": ["Peanuts and/or Tree Nuts", "Gluten Free", "Halal"],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=30&locationName=Rachel+Carson+Oakes+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=200002%2A4",
+		"Dining Halls": ["Rachel Carson/Oakes Dining Hall"]
+	},
+	"Matar Paneer": {
+		"Preferences": ["Vegetarian", "Dairy", "Gluten Free"],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=30&locationName=Rachel+Carson+Oakes+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=200003%2A3",
+		"Dining Halls": ["Rachel Carson/Oakes Dining Hall"]
+	},
+	"Original Naan": {
+		"Preferences": ["Vegetarian", "Dairy"],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=30&locationName=Rachel+Carson+Oakes+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=200006%2A1",
+		"Dining Halls": ["Rachel Carson/Oakes Dining Hall"]
+	},
+	"Potato Samosas": {
+		"Preferences": ["Vegan"],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=30&locationName=Rachel+Carson+Oakes+Dining+Hall&dtdate=12%2F01%2F2018&RecNumAndPort=200009%2A1",
 		"Dining Halls": ["Rachel Carson/Oakes Dining Hall"]
 	}
 }
