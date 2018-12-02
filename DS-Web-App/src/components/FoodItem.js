@@ -52,15 +52,10 @@ export class FoodItem extends React.Component {
                         Rating: totalRating,
                         Reviews: newReviews
                       },
-                success: function(response){
-                    console.log(response);
-                },
-                failure: function(err){
-                    console.log("Awww shit");
-                }
+                
             })
         } else {
-            $.ajax({
+            $.ajax({ //Not in the database, add it to the database
                 type: "POST",
                 url: '/dininghallfood/add',
                 data: {
@@ -68,9 +63,7 @@ export class FoodItem extends React.Component {
                         Rating: totalRating,
                         Reviews: newReviews
                       },
-                success: (response) => {
-                    console.log(response);
-                }
+                
             })
         }
         
@@ -109,10 +102,9 @@ export class FoodItem extends React.Component {
                 },
                 body: JSON.stringify(data)
             })
-                .then(res => res.json())
+                .then(res => res.json()) //Grab the result from the post call
                 .then( (result) => {
                     if(result[0] !== undefined){ //Make sure that we actually got data back. If we did, the item is in the db
-                        console.log("Grabbed from db");
                         this.setState({
                             rating: (result[0].Food_Star_Rating/result[0].Number_Of_Ratings),
                             overallRating: result[0].Food_Star_Rating,
@@ -128,7 +120,9 @@ export class FoodItem extends React.Component {
     }
 
     render() {
- 
+        //Renders the food ratings. There are two query cases based
+        //off of the size of the phone screen, and resizes the gaps
+        //between each star accordningly
         return(
             <div>
                 <MediaQuery query="(max-width:450px)">

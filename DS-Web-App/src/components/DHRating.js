@@ -20,7 +20,9 @@ export class DHRating extends React.Component {
         this.renderDHRating = this.renderDHRating.bind(this);
     }
     
-
+    //This function checks to see if we have an update to the state
+    //It is part of the React app's lifecycle, and is automatically run 
+    //once the components first render
     componentWillMount(){
         this.renderDHRating()
     }
@@ -44,6 +46,8 @@ export class DHRating extends React.Component {
                 //we can render the correct information
                 var hall;
                 var url;
+                //Fill the appropriate dining hall code and url based on the name of the
+                //dining hall. URLs are links to the google reviews for each dining hall
                 switch(this.props.hall){
                     case "9/10":
                         hall = 0;
@@ -65,9 +69,8 @@ export class DHRating extends React.Component {
                         hall = 4;   
                         url = "https://www.google.com/search?q=oaks+rachel+carson+dinig+hall&oq=oaks+rachel+carson+dinig+hall&aqs=chrome..69i57.3828j1j9&sourceid=chrome&ie=UTF-8#lrd=0x808e419940c684cb:0x27fb53a425d50bfd,1,,,";    
                 }
-                console.log("Hall number ", hall);
-                console.log(results.Halls[hall]);
                 const thisHallRating = results.Halls[hall];
+                //set the state from the information that we obtained from the fetch call
                 this.setState({
                     ratings : results.Halls,
                     dhRating : thisHallRating.Rating,
@@ -76,6 +79,7 @@ export class DHRating extends React.Component {
                 });
             })
             .then(() => {
+                //Render the UI based on the state that was set by the fetch call
                 let UI = (
                     <div>
                         <div> 
@@ -126,6 +130,8 @@ export class DHRating extends React.Component {
         */
         
         //Return the rendered component
+        //The fetch call runs asynchronously; We need to check whether the data provided by the call was
+        //ready during the first render
         return(
             <div className="dinRatings">
                 {this.state.final_UI ===null ? "Loading reviews.." : this.state.final_UI}

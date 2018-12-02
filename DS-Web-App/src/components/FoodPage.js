@@ -36,11 +36,21 @@ export class FoodPage extends React.Component {
         */
        
         var food = this.props.location.pathname.substring(6);
+
+        //this.state["preferences"] is an array of vegan, soy, etc. items
+        //This array could be empty
+
+        //this.state["url"] is the url of the food items nutritional information
+        
+        //this.state["diningHall"] is an array of the dining halls the item is serving in
+        //This array always has at least 1 element in it
+        
+        //Pull this data from the server files
         fetch("/food.json", {Method: "GET"})
             .then(res => res.json())
             .then((result) => {
-                console.log(result[food]["Preferences"]);
                 var foodList = result;
+                //Set the state of the component with the new data
                 this.setState ({
                     preferences : foodList[food]["Preferences"],
                     url : foodList[food]["URL"],
@@ -48,6 +58,8 @@ export class FoodPage extends React.Component {
                 })
             })
             .then(() => {
+                //Use the data to create a renderable UI, and then set the state
+                //Using this UI
                 let UI = (
                     <div className="App">
                         <header className="App-header">
@@ -118,7 +130,6 @@ export class FoodPage extends React.Component {
         if(preferences === null){
             return "Loading..";
         }
-        console.log(preferences);
         //Render the list of food preferences
         let prefUI = preferences.map((pref) => {
             return(
@@ -177,15 +188,9 @@ export class FoodPage extends React.Component {
         return hallUI;
     }
 
-    //this.state["preferences"] is an array of vegan, soy, etc. items
-    //This array could be empty
-
-    //this.state["url"] is the url of the food items nutritional information
     
-    //this.state["diningHall"] is an array of the dining halls the item is serving in
-    //This array always has at least 1 element in it 
 
-    //Any formatting will appear here.
+    //If the UI is ready, then render it. If not, wait to display the information
     render(){
 
         return(this.state.pageUI === null ? "" : this.state.pageUI);

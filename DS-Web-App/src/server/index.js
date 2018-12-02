@@ -3,10 +3,9 @@ const path = require('path');
 const mysql = require('mysql');
 const cors = require('cors'); //Allow for cross origin resource sharing
 
-
 const app = express();
 
-const bodyParser = require('body-parser');
+const bodyParser = require('body-parser'); //needed for parsing requests from client
 
 app.use(bodyParser.json()); //We'll need this to parse the data we get for post calls
 app.use(bodyParser.urlencoded({extended: true}));
@@ -37,7 +36,6 @@ app.use(cors()); //Allows us to use cross references between db and javascript
 
 //Add the new item to the database
 app.post('/dininghallfood/add', (req,res) => {
-    console.log("Got an sql request");
 
     //SQL query to insert the new food item
     const INSERT_FOOD_QUERY = `INSERT INTO dininghallfood (Name, Food_Star_Rating, Number_Of_Ratings) VALUES ('${req.body.Name}', ${req.body.Rating}, ${req.body.Reviews})`;
@@ -55,8 +53,6 @@ app.post('/dininghallfood/add', (req,res) => {
 //parameter passed to it so that we can send a request to find
 //information for a specific item
 app.post('/dininghallfood', (req,res) => {
-    console.log("Wow, a post request for database");
-    console.log('body: ' + req.body.Name);
     //Now we want to create a query for that given item name
     const FIND_FOOD_QUERY = `SELECT Food_Star_Rating, Number_Of_Ratings FROM dininghallfood WHERE Name ='${req.body.Name}'`
     //Make that query via the conection we set up
@@ -71,9 +67,6 @@ app.post('/dininghallfood', (req,res) => {
 
 //Update an already existing entry in the database
 app.post('/dininghallfood/update', (req,res) => {
-    console.log("Updating the database with a new review");
-    console.log("New rating: " + req.body.Rating);
-    console.log("New number of reviews: ", req.body.Reviews);
 
     const UPDATE_DATABASE_QUERY = `UPDATE dininghallfood SET Food_Star_Rating = ${req.body.Rating}, Number_Of_Ratings = ${req.body.Reviews} WHERE Name = '${req.body.Name}'`
     //Make the query with the connection that we have
@@ -86,36 +79,41 @@ app.post('/dininghallfood/update', (req,res) => {
     });
 });
 
+//Returns the json object in dailyMenu.json
 app.get('/dailyMenu.json', (req,res) => {
-    console.log("Get request for the daily menu");
     const dailyMenu = require('./dailyMenu.json');
     return res.send(JSON.stringify(dailyMenu));
 });
 
+//Returns the json object in dhRating.json
 app.get('/dhRating.json', (req,res) => {
-    console.log("Get request for the dining hall ratings");
     const dhRatings = require('./dhRating.json');
     return res.send(JSON.stringify(dhRatings));
 });
 
+//Returns the json object in poptimes.json
 app.get('/poptimes.json', (req,res) => {
     const data = require('./poptimes.json');
     return res.send(JSON.stringify(data));
 });
 
+
+//Returns the json object in food.json
 app.get('/food.json', (req,res) => {
     const foodList = require('./food.json');
     return res.send(JSON.stringify(foodList));
 })
 
+//Returns the json object in search.json
 app.get('/search.json', (req,res) => {
     const data = require('./search.json');
     return res.send(JSON.stringify(data));
 })
 
+//Catches any request that is not handled by the above gets, simply
+//reloads the page. This is mainly used for the react routers
 app.get('*', (req,res) => {
     res.sendFile(path.join(__dirname+ '/../../dist/index.html'));
-    console.log("Refresh");
 });
 
 

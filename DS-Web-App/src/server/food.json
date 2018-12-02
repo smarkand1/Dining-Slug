@@ -429,6 +429,11 @@
 		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=05&locationName=Cowell+Stevenson+Dining+Hall&dtdate=12%2F02%2F2018&RecNumAndPort=161015%2A3",
 		"Dining Halls": ["Cowell/Stevenson Dining Hall Menu"]
 	},
+	"Vietnamese Shrimp Pho Bowl": {
+		"Preferences": ["Fish", "Soy"],
+		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=05&locationName=Cowell+Stevenson+Dining+Hall&dtdate=12%2F02%2F2018&RecNumAndPort=180019%2A12",
+		"Dining Halls": ["Cowell/Stevenson Dining Hall Menu"]
+	},
 	"French Waffles": {
 		"Preferences": ["Soy", "Eggs", "Dairy"],
 		"URL": "https://nutrition.sa.ucsc.edu/label.asp?locationNum=30&locationName=Rachel+Carson+Oakes+Dining+Hall&dtdate=12%2F02%2F2018&RecNumAndPort=217040%2A2",

@@ -3,9 +3,7 @@ import React from 'react';
 import '../App.css';
 
 //Reading in the data that was outputed by the webscraper
-//const data = require('./poptimes.json');
 const closeData = require('./closedTimes.json')
-//const times = data.Halls;
 const hallsCloseTimes = closeData.Halls;
 
 export class Capacity extends React.Component {
@@ -74,6 +72,7 @@ export class Capacity extends React.Component {
         var currFullTime = currHour * 100 + d.getMinutes();
         var UI;
 
+        //Determine if a dining hall is closed
         if(currFullTime < hallsCloseTimes[hall][currDayNum][OPENING] || hallsCloseTimes[hall][currDayNum][CLOSING] < currFullTime){
             UI = (<div className="busy">Closed</div>);
             this.setState({finalUI : UI});
@@ -92,7 +91,6 @@ export class Capacity extends React.Component {
         fetch("/poptimes.json", {Method: "GET"})
             .then(res => res.json())
             .then((result) => {
-                console.log(result);
                 var dH = result.Halls[hall];
                 var currrDay = dH[currDay];
                 var currTime = currrDay[currHour];
@@ -120,7 +118,7 @@ export class Capacity extends React.Component {
                 this.setState({finalUI : UI})
             })
 
-        //Determine if a dining hall is closed
+        
         
        
     }

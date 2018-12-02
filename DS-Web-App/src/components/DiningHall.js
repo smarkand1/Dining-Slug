@@ -39,7 +39,10 @@ export class DiningHall extends React.Component {
                 hall = 4;       
         }
 
-        //Return the rendered component
+        //Returns the rendered component of the dining hall page as a whole
+        //Listhome: the navigation list that is rendered in the top left of the page
+        //Search: the search bar
+        //Menu: the dining hall menus that renders each item
         return(
             <div className="App">
                 <header className="App-header">
