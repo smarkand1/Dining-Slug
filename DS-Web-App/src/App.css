@@ -747,7 +747,12 @@ input {
   }
 
   .dropdown:hover .dropbtn {
-      background-color: #002b4e;
+    background-color: #fdc700;
+    transition-timing-function: ease-out;
+    transition-duration: 0.3s;
+    /* Safari Support*/
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 0.3s;
   }
 
   .title {
@@ -759,5 +764,15 @@ input {
     height: 6vw;
     width: 6vw;
     padding-inline-start: 1vw;
+  }
+
+  .foodPageTitle {
+    font-size: 7vmin;
+    text-align: center;
+    color: white;
+    margin: 0px;
+    padding-top: 1.5vw;
+    width: 100%;
+    font-weight: bold;
   }
 }
