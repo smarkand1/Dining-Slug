@@ -3,6 +3,7 @@ const path = require('path');
 const mysql = require('mysql');
 const cors = require('cors'); //Allow for cross origin resource sharing
 
+
 const app = express();
 
 const bodyParser = require('body-parser');
@@ -83,6 +84,18 @@ app.post('/dininghallfood/update', (req,res) => {
             return res.send('Updated database');
         }
     });
+});
+
+app.get('/dailyMenu.json', (req,res) => {
+    console.log("Get request for the daily menu");
+    const dailyMenu = require('./dailyMenu.json');
+    return res.send(JSON.stringify(dailyMenu));
+});
+
+app.get('/dhRating.json', (req,res) => {
+    console.log("Get request for the dining hall ratings");
+    const dhRatings = require('./dhRating.json');
+    return res.send(JSON.stringify(dhRatings));
 });
 
 app.get('*', (req,res) => {

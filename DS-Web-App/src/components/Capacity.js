@@ -1,6 +1,6 @@
 //This component renders how busy the dining hall is based on google's popular times
 import React from 'react';
-import './Capacity.css';
+import '../App.css';
 
 //Reading in the data that was outputed by the webscraper
 const data = require('./poptimes.json');

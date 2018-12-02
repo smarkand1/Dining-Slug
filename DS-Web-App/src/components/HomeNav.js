@@ -3,7 +3,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { Capacity } from './Capacity'
 import { DHRating } from './DHRating'
-import './HomeNav.css';
+import '../App.css';
 
 export class HomeNav extends React.Component{
 	render() {
@@ -20,8 +20,8 @@ export class HomeNav extends React.Component{
 		return (
 			<div className="bigButtons">
 				<ul className="boxList">
-					<NavLink to = "/9-10" exact>
-						<li className="boxItem">
+					<li className="boxItem">
+						<NavLink to = "/9-10" exact>
 							<div className="boxItemHelper">
 								<div className="name">
 									College 9/10	
@@ -29,14 +29,14 @@ export class HomeNav extends React.Component{
 								<div className="capacity">
 									Activity: <Capacity hall="9/10"/>	
 								</div>
-								<div className="rating">
-									<DHRating hall="9/10"/>	
-								</div>
 							</div>
-						</li>
-					</NavLink>
-					<NavLink to = "/cowell-stevenson" exact>
-						<li className="boxItem">
+						</NavLink>
+						<div className="rating">
+							<DHRating hall="9/10"/>	
+						</div>
+					</li>
+					<li className="boxItem">
+						<NavLink to = "/cowell-stevenson" exact>
 							<div className="boxItemHelper">
 								<div className="name">
 									Cowell/Stevenson
@@ -44,14 +44,14 @@ export class HomeNav extends React.Component{
 								<div className="capacity">
 									Activity: <Capacity hall="Cowell/Stevenson"/>		
 								</div>
-								<div className="rating">
-									<DHRating hall="Cowell/Stevenson"/>
-								</div>
 							</div>
-						</li>
-					</NavLink>
-					<NavLink to = "/crown-merrill" exact>
-						<li className="boxItem">
+						</NavLink>
+						<div className="rating">
+							<DHRating hall="Cowell/Stevenson"/>
+						</div>
+					</li>
+					<li className="boxItem">
+						<NavLink to = "/crown-merrill" exact>
 							<div className="boxItemHelper">
 								<div className="name">
 									Crown/Merrill
@@ -59,14 +59,14 @@ export class HomeNav extends React.Component{
 								<div className="capacity">
 									Activity: <Capacity hall="Crown/Merrill"/>			
 								</div>
-								<div className="rating">
-									<DHRating hall="Crown/Merrill"/>	
-								</div>
 							</div>
-						</li>
-					</NavLink>
-					<NavLink to = "/porter-kresge" exact>
-						<li className="boxItem">
+						</NavLink>
+						<div className="rating">
+							<DHRating hall="Crown/Merrill"/>	
+						</div>
+					</li>
+					<li className="boxItem">
+						<NavLink to = "/porter-kresge" exact>
 							<div className="boxItemHelper">
 								<div className="name">
 									Porter/Kresge
@@ -74,14 +74,14 @@ export class HomeNav extends React.Component{
 								<div className="capacity">
 									Activity: <Capacity hall="Porter/Kresge"/>
 								</div>
-								<div className="rating">
-									<DHRating hall="Porter/Kresge"/>
-								</div>
 							</div>
-						</li>
-					</NavLink>
-					<NavLink to = "/rcc-oakes" exact>
-						<li className="boxItem">
+						</NavLink>
+						<div className="rating">
+							<DHRating hall="Porter/Kresge"/>
+						</div>
+					</li>
+					<li className="boxItem">
+						<NavLink to = "/rcc-oakes" exact>
 							<div className="boxItemHelper">
 								<div className="name">
 									Rachel Carson/Oakes
@@ -89,12 +89,12 @@ export class HomeNav extends React.Component{
 								<div className="capacity">
 									Activity: <Capacity hall="Rachel Carson/Oakes"/>
 								</div>
-								<div className="rating">
-									<DHRating hall="Rachel Carson/Oakes"/>
-								</div>
 							</div>
-						</li>
-					</NavLink>	
+						</NavLink>	
+						<div className="rating">
+							<DHRating hall="Rachel Carson/Oakes"/>
+						</div>
+					</li>
 				</ul>
 			</div>
 		);

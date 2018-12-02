@@ -5,11 +5,10 @@
  */
 
 import React from 'react';
-import './FoodItem.css';
+import '../App.css';
 import Ratings from 'react-ratings-declarative';
 import $ from 'jquery';
 
-var database = require('./database.json');
 
 export class FoodItem extends React.Component {
     constructor(props){
@@ -130,29 +129,25 @@ export class FoodItem extends React.Component {
  
         return(
             <div>
-                <button className = "listFood">
-                    {this.props.itemName} | Reviews: {this.state.reviews}
-                    <h3>
-                        Rating: 
-                        <Ratings  
-                            rating = {this.state.rating}
-                            widgetRatedColors = 'rgb(253, 199, 0)'
-                            widgetEmptyColors = 'rgb(203, 211, 227)'
-                            widgetHoverColors = 'rgb(255, 219, 86)'
-                            changeRating = {this.changeRating}
-                            widgetDimensions = '20px'
-                        >
-                            <Ratings.Widget />
-                            <Ratings.Widget />
-                            <Ratings.Widget />
-                            <Ratings.Widget />
-                            <Ratings.Widget />
-                        </Ratings>
-                    </h3> 
-                </button>
-                
+                <div className="divText">
+                    Rating : <Ratings  
+                        rating = {this.state.rating}
+                        widgetRatedColors = 'rgb(253, 199, 0)'
+                        widgetEmptyColors = 'rgb(203, 211, 227)'
+                        widgetHoverColors = 'rgb(255, 219, 86)'
+                        changeRating = {this.changeRating}
+                        widgetDimensions = '2vmin'
+                        widgetSpacings = "1vmin"
+                    >
+                        <Ratings.Widget />
+                        <Ratings.Widget />
+                        <Ratings.Widget />
+                        <Ratings.Widget />
+                        <Ratings.Widget />
+                    </Ratings> 
+                </div>
+                Reviews: {this.state.reviews}
             </div>
-               
         );
     }
 }
