@@ -52,6 +52,7 @@ export class Search extends React.Component {
 
     //This function will render our results
     renderResults = r =>{
+        console.log("Rendering results")
         return (
         <NavLink to = {`/food/${r}`}>
             <button className="searchButton" id="searchBarFood">{r}</button>

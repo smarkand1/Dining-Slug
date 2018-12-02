@@ -163,16 +163,16 @@ food.json - food data with specifics
 '''
 
 #Old data to overwrite
-prev_ratings_json = json.load(open('src/components/dhRating.json'))
+prev_ratings_json = json.load(open('src/server/dhRating.json'))
 prev_times_json = json.load(open('src/components/poptimes.json'))
 prev_ratings = prev_ratings_json["Halls"]
 prev_times = prev_times_json["Halls"]
 
 #Output files
-data_file = open("src/components/dailyMenu.json", "w")
+data_file = open("src/server/dailyMenu.json", "w")
 search_file = open("src/components/search.json", "w")
 food_file = open("src/components/food.json", "w")
-ratings_file = open("src/components/dhRating.json", "w")
+ratings_file = open("src/server/dhRating.json", "w")
 times_file = open("src/components/poptimes.json", "w")
 
 #Write Data for times and ratings using google data
