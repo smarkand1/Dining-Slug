@@ -29,10 +29,7 @@ module.exports = {
             }
         ]
     },
-    devServer: {
-        port: 5000,
-        open: true
-    },
+    
     plugins: [
        // new CleanWebpackPlugin([outputDirectory]),
         new HtmlWebpackPlugin({
