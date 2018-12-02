@@ -6,7 +6,6 @@ import React from 'react';
 import { NavLink} from 'react-router-dom';
 import './App.css';
 import MediaQuery from 'react-responsive';
-import Picker from 'react-mobile-picker';
 
 
 export class Listhome extends React.Component{
