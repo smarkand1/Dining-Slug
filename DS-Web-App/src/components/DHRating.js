@@ -79,7 +79,8 @@ export class DHRating extends React.Component {
                 let UI = (
                     <div>
                         <div> 
-                            Rating: <Ratings  
+                            Rating: <Ratings
+                                 rating = {this.state.dhRating}  
                                  widgetRatedColors = 'rgb(253, 199, 0)'
                                  widgetEmptyColors = 'rgb(203, 211, 227)'
                                  widgetHoverColors = 'rgba(255, 219, 86, 0)'
