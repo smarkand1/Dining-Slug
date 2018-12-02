@@ -281,6 +281,8 @@ for url in urls:
             data_file.write("\n\t\t}\n")
     data_file.write("\t]\n}")
 
+print(full_menu)
+
 #Closes off the dailMenu.json file
 data_file.write("]\n}")
 

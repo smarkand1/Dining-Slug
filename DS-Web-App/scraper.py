@@ -19,10 +19,9 @@ def get_dining_hall_URLs():
     response = requests.get(main_url)
     if(response.status_code != SUCCESS_CODE):
         print("Error in connecting to website")
-        return None
+        return -1
     else:
        print("response code: ", response.status_code)
-       return -1; 
     html = response.content
     soup = BeautifulSoup(html, "html.parser")
 
@@ -102,8 +101,7 @@ def read_menu_frames(frame):
                 food_items.append(food)
         else:
             food.append(div.get_text())
-
-        food_items.append(food)
+            food_items.append(food)
     return food_items
 
 def make_soup_from_frame(frame):
@@ -158,4 +156,3 @@ def convert_img_name(name):
         return "Kosher Ingredients"
     else:
         return name
-    
