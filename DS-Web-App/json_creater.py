@@ -2,6 +2,7 @@ import scraper
 import requests
 import dhpop
 import json
+import sys
 
 def print_menu(file, term, menu, food_index):
     '''
@@ -20,15 +21,20 @@ def print_menu(file, term, menu, food_index):
     NAME = 0
     OUT_OF_BOUNDS = len(menu) - 1
 
+    #Makes sure there are items in the list to print out
     if(food_index > len(menu) - 1):
         return food_index
+
+    #Prints the header for each dining hall object in the JSON file
     title = menu[food_index][NAME]
     file.write("\t\t{\n")
     file.write("\t\t\t\"Title\": \"" + title + "\",\n")
     file.write("\t\t\t\"Food\": [")
 
+    #Increment as it is on a food item from a previous meal time
     food_index += 1
     food = menu[food_index][NAME]
+    #Prints the first food item for formatting purposes
     if food != term :
         file.write("\"" + food + "\"")
         food_index += 1
@@ -37,6 +43,7 @@ def print_menu(file, term, menu, food_index):
             return food_index
         food = menu[food_index][NAME]
 
+    #Writes the remaining terms for formatting issues
     while food != term :
         file.write(", \"" + food + "\"")
         food_index += 1
@@ -44,6 +51,7 @@ def print_menu(file, term, menu, food_index):
             break
         food = menu[food_index][NAME]
 
+    #Closes off file
     file.write("]\n\t\t}")
     return food_index
 
@@ -168,15 +176,23 @@ prev_times_json = json.load(open('DS-Web-App/src/components/poptimes.json'))
 prev_ratings = prev_ratings_json["Halls"]
 prev_times = prev_times_json["Halls"]
 
-#Output files
-data_file = open("DS-Web-App/src/components/dailyMenu.json", "w")
-search_file = open("DS-Web-App/src/components/search.json", "w")
-food_file = open("DS-Web-App/src/components/food.json", "w")
+#Output files for google api
 ratings_file = open("DS-Web-App/src/components/dhRating.json", "w")
 times_file = open("DS-Web-App/src/components/poptimes.json", "w")
 
 #Write Data for times and ratings using google data
 dhpop.print_google_data(ratings_file, times_file, prev_ratings, prev_times)
+ratings_file.close()
+times_file.close()
+
+urls = scraper.get_dining_hall_URLs()
+if(urls == -1):
+    sys.exit()
+
+#Output files for webscraper
+data_file = open("DS-Web-App/src/components/dailyMenu.json", "w")
+search_file = open("DS-Web-App/src/components/search.json", "w")
+food_file = open("DS-Web-App/src/components/food.json", "w")
 
 count = 0
 NAME = 0
@@ -191,16 +207,13 @@ MAX_DINING_HALL_COUNT = 5
 #Menu consisting of every item regardless of dining hall
 full_menu = []
 
-#Menu consisting of links to nutrition of every item regardless of dining hall
-full_link_menu = []
-
 #Starts the JSON file for dailyMenu.json
 data_file.write("{\n\"data\":[")
 
 #Starts the JSON file for food.json
 search_file.write("{\n\t\"Ids\": [\n")
 
-for url in scraper.get_dining_hall_URLs():
+for url in urls:
     #Purpose is to stop after the standard dining halls
     #First 5 links are the 5 dining halls
     count += INCREMENT_BY_ONE
@@ -268,6 +281,8 @@ for url in scraper.get_dining_hall_URLs():
             data_file.write("\n\t\t}\n")
     data_file.write("\t]\n}")
 
+print(full_menu)
+
 #Closes off the dailMenu.json file
 data_file.write("]\n}")
 
@@ -282,6 +297,4 @@ food_file.write("\n}")
 #Close the files
 data_file.close()   
 search_file.close()   
-ratings_file.close()
-times_file.close()
 food_file.close()  
