@@ -1,0 +1,2 @@
+robocopy build ..\build
+pause

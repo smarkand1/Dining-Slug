@@ -1,0 +1,24 @@
+{
+	"Halls": [
+		{
+			"Rating": 3.8,
+			"Reviews": 92
+		},
+		{
+			"Rating": 3.9,
+			"Reviews": 61
+		},
+		{
+			"Rating": 3.7,
+			"Reviews": 54
+		},
+		{
+			"Rating": 3.5,
+			"Reviews": 20
+		},
+		{
+			"Rating": 4.1,
+			"Reviews": 51
+		}
+	]
+}
