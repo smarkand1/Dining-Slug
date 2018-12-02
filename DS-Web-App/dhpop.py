@@ -9,16 +9,36 @@ google_api_key = google_api_json["GOOGLE_API_KEY"]
 def print_google_data(ratings_file, times_file, prev_ratings, prev_times):
     LAST = -1
     halls = []
+    nine = {}
+    cowel = {}
+    crown = {}
+    porter = {}
+    oaks = {}
     #Gets the google data for 9/10
-    nine = populartimes.get_id(google_api_key, "ChIJDf7xXQpBjoARyuZR1vXuXF8")
+    try:
+        nine = populartimes.get_id(google_api_key, "ChIJDf7xXQpBjoARyuZR1vXuXF8")
+    except:
+        pass
     #Gets the google data for Cowel/Stevenson
-    cowel = populartimes.get_id(google_api_key, "ChIJAVV0haZBjoARvMcbjbOCfUo")
+    try:
+        cowel = populartimes.get_id(google_api_key, "ChIJAVV0haZBjoARvMcbjbOCfUo")
+    except:
+        pass
     #Gets the google data for Crown/Merill
-    crown = populartimes.get_id(google_api_key, "ChIJi_EvW6dBjoAR463303sobo8")
+    try:
+        crown = populartimes.get_id(google_api_key, "ChIJi_EvW6dBjoAR463303sobo8")
+    except:
+        pass
     #gets the popular times for porter/kresge
-    porter = populartimes.get_id(google_api_key, "ChIJqZjyj55BjoARoDnq_JJ1zMA")
+    try:
+        porter = populartimes.get_id(google_api_key, "ChIJqZjyj55BjoARoDnq_JJ1zMA")
+    except:
+        pass
     #Gets the google data for Rachel Carson/Oaks
-    oaks = populartimes.get_id(google_api_key, "ChIJy4TGQJlBjoAR_QvVJaRT-yc")
+    try:
+        oaks = populartimes.get_id(google_api_key, "ChIJy4TGQJlBjoAR_QvVJaRT-yc")
+    except:
+        pass
 
     #Makes the dining halls into a list
     halls.extend([nine, cowel, crown, porter, oaks])
