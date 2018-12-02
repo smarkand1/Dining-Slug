@@ -10,14 +10,30 @@ import MediaQuery from 'react-responsive';
 
 export class Listhome extends React.Component{
 
-	myFunction() {
-		var x = document.getElementById("dropdown-content");
-		if (x.style.display === "none") {
-			x.style.display = "block";
-		} else {
-			x.style.display = "none";
-		}
-	}
+	constructor() {
+		super();
+		
+		this.state = {
+		  showMenu: false,
+		};
+		
+		this.showMenu = this.showMenu.bind(this);
+		this.closeMenu = this.closeMenu.bind(this);
+	  }
+	  
+	  showMenu(event) {
+		event.preventDefault();
+		
+		this.setState({ showMenu: true }, () => {
+		  document.addEventListener('click', this.closeMenu);
+		});
+	  }
+	  
+	  closeMenu() {
+		this.setState({ showMenu: false }, () => {
+		  document.removeEventListener('click', this.closeMenu);
+		});
+	  }
 
 	render() {
 		/*
@@ -70,31 +86,39 @@ export class Listhome extends React.Component{
 
 				<MediaQuery query="(max-width:450px)">
 				<div class="dropdown">
-					<button class="dropbtn">Dropdown</button>
-					<div class="dropdown-content">
-						<NavLink to = "/" exact>
-							Home
-						</NavLink>
-						<NavLink to = "/9-10" exact>
-							9/10
-						</NavLink>
+					<button onClick={this.showMenu} class="dropbtn">Select A Page...</button>
+					{
+					this.state.showMenu
+						? (
+						<div class="dropdown-content">
+							<NavLink to = "/" exact>
+								Home
+							</NavLink>
+							<NavLink to = "/9-10" exact>
+								9/10
+							</NavLink>
 
-						<NavLink to = "/cowell-stevenson" exact>
-							Cowell/Stevenson
-						</NavLink>
+							<NavLink to = "/cowell-stevenson" exact>
+								Cowell/Stevenson
+							</NavLink>
 
-						<NavLink to = "/crown-merrill" exact>
-							Crown/Merill
-						</NavLink>
-				
-						<NavLink to = "/porter-kresge" exact>
-							Porter/Kresge
-						</NavLink>
+							<NavLink to = "/crown-merrill" exact>
+								Crown/Merill
+							</NavLink>
 					
-						<NavLink to = "/rcc-oakes" exact>
-							Rachel Carson/Oakes
-						</NavLink>
-					</div>
+							<NavLink to = "/porter-kresge" exact>
+								Porter/Kresge
+							</NavLink>
+						
+							<NavLink to = "/rcc-oakes" exact>
+								Rachel Carson/Oakes
+							</NavLink>
+						</div>
+							)
+						: (
+						null
+						  )
+					}
 				</div>
 				</MediaQuery>
 			</div>

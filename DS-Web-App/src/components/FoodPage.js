@@ -106,9 +106,7 @@ export class FoodPage extends React.Component {
                     <div className="gradient"></div>
                     <div className="topBar">
                         <Listhome/>
-                        <div className="searchItem">
-                            <Search searchWithCode = {5}/>
-                        </div>
+                        <Search searchWithCode = {5}/>
                     </div>
 
                     <div className="foodPageTitle">
