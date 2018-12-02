@@ -45,7 +45,7 @@ export class DiningHall extends React.Component {
                 <header className="App-header">
                     <div className="title">
                         Dining Slug - {this.props.name}
-                        <img src ={require('./slug.png')}/>
+                        <img class="logo" src ={require('./slug.png')}/>
                     </div>
                     <div className="gradient"></div>
                     <div>

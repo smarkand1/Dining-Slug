@@ -13,7 +13,11 @@
 		},
 		{
 			"Title": "Dinner",
+<<<<<<< HEAD
 			"Food": ["Chicken Noodle Soup", "Thai Lentil and Coconut Soup", "BBQ Beef Brisket", "Oven Roasted Chicken Thigh", "Roasted Vegetables Penne", "Steamed Rice", "Cheese Pizza", "Pizza Philly Steak", "Steamed Seasonal Vegetables", "Sweet Pumpkin Bar", "UCSC Bakery French Rolls", "Vegan Apple Cranberry Pie", "Gardein and Broccoli Stir Fry", "Grilled Huli Huli Chicken", "Hawaiian Bar", "Shrimp Fried Rice", "Steamed Bok Choy", "Sticky Rice", "Yakisoba Stir-Fried Noodles", "Banh Mi Vegan Hot Dog", "Blended Beef & Mushroom Burger Hawaiian Style", "Garlic Fries", "Garlic Fries"]
+=======
+			"Food": ["Chicken Noodle Soup", "Thai Lentil and Coconut Soup", "Oven Roasted Chicken Thigh", "Steamed Rice", "Cheese Pizza", "Pizza Philly Steak", "Steamed Seasonal Vegetables", "Sweet Pumpkin Bar", "UCSC Bakery French Rolls", "Vegan Apple Cranberry Pie", "Gardein and Broccoli Stir Fry", "Grilled Huli Huli Chicken", "Hawaiian Bar", "Steamed Bok Choy", "Sticky Rice", "Yakisoba Stir-Fried Noodles", "Blended Beef & Mushroom Burger Hawaiian Style", "French Fries", "Vegan Malibu South West Burger", "Vegan Malibu South West Burger"]
+>>>>>>> d1b86aed2b40453e13ac2c6b1a4765fee78a3776
 		},
 		{
 			"Title": "Late Night",
