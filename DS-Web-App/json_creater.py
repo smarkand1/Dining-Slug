@@ -21,15 +21,20 @@ def print_menu(file, term, menu, food_index):
     NAME = 0
     OUT_OF_BOUNDS = len(menu) - 1
 
+    #Makes sure there are items in the list to print out
     if(food_index > len(menu) - 1):
         return food_index
+
+    #Prints the header for each dining hall object in the JSON file
     title = menu[food_index][NAME]
     file.write("\t\t{\n")
     file.write("\t\t\t\"Title\": \"" + title + "\",\n")
     file.write("\t\t\t\"Food\": [")
 
+    #Increment as it is on a food item from a previous meal time
     food_index += 1
     food = menu[food_index][NAME]
+    #Prints the first food item for formatting purposes
     if food != term :
         file.write("\"" + food + "\"")
         food_index += 1
@@ -38,6 +43,7 @@ def print_menu(file, term, menu, food_index):
             return food_index
         food = menu[food_index][NAME]
 
+    #Writes the remaining terms for formatting issues
     while food != term :
         file.write(", \"" + food + "\"")
         food_index += 1
@@ -45,6 +51,7 @@ def print_menu(file, term, menu, food_index):
             break
         food = menu[food_index][NAME]
 
+    #Closes off file
     file.write("]\n\t\t}")
     return food_index
 
@@ -199,9 +206,6 @@ MAX_DINING_HALL_COUNT = 5
 
 #Menu consisting of every item regardless of dining hall
 full_menu = []
-
-#Menu consisting of links to nutrition of every item regardless of dining hall
-full_link_menu = []
 
 #Starts the JSON file for dailyMenu.json
 data_file.write("{\n\"data\":[")
