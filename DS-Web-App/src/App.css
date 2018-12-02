@@ -633,46 +633,19 @@ input {
   }
 
   .Collapsible{
-    overflow: hidden;
-    cursor: pointer;
-    display: block;
-    font-size: 1.5em;
-    color: #ffffff;
-    margin: 10px 0px;
     width : 100%;
-    font-weight: bold;
-    border: 1.5px solid #fdc700;
-    border-radius: 8px;
-    background-color: rgba(0,60,108);
-    transition-timing-function: ease-out;
-    transition-duration: 0.3s;
-    align-self: center;
-    justify-content: center;
-    /* Safari Support*/
     }
 
   .collapsibleButton{
-    cursor: pointer;
-    display: block;
-    font-size: 2vw;
-    color: #ffffff;
-    padding: 10px 8px;
     font-weight: bold;
     font-size: 5vw;
     width: 100%;
-    border: none;
-    background-color: rgba(0,60,108);
-    transition-timing-function: ease-out;
-    transition-duration: 0.3s;
-    /* Safari Support*/
-    -webkit-transition-timing-function: ease-out;
-    -webkit-transition-duration: 0.3s;
   }
 
   .rightBox{
     width: 100%;
     margin: 0;
-    margin-top: 45vh;
+    margin-top: 5vh;
   }
 
   .leftBox{
