@@ -627,8 +627,98 @@ input {
 
 /*@MEDIA Responsive Code Block */
 @media screen and (max-width:450px){
+  
   .dinRatings{
-      width: 100%;
+    width: 100%;
+  }
+
+  .Collapsible{
+    overflow: hidden;
+    cursor: pointer;
+    display: block;
+    font-size: 1.5em;
+    color: #ffffff;
+    margin: 10px 0px;
+    width : 100%;
+    font-weight: bold;
+    border: 1.5px solid #fdc700;
+    border-radius: 8px;
+    background-color: rgba(0,60,108);
+    transition-timing-function: ease-out;
+    transition-duration: 0.3s;
+    align-self: center;
+    justify-content: center;
+    /* Safari Support*/
+    }
+
+  .collapsibleButton{
+    cursor: pointer;
+    display: block;
+    font-size: 2vw;
+    color: #ffffff;
+    padding: 10px 8px;
+    font-weight: bold;
+    font-size: 5vw;
+    width: 100%;
+    border: none;
+    background-color: rgba(0,60,108);
+    transition-timing-function: ease-out;
+    transition-duration: 0.3s;
+    /* Safari Support*/
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 0.3s;
+  }
+
+  .rightBox{
+    width: 100%;
+    margin: 0;
+    margin-top: 45vh;
+  }
+
+  .leftBox{
+    width: 100%;
+    margin: 0;
+    margin-top: 2vh;
+  }
+
+  .backButton{
+    margin: 0;
+    margin-top: 5vw;
+    
+  }
+
+  .rightBoxServing{
+    padding: 0;
+    margin: 10px 0;
+    font-size: 6vmin;
+    text-align: center;
+  }
+
+  .rightBoxRating{
+    padding: 0;
+    text-align: center;
+  }
+
+  .leftBoxPrefs{
+    padding: 0;
+    margin: 10px 0;
+    font-size: 6vmin;
+    text-align: center;
+  }
+
+  .leftBoxURL{
+    padding: 0;
+    margin-top: 4vh;
+    font-size: 6vmin;
+    text-align: center;
+  }
+
+  .prefItem {
+    font-size: 6vmin;    
+  }
+
+  .hallItem {
+    font-size: 6vmin;    
   }
 }
 
