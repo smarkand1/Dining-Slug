@@ -82,7 +82,6 @@ export class Listhome extends React.Component{
 								Rachel Carson/Oakes
 							</NavLink>
 						</li>
-						<Header pdfCode = {this.props.name}/>
 					</ul>
 				</MediaQuery>
 

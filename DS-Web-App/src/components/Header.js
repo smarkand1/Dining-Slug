@@ -46,10 +46,12 @@ export class Header extends React.Component {
         }
         //Return the rendered component
         return(
-            <div className="activityHeader">
-                Activity: <Capacity/>
+            <div>
+                <div className="activityHeader">
+                    Activity: <Capacity/>
+                </div>
                 <div class="PDF">
-                    <a href={PDF} target="_blank">Hours</a>
+                    <a href={PDF} target="_blank"><u>Weekly Hours</u></a>
                 </div>
             </div>
         );
