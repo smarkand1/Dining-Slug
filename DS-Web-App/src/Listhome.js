@@ -8,7 +8,6 @@ import './App.css';
 
 export class Listhome extends React.Component{
 
-
 	render() {
 		/*
         Renders the quicknav bar at the top of the page
@@ -28,27 +27,27 @@ export class Listhome extends React.Component{
 						</NavLink>
 					</li>	
 					<li class="quickNav">
-						<NavLink to = "/9-10" exact>
+						<NavLink to = "/9-10" exact onClick = {fetch("/9-10")}>
 							9/10
 						</NavLink>
 					</li>
 					<li class="quickNav">
-						<NavLink to = "/cowell-stevenson" exact>
+						<NavLink to = "/cowell-stevenson" exact onClick = {fetch("/cowell-stevenson")}>
 							Cowell/Stevenson
 						</NavLink>
 					</li>
 					<li class="quickNav">
-						<NavLink to = "/crown-merrill" exact>
+						<NavLink to = "/crown-merrill" exact onClick = {fetch("/crown-merrill")}>
 							Crown/Merill
 						</NavLink>
 					</li>
 					<li class="quickNav">
-						<NavLink to = "/porter-kresge" exact>
+						<NavLink to = "/porter-kresge" exact onClick = {fetch("/porter-kresge")}>
 							Porter/Kresge
 						</NavLink>
 					</li>
 					<li class="quickNav">
-						<NavLink to = "/rcc-oakes" exact>
+						<NavLink to = "/rcc-oakes" exact onClick = {fetch("/rcc-oakes")}>
 							Rachel Carson/Oakes
 						</NavLink>
 					</li>

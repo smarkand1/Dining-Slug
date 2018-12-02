@@ -22,8 +22,11 @@ export class Menu extends React.Component {
 
     //Grab the array of JSON objects from the text file
     componentWillMount(){
+        
         this.renderList()
     } 
+
+    
 
     //Render the menu list
     renderList(){
@@ -99,6 +102,7 @@ export class Menu extends React.Component {
    }
 
     render() {
+        
         /*
         Renders the drop down box for the menu on a dining hall page
         Arguments:
@@ -108,6 +112,7 @@ export class Menu extends React.Component {
         Raises:
             None
         */
+       
         return (
             <div class="wrapper">
                 {this.state.finalUI === null ? "Loading menus..." : this.state.finalUI}
