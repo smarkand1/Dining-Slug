@@ -101,12 +101,12 @@ export class FoodPage extends React.Component {
                 <header className="App-header">
                     <div className="title">
                         Dining Slug
-                        <img src ={require('./slug.png')}/>
+                        <img class="logo" src ={require('./slug.png')}/>
                     </div>
                     <div className="gradient"></div>
                     <div className="topBar">
                         <Listhome/>
-                        <Search searchWithCode = {5}/>
+                         <Search searchWithCode = {5}/>
                     </div>
 
                     <div className="foodPageTitle">
