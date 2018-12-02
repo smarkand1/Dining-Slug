@@ -5,10 +5,12 @@
  */
 
 import React from 'react';
+import MediaQuery from 'react-responsive';
 import '../App.css';
 import Ratings from 'react-ratings-declarative';
 import fs from 'fs';
 var database = require('./database.json');
+
 
 export class FoodItem extends React.Component {
     constructor(props){
@@ -84,23 +86,45 @@ export class FoodItem extends React.Component {
     render() {
         return(
             <div>
-                <div className="divText">
-                    Rating : <Ratings  
-                        rating = {this.state.rating}
-                        widgetRatedColors = 'rgb(253, 199, 0)'
-                        widgetEmptyColors = 'rgb(203, 211, 227)'
-                        widgetHoverColors = 'rgb(255, 219, 86)'
-                        changeRating = {this.changeRating}
-                        widgetDimensions = '2vmin'
-                        widgetSpacings = "1vmin"
-                    >
-                        <Ratings.Widget />
-                        <Ratings.Widget />
-                        <Ratings.Widget />
-                        <Ratings.Widget />
-                        <Ratings.Widget />
-                    </Ratings> 
-                </div>
+                <MediaQuery query="(max-width:450px)">
+                    <div className="divText">
+                        Rating : <Ratings  
+                            rating = {this.state.rating}
+                            widgetRatedColors = 'rgb(253, 199, 0)'
+                            widgetEmptyColors = 'rgb(203, 211, 227)'
+                            widgetHoverColors = 'rgb(255, 219, 86)'
+                            changeRating = {this.changeRating}
+                            widgetDimensions = '5vmin'
+                            widgetSpacings = "1vmin"
+                        >
+                            <Ratings.Widget />
+                            <Ratings.Widget />
+                            <Ratings.Widget />
+                            <Ratings.Widget />
+                            <Ratings.Widget />
+                        </Ratings> 
+                    </div>  
+                </MediaQuery>
+
+                <MediaQuery query="(min-width:450px)">
+                    <div className="divText">
+                        Rating : <Ratings  
+                            rating = {this.state.rating}
+                            widgetRatedColors = 'rgb(253, 199, 0)'
+                            widgetEmptyColors = 'rgb(203, 211, 227)'
+                            widgetHoverColors = 'rgb(255, 219, 86)'
+                            changeRating = {this.changeRating}
+                            widgetDimensions = '2vmin'
+                            widgetSpacings = "1vmin"
+                        >
+                            <Ratings.Widget />
+                            <Ratings.Widget />
+                            <Ratings.Widget />
+                            <Ratings.Widget />
+                            <Ratings.Widget />
+                        </Ratings> 
+                    </div>
+                </MediaQuery>
                 Reviews: {this.state.reviews}
             </div>
         );
