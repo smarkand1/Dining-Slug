@@ -547,6 +547,7 @@ File: Search.js*/
   text-indent: 0.5vmin;
   transition-timing-function: ease-out;
   transition-duration: 0.3s;
+  display: block;
   /* Safari Support*/
   -webkit-transition-timing-function: ease-out;
   -webkit-transition-duration: 0.3s;

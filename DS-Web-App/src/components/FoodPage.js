@@ -106,8 +106,9 @@ export class FoodPage extends React.Component {
                     <div className="gradient"></div>
                     <div className="topBar">
                         <Listhome/>
-                         <Search searchWithCode = {5}/>
                     </div>
+                    <Search searchWithCode = {5}/>
+
 
                     <div className="foodPageTitle">
                         {this.props.location.pathname.substring(6)}
