@@ -29,7 +29,7 @@ module.exports = {
             },
             {
                 test: /\.pdf$/,
-                loader: "url-loader?limit=100000"
+                loader: "url-loader"
             }
         ]
     },
