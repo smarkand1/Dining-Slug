@@ -3,7 +3,7 @@
 import populartimes
 import json
 
-google_api_json = json.load(open("DS-Web-App/config.json"))
+google_api_json = json.load(open("./config.json"))
 google_api_key = google_api_json["GOOGLE_API_KEY"]
 
 def print_google_data(ratings_file, times_file, prev_ratings, prev_times):
