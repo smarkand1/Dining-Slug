@@ -98,6 +98,21 @@ app.get('/dhRating.json', (req,res) => {
     return res.send(JSON.stringify(dhRatings));
 });
 
+app.get('/poptimes.json', (req,res) => {
+    const data = require('./poptimes.json');
+    return res.send(JSON.stringify(data));
+});
+
+app.get('/food.json', (req,res) => {
+    const foodList = require('./food.json');
+    return res.send(JSON.stringify(foodList));
+})
+
+app.get('/search.json', (req,res) => {
+    const data = require('./search.json');
+    return res.send(JSON.stringify(data));
+})
+
 app.get('*', (req,res) => {
     res.sendFile(path.join(__dirname+ '/../../dist/index.html'));
     console.log("Refresh");

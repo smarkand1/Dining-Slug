@@ -1,6 +1,6 @@
 import React from 'react';
 import { Search } from './Search';
-import foodList from './food.json';
+//import foodList from './food.json';
 import { Listhome } from './../Listhome';
 import { FoodItem } from './FoodItem';
 import "../App.css"
@@ -9,8 +9,99 @@ import { NavLink } from 'react-router-dom';
 export class FoodPage extends React.Component {
     constructor(props){
         super(props);
+
+        this.state = {
+            foodList: null,
+            preferences : null,
+            url : null,
+            diningHalls : null,
+            pageUI : null
+        }
+    }
+
+    componentWillMount(){
+        this.renderPage();
     }
   
+    renderPage(){
+        /*
+        Pulls data from the server and renders the foodItem page
+        Arguments:
+            None
+        Returns:
+            Component (HTML Div) - HTML div containing up to 4 divs.
+            Each div contains the items that the dining is serving at each meal time.
+        Raises:
+            None
+        */
+       
+        var food = this.props.location.pathname.substring(6);
+        fetch("/food.json", {Method: "GET"})
+            .then(res => res.json())
+            .then((result) => {
+                console.log(result[food]["Preferences"]);
+                var foodList = result;
+                this.setState ({
+                    preferences : foodList[food]["Preferences"],
+                    url : foodList[food]["URL"],
+                    diningHalls : foodList[food]["Dining Halls"]
+                })
+            })
+            .then(() => {
+                let UI = (
+                    <div className="App">
+                        <header className="App-header">
+                            <div className="title">
+                                Dining Slug
+                                <img src ={require('./slug.png')}/>
+                            </div>
+                            <div className="gradient"></div>
+                            <div className="topBar">
+                                <Listhome/>
+                                <div className="searchItem">
+                                    <Search searchWithCode = {5}/>
+                                </div>
+                            </div>
+
+                            <div className="foodPageTitle">
+                                {this.props.location.pathname.substring(6)}
+                            </div>
+
+                            <div className="wrapper">
+                                <div className="leftBox">
+                                    <div className="leftBoxPrefs">
+                                        <u>About</u>
+                                        <div className="prefList">
+                                            {this.renderListPref(this.state.preferences)}
+                                        </div>
+                                    </div>
+                                    <div className="leftBoxURL">
+                                        <a href={this.state["url"]} target="_blank" className="nutURL">Click Here for Nutritional Info</a>
+                                    </div>
+                                </div>
+                                <div className="rightBox">
+                                    <div className="rightBoxServing">
+                                        <u>Serving At</u>
+                                        <div className="hallList">
+                                            {this.renderListHalls(this.state["diningHalls"])}
+                                        </div>
+                                    </div>
+                                    <div className="rightBoxRating">
+                                        <FoodItem itemName = {this.props.location.pathname.substring(6)} className="foodItemRating"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="backButton" onClick ={() => {this.props.history.goBack()}}>
+                                Go Back
+                            </button>
+                        </header>    
+                    </div>
+                );
+                this.setState({pageUI:UI});
+            })
+    }
+
     renderListPref =(prefs) =>{
         /*
         Chooses which dining hall list to display from
@@ -23,7 +114,11 @@ export class FoodPage extends React.Component {
             None
         */
         //Determine which JSON objecy to look at based on what the user clicked
-        var preferences = prefs;
+        var preferences = this.state.preferences;
+        if(preferences === null){
+            return "Loading..";
+        }
+        console.log(preferences);
         //Render the list of food preferences
         let prefUI = preferences.map((pref) => {
             return(
@@ -48,6 +143,9 @@ export class FoodPage extends React.Component {
         */
         //Determine which JSON objecy to look at based on what the user clicked
         var diningHalls = halls;
+        if(diningHalls === null){
+            return "Loading...";
+        }
         //Render the list of food preferences
         let hallUI = diningHalls.map((hall) => {
             hall = hall.replace("Menu", "");
@@ -89,63 +187,8 @@ export class FoodPage extends React.Component {
 
     //Any formatting will appear here.
     render(){
-        var food = this.props.location.pathname.substring(6);
-        this.state = {
-            preferences : foodList[food]["Preferences"],
-            url : foodList[food]["URL"],
-            diningHalls : foodList[food]["Dining Halls"]
-        }
 
-        return(
-            <div className="App">
-                <header className="App-header">
-                    <div className="title">
-                        Dining Slug
-                        <img src ={require('./slug.png')}/>
-                    </div>
-                    <div className="gradient"></div>
-                    <div className="topBar">
-                        <Listhome/>
-                        <div className="searchItem">
-                            <Search searchWithCode = {5}/>
-                        </div>
-                    </div>
-
-                    <div className="foodPageTitle">
-                        {this.props.location.pathname.substring(6)}
-                    </div>
-
-                    <div className="wrapper">
-                        <div className="leftBox">
-                            <div className="leftBoxPrefs">
-                                <u>About</u>
-                                <div className="prefList">
-                                    {this.renderListPref(this.state["preferences"])}
-                                </div>
-                            </div>
-                            <div className="leftBoxURL">
-                                <a href={this.state["url"]} target="_blank" className="nutURL">Click Here for Nutritional Info</a>
-                            </div>
-                        </div>
-                        <div className="rightBox">
-                            <div className="rightBoxServing">
-                                <u>Serving At</u>
-                                <div className="hallList">
-                                    {this.renderListHalls(this.state["diningHalls"])}
-                                </div>
-                            </div>
-                            <div className="rightBoxRating">
-                                <FoodItem itemName = {this.props.location.pathname.substring(6)} className="foodItemRating"/>
-                            </div>
-                        </div>
-                    </div>
-
-                    <button class="backButton" onClick ={() => {this.props.history.goBack()}}>
-                        Go Back
-                    </button>
-                </header>    
-            </div>
-        )
+        return(this.state.pageUI === null ? "" : this.state.pageUI);
     }
 }
 
