@@ -122,7 +122,7 @@ export class FoodPage extends React.Component {
                                 </div>
                             </div>
                             <div className="leftBoxURL">
-                                <a href={this.state["url"]} target="_blank" className="nutURL">Click Here for Nutritional Info</a>
+                                <a href={this.state["url"]} target="_blank" className="nutURL">Click <u>Here</u> for Nutritional Info</a>
                             </div>
                         </div>
                         <div className="rightBox">

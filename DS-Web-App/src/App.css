@@ -674,7 +674,6 @@ input {
 
   .searchBar {
     font-size: 4vw;
-    
   }
 
   .rightBoxRating{
@@ -720,6 +719,9 @@ input {
     border: 1.5px solid #fdc700;
     border-radius: 8px;
     cursor: pointer;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    margin-left: 0;   
 }
 
   .dropdown {
@@ -781,10 +783,15 @@ input {
 
   .serving {
     font-size: 5vmin;
+    font-weight: bold;
     padding-top: 2vw;
-  }
-
-  .open {
-    padding-top: vw;
+    color: white;
+    padding: 2vw;
+    font-size: 4vw;
+    border: 1.5px solid #fdc700;
+    border-radius: 8px;
+    float: left;
+    margin: 0px; 
+    margin-top: 4vw;  
   }
 }
