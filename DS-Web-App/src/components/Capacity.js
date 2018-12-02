@@ -3,17 +3,27 @@ import React from 'react';
 import '../App.css';
 
 //Reading in the data that was outputed by the webscraper
-const data = require('./poptimes.json');
+//const data = require('./poptimes.json');
 const closeData = require('./closedTimes.json')
-const times = data.Halls;
+//const times = data.Halls;
 const hallsCloseTimes = closeData.Halls;
 
 export class Capacity extends React.Component {
     constructor(props){
         super(props);
+        this.state = {
+            diningHall : [],
+            currentDay : [],
+            currentTime: "",
+            finalUI : null
+        }
+    }
+
+    componentWillMount(){
+        this.findTimes()
     }
     
-    findTimes(hall) {
+    findTimes() {
         /*
         Finds out how the full the dining hall is on a given day and returns a one word description of it
         Arguments:
@@ -24,6 +34,27 @@ export class Capacity extends React.Component {
         Raises:
             None
         */
+
+       var hall;
+       //We'll need to pass this hall code code the menu component so that 
+       //we can render the correct information
+       switch(this.props.hall){
+           case "9/10":
+               hall = 0;
+               break;
+           case "Cowell/Stevenson":
+               hall = 1;
+               break;
+           case "Crown/Merrill":
+               hall = 2;
+               break;
+           case "Porter/Kresge":
+               hall = 3;
+               break;
+           default:
+               hall = 4;       
+       }
+
         const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
         const OPENING = 0;
         const CLOSING = 1;
@@ -41,34 +72,56 @@ export class Capacity extends React.Component {
         var currDay = weekday[currDayNum];
         var currHour = d.getHours();
         var currFullTime = currHour * 100 + d.getMinutes();
+        var UI;
 
-        //Determine if a dining hall is closed
         if(currFullTime < hallsCloseTimes[hall][currDayNum][OPENING] || hallsCloseTimes[hall][currDayNum][CLOSING] < currFullTime){
-            return (<div className="busy">Closed</div>);
+            UI = (<div className="busy">Closed</div>);
+            this.setState({finalUI : UI});
+            return;
+
         }
         //Check if we're on the weekends
         if((currDayNum === SUNDAY || currDayNum === SATURDAY) && (hall === MERRILL || hall === PORTER)){
-            return (<div className="busy">Closed</div>);
+            UI = (<div className="busy">Closed</div>);
+            this.setState({finalUI : UI});
+            return;
         }
 
-        //get the popularity at the time from the data
-        var diningHall = times[hall];
-        var currDay = diningHall[currDay];
-        var currTime = currDay[currHour];
 
-        //convert popularity to a word
-        if(currTime > BUSY){
-            return (<div className="busy">Busy</div>);
-        }
-        else if(currTime > MODERATE){
-            return (<div className="moderate">Moderate</div>);
-        }
-        else if(currTime > NOT_BUSY){
-            return (<div className="notBusy">Not Busy</div>);
-        }
-        else{
-            return (<div className="notBusy">Not Available</div>);
-        }
+        //First, we need to fetch the data from the server
+        fetch("/poptimes.json", {Method: "GET"})
+            .then(res => res.json())
+            .then((result) => {
+                console.log(result);
+                var dH = result.Halls[hall];
+                var currrDay = dH[currDay];
+                var currTime = currrDay[currHour];
+                this.setState({
+                    diningHall : dH,
+                    currentDay : currrDay,
+                    currentTime : currTime
+                })
+            })
+            .then(() => {
+                //get the popularity at the time from the data
+                //convert popularity to a word
+                if(this.state.currentTime > BUSY){
+                    UI = (<div className="busy">Busy</div>);
+                }
+                else if(this.state.currentTime > MODERATE){
+                    UI = (<div className="moderate">Moderate</div>);
+                }
+                else if(this.state.currentTime > NOT_BUSY){
+                    UI = (<div className="notBusy">Not Busy</div>);
+                }
+                else{
+                    UI = (<div className="notBusy">Not Available</div>);
+                }
+                this.setState({finalUI : UI})
+            })
+
+        //Determine if a dining hall is closed
+        
        
     }
 
@@ -84,28 +137,8 @@ export class Capacity extends React.Component {
         Raises:
             None
         */
-        var hall;
-        //We'll need to pass this hall code code the menu component so that 
-        //we can render the correct information
-        switch(this.props.hall){
-            case "9/10":
-                hall = 0;
-                break;
-            case "Cowell/Stevenson":
-                hall = 1;
-                break;
-            case "Crown/Merrill":
-                hall = 2;
-                break;
-            case "Porter/Kresge":
-                hall = 3;
-                break;
-            default:
-                hall = 4;       
-        }
+        
         //Return the rendered component
-        return(
-            this.findTimes(hall)
-        );
+        return this.state.finalUI === null ? "" : this.state.finalUI;
     }
 }
