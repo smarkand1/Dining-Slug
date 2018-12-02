@@ -3,7 +3,7 @@ import React from 'react';
 import { HomeNav } from './HomeNav';
 import { Search } from './Search';
 import { Serving } from './Serving';
-import './Home.css'
+import '../App.css'
 
 export class Home extends React.Component {
     render() {
@@ -30,10 +30,7 @@ export class Home extends React.Component {
                             <Search searchWithCode = {5}/>
                         </div>
                         <div className="serving">
-                            Currently Serving: 
-                        </div>
-                        <div className="serving">
-                            <Serving/>
+                            Currently Serving:  <Serving/>
                         </div>
                     </div>
                     <HomeNav/>

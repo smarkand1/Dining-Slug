@@ -5,7 +5,7 @@
 import React from 'react';
 import { FoodItem } from './FoodItem'
 import { NavLink} from 'react-router-dom';
-import './Menu.css'
+import '../App.css';
 import Collapsible from 'react-collapsible'
 
 //const data = require('./dailyMenu.json')
@@ -60,10 +60,14 @@ export class Menu extends React.Component {
                     //Render the list of food items
                     let foodUI = foodArr.map((foodItem) => {
                         return(
-                            <li>
-                                <FoodItem itemName = {foodItem} />
-                            </li>
-
+                            <div className="foodItem">
+                            <NavLink to = {`/food/${foodItem}`}>
+                                <button className="foodButton">
+                                    {foodItem}
+                                </button>
+                            </NavLink>
+                            <FoodItem itemName = {foodItem} />
+                            </div>
                         );          
                     });
                     // If we have an empty array (IE no food being served at that time)

@@ -1,6 +1,6 @@
 //This component redners the currently serving based on the time
 import React from 'react';
-import './Serving.css';
+import '../App.css';
 
 export class Serving extends React.Component {
     constructor(props){
