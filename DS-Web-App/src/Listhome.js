@@ -48,37 +48,37 @@ export class Listhome extends React.Component{
 		*/
 		
 		return (
-			
 			<div>
+				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>			
 				<MediaQuery query="(min-width:450px)">
 					<ul class="quickNavList">
 						<li class="quickNav">
-							<NavLink to = "/" exact >
+							<NavLink to = "/" exact>
 								Home
 							</NavLink>
 						</li>	
 						<li class="quickNav">
-							<NavLink to = "/9-10" exact onClick = {fetch("/9-10")}>
+							<NavLink to = "/9-10" exact>
 								9/10
 							</NavLink>
 						</li>
 						<li class="quickNav">
-							<NavLink to = "/cowell-stevenson" exact onClick = {fetch("/cowell-stevenson")}>
+							<NavLink to = "/cowell-stevenson" exact>
 								Cowell/Stevenson
 							</NavLink>
 						</li>
 						<li class="quickNav">
-							<NavLink to = "/crown-merrill" exact onClick = {fetch("/crown-merrill")}>
-								Crown/Merrill
+							<NavLink to = "/crown-merrill" exact>
+								Crown/Merill
 							</NavLink>
 						</li>
 						<li class="quickNav">
-							<NavLink to = "/porter-kresge" exact onClick = {fetch("/porter-kresge")}>
+							<NavLink to = "/porter-kresge" exact>
 								Porter/Kresge
 							</NavLink>
 						</li>
 						<li class="quickNav">
-							<NavLink to = "/rcc-oakes" exact onClick = {fetch("/rcc-oakes")}>
+							<NavLink to = "/rcc-oakes" exact>
 								Rachel Carson/Oakes
 							</NavLink>
 						</li>
@@ -87,7 +87,7 @@ export class Listhome extends React.Component{
 
 				<MediaQuery query="(max-width:450px)">
 				<div class="dropdown">
-					<button onClick={this.showMenu} class="dropbtn">Select A Page...</button>
+					<button onClick={this.showMenu} class="dropbtn"><i class="fa fa-bars"></i> Menu</button>
 					{
 					this.state.showMenu
 						? (
@@ -95,23 +95,23 @@ export class Listhome extends React.Component{
 							<NavLink to = "/" exact>
 								Home
 							</NavLink>
-							<NavLink to = "/9-10" exact onClick = {fetch("/9-10")}>
+							<NavLink to = "/9-10" exact>
 								9/10
 							</NavLink>
 
-							<NavLink to = "/cowell-stevenson" exact onClick = {fetch("/cowell-stevenson")}>
+							<NavLink to = "/cowell-stevenson" exact>
 								Cowell/Stevenson
 							</NavLink>
 
-							<NavLink to = "/crown-merrill" exact onClick = {fetch("/crown-merrill")}>
+							<NavLink to = "/crown-merrill" exact>
 								Crown/Merill
 							</NavLink>
 					
-							<NavLink to = "/porter-kresge" exact onClick = {fetch("/porter-kresge")}>
+							<NavLink to = "/porter-kresge" exact>
 								Porter/Kresge
 							</NavLink>
 						
-							<NavLink to = "/rcc-oakes" exact onClick = {fetch("/rcc-oakes")}>
+							<NavLink to = "/rcc-oakes" exact>
 								Rachel Carson/Oakes
 							</NavLink>
 						</div>
