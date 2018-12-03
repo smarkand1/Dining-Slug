@@ -1,15 +1,15 @@
 import React from 'react';
 import { Search } from './Search';
-//import foodList from './food.json';
 import { Listhome } from './../Listhome';
 import { FoodItem } from './FoodItem';
 import "../App.css"
 import { NavLink } from 'react-router-dom';
 
+var prevUrl = "";
+
 export class FoodPage extends React.Component {
     constructor(props){
         super(props);
-
         this.state = {
             foodList: null,
             preferences : null,
@@ -56,6 +56,7 @@ export class FoodPage extends React.Component {
                     url : foodList[food]["URL"],
                     diningHalls : foodList[food]["Dining Halls"]
                 })
+                console.log(food);
             })
             .then(() => {
                 //Use the data to create a renderable UI, and then set the state
@@ -190,8 +191,16 @@ export class FoodPage extends React.Component {
 
     //If the UI is ready, then render it. If not, wait to display the information
     render(){
-
-        return(this.state.pageUI === null ? "" : this.state.pageUI);
+        var currUrl = this.props.location.pathname.substring(6);
+        if(currUrl != prevUrl){
+            this.renderPage();
+            prevUrl = currUrl;
+            return(this.state.pageUI === null ? "" : this.state.pageUI);
+        }
+        else{
+            prevUrl = currUrl;
+            return(this.state.pageUI === null ? "" : this.state.pageUI);
+        }
     }
 }
 
