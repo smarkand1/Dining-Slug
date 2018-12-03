@@ -4,6 +4,7 @@ import React from 'react';
 import { Listhome } from './../Listhome';
 import { Menu } from './Menu';
 import { Search } from './Search';
+import { Header } from './Header';
 
 export class DiningHall extends React.Component {
     //Renders the entire dining hall page based on what page the user is in
@@ -53,6 +54,9 @@ export class DiningHall extends React.Component {
                     <div className="gradient"></div>
                     <div>
                     <Listhome/>
+                    <Header pdfCode = {this.props.name}/>
+                    </div>
+                    <div>
                     <Search searchWithCode = {hall}/>
                     <Menu hallCode = {hall}/>    
                     </div>

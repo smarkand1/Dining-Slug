@@ -110,6 +110,30 @@ app.get('/search.json', (req,res) => {
     return res.send(JSON.stringify(data));
 })
 
+/*
+ The calls to Hours/Hours...pdf handles the request to read open a pdf
+ that contains the information amout the open and close times
+*/
+app.get('/Hours/HoursCrown.pdf', (req,res) => {
+    res.sendFile(path.join(__dirname+'/Hours/HoursCrown.pdf'))
+});
+
+app.get('/Hours/HoursCowell.pdf', (req,res) => {
+    res.sendFile(path.join(__dirname+'/Hours/HoursCowell.pdf'))
+});
+
+app.get('/Hours/HoursNine.pdf', (req,res) => {
+    res.sendFile(path.join(__dirname+'/Hours/HoursNine.pdf'))
+});
+
+app.get('/Hours/HoursPorter.pdf', (req,res) => {
+    res.sendFile(path.join(__dirname+'/Hours/HoursPorter.pdf'))
+});
+
+app.get('/Hours/HoursRCC.pdf', (req,res) => {
+    res.sendFile(path.join(__dirname+'/Hours/HoursRCC.pdf'))
+});
+
 //Catches any request that is not handled by the above gets, simply
 //reloads the page. This is mainly used for the react routers
 app.get('*', (req,res) => {

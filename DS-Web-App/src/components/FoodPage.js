@@ -62,48 +62,46 @@ export class FoodPage extends React.Component {
                 //Using this UI
                 let UI = (
                     <div className="App">
-                        <header className="App-header">
-                            <div className="title">
-                                Dining Slug
-                                <img src ={require('./slug.png')}/>
-                            </div>
-                            <div className="gradient"></div>
-                            <div className="topBar">
-                                <Listhome/>
-                                <div className="searchItem">
-                                    <Search searchWithCode = {5}/>
+                <header className="App-header">
+                    <div className="title">
+                        Dining Slug
+                        <img class="logo" src ={require('./slug.png')}/>
+                    </div>
+                    <div className="gradient"></div>
+                    <div className="topBar">
+                        <Listhome/>
+                    </div>
+                    <Search searchWithCode = {5}/>
+
+
+                    <div className="foodPageTitle">
+                        {this.props.location.pathname.substring(6)}
+                    </div>
+
+                    <div className="wrapper">
+                        <div className="leftBox">
+                            <div className="leftBoxPrefs">
+                                <u>About</u>
+                                <div className="prefList">
+                                    {this.renderListPref(this.state["preferences"])}
                                 </div>
                             </div>
-
-                            <div className="foodPageTitle">
-                                {this.props.location.pathname.substring(6)}
+                            <div className="leftBoxURL">
+                                <a href={this.state["url"]} target="_blank" className="nutURL">Click <u>Here</u> for Nutritional Info</a>
                             </div>
-
-                            <div className="wrapper">
-                                <div className="leftBox">
-                                    <div className="leftBoxPrefs">
-                                        <u>About</u>
-                                        <div className="prefList">
-                                            {this.renderListPref(this.state.preferences)}
-                                        </div>
-                                    </div>
-                                    <div className="leftBoxURL">
-                                        <a href={this.state["url"]} target="_blank" className="nutURL">Click Here for Nutritional Info</a>
-                                    </div>
-                                </div>
-                                <div className="rightBox">
-                                    <div className="rightBoxServing">
-                                        <u>Serving At</u>
-                                        <div className="hallList">
-                                            {this.renderListHalls(this.state["diningHalls"])}
-                                        </div>
-                                    </div>
-                                    <div className="rightBoxRating">
-                                        <FoodItem itemName = {this.props.location.pathname.substring(6)} className="foodItemRating"/>
-                                    </div>
+                        </div>
+                        <div className="rightBox">
+                            <div className="rightBoxServing">
+                                <u>Serving At</u>
+                                <div className="hallList">
+                                    {this.renderListHalls(this.state["diningHalls"])}
                                 </div>
                             </div>
-
+                            <div className="rightBoxRating">
+                                <FoodItem itemName = {this.props.location.pathname.substring(6)} className="foodItemRating"/>
+                            </div>
+                        </div>
+                    </div>
                             <button class="backButton" onClick ={() => {this.props.history.goBack()}}>
                                 Go Back
                             </button>
