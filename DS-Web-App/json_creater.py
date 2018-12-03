@@ -176,11 +176,6 @@ prev_times_json = json.load(open('src/server/poptimes.json'))
 prev_ratings = prev_ratings_json["Halls"]
 prev_times = prev_times_json["Halls"]
 
-#Output files
-data_file = open("src/server/dailyMenu.json", "w")
-search_file = open("src/server/search.json", "w")
-food_file = open("src/server/food.json", "w")
-
 #Output files for google api
 ratings_file = open("src/server/dhRating.json", "w")
 times_file = open("src/server/poptimes.json", "w")
@@ -189,15 +184,17 @@ times_file = open("src/server/poptimes.json", "w")
 dhpop.print_google_data(ratings_file, times_file, prev_ratings, prev_times)
 ratings_file.close()
 times_file.close()
+print("Printed Ratings")
 
 urls = scraper.get_dining_hall_URLs()
 if(urls == -1):
     sys.exit()
+print("Printing Food Files")
 
 #Output files for webscraper
-data_file = open("DS-Web-App/src/components/dailyMenu.json", "w")
-search_file = open("DS-Web-App/src/components/search.json", "w")
-food_file = open("DS-Web-App/src/components/food.json", "w")
+data_file = open("src/server/dailyMenu.json", "w")
+search_file = open("src/server/search.json", "w")
+food_file = open("src/server/food.json", "w")
 
 count = 0
 NAME = 0

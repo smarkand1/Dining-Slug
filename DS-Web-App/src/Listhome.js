@@ -69,7 +69,7 @@ export class Listhome extends React.Component{
 						</li>
 						<li class="quickNav">
 							<NavLink to = "/crown-merrill" exact onClick = {fetch("/crown-merrill")}>
-								Crown/Merill
+								Crown/Merrill
 							</NavLink>
 						</li>
 						<li class="quickNav">
