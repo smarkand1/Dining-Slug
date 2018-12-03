@@ -87,7 +87,7 @@ export class Listhome extends React.Component{
 
 				<MediaQuery query="(max-width:450px)">
 				<div class="dropdown">
-					<button onClick={this.showMenu} class="dropbtn">Select A Page...</button>
+					<button onClick={this.showMenu} class="dropbtn"><i class= "fa fa-bars"></i> Menu</button>
 					{
 					this.state.showMenu
 						? (
