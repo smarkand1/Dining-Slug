@@ -55,6 +55,8 @@ export class DiningHall extends React.Component {
                     <div>
                     <Listhome/>
                     <Header pdfCode = {this.props.name}/>
+                    </div>
+                    <div>
                     <Search searchWithCode = {hall}/>
                     <Menu hallCode = {hall}/>    
                     </div>
