@@ -191,16 +191,8 @@ export class FoodPage extends React.Component {
 
     //If the UI is ready, then render it. If not, wait to display the information
     render(){
-        var currUrl = this.props.location.pathname.substring(6);
-        if(currUrl != prevUrl){
-            this.renderPage();
-            prevUrl = currUrl;
+
             return(this.state.pageUI === null ? "" : this.state.pageUI);
-        }
-        else{
-            prevUrl = currUrl;
-            return(this.state.pageUI === null ? "" : this.state.pageUI);
-        }
     }
 }
 

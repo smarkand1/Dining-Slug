@@ -78,19 +78,25 @@ def print_search_menu(file, menu):
     #Header for json object
     file.write("\t\t{\n")
     file.write("\t\t\t\"Food\": [")
+    start = 0
+
+    #Write the first item for formatting purposes
+    for index in range(len(menu)):
+        if menu[index][NAME][:4] not in ILLEGAL_PHRASES:
+            file.write("\"" + menu[index][NAME] + "\"")
+            start = index
+            added.add(menu[index][NAME])
+            break
 
     #Writes food items to array if it isnt there already
-    for item in menu[:LAST]:
-        if item[NAME][:4] in ILLEGAL_PHRASES:
-            continue
-        if item[NAME] in added:
-            continue
-        added.add(item[NAME])
-        file.write("\"" + item[NAME] + "\", ")
-
-    #Write last item to list so as to avoid comma formatting issues
-    if menu[LAST][NAME][:4] not in ILLEGAL_PHRASES:
-        file.write("\"" + menu[LAST][NAME] + "\"")
+    if(start < len(menu)):
+        for item in menu[start:]:
+            if item[NAME][:4] in ILLEGAL_PHRASES:
+                continue
+            if item[NAME] in added:
+                continue
+            added.add(item[NAME])
+            file.write(", \"" + item[NAME] + "\"")
 
     #Closes off list
     file.write("]\n\t\t}") 
@@ -122,7 +128,7 @@ def print_detailed_menu(file, menu):
     file.write("{\n")
 
     #Sifts out duplicates and combines which dining hall food is served in
-    for item in menu[:LAST]:
+    for item in menu:
         #If its not a food item, it skips over it
         if item[NAME][:4] in ILLEGAL_PHRASES:
             continue
@@ -255,6 +261,7 @@ for url in urls:
     #Formatting for data    
     data_file.write("\t\"Date\": \"" + menu[DATE][NAME] + "\",\n")
     data_file.write("\t\"Menu\": [\n")
+    hasOthers = False
     
     #Prints the food for that dining hall
     if len(menu) >= MIN_VALID :
@@ -263,20 +270,23 @@ for url in urls:
         if(menu[index][NAME] == "Breakfast"):
             index = print_menu(data_file, "Lunch", menu, index)
             data_file.write(",\n")
+            hasOthers = True
         #Print items for lunch
         if(menu[index][NAME] == "Lunch"):
             index = print_menu(data_file, "Dinner", menu, index)
             data_file.write(",\n")
+            hasOthers = True
         #Print items for Dinner
         if(menu[index][NAME] == "Dinner"):  
             index = print_menu(data_file, "Late Night", menu, index)
         #Print items for late night if it exists
-        if index != len(menu) :
+        if hasOthers:
             data_file.write(",\n")
+            
+        if index < len(menu) :
             index = print_menu(data_file, "", menu, index)
             data_file.write("\n")
         else:
-            data_file.write(",\n")
             data_file.write("\t\t{\n")
             data_file.write("\t\t\t\"Title\": \"Late Night\",\n")
             data_file.write("\t\t\t\"Food\": []")

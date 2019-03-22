@@ -81,7 +81,7 @@ export class Search extends React.Component {
     renderResults = r =>{
        
         return (
-        <NavLink to = {`/food/${r}`}>
+        <NavLink to = {`/food/${r}`} onClick = {fetch("/food")}>
             <button className="searchButton" id="searchBarFood">{r}</button>
         </NavLink>
         )

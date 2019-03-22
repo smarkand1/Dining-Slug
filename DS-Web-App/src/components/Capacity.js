@@ -109,11 +109,11 @@ export class Capacity extends React.Component {
                 else if(this.state.currentTime > MODERATE){
                     UI = (<div className="moderate">Moderate</div>);
                 }
-                else if(this.state.currentTime > NOT_BUSY){
+                else if(this.state.currentTime >= NOT_BUSY){
                     UI = (<div className="notBusy">Not Busy</div>);
                 }
                 else{
-                    UI = (<div className="notBusy">Not Available</div>);
+                    UI = (<div className="busy">Not Available</div>);
                 }
                 this.setState({finalUI : UI})
             })
