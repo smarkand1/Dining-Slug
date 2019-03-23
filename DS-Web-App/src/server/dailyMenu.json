@@ -1,3 +1,112 @@
 {
 "data":[{
 	"Title": "Colleges Nine & Ten Menu",
+	"Date": "Menus for Friday, March 22, 2019",
+	"Menu": [
+		{
+			"Title": "Breakfast",
+			"Food": ["Cage Free Scrambled Eggs", "Egg O'Muffin", "Gluten Free Blueberry Pancakes", "Ham Steaks", "Hard-boiled Cage Free Eggs", "Organic Oatmeal Gluten-Free", "Papas Fritas", "Banana Fritters", "Banana Walnut Muffin", "Chocolate Muffin", "Vegan Peanut Granola", "Bell Peppers", "Cage Free Eggs", "Cage Free Omelette Bar", "Cheddar Cheese", "Feta Cheese", "Fresh Organic Spinach", "Fresh Tomato", "Jalapeno", "Onions", "Oven Roasted Turkey", "Sliced Olives", "Smoked Ham"]
+		},
+		{
+			"Title": "Lunch",
+			"Food": ["N.E.Clam Chowder", "Tuscan Vegetable Soup", "Chicken Korma", "Garbanzo Madras Curry", "Steamed Rice", "Miso Glazed Line Caught Salmon", "Roasted Red Potatoes Garlic Herb", "Steamed Bok Choy", "Cheeseburger", "Condiments", "Crispy Tostada", "Sweet Potato Fries", "Oven Roasted Chicken Thigh", "Chocolate Buttercream Brownie", "Bar Pasta", "Bolognese Sauce", "Cheese Tortellini", "Cheesy Garlic Bread Sticks", "Condiments", "Marinara Sauce", "Penne"]
+		},
+		{
+			"Title": "Dinner",
+			"Food": ["Soup Of The Day", "Au Gratin Potatoes", "Chef's Special", "Cider House Chicken Breast", "Roasted Seasonal Vegetables", "Oven Roasted Chicken Thigh", "Steamed Rice", "Chocolate Buttercream Brownie", "Peach Galette", "UCSC Bakery French Rolls", "Argentine Tri-Tip with Chimichurri", "Black Beans", "Condiments", "Peruvian Bar", "Quinoa with Lemon and Thyme", "Roasted Corn", "Roasted Tomatoes"]
+		},
+		{
+			"Title": "Late Night",
+			"Food": []
+		}
+	]
+},
+{
+	"Title": "Cowell/Stevenson Dining Hall Menu",
+	"Date": "Menus for Friday, March 22, 2019",
+	"Menu": [
+		{
+			"Title": "Breakfast",
+			"Food": ["Belgian Waffles", "Cage Free Scrambled Eggs", "Chicken Bacon", "Eggbeaters Scramble", "French Toast Sticks", "Hard-boiled Cage Free Eggs", "Organic Oatmeal Gluten-Free", "Texas French Toast", "Banana Fritters", "Banana Walnut Muffin", "Chocolate Muffin", "Vegan Peanut Granola", "Bell Peppers", "Cage Free Eggs", "Cage Free Omelette Bar", "Cheddar Cheese", "Feta Cheese", "Fresh Organic Spinach", "Fresh Tomato", "Jalapeno", "Onions", "Oven Roasted Turkey", "Sliced Olives", "Smoked Ham"]
+		},
+		{
+			"Title": "Lunch",
+			"Food": ["Chicken & Rice Soup", "Organic Black Bean Soup", "Orange Glazed Vegan Chicken", "Ginger Rice", "Roasted Seasonal Vegetables", "Thai Style Sustainable Pacific Cod", "Cheese Pizza", "Oven Roasted Chicken Thigh", "Steamed Rice", "Gourmet Pacific Oatmeal Cookie, doz", "Sugar Cookie", "Chocolate Buttercream Brownie", "Carribbean Bar", "Coconut Basmati Rice", "Curry Mango and Chickpea Salad", "Popcorn Shrimp", "Pork Carnitas", "Roasted Yams"]
+		},
+		{
+			"Title": "Dinner",
+			"Food": ["Garden Vegetable Soup", "Chef's Special", "Filipino Chicken and Shrimp Pancit", "Sauteed Seasonal Vegetable", "Cheese Pizza", "Oven Roasted Chicken Thigh", "Steamed Rice", "Cheese Sauce", "Condiments", "Jalapeno", "Nachos Bar", "Refried Beans", "Taqueria Chicken", "Taqueria Ground Beef"]
+		},
+		{
+			"Title": "Late Night",
+			"Food": []
+		}
+	]
+},
+{
+	"Title": "Crown/Merrill Dining Hall Menu",
+	"Date": "Menus for Friday, March 22, 2019",
+	"Menu": [
+		{
+			"Title": "Breakfast",
+			"Food": ["Belgian Waffles", "Cage Free Scrambled Eggs", "Gluten Free Blueberry Pancakes", "Hard-boiled Cage Free Eggs", "Middle Eastern Shakshuka Eggs", "Organic Oatmeal Gluten-Free", "Tator Tots", "Turkey Sausage Patties", "Banana Fritters", "Banana Walnut Muffin", "Chocolate Muffin"]
+		},
+		{
+			"Title": "Lunch",
+			"Food": ["Chicken Noodle Soup", "Vegan Garbanzo Sesame Soup", "Lentil Beef and Vegetable Stew", "Lentil and Vegetable Stew", "Garlic Rainbow Chard", "Harrisa BBQ Beef Brisket", "Red Skin Mashed Potatoes", "Cheese Pizza", "Pizza with Gochujang BBQ Chicken", "Oven Roasted Chicken Thigh", "Steamed Rice", "Chocolate Buttercream Brownie", "BAR Boardwalk Burgers", "Bread Bun", "Burger Beef", "Burger Turkey", "Grilled Pineapple Rings", "Hawaiian Bun", "Sauteed Mushrooms", "Sauteed Onions and Peppers", "Sweet Potato Fries", "Szechuan Sweet Chili Sauce", "Teriyaki Sauce (Gluten Free)", "Vegan Malibu Burger"]
+		},
+		{
+			"Title": "Dinner",
+			"Food": ["Chicken Noodle Soup", "Vegan Garbanzo Sesame Soup", "Chef's Special", "Garlic Mashed Yukon Golds", "Oven Roasted Turkey", "Roasted Seasonal Vegetables", "Cheese Pizza", "Pizza with Gochujang BBQ Chicken", "Oven Roasted Chicken Thigh", "Steamed Rice", "Peach Galette", "UCSC Bakery French Rolls", "Bar Pasta", "Bolognese Sauce", "Cheese Tortellini", "Cheesy Garlic Bread Sticks", "Condiments", "Marinara Sauce", "Penne"]
+		},
+		{
+			"Title": "Late Night",
+			"Food": []
+		}
+	]
+},
+{
+	"Title": "Porter/Kresge Dining Hall Menu",
+	"Date": "Menus for Friday, March 22, 2019",
+	"Menu": [
+		{
+			"Title": "Breakfast",
+			"Food": ["Banana Fritters", "Banana Walnut Muffin", "Chocolate Muffin", "Bell Peppers", "Cage Free Eggs", "Cage Free Omelette Bar", "Cheddar Cheese", "Feta Cheese", "Fresh Organic Spinach", "Fresh Tomato", "Jalapeno", "Onions", "Oven Roasted Turkey", "Sliced Olives", "Smoked Ham", "Belgian Waffles", "Buttermilk Pancakes", "Cage Free Scrambled Eggs", "Eggbeaters Scramble", "Flour Tortilla", "Ham Steaks", "Hard-boiled Cage Free Eggs", "Organic Oatmeal Gluten-Free", "Sausage and Potato Breakfast Pizza", "Shredded Hash Browns", "Steamed Rice"]
+		},
+		{
+			"Title": "Lunch",
+			"Food": ["Gourmet Pacific Oatmeal Cookie, doz", "Sugar Cookie", "Chocolate Buttercream Brownie", "Fire Roasted Vegetable Soup", "N.E.Clam Chowder", "Bar Taqueria", "Black Beans", "Condiments", "Corn Tortillas", "Mexican Rice", "Pork Chile Verde", "Soyrizo and Potatoes", "Taqueria Chicken", "Beijing Chicken Wrap", "Beijing Vegan Wrap", "Farm Fridays", "Ginger Rice", "Oven Roasted Chicken Thigh", "Roasted Seasonal Vegetables", "Steamed Rice", "Tomato Basil Salad", "Bombay Chicken Pizza", "Cheese Pizza", "Combo Meat Pizza", "Pepperoni Pizza"]
+		},
+		{
+			"Title": "Dinner",
+			"Food": ["Chocolate Buttercream Brownie", "Peach Galette", "UCSC Bakery French Rolls", "Fire Roasted Vegetable Soup", "BAR Hot Dog", "Cheese Sauce", "Chili con Carne", "Condiments", "Hot Dog All Beef", "Hot Dog Vegan", "Sauteed Onions and Peppers", "Baked Potatoes", "Chef's Special", "Chicken Shawarma", "Couscous & Tomato Salad", "Oven Roasted Chicken Thigh", "Roasted Seasonal Vegetables", "Steamed Rice", "Tuscan Spareribs", "Bombay Chicken Pizza", "Cheese Pizza"]
+		},
+		{
+			"Title": "Late Night",
+			"Food": []
+		}
+	]
+},
+{
+	"Title": "Rachel Carson/Oakes Dining Hall",
+	"Date": "Menus for Friday, March 22, 2019",
+	"Menu": [
+		{
+			"Title": "Breakfast",
+			"Food": ["Belgian Waffle Squares", "Belgian Waffles", "Cage Free Scrambled Eggs", "Eggbeaters Scramble", "Hard-boiled Cage Free Eggs", "Organic Oatmeal Gluten-Free", "Roasted Seasonal Vegetables", "Shredded Hash Browns", "Turkey Sausage Egg & Cheese Biscuit", "Banana Fritters", "Banana Walnut Muffin", "Chocolate Muffin", "Vegan Peanut Granola", "Bell Peppers", "Cage Free Eggs", "Cage Free Omelette Bar", "Cheddar Cheese", "Feta Cheese", "Fresh Organic Spinach", "Fresh Tomato", "Jalapeno", "Onions", "Oven Roasted Turkey", "Sliced Olives", "Smoked Ham"]
+		},
+		{
+			"Title": "Lunch",
+			"Food": ["N.E.Clam Chowder", "Organic Black Bean Soup", "Sticky Rice", "Sweet & Sour Tofu", "Sweet and Sour Chicken", "Ravioli Toscana", "Roasted Seasonal Vegetables", "Salmon with Lemon, Garlic and Rosemary", "Curly Fries", "Grilled SouthWest Turkey Sandwich", "Vegan Malibu South West Burger", "Cheese Pizza", "Spicy Shrimp Pizza", "Oven Roasted Chicken Thigh", "Steamed Rice", "Sugar Cookie", "Chocolate Buttercream Brownie", "Gourmet Pacific Oatmeal Cookie, doz", "UCSC Bakery French Rolls", "Bar Taqueria", "Condiments", "Corn Tortillas", "Flour Tortilla", "Mexican Rice", "Refried Beans", "Taqueria Chicken", "Taqueria Ground Beef"]
+		},
+		{
+			"Title": "Dinner",
+			"Food": ["N.E.Clam Chowder", "Organic Black Bean Soup", "Baton Rouge Stroller Roller", "Chef's Special", "Argentinian Roasted Chicken", "Chimichurri Fries", "Steamed Seasonal Vegetables", "French Fries", "Grilled Cheese Sandwich", "Cheese Pizza", "Spicy Shrimp Pizza", "Oven Roasted Chicken Thigh", "Steamed Rice", "Chocolate Buttercream Brownie", "Peach Galette", "UCSC Bakery French Rolls", "Bar Rice Bowl", "Condiments", "Steamed Basmati Rice", "Steamed Brown Rice", "Stir Fry Chicken Vegetables", "Stir Fry Tofu and Vegetables", "Teriyaki Sauce (Gluten Free)", "Thai Green Curry Sauce"]
+		},
+		{
+			"Title": "Late Night",
+			"Food": []
+		}
+	]
+}]
+}
